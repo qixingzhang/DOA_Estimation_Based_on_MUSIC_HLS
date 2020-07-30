@@ -99,7 +99,7 @@ architecture behav of scaled_fixed2ieee_1 is
     signal trunc_ln510_fu_238_p1 : STD_LOGIC_VECTOR (0 downto 0);
     signal tmp_2_fu_251_p4 : STD_LOGIC_VECTOR (31 downto 0);
     signal tmp_1_fu_242_p4 : STD_LOGIC_VECTOR (31 downto 0);
-    signal p_Result_43_fu_260_p3 : STD_LOGIC_VECTOR (31 downto 0);
+    signal p_Result_22_fu_260_p3 : STD_LOGIC_VECTOR (31 downto 0);
     signal c_0_fu_268_p3 : STD_LOGIC_VECTOR (31 downto 0);
     signal trunc_ln314_fu_304_p1 : STD_LOGIC_VECTOR (0 downto 0);
     signal select_ln314_fu_308_p3 : STD_LOGIC_VECTOR (31 downto 0);
@@ -113,14 +113,14 @@ architecture behav of scaled_fixed2ieee_1 is
     signal sub_ln324_fu_378_p2 : STD_LOGIC_VECTOR (8 downto 0);
     signal sext_ln324_fu_383_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal newexp_fu_387_p2 : STD_LOGIC_VECTOR (31 downto 0);
-    signal tmp_10_fu_393_p3 : STD_LOGIC_VECTOR (0 downto 0);
+    signal tmp_7_fu_393_p3 : STD_LOGIC_VECTOR (0 downto 0);
     signal icmp_ln1452_fu_401_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal or_ln330_fu_406_p2 : STD_LOGIC_VECTOR (0 downto 0);
     signal phitmp1_fu_416_p4 : STD_LOGIC_VECTOR (22 downto 0);
     signal empty_fu_412_p1 : STD_LOGIC_VECTOR (7 downto 0);
     signal out_exp_V_fu_434_p3 : STD_LOGIC_VECTOR (7 downto 0);
     signal significand_V_fu_426_p3 : STD_LOGIC_VECTOR (22 downto 0);
-    signal p_Result_44_fu_442_p4 : STD_LOGIC_VECTOR (31 downto 0);
+    signal p_Result_23_fu_442_p4 : STD_LOGIC_VECTOR (31 downto 0);
     signal bitcast_ln348_fu_452_p1 : STD_LOGIC_VECTOR (31 downto 0);
     signal ap_return_preg : STD_LOGIC_VECTOR (31 downto 0) := "00000000000000000000000000000000";
     signal ap_NS_fsm : STD_LOGIC_VECTOR (3 downto 0);
@@ -382,13 +382,13 @@ begin
         end if; 
     end process;
 
-    bitcast_ln348_fu_452_p1 <= p_Result_44_fu_442_p4;
+    bitcast_ln348_fu_452_p1 <= p_Result_23_fu_442_p4;
     
-    c_0_fu_268_p3_proc : process(p_Result_43_fu_260_p3)
+    c_0_fu_268_p3_proc : process(p_Result_22_fu_260_p3)
     begin
         c_0_fu_268_p3 <= std_logic_vector(to_unsigned(32, 32));
         for i in 0 to 32 - 1 loop
-            if p_Result_43_fu_260_p3(i) = '1' then
+            if p_Result_22_fu_260_p3(i) = '1' then
                 c_0_fu_268_p3 <= std_logic_vector(to_unsigned(i,32));
                 exit;
             end if;
@@ -411,16 +411,16 @@ begin
     isNeg_fu_322_p3 <= select_ln314_fu_308_p3(31 downto 31);
     lshr_ln1287_fu_348_p2 <= std_logic_vector(shift_right(unsigned(p_0107_0_reg_119),to_integer(unsigned('0' & ushcast_fu_344_p1(29-1 downto 0)))));
     newexp_fu_387_p2 <= std_logic_vector(signed(sext_ln324_fu_383_p1) - signed(ap_phi_mux_shift_1_phi_fu_165_p4));
-    or_ln330_fu_406_p2 <= (tmp_10_fu_393_p3 or icmp_ln1452_fu_401_p2);
+    or_ln330_fu_406_p2 <= (tmp_7_fu_393_p3 or icmp_ln1452_fu_401_p2);
     out_bits_0_V_fu_190_p5 <= (tmp_fu_182_p3 & ap_const_lv32_0(14 downto 0));
     out_exp_V_fu_434_p3 <= 
         ap_const_lv8_0 when (or_ln330_fu_406_p2(0) = '1') else 
         empty_fu_412_p1;
     p_Result_1_fu_172_p4 <= in_V(28 downto 13);
-    p_Result_43_fu_260_p3 <= 
+    p_Result_22_fu_260_p3 <= 
         tmp_2_fu_251_p4 when (trunc_ln510_fu_238_p1(0) = '1') else 
         tmp_1_fu_242_p4;
-    p_Result_44_fu_442_p4 <= ((ap_const_lv1_0 & out_exp_V_fu_434_p3) & significand_V_fu_426_p3);
+    p_Result_23_fu_442_p4 <= ((ap_const_lv1_0 & out_exp_V_fu_434_p3) & significand_V_fu_426_p3);
     p_Result_s_fu_214_p5 <= (tmp_s_fu_206_p3 & ap_const_lv32_0(17 downto 0));
     phitmp1_fu_416_p4 <= ap_phi_mux_p_Val2_s_phi_fu_155_p4(27 downto 5);
     r_V_fu_364_p3 <= 
@@ -438,7 +438,6 @@ begin
         phitmp1_fu_416_p4;
     sub_ln1311_fu_330_p2 <= std_logic_vector(unsigned(ap_const_lv32_0) - unsigned(select_ln314_fu_308_p3));
     sub_ln324_fu_378_p2 <= std_logic_vector(unsigned(ap_const_lv9_7F) - unsigned(prescale));
-    tmp_10_fu_393_p3 <= newexp_fu_387_p2(31 downto 31);
     
     tmp_1_fu_242_p4_proc : process(out_bits_0_V_reg_467)
     variable vlo_cpy : STD_LOGIC_VECTOR(32+32 - 1 downto 0);
@@ -505,6 +504,7 @@ begin
         tmp_2_fu_251_p4 <= resvalue(32-1 downto 0);
     end process;
 
+    tmp_7_fu_393_p3 <= newexp_fu_387_p2(31 downto 31);
     tmp_fu_182_p3 <= (p_Result_1_fu_172_p4 & ap_const_lv1_1);
     tmp_s_fu_206_p3 <= (trunc_ln566_fu_202_p1 & ap_const_lv1_1);
     trunc_ln314_fu_304_p1 <= i2_0_reg_141(1 - 1 downto 0);

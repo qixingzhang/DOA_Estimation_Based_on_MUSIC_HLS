@@ -2041,7 +2041,7 @@
 
 <Node id="17" bw="0" op_0_bw="0" op_1_bw="100" op_2_bw="0" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="0" op_7_bw="0" op_8_bw="0" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-._crit_edge_ifconv:10  call void (...)* @_ssdm_op_SpecMemCore([13 x i100]* @ref_4oPi_table_100_V, [1 x i8]* @p_str52108, [14 x i8]* @p_str56112, [1 x i8]* @p_str52108, i32 -1, [1 x i8]* @p_str52108, [1 x i8]* @p_str52108, [1 x i8]* @p_str52108, [1 x i8]* @p_str52108, [1 x i8]* @p_str52108) nounwind
+._crit_edge_ifconv:10  call void (...)* @_ssdm_op_SpecMemCore([13 x i100]* @ref_4oPi_table_100_V, [1 x i8]* @p_str52, [14 x i8]* @p_str56, [1 x i8]* @p_str52, i32 -1, [1 x i8]* @p_str52, [1 x i8]* @p_str52, [1 x i8]* @p_str52, [1 x i8]* @p_str52, [1 x i8]* @p_str52) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln404"/></StgValue>
@@ -2056,7 +2056,7 @@
 
 <Node id="64" bw="0" op_0_bw="0" op_1_bw="30" op_2_bw="0" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="0" op_7_bw="0" op_8_bw="0" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-._crit_edge_ifconv:57  call void (...)* @_ssdm_op_SpecMemCore([256 x i30]* @second_order_float_2, [1 x i8]* @p_str11951650, [14 x i8]* @p_str11961651, [1 x i8]* @p_str11951650, i32 -1, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650) nounwind
+._crit_edge_ifconv:57  call void (...)* @_ssdm_op_SpecMemCore([256 x i30]* @second_order_float_2, [1 x i8]* @p_str11951651, [14 x i8]* @p_str11961652, [1 x i8]* @p_str11951651, i32 -1, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln16"/></StgValue>
@@ -2071,7 +2071,7 @@
 
 <Node id="65" bw="0" op_0_bw="0" op_1_bw="23" op_2_bw="0" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="0" op_7_bw="0" op_8_bw="0" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-._crit_edge_ifconv:58  call void (...)* @_ssdm_op_SpecMemCore([256 x i23]* @second_order_float_3, [1 x i8]* @p_str11951650, [14 x i8]* @p_str11961651, [1 x i8]* @p_str11951650, i32 -1, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650) nounwind
+._crit_edge_ifconv:58  call void (...)* @_ssdm_op_SpecMemCore([256 x i23]* @second_order_float_3, [1 x i8]* @p_str11951651, [14 x i8]* @p_str11961652, [1 x i8]* @p_str11951651, i32 -1, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln17"/></StgValue>
@@ -2086,7 +2086,7 @@
 
 <Node id="66" bw="0" op_0_bw="0" op_1_bw="15" op_2_bw="0" op_3_bw="0" op_4_bw="0" op_5_bw="32" op_6_bw="0" op_7_bw="0" op_8_bw="0" op_9_bw="0" op_10_bw="0">
 <![CDATA[
-._crit_edge_ifconv:59  call void (...)* @_ssdm_op_SpecMemCore([256 x i15]* @second_order_float_s, [1 x i8]* @p_str11951650, [14 x i8]* @p_str11961651, [1 x i8]* @p_str11951650, i32 -1, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650) nounwind
+._crit_edge_ifconv:59  call void (...)* @_ssdm_op_SpecMemCore([256 x i15]* @second_order_float_s, [1 x i8]* @p_str11951651, [14 x i8]* @p_str11961652, [1 x i8]* @p_str11951651, i32 -1, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="specmemcore_ln18"/></StgValue>

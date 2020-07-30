@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'scaled_fixed2ieee_1'" level="0">
-<item name = "Date">Thu Jul 30 14:37:22 2020
+<item name = "Date">Thu Jul 30 16:23:37 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">DOA_Estimation_proj</item>
@@ -95,7 +95,7 @@
 <column name="c_1_1_fu_276_p3">select, 0, 0, 32, 1, 32</column>
 <column name="c_1_2_fu_284_p3">select, 0, 0, 32, 1, 32</column>
 <column name="out_exp_V_fu_434_p3">select, 0, 0, 8, 1, 1</column>
-<column name="p_Result_43_fu_260_p3">select, 0, 0, 32, 1, 32</column>
+<column name="p_Result_22_fu_260_p3">select, 0, 0, 32, 1, 32</column>
 <column name="r_V_fu_364_p3">select, 0, 0, 29, 1, 29</column>
 <column name="select_ln314_fu_308_p3">select, 0, 0, 32, 1, 32</column>
 <column name="significand_V_fu_426_p3">select, 0, 0, 23, 1, 1</column>

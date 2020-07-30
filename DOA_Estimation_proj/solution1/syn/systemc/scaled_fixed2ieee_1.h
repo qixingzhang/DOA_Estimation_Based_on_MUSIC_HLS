@@ -75,7 +75,7 @@ struct scaled_fixed2ieee_1 : public sc_module {
     sc_signal< sc_lv<1> > trunc_ln510_fu_238_p1;
     sc_signal< sc_lv<32> > tmp_2_fu_251_p4;
     sc_signal< sc_lv<32> > tmp_1_fu_242_p4;
-    sc_signal< sc_lv<32> > p_Result_43_fu_260_p3;
+    sc_signal< sc_lv<32> > p_Result_22_fu_260_p3;
     sc_signal< sc_lv<32> > c_0_fu_268_p3;
     sc_signal< sc_lv<1> > trunc_ln314_fu_304_p1;
     sc_signal< sc_lv<32> > select_ln314_fu_308_p3;
@@ -89,14 +89,14 @@ struct scaled_fixed2ieee_1 : public sc_module {
     sc_signal< sc_lv<9> > sub_ln324_fu_378_p2;
     sc_signal< sc_lv<32> > sext_ln324_fu_383_p1;
     sc_signal< sc_lv<32> > newexp_fu_387_p2;
-    sc_signal< sc_lv<1> > tmp_10_fu_393_p3;
+    sc_signal< sc_lv<1> > tmp_7_fu_393_p3;
     sc_signal< sc_lv<1> > icmp_ln1452_fu_401_p2;
     sc_signal< sc_lv<1> > or_ln330_fu_406_p2;
     sc_signal< sc_lv<23> > phitmp1_fu_416_p4;
     sc_signal< sc_lv<8> > empty_fu_412_p1;
     sc_signal< sc_lv<8> > out_exp_V_fu_434_p3;
     sc_signal< sc_lv<23> > significand_V_fu_426_p3;
-    sc_signal< sc_lv<32> > p_Result_44_fu_442_p4;
+    sc_signal< sc_lv<32> > p_Result_23_fu_442_p4;
     sc_signal< sc_lv<32> > bitcast_ln348_fu_452_p1;
     sc_signal< sc_lv<32> > ap_return_preg;
     sc_signal< sc_lv<4> > ap_NS_fsm;
@@ -158,8 +158,8 @@ struct scaled_fixed2ieee_1 : public sc_module {
     void thread_out_bits_0_V_fu_190_p5();
     void thread_out_exp_V_fu_434_p3();
     void thread_p_Result_1_fu_172_p4();
-    void thread_p_Result_43_fu_260_p3();
-    void thread_p_Result_44_fu_442_p4();
+    void thread_p_Result_22_fu_260_p3();
+    void thread_p_Result_23_fu_442_p4();
     void thread_p_Result_s_fu_214_p5();
     void thread_phitmp1_fu_416_p4();
     void thread_r_V_fu_364_p3();
@@ -170,9 +170,9 @@ struct scaled_fixed2ieee_1 : public sc_module {
     void thread_significand_V_fu_426_p3();
     void thread_sub_ln1311_fu_330_p2();
     void thread_sub_ln324_fu_378_p2();
-    void thread_tmp_10_fu_393_p3();
     void thread_tmp_1_fu_242_p4();
     void thread_tmp_2_fu_251_p4();
+    void thread_tmp_7_fu_393_p3();
     void thread_tmp_fu_182_p3();
     void thread_tmp_s_fu_206_p3();
     void thread_trunc_ln314_fu_304_p1();

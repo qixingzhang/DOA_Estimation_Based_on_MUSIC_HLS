@@ -1,0 +1,110 @@
+<AutoPilot:ProjectResources xmlns:AutoPilot="com.autoesl.autopilot.ui.directiveView">
+    <sourceFile name="">
+        <directive functionName="qrf_basic" label="qrf_r_update" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="off" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="qrf_basic" label="qrf_q_update" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="off" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="qrf_basic" label="qrf_out_col_assign_Q" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="off" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="qrf_basic" label="qrf_out_col_assign_R" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="off" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="qrf_basic" label="qrf_in_col_assign_Qi" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="off" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="qrf_basic" label="qrf_in_col_assign_Ri" functionLabel="">
+            <pragma name="PIPELINE">
+                <option name="off" value="" positionalBoolean="1"/>
+            </pragma>
+        </directive>
+        <directive functionName="fft" label="DFTpts" functionLabel="">
+            <pragma name="LOOP_TRIPCOUNT">
+                <option name="min" value="1"/>
+                <option name="max" value="1024"/>
+            </pragma>
+        </directive>
+        <directive functionName="qr_decompose" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="eig_decompose" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="sort_eigval" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="Autocorrelation" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="reverse_bits" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="bit_reverse" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="fft" label="" functionLabel="">
+            <pragma name="INLINE"/>
+        </directive>
+        <directive functionName="fft" label="DFTpts" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="music" label="music_label2" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="music" label="music_label3" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="music" label="music_label4" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="music" label="music_label5" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="music" label="music_label6" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="eig_decompose" label="eig_decompose_label7" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="eig_decompose" label="eig_decompose_label8" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="eig_decompose" label="eig_decompose_label9" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="eig_decompose" label="eig_decompose_label10" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="eig_decompose" label="eig_decompose_label11" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="eig_decompose" label="eig_decompose_label12" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="eig_decompose" label="eig_decompose_label13" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="reverse_bits" label="reverse_bits_label14" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="music" label="music_label15" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+        <directive functionName="music" label="music_label16" functionLabel="">
+            <pragma name="EXPRESSION_BALANCE"/>
+        </directive>
+    </sourceFile>
+</AutoPilot:ProjectResources>
+

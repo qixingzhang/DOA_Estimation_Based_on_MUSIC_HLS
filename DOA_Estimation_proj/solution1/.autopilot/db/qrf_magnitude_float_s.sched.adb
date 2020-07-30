@@ -744,7 +744,7 @@
 					<Obj>
 						<type>0</type>
 						<id>14</id>
-						<name>p_Val2_64</name>
+						<name>p_Val2_32</name>
 						<fileName>r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h</fileName>
 						<fileDirectory>r:\builds\2019.1\continuous\2019_05_24_2552052\src\products</fileDirectory>
 						<lineNumber>310</lineNumber>
@@ -972,7 +972,7 @@
 					<Obj>
 						<type>0</type>
 						<id>17</id>
-						<name>p_Result_48</name>
+						<name>p_Result_27</name>
 						<fileName>r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h</fileName>
 						<fileDirectory>r:\builds\2019.1\continuous\2019_05_24_2552052\src\products</fileDirectory>
 						<lineNumber>335</lineNumber>
@@ -1161,7 +1161,7 @@
 					<Obj>
 						<type>0</type>
 						<id>19</id>
-						<name>p_Val2_65</name>
+						<name>p_Val2_33</name>
 						<fileName>r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h</fileName>
 						<fileDirectory>r:\builds\2019.1\continuous\2019_05_24_2552052\src\products</fileDirectory>
 						<lineNumber>310</lineNumber>
@@ -1389,7 +1389,7 @@
 					<Obj>
 						<type>0</type>
 						<id>22</id>
-						<name>p_Result_49</name>
+						<name>p_Result_28</name>
 						<fileName>r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h</fileName>
 						<fileDirectory>r:\builds\2019.1\continuous\2019_05_24_2552052\src\products</fileDirectory>
 						<lineNumber>335</lineNumber>
@@ -1578,7 +1578,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>p_Val2_66</name>
+						<name>p_Val2_34</name>
 						<fileName>r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h</fileName>
 						<fileDirectory>r:\builds\2019.1\continuous\2019_05_24_2552052\src\products</fileDirectory>
 						<lineNumber>310</lineNumber>
@@ -1806,7 +1806,7 @@
 					<Obj>
 						<type>0</type>
 						<id>27</id>
-						<name>p_Result_50</name>
+						<name>p_Result_29</name>
 						<fileName>r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h</fileName>
 						<fileDirectory>r:\builds\2019.1\continuous\2019_05_24_2552052\src\products</fileDirectory>
 						<lineNumber>335</lineNumber>
@@ -7828,11 +7828,11 @@
 				<item>109</item>
 				<item>112</item>
 			</basic_blocks>
-			<mII>1</mII>
-			<mDepth>49</mDepth>
+			<mII>-1</mII>
+			<mDepth>-1</mDepth>
 			<mMinTripCount>-1</mMinTripCount>
 			<mMaxTripCount>-1</mMaxTripCount>
-			<mMinLatency>48</mMinLatency>
+			<mMinLatency>4</mMinLatency>
 			<mMaxLatency>48</mMaxLatency>
 			<mIsDfPipe>0</mIsDfPipe>
 			<mDfPipe class_id="-1"></mDfPipe>
@@ -8605,32 +8605,14 @@
 		</item>
 	</bblk_ent_exit>
 	<regions class_id="32" tracking_level="0" version="0">
-		<count>1</count>
+		<count>0</count>
 		<item_version>0</item_version>
-		<item class_id="33" tracking_level="1" version="0" object_id="_328">
-			<region_name>qrf_magnitude&lt;float&gt;</region_name>
-			<basic_blocks>
-				<count>3</count>
-				<item_version>0</item_version>
-				<item>96</item>
-				<item>109</item>
-				<item>112</item>
-			</basic_blocks>
-			<nodes>
-				<count>0</count>
-				<item_version>0</item_version>
-			</nodes>
-			<anchor_node>-1</anchor_node>
-			<region_type>8</region_type>
-			<interval>1</interval>
-			<pipe_depth>49</pipe_depth>
-		</item>
 	</regions>
-	<dp_fu_nodes class_id="34" tracking_level="0" version="0">
+	<dp_fu_nodes class_id="33" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_fu_nodes>
-	<dp_fu_nodes_expression class_id="35" tracking_level="0" version="0">
+	<dp_fu_nodes_expression class_id="34" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_fu_nodes_expression>
@@ -8646,7 +8628,7 @@
 		<count>0</count>
 		<item_version>0</item_version>
 	</return_ports>
-	<dp_mem_port_nodes class_id="36" tracking_level="0" version="0">
+	<dp_mem_port_nodes class_id="35" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_mem_port_nodes>
@@ -8666,11 +8648,11 @@
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_regname_phi>
-	<dp_port_io_nodes class_id="37" tracking_level="0" version="0">
+	<dp_port_io_nodes class_id="36" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</dp_port_io_nodes>
-	<port2core class_id="38" tracking_level="0" version="0">
+	<port2core class_id="37" tracking_level="0" version="0">
 		<count>0</count>
 		<item_version>0</item_version>
 	</port2core>

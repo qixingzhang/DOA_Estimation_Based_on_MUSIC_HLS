@@ -7,7 +7,7 @@
 
 module music_fcmp_32ns_3pcA
 #(parameter
-    ID         = 62,
+    ID         = 60,
     NUM_STAGE  = 2,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

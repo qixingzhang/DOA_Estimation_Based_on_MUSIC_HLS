@@ -7,7 +7,7 @@ use ieee.std_logic_1164.all;
 
 entity music_fsub_32ns_3rcU is
     generic (
-        ID         : integer := 82;
+        ID         : integer := 79;
         NUM_STAGE  : integer := 5;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;
@@ -48,6 +48,9 @@ architecture arch of music_fsub_32ns_3rcU is
     signal r_tdata   : std_logic_vector(31 downto 0);
     signal din0_buf1 : std_logic_vector(din0_WIDTH-1 downto 0);
     signal din1_buf1 : std_logic_vector(din1_WIDTH-1 downto 0);
+    signal ce_r      : std_logic;
+    signal dout_i    : std_logic_vector(dout_WIDTH-1 downto 0);
+    signal dout_r    : std_logic_vector(dout_WIDTH-1 downto 0);
 begin
     --------------------- Instantiation -----------------
     music_ap_fsub_3_full_dsp_32_u : component music_ap_fsub_3_full_dsp_32
@@ -64,12 +67,12 @@ begin
 
     --------------------- Assignment --------------------
     aclk     <= clk;
-    aclken   <= ce;
+    aclken   <= ce_r;
     a_tvalid <= '1';
     a_tdata  <= din0_buf1;
     b_tvalid <= '1';
     b_tdata  <= din1_buf1;
-    dout     <= r_tdata;
+    dout_i   <= r_tdata;
 
     --------------------- Input buffer ------------------
     process (clk) begin
@@ -81,4 +84,19 @@ begin
         end if;
     end process;
 
+    process (clk) begin
+        if clk'event and clk = '1' then
+            ce_r <= ce;
+        end if;
+    end process;
+
+    process (clk) begin
+        if clk'event and clk = '1' then
+            if ce_r = '1' then
+                dout_r <= dout_i;
+            end if;
+        end if;
+    end process;
+
+    dout <= dout_i when ce_r = '1' else dout_r;
 end architecture;

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'qrf_givens_float_s'" level="0">
-<item name = "Date">Thu Jul 30 14:37:06 2020
+<item name = "Date">Thu Jul 30 16:23:23 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">DOA_Estimation_proj</item>
@@ -24,14 +24,14 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">, min, max, min, max, Type</keys>
-<column name="">75, 75, 1, 1, function</column>
+<column name="">8, 77, 8, 77, none</column>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="0">
 <keys size="7">Instance, Module, min, max, min, max, Type</keys>
-<column name="grp_qrf_magnitude_float_s_fu_220">qrf_magnitude_float_s, 48, 48, 1, 1, function</column>
+<column name="grp_qrf_magnitude_float_s_fu_226">qrf_magnitude_float_s, 4, 48, 4, 48, none</column>
 </table>
 </item>
 <item name = "Loop"><table name="" hasTotal="0">

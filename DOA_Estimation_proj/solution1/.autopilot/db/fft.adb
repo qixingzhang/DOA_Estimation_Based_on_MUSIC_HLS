@@ -75,10 +75,10 @@
             <Obj>
               <type>0</type>
               <id>7</id>
-              <name>_ln153</name>
+              <name>_ln157</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>153</lineNumber>
+              <lineNumber>157</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -93,7 +93,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>153</second>
+                      <second>157</second>
                     </item>
                   </second>
                 </item>
@@ -125,10 +125,10 @@
             <Obj>
               <type>0</type>
               <id>8</id>
-              <name>_ln159</name>
+              <name>_ln163</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>159</lineNumber>
+              <lineNumber>163</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -143,7 +143,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>159</second>
+                      <second>163</second>
                     </item>
                   </second>
                 </item>
@@ -210,10 +210,10 @@
             <Obj>
               <type>0</type>
               <id>11</id>
-              <name>zext_ln159</name>
+              <name>zext_ln163</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>159</lineNumber>
+              <lineNumber>163</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -228,13 +228,13 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>159</second>
+                      <second>163</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln159_fu_254_p1</rtlName>
+              <rtlName>zext_ln163_fu_254_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>11</bitwidth>
@@ -258,10 +258,10 @@
             <Obj>
               <type>0</type>
               <id>12</id>
-              <name>icmp_ln159</name>
+              <name>icmp_ln163</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>159</lineNumber>
+              <lineNumber>163</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -276,13 +276,13 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>159</second>
+                      <second>163</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln159_fu_258_p2</rtlName>
+              <rtlName>icmp_ln163_fu_258_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -307,10 +307,10 @@
             <Obj>
               <type>0</type>
               <id>14</id>
-              <name>_ln159</name>
+              <name>_ln163</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>159</lineNumber>
+              <lineNumber>163</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -325,7 +325,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>159</second>
+                      <second>163</second>
                     </item>
                   </second>
                 </item>
@@ -360,7 +360,7 @@
               <name>DFTpts</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>161</lineNumber>
+              <lineNumber>165</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -375,7 +375,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>161</second>
+                      <second>165</second>
                     </item>
                   </second>
                 </item>
@@ -406,10 +406,10 @@
             <Obj>
               <type>0</type>
               <id>19</id>
-              <name>zext_ln161</name>
+              <name>zext_ln165</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>161</lineNumber>
+              <lineNumber>165</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -424,13 +424,13 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>161</second>
+                      <second>165</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln161_fu_270_p1</rtlName>
+              <rtlName>zext_ln165_fu_270_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -457,7 +457,7 @@
               <name>trunc_ln</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>162</lineNumber>
+              <lineNumber>166</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -472,7 +472,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>162</second>
+                      <second>166</second>
                     </item>
                   </second>
                 </item>
@@ -508,7 +508,7 @@
               <name>numBF</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>162</lineNumber>
+              <lineNumber>166</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -523,7 +523,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>162</second>
+                      <second>166</second>
                     </item>
                   </second>
                 </item>
@@ -556,7 +556,7 @@
               <name>tmp</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>165</lineNumber>
+              <lineNumber>169</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -571,7 +571,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>165</second>
+                      <second>169</second>
                     </item>
                   </second>
                 </item>
@@ -604,7 +604,7 @@
               <name>tmp_s</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>165</lineNumber>
+              <lineNumber>169</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -619,7 +619,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>165</second>
+                      <second>169</second>
                     </item>
                   </second>
                 </item>
@@ -653,7 +653,7 @@
               <name>e</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>165</lineNumber>
+              <lineNumber>169</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -668,7 +668,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>165</second>
+                      <second>169</second>
                     </item>
                   </second>
                 </item>
@@ -698,10 +698,10 @@
             <Obj>
               <type>0</type>
               <id>25</id>
-              <name>_ln169</name>
+              <name>_ln173</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>169</lineNumber>
+              <lineNumber>173</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -716,7 +716,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>169</second>
+                      <second>173</second>
                     </item>
                   </second>
                 </item>
@@ -823,7 +823,7 @@
               <name>i_cast</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>169</lineNumber>
+              <lineNumber>173</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -838,7 +838,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>169</second>
+                      <second>173</second>
                     </item>
                   </second>
                 </item>
@@ -868,10 +868,10 @@
             <Obj>
               <type>0</type>
               <id>31</id>
-              <name>icmp_ln169</name>
+              <name>icmp_ln173</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>169</lineNumber>
+              <lineNumber>173</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -886,13 +886,13 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>169</second>
+                      <second>173</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln169_fu_292_p2</rtlName>
+              <rtlName>icmp_ln173_fu_292_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -920,7 +920,7 @@
               <name>j</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>169</lineNumber>
+              <lineNumber>173</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -935,7 +935,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>169</second>
+                      <second>173</second>
                     </item>
                   </second>
                 </item>
@@ -966,10 +966,10 @@
             <Obj>
               <type>0</type>
               <id>33</id>
-              <name>_ln169</name>
+              <name>_ln173</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>169</lineNumber>
+              <lineNumber>173</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -984,7 +984,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>169</second>
+                      <second>173</second>
                     </item>
                   </second>
                 </item>
@@ -1041,7 +1041,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>172</second>
+                      <second>176</second>
                     </item>
                   </second>
                 </item>
@@ -1123,7 +1123,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>173</second>
+                      <second>177</second>
                     </item>
                   </second>
                 </item>
@@ -1183,7 +1183,7 @@
               <name>a</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>174</lineNumber>
+              <lineNumber>178</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1198,7 +1198,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>174</second>
+                      <second>178</second>
                     </item>
                   </second>
                 </item>
@@ -1229,10 +1229,10 @@
             <Obj>
               <type>0</type>
               <id>40</id>
-              <name>_ln177</name>
+              <name>_ln181</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>177</lineNumber>
+              <lineNumber>181</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1247,7 +1247,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>177</second>
+                      <second>181</second>
                     </item>
                   </second>
                 </item>
@@ -1314,10 +1314,10 @@
             <Obj>
               <type>0</type>
               <id>43</id>
-              <name>tmp_42</name>
+              <name>tmp_26</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>177</lineNumber>
+              <lineNumber>181</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1332,13 +1332,13 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>177</second>
+                      <second>181</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>tmp_42_fu_309_p4</rtlName>
+              <rtlName>tmp_26_fu_309_p4</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>22</bitwidth>
@@ -1365,10 +1365,10 @@
             <Obj>
               <type>0</type>
               <id>44</id>
-              <name>icmp_ln177</name>
+              <name>icmp_ln181</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>177</lineNumber>
+              <lineNumber>181</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1383,13 +1383,13 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>177</second>
+                      <second>181</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln177_fu_319_p2</rtlName>
+              <rtlName>icmp_ln181_fu_319_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -1414,10 +1414,10 @@
             <Obj>
               <type>0</type>
               <id>45</id>
-              <name>_ln177</name>
+              <name>_ln181</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>177</lineNumber>
+              <lineNumber>181</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1432,7 +1432,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>177</second>
+                      <second>181</second>
                     </item>
                   </second>
                 </item>
@@ -1467,7 +1467,7 @@
               <name>i_lower</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>180</lineNumber>
+              <lineNumber>184</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1482,7 +1482,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>180</second>
+                      <second>184</second>
                     </item>
                   </second>
                 </item>
@@ -1513,10 +1513,10 @@
             <Obj>
               <type>0</type>
               <id>49</id>
-              <name>sext_ln181</name>
+              <name>sext_ln185</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>181</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1531,13 +1531,13 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>181</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sext_ln181_fu_330_p1</rtlName>
+              <rtlName>sext_ln185_fu_330_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1564,7 +1564,7 @@
               <name>X_R_addr</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>181</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1579,7 +1579,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>181</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
@@ -1614,7 +1614,7 @@
               <name>X_R_load</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>181</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1629,7 +1629,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>181</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
@@ -1659,10 +1659,10 @@
             <Obj>
               <type>0</type>
               <id>52</id>
-              <name>tmp_19</name>
+              <name>tmp_6</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>181</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1677,7 +1677,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>181</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
@@ -1711,7 +1711,7 @@
               <name>X_I_addr</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>181</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1726,7 +1726,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>181</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
@@ -1761,7 +1761,7 @@
               <name>X_I_load</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>181</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1776,7 +1776,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>181</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
@@ -1806,10 +1806,10 @@
             <Obj>
               <type>0</type>
               <id>55</id>
-              <name>tmp_20</name>
+              <name>tmp_7</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>181</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1824,7 +1824,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>181</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
@@ -1858,7 +1858,7 @@
               <name>temp_R</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>181</lineNumber>
+              <lineNumber>185</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1873,7 +1873,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>181</second>
+                      <second>185</second>
                     </item>
                   </second>
                 </item>
@@ -1904,10 +1904,10 @@
             <Obj>
               <type>0</type>
               <id>57</id>
-              <name>tmp_21</name>
+              <name>tmp_8</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>182</lineNumber>
+              <lineNumber>186</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1922,7 +1922,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>182</second>
+                      <second>186</second>
                     </item>
                   </second>
                 </item>
@@ -1953,10 +1953,10 @@
             <Obj>
               <type>0</type>
               <id>58</id>
-              <name>tmp_22</name>
+              <name>tmp_9</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>182</lineNumber>
+              <lineNumber>186</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1971,7 +1971,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>182</second>
+                      <second>186</second>
                     </item>
                   </second>
                 </item>
@@ -2005,7 +2005,7 @@
               <name>temp_I</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>182</lineNumber>
+              <lineNumber>186</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2020,7 +2020,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>182</second>
+                      <second>186</second>
                     </item>
                   </second>
                 </item>
@@ -2051,10 +2051,10 @@
             <Obj>
               <type>0</type>
               <id>60</id>
-              <name>sext_ln184</name>
+              <name>sext_ln188</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>184</lineNumber>
+              <lineNumber>188</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2069,13 +2069,13 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>184</second>
+                      <second>188</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>sext_ln184_fu_336_p1</rtlName>
+              <rtlName>sext_ln188_fu_336_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -2102,7 +2102,7 @@
               <name>X_R_addr_1</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>184</lineNumber>
+              <lineNumber>188</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2117,7 +2117,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>184</second>
+                      <second>188</second>
                     </item>
                   </second>
                 </item>
@@ -2152,7 +2152,7 @@
               <name>X_R_load_1</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>184</lineNumber>
+              <lineNumber>188</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2167,7 +2167,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>184</second>
+                      <second>188</second>
                     </item>
                   </second>
                 </item>
@@ -2197,10 +2197,10 @@
             <Obj>
               <type>0</type>
               <id>63</id>
-              <name>tmp_23</name>
+              <name>tmp_10</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>184</lineNumber>
+              <lineNumber>188</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2215,7 +2215,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>184</second>
+                      <second>188</second>
                     </item>
                   </second>
                 </item>
@@ -2246,10 +2246,10 @@
             <Obj>
               <type>0</type>
               <id>64</id>
-              <name>X_R_addr_write_ln184</name>
+              <name>X_R_addr_write_ln188</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>184</lineNumber>
+              <lineNumber>188</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2264,7 +2264,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>184</second>
+                      <second>188</second>
                     </item>
                   </second>
                 </item>
@@ -2300,7 +2300,7 @@
               <name>X_I_addr_1</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>189</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2315,7 +2315,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>185</second>
+                      <second>189</second>
                     </item>
                   </second>
                 </item>
@@ -2350,7 +2350,7 @@
               <name>X_I_load_1</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>189</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2365,7 +2365,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>185</second>
+                      <second>189</second>
                     </item>
                   </second>
                 </item>
@@ -2395,10 +2395,10 @@
             <Obj>
               <type>0</type>
               <id>67</id>
-              <name>tmp_24</name>
+              <name>tmp_11</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>189</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2413,7 +2413,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>185</second>
+                      <second>189</second>
                     </item>
                   </second>
                 </item>
@@ -2444,10 +2444,10 @@
             <Obj>
               <type>0</type>
               <id>68</id>
-              <name>X_I_addr_write_ln185</name>
+              <name>X_I_addr_write_ln189</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>185</lineNumber>
+              <lineNumber>189</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2462,7 +2462,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>185</second>
+                      <second>189</second>
                     </item>
                   </second>
                 </item>
@@ -2498,7 +2498,7 @@
               <name>X_R_load_2</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>186</lineNumber>
+              <lineNumber>190</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2513,7 +2513,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>186</second>
+                      <second>190</second>
                     </item>
                   </second>
                 </item>
@@ -2544,10 +2544,10 @@
             <Obj>
               <type>0</type>
               <id>70</id>
-              <name>tmp_25</name>
+              <name>tmp_12</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>186</lineNumber>
+              <lineNumber>190</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2562,7 +2562,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>186</second>
+                      <second>190</second>
                     </item>
                   </second>
                 </item>
@@ -2593,10 +2593,10 @@
             <Obj>
               <type>0</type>
               <id>71</id>
-              <name>X_R_addr_1_write_ln186</name>
+              <name>X_R_addr_1_write_ln190</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>186</lineNumber>
+              <lineNumber>190</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2611,7 +2611,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>186</second>
+                      <second>190</second>
                     </item>
                   </second>
                 </item>
@@ -2646,7 +2646,7 @@
               <name>X_I_load_2</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>187</lineNumber>
+              <lineNumber>191</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2661,7 +2661,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>187</second>
+                      <second>191</second>
                     </item>
                   </second>
                 </item>
@@ -2692,10 +2692,10 @@
             <Obj>
               <type>0</type>
               <id>73</id>
-              <name>tmp_26</name>
+              <name>tmp_13</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>187</lineNumber>
+              <lineNumber>191</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2710,7 +2710,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>187</second>
+                      <second>191</second>
                     </item>
                   </second>
                 </item>
@@ -2741,10 +2741,10 @@
             <Obj>
               <type>0</type>
               <id>74</id>
-              <name>X_I_addr_1_write_ln187</name>
+              <name>X_I_addr_1_write_ln191</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>187</lineNumber>
+              <lineNumber>191</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2759,7 +2759,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>187</second>
+                      <second>191</second>
                     </item>
                   </second>
                 </item>
@@ -2794,7 +2794,7 @@
               <name>i_8</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>177</lineNumber>
+              <lineNumber>181</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2809,7 +2809,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>177</second>
+                      <second>181</second>
                     </item>
                   </second>
                 </item>
@@ -2840,10 +2840,10 @@
             <Obj>
               <type>0</type>
               <id>76</id>
-              <name>_ln177</name>
+              <name>_ln181</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>177</lineNumber>
+              <lineNumber>181</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2858,7 +2858,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>177</second>
+                      <second>181</second>
                     </item>
                   </second>
                 </item>
@@ -2888,10 +2888,10 @@
             <Obj>
               <type>0</type>
               <id>79</id>
-              <name>_ln169</name>
+              <name>_ln173</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>169</lineNumber>
+              <lineNumber>173</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2906,7 +2906,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>169</second>
+                      <second>173</second>
                     </item>
                   </second>
                 </item>
@@ -2939,7 +2939,7 @@
               <name>stage</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>159</lineNumber>
+              <lineNumber>163</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2954,7 +2954,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>159</second>
+                      <second>163</second>
                     </item>
                   </second>
                 </item>
@@ -2985,10 +2985,10 @@
             <Obj>
               <type>0</type>
               <id>83</id>
-              <name>_ln159</name>
+              <name>_ln163</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>159</lineNumber>
+              <lineNumber>163</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3003,7 +3003,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>159</second>
+                      <second>163</second>
                     </item>
                   </second>
                 </item>
@@ -3033,10 +3033,10 @@
             <Obj>
               <type>0</type>
               <id>85</id>
-              <name>_ln193</name>
+              <name>_ln197</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>193</lineNumber>
+              <lineNumber>197</lineNumber>
               <contextFuncName>fft</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3051,7 +3051,7 @@
                         <first>src/music.cpp</first>
                         <second>fft</second>
                       </first>
-                      <second>193</second>
+                      <second>197</second>
                     </item>
                   </second>
                 </item>
@@ -7453,7 +7453,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2686</second>
+              <second>2916</second>
             </item>
           </second>
         </item>
@@ -7472,7 +7472,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>2686</second>
+              <second>2916</second>
             </item>
           </second>
         </item>
@@ -7744,7 +7744,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln159_fu_258_p2 ( icmp ) </first>
+          <first>icmp_ln163_fu_258_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7767,7 +7767,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln169_fu_292_p2 ( icmp ) </first>
+          <first>icmp_ln173_fu_292_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7790,7 +7790,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln177_fu_319_p2 ( icmp ) </first>
+          <first>icmp_ln181_fu_319_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -8860,7 +8860,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_19_reg_445</first>
+          <first>tmp_10_reg_465</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8879,7 +8879,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_20_reg_450</first>
+          <first>tmp_11_reg_470</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8898,7 +8898,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_21_reg_455</first>
+          <first>tmp_6_reg_445</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8917,7 +8917,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_22_reg_460</first>
+          <first>tmp_7_reg_450</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8936,7 +8936,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_23_reg_465</first>
+          <first>tmp_8_reg_455</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8955,7 +8955,7 @@
           </second>
         </item>
         <item>
-          <first>tmp_24_reg_470</first>
+          <first>tmp_9_reg_460</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9031,7 +9031,7 @@
           </second>
         </item>
         <item>
-          <first>zext_ln161_reg_350</first>
+          <first>zext_ln165_reg_350</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -9271,7 +9271,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln159_fu_258_p2 ( icmp ) </first>
+          <first>icmp_ln163_fu_258_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9279,7 +9279,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln169_fu_292_p2 ( icmp ) </first>
+          <first>icmp_ln173_fu_292_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -9287,7 +9287,7 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln177_fu_319_p2 ( icmp ) </first>
+          <first>icmp_ln181_fu_319_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -10319,7 +10319,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln159_fu_258</first>
+        <first>icmp_ln163_fu_258</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10327,7 +10327,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln169_fu_292</first>
+        <first>icmp_ln173_fu_292</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10335,7 +10335,7 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln177_fu_319</first>
+        <first>icmp_ln181_fu_319</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10367,7 +10367,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln181_fu_330</first>
+        <first>sext_ln185_fu_330</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10375,7 +10375,7 @@
         </second>
       </item>
       <item>
-        <first>sext_ln184_fu_336</first>
+        <first>sext_ln188_fu_336</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10399,7 +10399,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_42_fu_309</first>
+        <first>tmp_26_fu_309</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10415,7 +10415,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln159_fu_254</first>
+        <first>zext_ln163_fu_254</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10423,7 +10423,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln161_fu_270</first>
+        <first>zext_ln165_fu_270</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11169,39 +11169,7 @@
         </second>
       </item>
       <item>
-        <first>tmp_19_reg_445</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>52</item>
-        </second>
-      </item>
-      <item>
-        <first>tmp_20_reg_450</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>55</item>
-        </second>
-      </item>
-      <item>
-        <first>tmp_21_reg_455</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>57</item>
-        </second>
-      </item>
-      <item>
-        <first>tmp_22_reg_460</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>58</item>
-        </second>
-      </item>
-      <item>
-        <first>tmp_23_reg_465</first>
+        <first>tmp_10_reg_465</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -11209,11 +11177,43 @@
         </second>
       </item>
       <item>
-        <first>tmp_24_reg_470</first>
+        <first>tmp_11_reg_470</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>67</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_6_reg_445</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>52</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_7_reg_450</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>55</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_8_reg_455</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>57</item>
+        </second>
+      </item>
+      <item>
+        <first>tmp_9_reg_460</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>58</item>
         </second>
       </item>
       <item>
@@ -11241,7 +11241,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln161_reg_350</first>
+        <first>zext_ln165_reg_350</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>

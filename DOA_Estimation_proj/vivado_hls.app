@@ -11,7 +11,8 @@
         <file name="src/music.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
     </files>
     <solutions xmlns="">
-        <solution name="solution1" status="active"/>
+        <solution name="solution1" status="inactive"/>
+        <solution name="solution2" status="active"/>
     </solutions>
 </project>
 

@@ -7,7 +7,7 @@
 
 module music_fsqrt_32ns_qcK
 #(parameter
-    ID         = 72,
+    ID         = 69,
     NUM_STAGE  = 12,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

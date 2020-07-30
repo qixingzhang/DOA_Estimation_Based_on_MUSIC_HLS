@@ -105,20 +105,20 @@ set RtlHierarchyInfo {[
 					{"ID" : "25", "SubInstance" : "grp_bit_reverse_fu_184", "Port" : "X_I"}]},
 			{"Name" : "ref_4oPi_table_100_V", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_sin_or_cos_float_s_fu_152", "Port" : "ref_4oPi_table_100_V"},
-					{"ID" : "13", "SubInstance" : "grp_sin_or_cos_float_s_fu_168", "Port" : "ref_4oPi_table_100_V"}]},
+					{"ID" : "13", "SubInstance" : "grp_sin_or_cos_float_s_fu_168", "Port" : "ref_4oPi_table_100_V"},
+					{"ID" : "1", "SubInstance" : "grp_sin_or_cos_float_s_fu_152", "Port" : "ref_4oPi_table_100_V"}]},
 			{"Name" : "second_order_float_2", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_sin_or_cos_float_s_fu_152", "Port" : "second_order_float_2"},
-					{"ID" : "13", "SubInstance" : "grp_sin_or_cos_float_s_fu_168", "Port" : "second_order_float_2"}]},
+					{"ID" : "13", "SubInstance" : "grp_sin_or_cos_float_s_fu_168", "Port" : "second_order_float_2"},
+					{"ID" : "1", "SubInstance" : "grp_sin_or_cos_float_s_fu_152", "Port" : "second_order_float_2"}]},
 			{"Name" : "second_order_float_3", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_sin_or_cos_float_s_fu_152", "Port" : "second_order_float_3"},
-					{"ID" : "13", "SubInstance" : "grp_sin_or_cos_float_s_fu_168", "Port" : "second_order_float_3"}]},
+					{"ID" : "13", "SubInstance" : "grp_sin_or_cos_float_s_fu_168", "Port" : "second_order_float_3"},
+					{"ID" : "1", "SubInstance" : "grp_sin_or_cos_float_s_fu_152", "Port" : "second_order_float_3"}]},
 			{"Name" : "second_order_float_s", "Type" : "Memory", "Direction" : "I",
 				"SubConnect" : [
-					{"ID" : "1", "SubInstance" : "grp_sin_or_cos_float_s_fu_152", "Port" : "second_order_float_s"},
-					{"ID" : "13", "SubInstance" : "grp_sin_or_cos_float_s_fu_168", "Port" : "second_order_float_s"}]}]},
+					{"ID" : "13", "SubInstance" : "grp_sin_or_cos_float_s_fu_168", "Port" : "second_order_float_s"},
+					{"ID" : "1", "SubInstance" : "grp_sin_or_cos_float_s_fu_152", "Port" : "second_order_float_s"}]}]},
 	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_sin_or_cos_float_s_fu_152", "Parent" : "0", "Child" : ["2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12"],
 		"CDFG" : "sin_or_cos_float_s",
 		"Protocol" : "ap_ctrl_hs",

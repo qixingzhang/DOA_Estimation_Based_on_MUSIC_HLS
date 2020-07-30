@@ -345,10 +345,10 @@
 
 <Node id="24" bw="32" op_0_bw="1" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-:3  %p_Result_43 = select i1 %trunc_ln510, i32 %tmp_2, i32 %tmp_1
+:3  %p_Result_22 = select i1 %trunc_ln510, i32 %tmp_2, i32 %tmp_1
 
 ]]></Node>
-<StgValue><ssdm name="p_Result_43"/></StgValue>
+<StgValue><ssdm name="p_Result_22"/></StgValue>
 </operation>
 
 <operation id="25" st_id="2" stage="1" lat="1">
@@ -361,7 +361,7 @@
 
 <Node id="25" bw="32" op_0_bw="32" op_1_bw="32" op_2_bw="1">
 <![CDATA[
-:4  %c_0 = call i32 @llvm.cttz.i32(i32 %p_Result_43, i1 true) nounwind
+:4  %c_0 = call i32 @llvm.cttz.i32(i32 %p_Result_22, i1 true) nounwind
 
 ]]></Node>
 <StgValue><ssdm name="c_0"/></StgValue>
@@ -846,10 +846,10 @@ _ifconv:12  br i1 %icmp_ln316, label %.preheader, label %.loopexit_ifconv
 
 <Node id="59" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32">
 <![CDATA[
-.loopexit_ifconv:5  %tmp_10 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %newexp, i32 31)
+.loopexit_ifconv:5  %tmp_7 = call i1 @_ssdm_op_BitSelect.i1.i32.i32(i32 %newexp, i32 31)
 
 ]]></Node>
-<StgValue><ssdm name="tmp_10"/></StgValue>
+<StgValue><ssdm name="tmp_7"/></StgValue>
 </operation>
 
 <operation id="56" st_id="4" stage="1" lat="1">
@@ -880,7 +880,7 @@ _ifconv:12  br i1 %icmp_ln316, label %.preheader, label %.loopexit_ifconv
 
 <Node id="61" bw="1" op_0_bw="1" op_1_bw="1">
 <![CDATA[
-.loopexit_ifconv:7  %or_ln330 = or i1 %tmp_10, %icmp_ln1452
+.loopexit_ifconv:7  %or_ln330 = or i1 %tmp_7, %icmp_ln1452
 
 ]]></Node>
 <StgValue><ssdm name="or_ln330"/></StgValue>
@@ -965,10 +965,10 @@ _ifconv:12  br i1 %icmp_ln316, label %.preheader, label %.loopexit_ifconv
 
 <Node id="66" bw="32" op_0_bw="32" op_1_bw="1" op_2_bw="8" op_3_bw="23">
 <![CDATA[
-.loopexit_ifconv:12  %p_Result_44 = call i32 @_ssdm_op_BitConcatenate.i32.i1.i8.i23(i1 false, i8 %out_exp_V, i23 %significand_V)
+.loopexit_ifconv:12  %p_Result_23 = call i32 @_ssdm_op_BitConcatenate.i32.i1.i8.i23(i1 false, i8 %out_exp_V, i23 %significand_V)
 
 ]]></Node>
-<StgValue><ssdm name="p_Result_44"/></StgValue>
+<StgValue><ssdm name="p_Result_23"/></StgValue>
 </operation>
 
 <operation id="63" st_id="4" stage="1" lat="1">
@@ -982,7 +982,7 @@ _ifconv:12  br i1 %icmp_ln316, label %.preheader, label %.loopexit_ifconv
 
 <Node id="67" bw="32" op_0_bw="32">
 <![CDATA[
-.loopexit_ifconv:13  %bitcast_ln348 = bitcast i32 %p_Result_44 to float
+.loopexit_ifconv:13  %bitcast_ln348 = bitcast i32 %p_Result_23 to float
 
 ]]></Node>
 <StgValue><ssdm name="bitcast_ln348"/></StgValue>
@@ -1156,15 +1156,15 @@ _ifconv:12  br i1 %icmp_ln316, label %.preheader, label %.loopexit_ifconv
 </dataflow>
 <dataflow id="148" from="StgValue_143" to="tmp_2" fromId="143" toId="23">
 </dataflow>
-<dataflow id="149" from="trunc_ln510" to="p_Result_43" fromId="21" toId="24">
+<dataflow id="149" from="trunc_ln510" to="p_Result_22" fromId="21" toId="24">
 </dataflow>
-<dataflow id="150" from="tmp_2" to="p_Result_43" fromId="23" toId="24">
+<dataflow id="150" from="tmp_2" to="p_Result_22" fromId="23" toId="24">
 </dataflow>
-<dataflow id="151" from="tmp_1" to="p_Result_43" fromId="22" toId="24">
+<dataflow id="151" from="tmp_1" to="p_Result_22" fromId="22" toId="24">
 </dataflow>
 <dataflow id="153" from="llvm.cttz.i32" to="c_0" fromId="152" toId="25">
 </dataflow>
-<dataflow id="154" from="p_Result_43" to="c_0" fromId="24" toId="25">
+<dataflow id="154" from="p_Result_22" to="c_0" fromId="24" toId="25">
 </dataflow>
 <dataflow id="155" from="StgValue_89" to="c_0" fromId="89" toId="25">
 </dataflow>
@@ -1351,17 +1351,17 @@ _ifconv:12  br i1 %icmp_ln316, label %.preheader, label %.loopexit_ifconv
 </dataflow>
 <dataflow id="225" from="shift_1" to="newexp" fromId="51" toId="54">
 </dataflow>
-<dataflow id="226" from="_ssdm_op_BitSelect.i1.i32.i32" to="tmp_10" fromId="190" toId="55">
+<dataflow id="226" from="_ssdm_op_BitSelect.i1.i32.i32" to="tmp_7" fromId="190" toId="55">
 </dataflow>
-<dataflow id="227" from="newexp" to="tmp_10" fromId="54" toId="55">
+<dataflow id="227" from="newexp" to="tmp_7" fromId="54" toId="55">
 </dataflow>
-<dataflow id="228" from="StgValue_98" to="tmp_10" fromId="98" toId="55">
+<dataflow id="228" from="StgValue_98" to="tmp_7" fromId="98" toId="55">
 </dataflow>
 <dataflow id="229" from="in_V_read" to="icmp_ln1452" fromId="6" toId="56">
 </dataflow>
 <dataflow id="231" from="StgValue_230" to="icmp_ln1452" fromId="230" toId="56">
 </dataflow>
-<dataflow id="232" from="tmp_10" to="or_ln330" fromId="55" toId="57">
+<dataflow id="232" from="tmp_7" to="or_ln330" fromId="55" toId="57">
 </dataflow>
 <dataflow id="233" from="icmp_ln1452" to="or_ln330" fromId="56" toId="57">
 </dataflow>
@@ -1387,15 +1387,15 @@ _ifconv:12  br i1 %icmp_ln316, label %.preheader, label %.loopexit_ifconv
 </dataflow>
 <dataflow id="249" from="empty" to="out_exp_V" fromId="58" toId="61">
 </dataflow>
-<dataflow id="251" from="_ssdm_op_BitConcatenate.i32.i1.i8.i23" to="p_Result_44" fromId="250" toId="62">
+<dataflow id="251" from="_ssdm_op_BitConcatenate.i32.i1.i8.i23" to="p_Result_23" fromId="250" toId="62">
 </dataflow>
-<dataflow id="253" from="StgValue_252" to="p_Result_44" fromId="252" toId="62">
+<dataflow id="253" from="StgValue_252" to="p_Result_23" fromId="252" toId="62">
 </dataflow>
-<dataflow id="254" from="out_exp_V" to="p_Result_44" fromId="61" toId="62">
+<dataflow id="254" from="out_exp_V" to="p_Result_23" fromId="61" toId="62">
 </dataflow>
-<dataflow id="255" from="significand_V" to="p_Result_44" fromId="60" toId="62">
+<dataflow id="255" from="significand_V" to="p_Result_23" fromId="60" toId="62">
 </dataflow>
-<dataflow id="256" from="p_Result_44" to="bitcast_ln348" fromId="62" toId="63">
+<dataflow id="256" from="p_Result_23" to="bitcast_ln348" fromId="62" toId="63">
 </dataflow>
 <dataflow id="257" from="bitcast_ln348" to="ret_ln343" fromId="63" toId="64">
 </dataflow>

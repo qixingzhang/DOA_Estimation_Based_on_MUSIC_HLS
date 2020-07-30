@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'bit_reverse'" level="0">
-<item name = "Date">Thu Jul 30 14:37:21 2020
+<item name = "Date">Thu Jul 30 16:23:37 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">DOA_Estimation_proj</item>
@@ -81,9 +81,9 @@
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
 <column name="i_14_fu_143_p2">+, 0, 0, 13, 1, 11</column>
 <column name="i_fu_155_p2">+, 0, 0, 13, 4, 1</column>
-<column name="icmp_ln110_fu_149_p2">icmp, 0, 0, 9, 4, 4</column>
-<column name="icmp_ln122_fu_137_p2">icmp, 0, 0, 13, 11, 12</column>
-<column name="icmp_ln124_fu_191_p2">icmp, 0, 0, 18, 32, 32</column>
+<column name="icmp_ln114_fu_149_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="icmp_ln126_fu_137_p2">icmp, 0, 0, 13, 11, 12</column>
+<column name="icmp_ln128_fu_191_p2">icmp, 0, 0, 18, 32, 32</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -108,13 +108,13 @@
 <column name="ap_CS_fsm">5, 0, 5, 0</column>
 <column name="i_0_i_reg_109">4, 0, 4, 0</column>
 <column name="i_14_reg_221">11, 0, 11, 0</column>
-<column name="icmp_ln124_reg_244">1, 0, 1, 0</column>
+<column name="icmp_ln128_reg_244">1, 0, 1, 0</column>
 <column name="input_assign_reg_86">11, 0, 11, 0</column>
 <column name="p_0_i_reg_120">10, 0, 10, 0</column>
 <column name="reversed_reg_98">32, 0, 32, 0</column>
 <column name="temp_1_reg_273">32, 0, 32, 0</column>
 <column name="temp_reg_268">32, 0, 32, 0</column>
-<column name="zext_ln108_reg_213">11, 0, 32, 21</column>
+<column name="zext_ln112_reg_213">11, 0, 32, 21</column>
 </table>
 </item>
 </section>

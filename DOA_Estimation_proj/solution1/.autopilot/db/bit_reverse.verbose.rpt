@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'bit_reverse'
 ================================================================
-* Date:           Thu Jul 30 14:37:21 2020
+* Date:           Thu Jul 30 16:23:37 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        DOA_Estimation_proj
@@ -88,9 +88,9 @@
     +----------------------+----------+-------+---+----+------------+------------+
     |i_14_fu_143_p2        |     +    |      0|  0|  13|           1|          11|
     |i_fu_155_p2           |     +    |      0|  0|  13|           4|           1|
-    |icmp_ln110_fu_149_p2  |   icmp   |      0|  0|   9|           4|           4|
-    |icmp_ln122_fu_137_p2  |   icmp   |      0|  0|  13|          11|          12|
-    |icmp_ln124_fu_191_p2  |   icmp   |      0|  0|  18|          32|          32|
+    |icmp_ln114_fu_149_p2  |   icmp   |      0|  0|   9|           4|           4|
+    |icmp_ln126_fu_137_p2  |   icmp   |      0|  0|  13|          11|          12|
+    |icmp_ln128_fu_191_p2  |   icmp   |      0|  0|  18|          32|          32|
     +----------------------+----------+-------+---+----+------------+------------+
     |Total                 |          |      0|  0|  66|          52|          60|
     +----------------------+----------+-------+---+----+------------+------------+
@@ -123,13 +123,13 @@
     |ap_CS_fsm            |   5|   0|    5|          0|
     |i_0_i_reg_109        |   4|   0|    4|          0|
     |i_14_reg_221         |  11|   0|   11|          0|
-    |icmp_ln124_reg_244   |   1|   0|    1|          0|
+    |icmp_ln128_reg_244   |   1|   0|    1|          0|
     |input_assign_reg_86  |  11|   0|   11|          0|
     |p_0_i_reg_120        |  10|   0|   10|          0|
     |reversed_reg_98      |  32|   0|   32|          0|
     |temp_1_reg_273       |  32|   0|   32|          0|
     |temp_reg_268         |  32|   0|   32|          0|
-    |zext_ln108_reg_213   |  11|   0|   32|         21|
+    |zext_ln112_reg_213   |  11|   0|   32|         21|
     +---------------------+----+----+-----+-----------+
     |Total                | 189|   0|  210|         21|
     +---------------------+----+----+-----+-----------+
@@ -211,59 +211,59 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.76>
-ST_1 : Operation 6 [1/1] (1.76ns)   --->   "br label %1" [src/music.cpp:122]   --->   Operation 6 'br' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 6 [1/1] (1.76ns)   --->   "br label %1" [src/music.cpp:126]   --->   Operation 6 'br' <Predicate = true> <Delay = 1.76>
 
 State 2 <SV = 1> <Delay = 1.88>
 ST_2 : Operation 7 [1/1] (0.00ns)   --->   "%input_assign = phi i11 [ 0, %0 ], [ %i_14, %._crit_edge ]"   --->   Operation 7 'phi' 'input_assign' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%trunc_ln108 = trunc i11 %input_assign to i10" [src/music.cpp:108->src/music.cpp:123]   --->   Operation 8 'trunc' 'trunc_ln108' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%zext_ln108 = zext i11 %input_assign to i32" [src/music.cpp:108->src/music.cpp:123]   --->   Operation 9 'zext' 'zext_ln108' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 10 [1/1] (1.88ns)   --->   "%icmp_ln122 = icmp eq i11 %input_assign, -1024" [src/music.cpp:122]   --->   Operation 10 'icmp' 'icmp_ln122' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 8 [1/1] (0.00ns)   --->   "%trunc_ln112 = trunc i11 %input_assign to i10" [src/music.cpp:112->src/music.cpp:127]   --->   Operation 8 'trunc' 'trunc_ln112' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "%zext_ln112 = zext i11 %input_assign to i32" [src/music.cpp:112->src/music.cpp:127]   --->   Operation 9 'zext' 'zext_ln112' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (1.88ns)   --->   "%icmp_ln126 = icmp eq i11 %input_assign, -1024" [src/music.cpp:126]   --->   Operation 10 'icmp' 'icmp_ln126' <Predicate = true> <Delay = 1.88> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 1024, i64 1024, i64 1024)"   --->   Operation 11 'speclooptripcount' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 12 [1/1] (1.63ns)   --->   "%i_14 = add i11 1, %input_assign" [src/music.cpp:122]   --->   Operation 12 'add' 'i_14' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 13 [1/1] (0.00ns)   --->   "br i1 %icmp_ln122, label %4, label %.preheader.preheader" [src/music.cpp:122]   --->   Operation 13 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 14 [1/1] (1.76ns)   --->   "br label %.preheader" [src/music.cpp:110->src/music.cpp:123]   --->   Operation 14 'br' <Predicate = (!icmp_ln122)> <Delay = 1.76>
-ST_2 : Operation 15 [1/1] (0.00ns)   --->   "ret void" [src/music.cpp:136]   --->   Operation 15 'ret' <Predicate = (icmp_ln122)> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (1.63ns)   --->   "%i_14 = add i11 1, %input_assign" [src/music.cpp:126]   --->   Operation 12 'add' 'i_14' <Predicate = true> <Delay = 1.63> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "br i1 %icmp_ln126, label %4, label %.preheader.preheader" [src/music.cpp:126]   --->   Operation 13 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (1.76ns)   --->   "br label %.preheader" [src/music.cpp:114->src/music.cpp:127]   --->   Operation 14 'br' <Predicate = (!icmp_ln126)> <Delay = 1.76>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "ret void" [src/music.cpp:140]   --->   Operation 15 'ret' <Predicate = (icmp_ln126)> <Delay = 0.00>
 
 State 3 <SV = 2> <Delay = 3.25>
 ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%reversed = phi i32 [ %rev, %2 ], [ 0, %.preheader.preheader ]"   --->   Operation 16 'phi' 'reversed' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 17 [1/1] (0.00ns)   --->   "%i_0_i = phi i4 [ %i, %2 ], [ 0, %.preheader.preheader ]"   --->   Operation 17 'phi' 'i_0_i' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%p_0_i = phi i10 [ %zext_ln112, %2 ], [ %trunc_ln108, %.preheader.preheader ]" [src/music.cpp:112->src/music.cpp:123]   --->   Operation 18 'phi' 'p_0_i' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 19 [1/1] (1.30ns)   --->   "%icmp_ln110 = icmp eq i4 %i_0_i, -6" [src/music.cpp:110->src/music.cpp:123]   --->   Operation 19 'icmp' 'icmp_ln110' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 18 [1/1] (0.00ns)   --->   "%p_0_i = phi i10 [ %zext_ln116, %2 ], [ %trunc_ln112, %.preheader.preheader ]" [src/music.cpp:116->src/music.cpp:127]   --->   Operation 18 'phi' 'p_0_i' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 19 [1/1] (1.30ns)   --->   "%icmp_ln114 = icmp eq i4 %i_0_i, -6" [src/music.cpp:114->src/music.cpp:127]   --->   Operation 19 'icmp' 'icmp_ln114' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 10, i64 10, i64 10) nounwind"   --->   Operation 20 'speclooptripcount' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 21 [1/1] (1.73ns)   --->   "%i = add i4 %i_0_i, 1" [src/music.cpp:110->src/music.cpp:123]   --->   Operation 21 'add' 'i' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 22 [1/1] (0.00ns)   --->   "br i1 %icmp_ln110, label %reverse_bits.exit, label %2" [src/music.cpp:110->src/music.cpp:123]   --->   Operation 22 'br' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%trunc_ln111 = trunc i32 %reversed to i31" [src/music.cpp:111->src/music.cpp:123]   --->   Operation 23 'trunc' 'trunc_ln111' <Predicate = (!icmp_ln110)> <Delay = 0.00>
-ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%trunc_ln110 = trunc i10 %p_0_i to i1" [src/music.cpp:110->src/music.cpp:123]   --->   Operation 24 'trunc' 'trunc_ln110' <Predicate = (!icmp_ln110)> <Delay = 0.00>
-ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%rev = call i32 @_ssdm_op_BitConcatenate.i32.i31.i1(i31 %trunc_ln111, i1 %trunc_ln110)" [src/music.cpp:111->src/music.cpp:123]   --->   Operation 25 'bitconcatenate' 'rev' <Predicate = (!icmp_ln110)> <Delay = 0.00>
-ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%input_assign_1 = call i9 @_ssdm_op_PartSelect.i9.i10.i32.i32(i10 %p_0_i, i32 1, i32 9)" [src/music.cpp:112->src/music.cpp:123]   --->   Operation 26 'partselect' 'input_assign_1' <Predicate = (!icmp_ln110)> <Delay = 0.00>
-ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%zext_ln112 = zext i9 %input_assign_1 to i10" [src/music.cpp:112->src/music.cpp:123]   --->   Operation 27 'zext' 'zext_ln112' <Predicate = (!icmp_ln110)> <Delay = 0.00>
-ST_3 : Operation 28 [1/1] (0.00ns)   --->   "br label %.preheader" [src/music.cpp:110->src/music.cpp:123]   --->   Operation 28 'br' <Predicate = (!icmp_ln110)> <Delay = 0.00>
-ST_3 : Operation 29 [1/1] (2.47ns)   --->   "%icmp_ln124 = icmp ugt i32 %zext_ln108, %reversed" [src/music.cpp:124]   --->   Operation 29 'icmp' 'icmp_ln124' <Predicate = (icmp_ln110)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 30 [1/1] (0.00ns)   --->   "br i1 %icmp_ln124, label %._crit_edge, label %3" [src/music.cpp:124]   --->   Operation 30 'br' <Predicate = (icmp_ln110)> <Delay = 0.00>
-ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln126 = zext i11 %input_assign to i64" [src/music.cpp:126]   --->   Operation 31 'zext' 'zext_ln126' <Predicate = (icmp_ln110 & !icmp_ln124)> <Delay = 0.00>
-ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%X_R_addr = getelementptr [1024 x float]* %X_R, i64 0, i64 %zext_ln126" [src/music.cpp:126]   --->   Operation 32 'getelementptr' 'X_R_addr' <Predicate = (icmp_ln110 & !icmp_ln124)> <Delay = 0.00>
-ST_3 : Operation 33 [2/2] (3.25ns)   --->   "%temp = load float* %X_R_addr, align 4" [src/music.cpp:126]   --->   Operation 33 'load' 'temp' <Predicate = (icmp_ln110 & !icmp_ln124)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1444> <RAM>
-ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln127 = zext i32 %reversed to i64" [src/music.cpp:127]   --->   Operation 34 'zext' 'zext_ln127' <Predicate = (icmp_ln110 & !icmp_ln124)> <Delay = 0.00>
-ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%X_R_addr_2 = getelementptr [1024 x float]* %X_R, i64 0, i64 %zext_ln127" [src/music.cpp:127]   --->   Operation 35 'getelementptr' 'X_R_addr_2' <Predicate = (icmp_ln110 & !icmp_ln124)> <Delay = 0.00>
-ST_3 : Operation 36 [2/2] (3.25ns)   --->   "%X_R_load = load float* %X_R_addr_2, align 4" [src/music.cpp:127]   --->   Operation 36 'load' 'X_R_load' <Predicate = (icmp_ln110 & !icmp_ln124)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1444> <RAM>
-ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%X_I_addr = getelementptr [1024 x float]* %X_I, i64 0, i64 %zext_ln126" [src/music.cpp:131]   --->   Operation 37 'getelementptr' 'X_I_addr' <Predicate = (icmp_ln110 & !icmp_ln124)> <Delay = 0.00>
-ST_3 : Operation 38 [2/2] (3.25ns)   --->   "%temp_1 = load float* %X_I_addr, align 4" [src/music.cpp:131]   --->   Operation 38 'load' 'temp_1' <Predicate = (icmp_ln110 & !icmp_ln124)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1444> <RAM>
-ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%X_I_addr_2 = getelementptr [1024 x float]* %X_I, i64 0, i64 %zext_ln127" [src/music.cpp:132]   --->   Operation 39 'getelementptr' 'X_I_addr_2' <Predicate = (icmp_ln110 & !icmp_ln124)> <Delay = 0.00>
-ST_3 : Operation 40 [2/2] (3.25ns)   --->   "%X_I_load = load float* %X_I_addr_2, align 4" [src/music.cpp:132]   --->   Operation 40 'load' 'X_I_load' <Predicate = (icmp_ln110 & !icmp_ln124)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1444> <RAM>
+ST_3 : Operation 21 [1/1] (1.73ns)   --->   "%i = add i4 %i_0_i, 1" [src/music.cpp:114->src/music.cpp:127]   --->   Operation 21 'add' 'i' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "br i1 %icmp_ln114, label %reverse_bits.exit, label %2" [src/music.cpp:114->src/music.cpp:127]   --->   Operation 22 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%trunc_ln115 = trunc i32 %reversed to i31" [src/music.cpp:115->src/music.cpp:127]   --->   Operation 23 'trunc' 'trunc_ln115' <Predicate = (!icmp_ln114)> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%trunc_ln114 = trunc i10 %p_0_i to i1" [src/music.cpp:114->src/music.cpp:127]   --->   Operation 24 'trunc' 'trunc_ln114' <Predicate = (!icmp_ln114)> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%rev = call i32 @_ssdm_op_BitConcatenate.i32.i31.i1(i31 %trunc_ln115, i1 %trunc_ln114)" [src/music.cpp:115->src/music.cpp:127]   --->   Operation 25 'bitconcatenate' 'rev' <Predicate = (!icmp_ln114)> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%input_assign_1 = call i9 @_ssdm_op_PartSelect.i9.i10.i32.i32(i10 %p_0_i, i32 1, i32 9)" [src/music.cpp:116->src/music.cpp:127]   --->   Operation 26 'partselect' 'input_assign_1' <Predicate = (!icmp_ln114)> <Delay = 0.00>
+ST_3 : Operation 27 [1/1] (0.00ns)   --->   "%zext_ln116 = zext i9 %input_assign_1 to i10" [src/music.cpp:116->src/music.cpp:127]   --->   Operation 27 'zext' 'zext_ln116' <Predicate = (!icmp_ln114)> <Delay = 0.00>
+ST_3 : Operation 28 [1/1] (0.00ns)   --->   "br label %.preheader" [src/music.cpp:114->src/music.cpp:127]   --->   Operation 28 'br' <Predicate = (!icmp_ln114)> <Delay = 0.00>
+ST_3 : Operation 29 [1/1] (2.47ns)   --->   "%icmp_ln128 = icmp ugt i32 %zext_ln112, %reversed" [src/music.cpp:128]   --->   Operation 29 'icmp' 'icmp_ln128' <Predicate = (icmp_ln114)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "br i1 %icmp_ln128, label %._crit_edge, label %3" [src/music.cpp:128]   --->   Operation 30 'br' <Predicate = (icmp_ln114)> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln130 = zext i11 %input_assign to i64" [src/music.cpp:130]   --->   Operation 31 'zext' 'zext_ln130' <Predicate = (icmp_ln114 & !icmp_ln128)> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%X_R_addr = getelementptr [1024 x float]* %X_R, i64 0, i64 %zext_ln130" [src/music.cpp:130]   --->   Operation 32 'getelementptr' 'X_R_addr' <Predicate = (icmp_ln114 & !icmp_ln128)> <Delay = 0.00>
+ST_3 : Operation 33 [2/2] (3.25ns)   --->   "%temp = load float* %X_R_addr, align 4" [src/music.cpp:130]   --->   Operation 33 'load' 'temp' <Predicate = (icmp_ln114 & !icmp_ln128)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 361> <RAM>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%zext_ln131 = zext i32 %reversed to i64" [src/music.cpp:131]   --->   Operation 34 'zext' 'zext_ln131' <Predicate = (icmp_ln114 & !icmp_ln128)> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%X_R_addr_2 = getelementptr [1024 x float]* %X_R, i64 0, i64 %zext_ln131" [src/music.cpp:131]   --->   Operation 35 'getelementptr' 'X_R_addr_2' <Predicate = (icmp_ln114 & !icmp_ln128)> <Delay = 0.00>
+ST_3 : Operation 36 [2/2] (3.25ns)   --->   "%X_R_load = load float* %X_R_addr_2, align 4" [src/music.cpp:131]   --->   Operation 36 'load' 'X_R_load' <Predicate = (icmp_ln114 & !icmp_ln128)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 361> <RAM>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%X_I_addr = getelementptr [1024 x float]* %X_I, i64 0, i64 %zext_ln130" [src/music.cpp:135]   --->   Operation 37 'getelementptr' 'X_I_addr' <Predicate = (icmp_ln114 & !icmp_ln128)> <Delay = 0.00>
+ST_3 : Operation 38 [2/2] (3.25ns)   --->   "%temp_1 = load float* %X_I_addr, align 4" [src/music.cpp:135]   --->   Operation 38 'load' 'temp_1' <Predicate = (icmp_ln114 & !icmp_ln128)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 361> <RAM>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%X_I_addr_2 = getelementptr [1024 x float]* %X_I, i64 0, i64 %zext_ln131" [src/music.cpp:136]   --->   Operation 39 'getelementptr' 'X_I_addr_2' <Predicate = (icmp_ln114 & !icmp_ln128)> <Delay = 0.00>
+ST_3 : Operation 40 [2/2] (3.25ns)   --->   "%X_I_load = load float* %X_I_addr_2, align 4" [src/music.cpp:136]   --->   Operation 40 'load' 'X_I_load' <Predicate = (icmp_ln114 & !icmp_ln128)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 361> <RAM>
 
 State 4 <SV = 3> <Delay = 6.50>
-ST_4 : Operation 41 [1/2] (3.25ns)   --->   "%temp = load float* %X_R_addr, align 4" [src/music.cpp:126]   --->   Operation 41 'load' 'temp' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1444> <RAM>
-ST_4 : Operation 42 [1/2] (3.25ns)   --->   "%X_R_load = load float* %X_R_addr_2, align 4" [src/music.cpp:127]   --->   Operation 42 'load' 'X_R_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1444> <RAM>
-ST_4 : Operation 43 [1/1] (3.25ns)   --->   "store float %X_R_load, float* %X_R_addr, align 4" [src/music.cpp:127]   --->   Operation 43 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1444> <RAM>
-ST_4 : Operation 44 [1/2] (3.25ns)   --->   "%temp_1 = load float* %X_I_addr, align 4" [src/music.cpp:131]   --->   Operation 44 'load' 'temp_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1444> <RAM>
-ST_4 : Operation 45 [1/2] (3.25ns)   --->   "%X_I_load = load float* %X_I_addr_2, align 4" [src/music.cpp:132]   --->   Operation 45 'load' 'X_I_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1444> <RAM>
-ST_4 : Operation 46 [1/1] (3.25ns)   --->   "store float %X_I_load, float* %X_I_addr, align 4" [src/music.cpp:132]   --->   Operation 46 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1444> <RAM>
+ST_4 : Operation 41 [1/2] (3.25ns)   --->   "%temp = load float* %X_R_addr, align 4" [src/music.cpp:130]   --->   Operation 41 'load' 'temp' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 361> <RAM>
+ST_4 : Operation 42 [1/2] (3.25ns)   --->   "%X_R_load = load float* %X_R_addr_2, align 4" [src/music.cpp:131]   --->   Operation 42 'load' 'X_R_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 361> <RAM>
+ST_4 : Operation 43 [1/1] (3.25ns)   --->   "store float %X_R_load, float* %X_R_addr, align 4" [src/music.cpp:131]   --->   Operation 43 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 361> <RAM>
+ST_4 : Operation 44 [1/2] (3.25ns)   --->   "%temp_1 = load float* %X_I_addr, align 4" [src/music.cpp:135]   --->   Operation 44 'load' 'temp_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 361> <RAM>
+ST_4 : Operation 45 [1/2] (3.25ns)   --->   "%X_I_load = load float* %X_I_addr_2, align 4" [src/music.cpp:136]   --->   Operation 45 'load' 'X_I_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 361> <RAM>
+ST_4 : Operation 46 [1/1] (3.25ns)   --->   "store float %X_I_load, float* %X_I_addr, align 4" [src/music.cpp:136]   --->   Operation 46 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 361> <RAM>
 
 State 5 <SV = 4> <Delay = 3.25>
-ST_5 : Operation 47 [1/1] (3.25ns)   --->   "store float %temp, float* %X_R_addr_2, align 4" [src/music.cpp:128]   --->   Operation 47 'store' <Predicate = (!icmp_ln124)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1444> <RAM>
-ST_5 : Operation 48 [1/1] (3.25ns)   --->   "store float %temp_1, float* %X_I_addr_2, align 4" [src/music.cpp:133]   --->   Operation 48 'store' <Predicate = (!icmp_ln124)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1444> <RAM>
-ST_5 : Operation 49 [1/1] (0.00ns)   --->   "br label %._crit_edge" [src/music.cpp:134]   --->   Operation 49 'br' <Predicate = (!icmp_ln124)> <Delay = 0.00>
-ST_5 : Operation 50 [1/1] (0.00ns)   --->   "br label %1" [src/music.cpp:122]   --->   Operation 50 'br' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 47 [1/1] (3.25ns)   --->   "store float %temp, float* %X_R_addr_2, align 4" [src/music.cpp:132]   --->   Operation 47 'store' <Predicate = (!icmp_ln128)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 361> <RAM>
+ST_5 : Operation 48 [1/1] (3.25ns)   --->   "store float %temp_1, float* %X_I_addr_2, align 4" [src/music.cpp:137]   --->   Operation 48 'store' <Predicate = (!icmp_ln128)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 361> <RAM>
+ST_5 : Operation 49 [1/1] (0.00ns)   --->   "br label %._crit_edge" [src/music.cpp:138]   --->   Operation 49 'br' <Predicate = (!icmp_ln128)> <Delay = 0.00>
+ST_5 : Operation 50 [1/1] (0.00ns)   --->   "br label %1" [src/music.cpp:126]   --->   Operation 50 'br' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -285,47 +285,47 @@ Port [ X_I]:  wired=1; compound=1; hidden=0; nouse=0; global=0; static=0; extern
 
 <LifeTime>
 <method=bitvector/>
-br_ln122              (br               ) [ 011111]
+br_ln126              (br               ) [ 011111]
 input_assign          (phi              ) [ 001100]
-trunc_ln108           (trunc            ) [ 001111]
-zext_ln108            (zext             ) [ 000100]
-icmp_ln122            (icmp             ) [ 001111]
+trunc_ln112           (trunc            ) [ 001111]
+zext_ln112            (zext             ) [ 000100]
+icmp_ln126            (icmp             ) [ 001111]
 speclooptripcount_ln0 (speclooptripcount) [ 000000]
 i_14                  (add              ) [ 011111]
-br_ln122              (br               ) [ 000000]
-br_ln110              (br               ) [ 001111]
-ret_ln136             (ret              ) [ 000000]
+br_ln126              (br               ) [ 000000]
+br_ln114              (br               ) [ 001111]
+ret_ln140             (ret              ) [ 000000]
 reversed              (phi              ) [ 000100]
 i_0_i                 (phi              ) [ 000100]
 p_0_i                 (phi              ) [ 000100]
-icmp_ln110            (icmp             ) [ 001111]
+icmp_ln114            (icmp             ) [ 001111]
 speclooptripcount_ln0 (speclooptripcount) [ 000000]
 i                     (add              ) [ 001111]
-br_ln110              (br               ) [ 000000]
-trunc_ln111           (trunc            ) [ 000000]
-trunc_ln110           (trunc            ) [ 000000]
+br_ln114              (br               ) [ 000000]
+trunc_ln115           (trunc            ) [ 000000]
+trunc_ln114           (trunc            ) [ 000000]
 rev                   (bitconcatenate   ) [ 001111]
 input_assign_1        (partselect       ) [ 000000]
-zext_ln112            (zext             ) [ 001111]
-br_ln110              (br               ) [ 001111]
-icmp_ln124            (icmp             ) [ 001111]
-br_ln124              (br               ) [ 000000]
-zext_ln126            (zext             ) [ 000000]
+zext_ln116            (zext             ) [ 001111]
+br_ln114              (br               ) [ 001111]
+icmp_ln128            (icmp             ) [ 001111]
+br_ln128              (br               ) [ 000000]
+zext_ln130            (zext             ) [ 000000]
 X_R_addr              (getelementptr    ) [ 000010]
-zext_ln127            (zext             ) [ 000000]
+zext_ln131            (zext             ) [ 000000]
 X_R_addr_2            (getelementptr    ) [ 000011]
 X_I_addr              (getelementptr    ) [ 000010]
 X_I_addr_2            (getelementptr    ) [ 000011]
 temp                  (load             ) [ 001101]
 X_R_load              (load             ) [ 000000]
-store_ln127           (store            ) [ 000000]
+store_ln131           (store            ) [ 000000]
 temp_1                (load             ) [ 001101]
 X_I_load              (load             ) [ 000000]
+store_ln136           (store            ) [ 000000]
 store_ln132           (store            ) [ 000000]
-store_ln128           (store            ) [ 000000]
-store_ln133           (store            ) [ 000000]
-br_ln134              (br               ) [ 000000]
-br_ln122              (br               ) [ 011111]
+store_ln137           (store            ) [ 000000]
+br_ln138              (br               ) [ 000000]
+br_ln126              (br               ) [ 011111]
 </LifeTime>
 
 <model>
@@ -512,7 +512,7 @@ br_ln122              (br               ) [ 011111]
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="store"/>
-<opset="temp/3 X_R_load/3 store_ln127/4 store_ln128/5 "/>
+<opset="temp/3 X_R_load/3 store_ln131/4 store_ln132/5 "/>
 </bind>
 </comp>
 
@@ -555,7 +555,7 @@ br_ln122              (br               ) [ 011111]
 </pin_list>
 <bind>
 <opcode="load(27) store(28) " fcode="store"/>
-<opset="temp_1/3 X_I_load/3 store_ln132/4 store_ln133/5 "/>
+<opset="temp_1/3 X_I_load/3 store_ln136/4 store_ln137/5 "/>
 </bind>
 </comp>
 
@@ -668,29 +668,29 @@ br_ln122              (br               ) [ 011111]
 </bind>
 </comp>
 
-<comp id="129" class="1004" name="trunc_ln108_fu_129">
+<comp id="129" class="1004" name="trunc_ln112_fu_129">
 <pin_list>
 <pin id="130" dir="0" index="0" bw="11" slack="0"/>
 <pin id="131" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln108/2 "/>
+<opset="trunc_ln112/2 "/>
 </bind>
 </comp>
 
-<comp id="133" class="1004" name="zext_ln108_fu_133">
+<comp id="133" class="1004" name="zext_ln112_fu_133">
 <pin_list>
 <pin id="134" dir="0" index="0" bw="11" slack="0"/>
 <pin id="135" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln108/2 "/>
+<opset="zext_ln112/2 "/>
 </bind>
 </comp>
 
-<comp id="137" class="1004" name="icmp_ln122_fu_137">
+<comp id="137" class="1004" name="icmp_ln126_fu_137">
 <pin_list>
 <pin id="138" dir="0" index="0" bw="11" slack="0"/>
 <pin id="139" dir="0" index="1" bw="11" slack="0"/>
@@ -698,7 +698,7 @@ br_ln122              (br               ) [ 011111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln122/2 "/>
+<opset="icmp_ln126/2 "/>
 </bind>
 </comp>
 
@@ -714,7 +714,7 @@ br_ln122              (br               ) [ 011111]
 </bind>
 </comp>
 
-<comp id="149" class="1004" name="icmp_ln110_fu_149">
+<comp id="149" class="1004" name="icmp_ln114_fu_149">
 <pin_list>
 <pin id="150" dir="0" index="0" bw="4" slack="0"/>
 <pin id="151" dir="0" index="1" bw="4" slack="0"/>
@@ -722,7 +722,7 @@ br_ln122              (br               ) [ 011111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln110/3 "/>
+<opset="icmp_ln114/3 "/>
 </bind>
 </comp>
 
@@ -738,25 +738,25 @@ br_ln122              (br               ) [ 011111]
 </bind>
 </comp>
 
-<comp id="161" class="1004" name="trunc_ln111_fu_161">
+<comp id="161" class="1004" name="trunc_ln115_fu_161">
 <pin_list>
 <pin id="162" dir="0" index="0" bw="32" slack="0"/>
 <pin id="163" dir="1" index="1" bw="31" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln111/3 "/>
+<opset="trunc_ln115/3 "/>
 </bind>
 </comp>
 
-<comp id="165" class="1004" name="trunc_ln110_fu_165">
+<comp id="165" class="1004" name="trunc_ln114_fu_165">
 <pin_list>
 <pin id="166" dir="0" index="0" bw="10" slack="0"/>
 <pin id="167" dir="1" index="1" bw="1" slack="0"/>
 </pin_list>
 <bind>
 <opcode="trunc(33) " fcode="trunc"/>
-<opset="trunc_ln110/3 "/>
+<opset="trunc_ln114/3 "/>
 </bind>
 </comp>
 
@@ -787,18 +787,18 @@ br_ln122              (br               ) [ 011111]
 </bind>
 </comp>
 
-<comp id="187" class="1004" name="zext_ln112_fu_187">
+<comp id="187" class="1004" name="zext_ln116_fu_187">
 <pin_list>
 <pin id="188" dir="0" index="0" bw="9" slack="0"/>
 <pin id="189" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln112/3 "/>
+<opset="zext_ln116/3 "/>
 </bind>
 </comp>
 
-<comp id="191" class="1004" name="icmp_ln124_fu_191">
+<comp id="191" class="1004" name="icmp_ln128_fu_191">
 <pin_list>
 <pin id="192" dir="0" index="0" bw="32" slack="1"/>
 <pin id="193" dir="0" index="1" bw="32" slack="0"/>
@@ -806,49 +806,49 @@ br_ln122              (br               ) [ 011111]
 </pin_list>
 <bind>
 <opcode="icmp(45) " fcode="icmp"/>
-<opset="icmp_ln124/3 "/>
+<opset="icmp_ln128/3 "/>
 </bind>
 </comp>
 
-<comp id="196" class="1004" name="zext_ln126_fu_196">
+<comp id="196" class="1004" name="zext_ln130_fu_196">
 <pin_list>
 <pin id="197" dir="0" index="0" bw="11" slack="1"/>
 <pin id="198" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln126/3 "/>
+<opset="zext_ln130/3 "/>
 </bind>
 </comp>
 
-<comp id="202" class="1004" name="zext_ln127_fu_202">
+<comp id="202" class="1004" name="zext_ln131_fu_202">
 <pin_list>
 <pin id="203" dir="0" index="0" bw="32" slack="0"/>
 <pin id="204" dir="1" index="1" bw="64" slack="0"/>
 </pin_list>
 <bind>
 <opcode="zext(34) " fcode="zext"/>
-<opset="zext_ln127/3 "/>
+<opset="zext_ln131/3 "/>
 </bind>
 </comp>
 
-<comp id="208" class="1005" name="trunc_ln108_reg_208">
+<comp id="208" class="1005" name="trunc_ln112_reg_208">
 <pin_list>
 <pin id="209" dir="0" index="0" bw="10" slack="1"/>
 <pin id="210" dir="1" index="1" bw="10" slack="1"/>
 </pin_list>
 <bind>
-<opset="trunc_ln108 "/>
+<opset="trunc_ln112 "/>
 </bind>
 </comp>
 
-<comp id="213" class="1005" name="zext_ln108_reg_213">
+<comp id="213" class="1005" name="zext_ln112_reg_213">
 <pin_list>
 <pin id="214" dir="0" index="0" bw="32" slack="1"/>
 <pin id="215" dir="1" index="1" bw="32" slack="1"/>
 </pin_list>
 <bind>
-<opset="zext_ln108 "/>
+<opset="zext_ln112 "/>
 </bind>
 </comp>
 
@@ -882,23 +882,23 @@ br_ln122              (br               ) [ 011111]
 </bind>
 </comp>
 
-<comp id="239" class="1005" name="zext_ln112_reg_239">
+<comp id="239" class="1005" name="zext_ln116_reg_239">
 <pin_list>
 <pin id="240" dir="0" index="0" bw="10" slack="0"/>
 <pin id="241" dir="1" index="1" bw="10" slack="0"/>
 </pin_list>
 <bind>
-<opset="zext_ln112 "/>
+<opset="zext_ln116 "/>
 </bind>
 </comp>
 
-<comp id="244" class="1005" name="icmp_ln124_reg_244">
+<comp id="244" class="1005" name="icmp_ln128_reg_244">
 <pin_list>
 <pin id="245" dir="0" index="0" bw="1" slack="2"/>
 <pin id="246" dir="1" index="1" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<opset="icmp_ln124 "/>
+<opset="icmp_ln128 "/>
 </bind>
 </comp>
 
@@ -1126,25 +1126,25 @@ br_ln122              (br               ) [ 011111]
   - Chain level:
 	State 1
 	State 2
-		trunc_ln108 : 1
-		zext_ln108 : 1
-		icmp_ln122 : 1
+		trunc_ln112 : 1
+		zext_ln112 : 1
+		icmp_ln126 : 1
 		i_14 : 1
-		br_ln122 : 2
+		br_ln126 : 2
 	State 3
-		icmp_ln110 : 1
+		icmp_ln114 : 1
 		i : 1
-		br_ln110 : 2
-		trunc_ln111 : 1
-		trunc_ln110 : 1
+		br_ln114 : 2
+		trunc_ln115 : 1
+		trunc_ln114 : 1
 		rev : 2
 		input_assign_1 : 1
-		zext_ln112 : 2
-		icmp_ln124 : 1
-		br_ln124 : 2
+		zext_ln116 : 2
+		icmp_ln128 : 1
+		br_ln128 : 2
 		X_R_addr : 1
 		temp : 2
-		zext_ln127 : 1
+		zext_ln131 : 1
 		X_R_addr_2 : 2
 		X_R_load : 3
 		X_I_addr : 1
@@ -1152,8 +1152,8 @@ br_ln122              (br               ) [ 011111]
 		X_I_addr_2 : 2
 		X_I_load : 3
 	State 4
-		store_ln127 : 1
-		store_ln132 : 1
+		store_ln131 : 1
+		store_ln136 : 1
 	State 5
 
 
@@ -1165,21 +1165,21 @@ br_ln122              (br               ) [ 011111]
 |----------|-----------------------|---------|---------|
 | Operation|    Functional Unit    |    FF   |   LUT   |
 |----------|-----------------------|---------|---------|
-|          |   icmp_ln122_fu_137   |    0    |    13   |
-|   icmp   |   icmp_ln110_fu_149   |    0    |    9    |
-|          |   icmp_ln124_fu_191   |    0    |    18   |
+|          |   icmp_ln126_fu_137   |    0    |    13   |
+|   icmp   |   icmp_ln114_fu_149   |    0    |    9    |
+|          |   icmp_ln128_fu_191   |    0    |    18   |
 |----------|-----------------------|---------|---------|
 |    add   |      i_14_fu_143      |    0    |    13   |
 |          |        i_fu_155       |    0    |    13   |
 |----------|-----------------------|---------|---------|
-|          |   trunc_ln108_fu_129  |    0    |    0    |
-|   trunc  |   trunc_ln111_fu_161  |    0    |    0    |
-|          |   trunc_ln110_fu_165  |    0    |    0    |
+|          |   trunc_ln112_fu_129  |    0    |    0    |
+|   trunc  |   trunc_ln115_fu_161  |    0    |    0    |
+|          |   trunc_ln114_fu_165  |    0    |    0    |
 |----------|-----------------------|---------|---------|
-|          |   zext_ln108_fu_133   |    0    |    0    |
-|   zext   |   zext_ln112_fu_187   |    0    |    0    |
-|          |   zext_ln126_fu_196   |    0    |    0    |
-|          |   zext_ln127_fu_202   |    0    |    0    |
+|          |   zext_ln112_fu_133   |    0    |    0    |
+|   zext   |   zext_ln116_fu_187   |    0    |    0    |
+|          |   zext_ln130_fu_196   |    0    |    0    |
+|          |   zext_ln131_fu_202   |    0    |    0    |
 |----------|-----------------------|---------|---------|
 |bitconcatenate|       rev_fu_169      |    0    |    0    |
 |----------|-----------------------|---------|---------|
@@ -1202,16 +1202,16 @@ N/A
 |   i_0_i_reg_109   |    4   |
 |    i_14_reg_221   |   11   |
 |     i_reg_229     |    4   |
-| icmp_ln124_reg_244|    1   |
+| icmp_ln128_reg_244|    1   |
 |input_assign_reg_86|   11   |
 |   p_0_i_reg_120   |   10   |
 |    rev_reg_234    |   32   |
 |  reversed_reg_98  |   32   |
 |   temp_1_reg_273  |   32   |
 |    temp_reg_268   |   32   |
-|trunc_ln108_reg_208|   10   |
-| zext_ln108_reg_213|   32   |
-| zext_ln112_reg_239|   10   |
+|trunc_ln112_reg_208|   10   |
+| zext_ln112_reg_213|   32   |
+| zext_ln116_reg_239|   10   |
 +-------------------+--------+
 |       Total       |   261  |
 +-------------------+--------+

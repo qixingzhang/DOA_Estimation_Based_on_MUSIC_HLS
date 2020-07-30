@@ -43112,16 +43112,16 @@ namespace hls {
 
       qrf_in_row_assign : for(int r=0; r<RowsA; r++){
         qrf_in_col_assign_Qi : for(int c=0; c<RowsA; c++) {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- if (r == c) {
+
+          if (r == c) {
             Qi[r][c] = 1.0;
           } else {
             Qi[r][c] = 0.0;
           }
         }
         qrf_in_col_assign_Ri : for(int c=0; c<ColsA; c++) {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- Ri[r][c] = A[r][c];
+
+          Ri[r][c] = A[r][c];
         }
       }
 
@@ -43151,16 +43151,16 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
             }
 
             qrf_r_update : for(int k=0; k<ColsA; k++) {
-_ssdm_op_SpecPipeline(QRF_TRAITS::UPDATE_II, 1, 1, 0, "");
- if (k < j+1) {
+
+              if (k < j+1) {
                 continue;
               } else {
                 qrf_mm(G, Ri[i-1][k], Ri[i][k]);
               }
             }
             qrf_q_update : for(int k=0; k<RowsA; k++) {
-_ssdm_op_SpecPipeline(QRF_TRAITS::UPDATE_II, 1, 1, 0, "");
- if (k < (i-(1+j)+extra_pass)) {
+
+              if (k < (i-(1+j)+extra_pass)) {
                 continue;
               } else {
                 qrf_mm(G, Qi[i-1][k], Qi[i][k]);
@@ -43173,16 +43173,16 @@ _ssdm_op_SpecPipeline(QRF_TRAITS::UPDATE_II, 1, 1, 0, "");
 
       qrf_out_row_assign : for(int r=0; r<RowsA; r++){
         qrf_out_col_assign_Q : for(int c=0; c<RowsA; c++) {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- if (TransposedQ == true) {
+
+          if (TransposedQ == true) {
             Q[r][c] = Qi[r][c];
           } else {
             Q[c][r] = x_conj(Qi[r][c]);
           }
         }
         qrf_out_col_assign_R : for(int c=0; c<ColsA; c++) {
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- if (r <= c) {
+
+          if (r <= c) {
 
             R[r][c] = Ri[r][c];
           }
@@ -43381,10 +43381,13 @@ _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
     }
 }
 # 7 "src/music.h" 2
-# 23 "src/music.h"
+# 24 "src/music.h"
 using namespace std;
 
 typedef complex<float> complex_float;
+struct QRF_CONFIG : hls::qrf_traits<4, 4, complex_float, complex_float>{
+ static const int ARCH = 0;
+};
 
 
 void music(
@@ -43431,7 +43434,7 @@ void qr_decompose(
   complex_float Q[4][4],
   complex_float R[4][4])
 {_ssdm_SpecArrayDimSize(A, 4);_ssdm_SpecArrayDimSize(Q, 4);_ssdm_SpecArrayDimSize(R, 4);
- hls::qrf<false, 4, 4, complex_float, complex_float> (A, Q, R);
+ hls::qrf_top<false, 4, 4, QRF_CONFIG, complex_float, complex_float> (A, Q, R);
 }
 void eig_decompose(complex_float Rx[4][4], complex_float U[4][4], float eigval[4]) {_ssdm_SpecArrayDimSize(Rx, 4);_ssdm_SpecArrayDimSize(U, 4);_ssdm_SpecArrayDimSize(eigval, 4);
  complex_float Q_temp[4][4];
@@ -43443,7 +43446,8 @@ void eig_decompose(complex_float Rx[4][4], complex_float U[4][4], float eigval[4
  float midsum;
 
  for(int i = 0; i < 4; i++) {
-  for(int j = 0; j < 4; j++) {
+_ssdm_op_SpecLoopTripCount(4, 4, 4, "");
+ for(int j = 0; j < 4; j++) {
    eig_mat[i][j] = Rx[i][j];
    Rx_temp[i][j] = Rx[i][j];
    U[i][j].real(0);
@@ -43451,7 +43455,8 @@ void eig_decompose(complex_float Rx[4][4], complex_float U[4][4], float eigval[4
   }
  }
  for(int i = 0; i < 10; i++) {
-  qr_decompose(eig_mat, Q_temp, R_temp);
+_ssdm_op_SpecResourceLimit(10, "", "", "10", "");
+ qr_decompose(eig_mat, Q_temp, R_temp);
   for(int i = 0; i < 4; i++) {
    for(int j = 0; j < 4; j++) {
     temp.real(0);
@@ -43464,7 +43469,8 @@ void eig_decompose(complex_float Rx[4][4], complex_float U[4][4], float eigval[4
   }
  }
  for(int count = 0; count < 4; count++) {
-  eigval[count] = eig_mat[count][count].real();
+_ssdm_op_SpecLoopTripCount(4, 4, 4, "");
+ eigval[count] = eig_mat[count][count].real();
   for(int i = 0; i < 4; i++) {
    for(int j = 0; j < 4; j++) {
     if (i == j) {
@@ -43525,7 +43531,8 @@ void Autocorrelation(complex_float X[10][4], complex_float Rx[4][4]) {_ssdm_Spec
   for (int y = 0; y < 4; y++) {
    complex_float temp(0.0, 0.0);
    for(int l = 0; l < 10; l++) {
-    temp += X[l][x] * conj(X[l][y]);
+_ssdm_SpecExprBalance(1, "");
+ temp += X[l][x] * conj(X[l][y]);
    }
    Rx[x][y] = temp / (float)10;
   }
@@ -43621,16 +43628,17 @@ void music(float X[10240][4], float P_sm[361]) {_ssdm_SpecArrayDimSize(X, 10240)
 
  float FFT_Buffer_re[1024];
  float FFT_Buffer_im[1024];
- complex_float Xl_f[10][1024][4];
  complex_float Xj_f[1024][10][4];
+_ssdm_op_SpecResource(Xj_f, "", "RAM_1P_BRAM", "", -1, "", "", "", "", "");
  complex_float Autocorr_Buffer[10][4];
- complex_float Rx[4][4];
  complex_float U[4][4];
  complex_float Un[4][4 - 2];
- complex_float UU[4][4];
+ complex_float temp_mat[4][4];
  complex_float AUU[361][4];
+_ssdm_op_SpecResource(AUU, "", "RAM_1P_BRAM", "", -1, "", "", "", "", "");
  complex_float w[361];
  complex_float a_theta[4][361];
+_ssdm_op_SpecResource(a_theta, "", "RAM_1P_BRAM", "", -1, "", "", "", "", "");
  complex_float temp;
  float eigval[4];
  int sort_index[4];
@@ -43639,7 +43647,9 @@ void music(float X[10240][4], float P_sm[361]) {_ssdm_SpecArrayDimSize(X, 10240)
  float fc[1024];
 
  for(int j = 0; j < 1024; j++) {
-  if (j < 1024/2) {
+_ssdm_op_SpecLoopTripCount(4, 4, 4, "");
+
+ if (j < 1024/2) {
    fc[j] = (float)j * (float)16000 / (float)1024;
   } else {
    fc[j] = (float)(j - 1024) * (float)16000 / (float)1024;
@@ -43651,7 +43661,8 @@ void music(float X[10240][4], float P_sm[361]) {_ssdm_SpecArrayDimSize(X, 10240)
  }
 
  for(int l = 0; l < 10; l++) {
-  for(int n = 0; n < 4; n++) {
+_ssdm_op_SpecLoopTripCount(1024, 1024, 1024, "");
+ for(int n = 0; n < 4; n++) {
    for(int j = 0; j < 1024; j++) {
     FFT_Buffer_re[j] = X[l*1024 +j][n];
     FFT_Buffer_im[j] = 0;
@@ -43665,13 +43676,16 @@ void music(float X[10240][4], float P_sm[361]) {_ssdm_SpecArrayDimSize(X, 10240)
  }
 
  for(int jj = 0; jj < 1024; jj++) {
+_ssdm_op_SpecLoopTripCount(10, 10, 10, "");
+ float tpf = 2*3.141592654*fc[jj];
   for (int l = 0; l < 10; l++) {
    for (int n = 0; n < 4; n++) {
+
     Autocorr_Buffer[l][n] = Xj_f[jj][l][n];
    }
   }
-  Autocorrelation(Autocorr_Buffer, Rx);
-  eig_decompose(Rx, U, eigval);
+  Autocorrelation(Autocorr_Buffer, temp_mat);
+  eig_decompose(temp_mat, U, eigval);
   sort_eigval(eigval, sort_index);
   for(int x = 0; x < 4; x++) {
    for(int y = 0; y < 4; y++) {
@@ -43684,9 +43698,12 @@ void music(float X[10240][4], float P_sm[361]) {_ssdm_SpecArrayDimSize(X, 10240)
   }
 
   for (int x = 0; x < 4; x++) {
+   float tpfpx = tpf*p[x];
    for (int y = 0; y < 361; y++) {
-    a_theta[x][y].real(cos(2*3.14159265358979*fc[jj]*p[x]*sin(theta[y]*3.14159265358979/180)/340));
-    a_theta[x][y].imag(-sin(2*3.14159265358979*fc[jj]*p[x]*sin(theta[y]*3.14159265358979/180)/340));
+_ssdm_SpecExprBalance(1, "");
+ float sinpitheta = sin(theta[y]*0.01745329252);
+    a_theta[x][y].real(cos(tpfpx*sinpitheta/340));
+    a_theta[x][y].imag(-sin(tpfpx*sinpitheta/340));
    }
   }
   for(int i = 0; i < 4; i++) {
@@ -43696,7 +43713,7 @@ void music(float X[10240][4], float P_sm[361]) {_ssdm_SpecArrayDimSize(X, 10240)
     for(int k = 0; k < 4 -2; k++) {
      temp += Un[i][k] * conj(Un[j][k]);
     }
-    UU[i][j] = temp;
+    temp_mat[i][j] = temp;
    }
   }
   for(int i = 0; i < 361; i++) {
@@ -43704,7 +43721,7 @@ void music(float X[10240][4], float P_sm[361]) {_ssdm_SpecArrayDimSize(X, 10240)
     temp.real(0.0);
     temp.imag(0.0);
     for (int k = 0; k < 4; k++) {
-     temp += conj(a_theta[k][i]) * UU[k][j];
+     temp += conj(a_theta[k][i]) * temp_mat[k][j];
     }
     AUU[i][j] = temp;
    }
@@ -43720,6 +43737,7 @@ void music(float X[10240][4], float P_sm[361]) {_ssdm_SpecArrayDimSize(X, 10240)
  }
 
  for (int i = 0; i < 361; i++) {
-  P_sm[i] = 1/w[i].real();
+_ssdm_op_SpecLoopTripCount(361, 361, 361, "");
+ P_sm[i] = 1/w[i].real();
  }
 }

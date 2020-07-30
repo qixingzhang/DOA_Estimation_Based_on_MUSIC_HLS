@@ -99,7 +99,6 @@ meminst->q0(q0);
 meminst->we0(we0);
 meminst->d0(d0);
 
-
 meminst->reset(reset);
 meminst->clk(clk);
 }

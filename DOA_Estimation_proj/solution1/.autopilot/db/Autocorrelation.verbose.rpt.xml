@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'Autocorrelation'" level="0">
-<item name = "Date">Thu Jul 30 14:37:24 2020
+<item name = "Date">Thu Jul 30 16:23:39 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">DOA_Estimation_proj</item>
@@ -88,15 +88,15 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln102_1_fu_345_p2">+, 0, 0, 15, 7, 7</column>
-<column name="add_ln102_fu_334_p2">+, 0, 0, 15, 7, 7</column>
-<column name="add_ln104_fu_299_p2">+, 0, 0, 15, 6, 6</column>
+<column name="add_ln106_1_fu_345_p2">+, 0, 0, 15, 7, 7</column>
+<column name="add_ln106_fu_334_p2">+, 0, 0, 15, 7, 7</column>
+<column name="add_ln108_fu_299_p2">+, 0, 0, 15, 6, 6</column>
 <column name="l_fu_316_p2">+, 0, 0, 13, 4, 1</column>
 <column name="x_fu_257_p2">+, 0, 0, 12, 3, 1</column>
 <column name="y_fu_285_p2">+, 0, 0, 12, 3, 1</column>
-<column name="icmp_ln101_fu_310_p2">icmp, 0, 0, 9, 4, 4</column>
-<column name="icmp_ln98_fu_251_p2">icmp, 0, 0, 9, 3, 4</column>
-<column name="icmp_ln99_fu_279_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln101_fu_251_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln102_fu_279_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln104_fu_310_p2">icmp, 0, 0, 9, 4, 4</column>
 <column name="xor_ln667_fu_359_p2">xor, 0, 0, 33, 32, 33</column>
 </table>
 </item>
@@ -147,9 +147,9 @@
 <column name="x_reg_374">3, 0, 3, 0</column>
 <column name="y_0_reg_127">3, 0, 3, 0</column>
 <column name="y_reg_392">3, 0, 3, 0</column>
-<column name="zext_ln104_1_reg_397">3, 0, 7, 4</column>
-<column name="zext_ln104_reg_379">3, 0, 7, 4</column>
-<column name="zext_ln99_reg_384">3, 0, 6, 3</column>
+<column name="zext_ln102_reg_384">3, 0, 6, 3</column>
+<column name="zext_ln108_1_reg_397">3, 0, 7, 4</column>
+<column name="zext_ln108_reg_379">3, 0, 7, 4</column>
 </table>
 </item>
 </section>

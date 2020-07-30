@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'sort_eigval'
 ================================================================
-* Date:           Thu Jul 30 14:37:13 2020
+* Date:           Thu Jul 30 16:23:29 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        DOA_Estimation_proj
@@ -88,110 +88,110 @@ IsGatedGlobalClock: 0
 * FSM state operations: 
 
 State 1 <SV = 0> <Delay = 1.76>
-ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sort_index_3_read_1 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %sort_index_3_read)" [src/music.cpp:80]   --->   Operation 8 'read' 'sort_index_3_read_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%sort_index_2_read_1 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %sort_index_2_read)" [src/music.cpp:80]   --->   Operation 9 'read' 'sort_index_2_read_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%sort_index_1_read_1 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %sort_index_1_read)" [src/music.cpp:80]   --->   Operation 10 'read' 'sort_index_1_read_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%sort_index_0_read_1 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %sort_index_0_read)" [src/music.cpp:80]   --->   Operation 11 'read' 'sort_index_0_read_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%eigval_3_read_1 = call float @_ssdm_op_Read.ap_auto.float(float %eigval_3_read)" [src/music.cpp:80]   --->   Operation 12 'read' 'eigval_3_read_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%eigval_2_read_1 = call float @_ssdm_op_Read.ap_auto.float(float %eigval_2_read)" [src/music.cpp:80]   --->   Operation 13 'read' 'eigval_2_read_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%eigval_1_read_1 = call float @_ssdm_op_Read.ap_auto.float(float %eigval_1_read)" [src/music.cpp:80]   --->   Operation 14 'read' 'eigval_1_read_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%eigval_0_read_1 = call float @_ssdm_op_Read.ap_auto.float(float %eigval_0_read)" [src/music.cpp:80]   --->   Operation 15 'read' 'eigval_0_read_1' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 16 [1/1] (1.76ns)   --->   "br label %1" [src/music.cpp:81]   --->   Operation 16 'br' <Predicate = true> <Delay = 1.76>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sort_index_3_read_1 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %sort_index_3_read)" [src/music.cpp:83]   --->   Operation 8 'read' 'sort_index_3_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%sort_index_2_read_1 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %sort_index_2_read)" [src/music.cpp:83]   --->   Operation 9 'read' 'sort_index_2_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%sort_index_1_read_1 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %sort_index_1_read)" [src/music.cpp:83]   --->   Operation 10 'read' 'sort_index_1_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%sort_index_0_read_1 = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %sort_index_0_read)" [src/music.cpp:83]   --->   Operation 11 'read' 'sort_index_0_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%eigval_3_read_1 = call float @_ssdm_op_Read.ap_auto.float(float %eigval_3_read)" [src/music.cpp:83]   --->   Operation 12 'read' 'eigval_3_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%eigval_2_read_1 = call float @_ssdm_op_Read.ap_auto.float(float %eigval_2_read)" [src/music.cpp:83]   --->   Operation 13 'read' 'eigval_2_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%eigval_1_read_1 = call float @_ssdm_op_Read.ap_auto.float(float %eigval_1_read)" [src/music.cpp:83]   --->   Operation 14 'read' 'eigval_1_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%eigval_0_read_1 = call float @_ssdm_op_Read.ap_auto.float(float %eigval_0_read)" [src/music.cpp:83]   --->   Operation 15 'read' 'eigval_0_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (1.76ns)   --->   "br label %1" [src/music.cpp:84]   --->   Operation 16 'br' <Predicate = true> <Delay = 1.76>
 
 State 2 <SV = 1> <Delay = 1.95>
-ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%sort_index_0_0 = phi i32 [ %sort_index_0_read_1, %0 ], [ %sort_index_0_1, %branch12 ]" [src/music.cpp:80]   --->   Operation 17 'phi' 'sort_index_0_0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%sort_index_1_0 = phi i32 [ %sort_index_1_read_1, %0 ], [ %sort_index_1_1, %branch12 ]" [src/music.cpp:80]   --->   Operation 18 'phi' 'sort_index_1_0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%sort_index_2_0 = phi i32 [ %sort_index_2_read_1, %0 ], [ %sort_index_2_1, %branch12 ]" [src/music.cpp:80]   --->   Operation 19 'phi' 'sort_index_2_0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%sort_index_3_0 = phi i32 [ %sort_index_3_read_1, %0 ], [ %sort_index_3_1, %branch12 ]" [src/music.cpp:80]   --->   Operation 20 'phi' 'sort_index_3_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "%sort_index_0_0 = phi i32 [ %sort_index_0_read_1, %0 ], [ %sort_index_0_1, %branch12 ]" [src/music.cpp:83]   --->   Operation 17 'phi' 'sort_index_0_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/1] (0.00ns)   --->   "%sort_index_1_0 = phi i32 [ %sort_index_1_read_1, %0 ], [ %sort_index_1_1, %branch12 ]" [src/music.cpp:83]   --->   Operation 18 'phi' 'sort_index_1_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 19 [1/1] (0.00ns)   --->   "%sort_index_2_0 = phi i32 [ %sort_index_2_read_1, %0 ], [ %sort_index_2_1, %branch12 ]" [src/music.cpp:83]   --->   Operation 19 'phi' 'sort_index_2_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "%sort_index_3_0 = phi i32 [ %sort_index_3_read_1, %0 ], [ %sort_index_3_1, %branch12 ]" [src/music.cpp:83]   --->   Operation 20 'phi' 'sort_index_3_0' <Predicate = true> <Delay = 0.00>
 ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%i_0 = phi i3 [ 0, %0 ], [ %i, %branch12 ]"   --->   Operation 21 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%zext_ln81 = zext i3 %i_0 to i32" [src/music.cpp:81]   --->   Operation 22 'zext' 'zext_ln81' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 23 [1/1] (1.13ns)   --->   "%icmp_ln81 = icmp eq i3 %i_0, -4" [src/music.cpp:81]   --->   Operation 23 'icmp' 'icmp_ln81' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%zext_ln84 = zext i3 %i_0 to i32" [src/music.cpp:84]   --->   Operation 22 'zext' 'zext_ln84' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (1.13ns)   --->   "%icmp_ln84 = icmp eq i3 %i_0, -4" [src/music.cpp:84]   --->   Operation 23 'icmp' 'icmp_ln84' <Predicate = true> <Delay = 1.13> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_2 : Operation 24 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 4, i64 4, i64 4)"   --->   Operation 24 'speclooptripcount' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 25 [1/1] (1.65ns)   --->   "%i = add i3 %i_0, 1" [src/music.cpp:81]   --->   Operation 25 'add' 'i' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 26 [1/1] (0.00ns)   --->   "br i1 %icmp_ln81, label %.preheader2.preheader, label %branch12" [src/music.cpp:81]   --->   Operation 26 'br' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln82 = trunc i3 %i_0 to i2" [src/music.cpp:82]   --->   Operation 27 'trunc' 'trunc_ln82' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_2 : Operation 28 [1/1] (1.95ns)   --->   "%sort_index_3_1 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_3_0, i32 %sort_index_3_0, i32 %sort_index_3_0, i32 %zext_ln81, i2 %trunc_ln82)" [src/music.cpp:80]   --->   Operation 28 'mux' 'sort_index_3_1' <Predicate = (!icmp_ln81)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 29 [1/1] (1.95ns)   --->   "%sort_index_2_1 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_2_0, i32 %sort_index_2_0, i32 %zext_ln81, i32 %sort_index_2_0, i2 %trunc_ln82)" [src/music.cpp:80]   --->   Operation 29 'mux' 'sort_index_2_1' <Predicate = (!icmp_ln81)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 30 [1/1] (1.95ns)   --->   "%sort_index_1_1 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_1_0, i32 %zext_ln81, i32 %sort_index_1_0, i32 %sort_index_1_0, i2 %trunc_ln82)" [src/music.cpp:80]   --->   Operation 30 'mux' 'sort_index_1_1' <Predicate = (!icmp_ln81)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 31 [1/1] (1.95ns)   --->   "%sort_index_0_1 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %zext_ln81, i32 %sort_index_0_0, i32 %sort_index_0_0, i32 %sort_index_0_0, i2 %trunc_ln82)" [src/music.cpp:81]   --->   Operation 31 'mux' 'sort_index_0_1' <Predicate = (!icmp_ln81)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_2 : Operation 32 [1/1] (0.00ns)   --->   "br label %1" [src/music.cpp:81]   --->   Operation 32 'br' <Predicate = (!icmp_ln81)> <Delay = 0.00>
-ST_2 : Operation 33 [1/1] (1.76ns)   --->   "br label %.preheader2" [src/music.cpp:85]   --->   Operation 33 'br' <Predicate = (icmp_ln81)> <Delay = 1.76>
+ST_2 : Operation 25 [1/1] (1.65ns)   --->   "%i = add i3 %i_0, 1" [src/music.cpp:84]   --->   Operation 25 'add' 'i' <Predicate = true> <Delay = 1.65> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "br i1 %icmp_ln84, label %.preheader2.preheader, label %branch12" [src/music.cpp:84]   --->   Operation 26 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%trunc_ln85 = trunc i3 %i_0 to i2" [src/music.cpp:85]   --->   Operation 27 'trunc' 'trunc_ln85' <Predicate = (!icmp_ln84)> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (1.95ns)   --->   "%sort_index_3_1 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_3_0, i32 %sort_index_3_0, i32 %sort_index_3_0, i32 %zext_ln84, i2 %trunc_ln85)" [src/music.cpp:83]   --->   Operation 28 'mux' 'sort_index_3_1' <Predicate = (!icmp_ln84)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/1] (1.95ns)   --->   "%sort_index_2_1 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_2_0, i32 %sort_index_2_0, i32 %zext_ln84, i32 %sort_index_2_0, i2 %trunc_ln85)" [src/music.cpp:83]   --->   Operation 29 'mux' 'sort_index_2_1' <Predicate = (!icmp_ln84)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 30 [1/1] (1.95ns)   --->   "%sort_index_1_1 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_1_0, i32 %zext_ln84, i32 %sort_index_1_0, i32 %sort_index_1_0, i2 %trunc_ln85)" [src/music.cpp:83]   --->   Operation 30 'mux' 'sort_index_1_1' <Predicate = (!icmp_ln84)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 31 [1/1] (1.95ns)   --->   "%sort_index_0_1 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %zext_ln84, i32 %sort_index_0_0, i32 %sort_index_0_0, i32 %sort_index_0_0, i2 %trunc_ln85)" [src/music.cpp:84]   --->   Operation 31 'mux' 'sort_index_0_1' <Predicate = (!icmp_ln84)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "br label %1" [src/music.cpp:84]   --->   Operation 32 'br' <Predicate = (!icmp_ln84)> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (1.76ns)   --->   "br label %.preheader2" [src/music.cpp:88]   --->   Operation 33 'br' <Predicate = (icmp_ln84)> <Delay = 1.76>
 
 State 3 <SV = 2> <Delay = 1.76>
-ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%sort_index_0_2 = phi i32 [ %sort_index_0_4, %branch4 ], [ %sort_index_0_0, %.preheader2.preheader ]" [src/music.cpp:92]   --->   Operation 34 'phi' 'sort_index_0_2' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%sort_index_1_2 = phi i32 [ %sort_index_1_4, %branch4 ], [ %sort_index_1_0, %.preheader2.preheader ]" [src/music.cpp:93]   --->   Operation 35 'phi' 'sort_index_1_2' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%sort_index_2_2 = phi i32 [ %sort_index_2_4, %branch4 ], [ %sort_index_2_0, %.preheader2.preheader ]" [src/music.cpp:93]   --->   Operation 36 'phi' 'sort_index_2_2' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%sort_index_3_2 = phi i32 [ %sort_index_3_3, %branch4 ], [ %sort_index_3_0, %.preheader2.preheader ]" [src/music.cpp:93]   --->   Operation 37 'phi' 'sort_index_3_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%sort_index_0_2 = phi i32 [ %sort_index_0_4, %branch4 ], [ %sort_index_0_0, %.preheader2.preheader ]" [src/music.cpp:95]   --->   Operation 34 'phi' 'sort_index_0_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%sort_index_1_2 = phi i32 [ %sort_index_1_4, %branch4 ], [ %sort_index_1_0, %.preheader2.preheader ]" [src/music.cpp:96]   --->   Operation 35 'phi' 'sort_index_1_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%sort_index_2_2 = phi i32 [ %sort_index_2_4, %branch4 ], [ %sort_index_2_0, %.preheader2.preheader ]" [src/music.cpp:96]   --->   Operation 36 'phi' 'sort_index_2_2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%sort_index_3_2 = phi i32 [ %sort_index_3_3, %branch4 ], [ %sort_index_3_0, %.preheader2.preheader ]" [src/music.cpp:96]   --->   Operation 37 'phi' 'sort_index_3_2' <Predicate = true> <Delay = 0.00>
 ST_3 : Operation 38 [1/1] (0.00ns)   --->   "%flag = phi i2 [ %i_1, %branch4 ], [ 0, %.preheader2.preheader ]"   --->   Operation 38 'phi' 'flag' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%zext_ln85 = zext i2 %flag to i32" [src/music.cpp:85]   --->   Operation 39 'zext' 'zext_ln85' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 40 [1/1] (0.95ns)   --->   "%icmp_ln84 = icmp eq i2 %flag, -1" [src/music.cpp:84]   --->   Operation 40 'icmp' 'icmp_ln84' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%zext_ln88 = zext i2 %flag to i32" [src/music.cpp:88]   --->   Operation 39 'zext' 'zext_ln88' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.95ns)   --->   "%icmp_ln87 = icmp eq i2 %flag, -1" [src/music.cpp:87]   --->   Operation 40 'icmp' 'icmp_ln87' <Predicate = true> <Delay = 0.95> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_3 : Operation 41 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 3, i64 3, i64 3)"   --->   Operation 41 'speclooptripcount' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 42 [1/1] (1.56ns)   --->   "%i_1 = add i2 %flag, 1" [src/music.cpp:84]   --->   Operation 42 'add' 'i_1' <Predicate = true> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 43 [1/1] (0.00ns)   --->   "br i1 %icmp_ln84, label %4, label %.preheader.preheader" [src/music.cpp:84]   --->   Operation 43 'br' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 44 [1/1] (1.76ns)   --->   "br label %.preheader" [src/music.cpp:86]   --->   Operation 44 'br' <Predicate = (!icmp_ln84)> <Delay = 1.76>
-ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%mrv = insertvalue { i32, i32, i32, i32 } undef, i32 %sort_index_0_2, 0" [src/music.cpp:96]   --->   Operation 45 'insertvalue' 'mrv' <Predicate = (icmp_ln84)> <Delay = 0.00>
-ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { i32, i32, i32, i32 } %mrv, i32 %sort_index_1_2, 1" [src/music.cpp:96]   --->   Operation 46 'insertvalue' 'mrv_1' <Predicate = (icmp_ln84)> <Delay = 0.00>
-ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue { i32, i32, i32, i32 } %mrv_1, i32 %sort_index_2_2, 2" [src/music.cpp:96]   --->   Operation 47 'insertvalue' 'mrv_2' <Predicate = (icmp_ln84)> <Delay = 0.00>
-ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue { i32, i32, i32, i32 } %mrv_2, i32 %sort_index_3_2, 3" [src/music.cpp:96]   --->   Operation 48 'insertvalue' 'mrv_3' <Predicate = (icmp_ln84)> <Delay = 0.00>
-ST_3 : Operation 49 [1/1] (0.00ns)   --->   "ret { i32, i32, i32, i32 } %mrv_3" [src/music.cpp:96]   --->   Operation 49 'ret' <Predicate = (icmp_ln84)> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (1.56ns)   --->   "%i_1 = add i2 %flag, 1" [src/music.cpp:87]   --->   Operation 42 'add' 'i_1' <Predicate = true> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 43 [1/1] (0.00ns)   --->   "br i1 %icmp_ln87, label %4, label %.preheader.preheader" [src/music.cpp:87]   --->   Operation 43 'br' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 44 [1/1] (1.76ns)   --->   "br label %.preheader" [src/music.cpp:89]   --->   Operation 44 'br' <Predicate = (!icmp_ln87)> <Delay = 1.76>
+ST_3 : Operation 45 [1/1] (0.00ns)   --->   "%mrv = insertvalue { i32, i32, i32, i32 } undef, i32 %sort_index_0_2, 0" [src/music.cpp:99]   --->   Operation 45 'insertvalue' 'mrv' <Predicate = (icmp_ln87)> <Delay = 0.00>
+ST_3 : Operation 46 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue { i32, i32, i32, i32 } %mrv, i32 %sort_index_1_2, 1" [src/music.cpp:99]   --->   Operation 46 'insertvalue' 'mrv_1' <Predicate = (icmp_ln87)> <Delay = 0.00>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%mrv_2 = insertvalue { i32, i32, i32, i32 } %mrv_1, i32 %sort_index_2_2, 2" [src/music.cpp:99]   --->   Operation 47 'insertvalue' 'mrv_2' <Predicate = (icmp_ln87)> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%mrv_3 = insertvalue { i32, i32, i32, i32 } %mrv_2, i32 %sort_index_3_2, 3" [src/music.cpp:99]   --->   Operation 48 'insertvalue' 'mrv_3' <Predicate = (icmp_ln87)> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (0.00ns)   --->   "ret { i32, i32, i32, i32 } %mrv_3" [src/music.cpp:99]   --->   Operation 49 'ret' <Predicate = (icmp_ln87)> <Delay = 0.00>
 
 State 4 <SV = 3> <Delay = 5.48>
-ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%flag_0 = phi i32 [ %j, %2 ], [ %zext_ln85, %.preheader.preheader ]"   --->   Operation 50 'phi' 'flag_0' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%j_0_in = phi i32 [ %j_2, %2 ], [ %zext_ln85, %.preheader.preheader ]"   --->   Operation 51 'phi' 'j_0_in' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%trunc_ln86 = trunc i32 %j_0_in to i2" [src/music.cpp:86]   --->   Operation 52 'trunc' 'trunc_ln86' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 53 [1/1] (2.55ns)   --->   "%j_2 = add nsw i32 1, %j_0_in" [src/music.cpp:86]   --->   Operation 53 'add' 'j_2' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 54 [1/1] (2.47ns)   --->   "%icmp_ln86 = icmp eq i32 %j_0_in, 3" [src/music.cpp:86]   --->   Operation 54 'icmp' 'icmp_ln86' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%flag_0 = phi i32 [ %j, %2 ], [ %zext_ln88, %.preheader.preheader ]"   --->   Operation 50 'phi' 'flag_0' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 51 [1/1] (0.00ns)   --->   "%j_0_in = phi i32 [ %j_2, %2 ], [ %zext_ln88, %.preheader.preheader ]"   --->   Operation 51 'phi' 'j_0_in' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%trunc_ln89 = trunc i32 %j_0_in to i2" [src/music.cpp:89]   --->   Operation 52 'trunc' 'trunc_ln89' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (2.55ns)   --->   "%j_2 = add nsw i32 1, %j_0_in" [src/music.cpp:89]   --->   Operation 53 'add' 'j_2' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 54 [1/1] (2.47ns)   --->   "%icmp_ln89 = icmp eq i32 %j_0_in, 3" [src/music.cpp:89]   --->   Operation 54 'icmp' 'icmp_ln89' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 55 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 3, i64 0)"   --->   Operation 55 'speclooptripcount' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 56 [1/1] (0.00ns)   --->   "br i1 %icmp_ln86, label %3, label %2" [src/music.cpp:86]   --->   Operation 56 'br' <Predicate = true> <Delay = 0.00>
-ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%trunc_ln87 = trunc i32 %flag_0 to i2" [src/music.cpp:87]   --->   Operation 57 'trunc' 'trunc_ln87' <Predicate = (!icmp_ln86)> <Delay = 0.00>
-ST_4 : Operation 58 [1/1] (1.95ns)   --->   "%tmp = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_0_2, i32 %sort_index_1_2, i32 %sort_index_2_2, i32 %sort_index_3_2, i2 %trunc_ln87)" [src/music.cpp:87]   --->   Operation 58 'mux' 'tmp' <Predicate = (!icmp_ln86)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%trunc_ln87_1 = trunc i32 %tmp to i2" [src/music.cpp:87]   --->   Operation 59 'trunc' 'trunc_ln87_1' <Predicate = (!icmp_ln86)> <Delay = 0.00>
-ST_4 : Operation 60 [1/1] (1.95ns)   --->   "%tmp_1 = call float @_ssdm_op_Mux.ap_auto.4float.i2(float %eigval_0_read_1, float %eigval_1_read_1, float %eigval_2_read_1, float %eigval_3_read_1, i2 %trunc_ln87_1)" [src/music.cpp:87]   --->   Operation 60 'mux' 'tmp_1' <Predicate = (!icmp_ln86)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 61 [1/1] (1.56ns)   --->   "%add_ln87 = add i2 1, %trunc_ln86" [src/music.cpp:87]   --->   Operation 61 'add' 'add_ln87' <Predicate = (!icmp_ln86)> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 62 [1/1] (1.95ns)   --->   "%tmp_2 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_0_2, i32 %sort_index_1_2, i32 %sort_index_2_2, i32 %sort_index_3_2, i2 %add_ln87)" [src/music.cpp:87]   --->   Operation 62 'mux' 'tmp_2' <Predicate = (!icmp_ln86)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 63 [1/1] (0.00ns)   --->   "%trunc_ln87_2 = trunc i32 %tmp_2 to i2" [src/music.cpp:87]   --->   Operation 63 'trunc' 'trunc_ln87_2' <Predicate = (!icmp_ln86)> <Delay = 0.00>
-ST_4 : Operation 64 [1/1] (1.95ns)   --->   "%tmp_3 = call float @_ssdm_op_Mux.ap_auto.4float.i2(float %eigval_0_read_1, float %eigval_1_read_1, float %eigval_2_read_1, float %eigval_3_read_1, i2 %trunc_ln87_2)" [src/music.cpp:87]   --->   Operation 64 'mux' 'tmp_3' <Predicate = (!icmp_ln86)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 65 [1/1] (0.00ns)   --->   "%trunc_ln92 = trunc i32 %flag_0 to i2" [src/music.cpp:92]   --->   Operation 65 'trunc' 'trunc_ln92' <Predicate = (icmp_ln86)> <Delay = 0.00>
-ST_4 : Operation 66 [1/1] (1.95ns)   --->   "%temp = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_0_2, i32 %sort_index_1_2, i32 %sort_index_2_2, i32 %sort_index_3_2, i2 %trunc_ln92)" [src/music.cpp:92]   --->   Operation 66 'mux' 'temp' <Predicate = (icmp_ln86)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 56 [1/1] (0.00ns)   --->   "br i1 %icmp_ln89, label %3, label %2" [src/music.cpp:89]   --->   Operation 56 'br' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 57 [1/1] (0.00ns)   --->   "%trunc_ln90 = trunc i32 %flag_0 to i2" [src/music.cpp:90]   --->   Operation 57 'trunc' 'trunc_ln90' <Predicate = (!icmp_ln89)> <Delay = 0.00>
+ST_4 : Operation 58 [1/1] (1.95ns)   --->   "%tmp = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_0_2, i32 %sort_index_1_2, i32 %sort_index_2_2, i32 %sort_index_3_2, i2 %trunc_ln90)" [src/music.cpp:90]   --->   Operation 58 'mux' 'tmp' <Predicate = (!icmp_ln89)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 59 [1/1] (0.00ns)   --->   "%trunc_ln90_1 = trunc i32 %tmp to i2" [src/music.cpp:90]   --->   Operation 59 'trunc' 'trunc_ln90_1' <Predicate = (!icmp_ln89)> <Delay = 0.00>
+ST_4 : Operation 60 [1/1] (1.95ns)   --->   "%tmp_1 = call float @_ssdm_op_Mux.ap_auto.4float.i2(float %eigval_0_read_1, float %eigval_1_read_1, float %eigval_2_read_1, float %eigval_3_read_1, i2 %trunc_ln90_1)" [src/music.cpp:90]   --->   Operation 60 'mux' 'tmp_1' <Predicate = (!icmp_ln89)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 61 [1/1] (1.56ns)   --->   "%add_ln90 = add i2 1, %trunc_ln89" [src/music.cpp:90]   --->   Operation 61 'add' 'add_ln90' <Predicate = (!icmp_ln89)> <Delay = 1.56> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 62 [1/1] (1.95ns)   --->   "%tmp_2 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_0_2, i32 %sort_index_1_2, i32 %sort_index_2_2, i32 %sort_index_3_2, i2 %add_ln90)" [src/music.cpp:90]   --->   Operation 62 'mux' 'tmp_2' <Predicate = (!icmp_ln89)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 63 [1/1] (0.00ns)   --->   "%trunc_ln90_2 = trunc i32 %tmp_2 to i2" [src/music.cpp:90]   --->   Operation 63 'trunc' 'trunc_ln90_2' <Predicate = (!icmp_ln89)> <Delay = 0.00>
+ST_4 : Operation 64 [1/1] (1.95ns)   --->   "%tmp_3 = call float @_ssdm_op_Mux.ap_auto.4float.i2(float %eigval_0_read_1, float %eigval_1_read_1, float %eigval_2_read_1, float %eigval_3_read_1, i2 %trunc_ln90_2)" [src/music.cpp:90]   --->   Operation 64 'mux' 'tmp_3' <Predicate = (!icmp_ln89)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 65 [1/1] (0.00ns)   --->   "%trunc_ln95 = trunc i32 %flag_0 to i2" [src/music.cpp:95]   --->   Operation 65 'trunc' 'trunc_ln95' <Predicate = (icmp_ln89)> <Delay = 0.00>
+ST_4 : Operation 66 [1/1] (1.95ns)   --->   "%temp = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_0_2, i32 %sort_index_1_2, i32 %sort_index_2_2, i32 %sort_index_3_2, i2 %trunc_ln95)" [src/music.cpp:95]   --->   Operation 66 'mux' 'temp' <Predicate = (icmp_ln89)> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
 ST_4 : Operation 67 [1/1] (1.81ns)   --->   "switch i2 %flag, label %branch6 [
     i2 0, label %branch4
     i2 1, label %branch5
-  ]" [src/music.cpp:93]   --->   Operation 67 'switch' <Predicate = (icmp_ln86)> <Delay = 1.81>
-ST_4 : Operation 68 [1/1] (1.81ns)   --->   "br label %branch4" [src/music.cpp:93]   --->   Operation 68 'br' <Predicate = (icmp_ln86 & flag == 1)> <Delay = 1.81>
-ST_4 : Operation 69 [1/1] (1.81ns)   --->   "br label %branch4" [src/music.cpp:93]   --->   Operation 69 'br' <Predicate = (icmp_ln86 & flag != 0 & flag != 1)> <Delay = 1.81>
+  ]" [src/music.cpp:96]   --->   Operation 67 'switch' <Predicate = (icmp_ln89)> <Delay = 1.81>
+ST_4 : Operation 68 [1/1] (1.81ns)   --->   "br label %branch4" [src/music.cpp:96]   --->   Operation 68 'br' <Predicate = (icmp_ln89 & flag == 1)> <Delay = 1.81>
+ST_4 : Operation 69 [1/1] (1.81ns)   --->   "br label %branch4" [src/music.cpp:96]   --->   Operation 69 'br' <Predicate = (icmp_ln89 & flag != 0 & flag != 1)> <Delay = 1.81>
 
 State 5 <SV = 4> <Delay = 5.43>
-ST_5 : Operation 70 [1/1] (0.00ns)   --->   "%bitcast_ln87 = bitcast float %tmp_1 to i32" [src/music.cpp:87]   --->   Operation 70 'bitcast' 'bitcast_ln87' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 71 [1/1] (0.00ns)   --->   "%tmp_4 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln87, i32 23, i32 30)" [src/music.cpp:87]   --->   Operation 71 'partselect' 'tmp_4' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 72 [1/1] (0.00ns)   --->   "%trunc_ln87_3 = trunc i32 %bitcast_ln87 to i23" [src/music.cpp:87]   --->   Operation 72 'trunc' 'trunc_ln87_3' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 73 [1/1] (0.00ns)   --->   "%bitcast_ln87_1 = bitcast float %tmp_3 to i32" [src/music.cpp:87]   --->   Operation 73 'bitcast' 'bitcast_ln87_1' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 74 [1/1] (0.00ns)   --->   "%tmp_5 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln87_1, i32 23, i32 30)" [src/music.cpp:87]   --->   Operation 74 'partselect' 'tmp_5' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 75 [1/1] (0.00ns)   --->   "%trunc_ln87_4 = trunc i32 %bitcast_ln87_1 to i23" [src/music.cpp:87]   --->   Operation 75 'trunc' 'trunc_ln87_4' <Predicate = true> <Delay = 0.00>
-ST_5 : Operation 76 [1/1] (1.55ns)   --->   "%icmp_ln87 = icmp ne i8 %tmp_4, -1" [src/music.cpp:87]   --->   Operation 76 'icmp' 'icmp_ln87' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 77 [1/1] (2.44ns)   --->   "%icmp_ln87_1 = icmp eq i23 %trunc_ln87_3, 0" [src/music.cpp:87]   --->   Operation 77 'icmp' 'icmp_ln87_1' <Predicate = true> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 78 [1/1] (1.55ns)   --->   "%icmp_ln87_2 = icmp ne i8 %tmp_5, -1" [src/music.cpp:87]   --->   Operation 78 'icmp' 'icmp_ln87_2' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 79 [1/1] (2.44ns)   --->   "%icmp_ln87_3 = icmp eq i23 %trunc_ln87_4, 0" [src/music.cpp:87]   --->   Operation 79 'icmp' 'icmp_ln87_3' <Predicate = true> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 80 [2/2] (5.43ns)   --->   "%tmp_6 = fcmp ogt float %tmp_1, %tmp_3" [src/music.cpp:87]   --->   Operation 80 'fcmp' 'tmp_6' <Predicate = true> <Delay = 5.43> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 5.43> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 70 [1/1] (0.00ns)   --->   "%bitcast_ln90 = bitcast float %tmp_1 to i32" [src/music.cpp:90]   --->   Operation 70 'bitcast' 'bitcast_ln90' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 71 [1/1] (0.00ns)   --->   "%tmp_4 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln90, i32 23, i32 30)" [src/music.cpp:90]   --->   Operation 71 'partselect' 'tmp_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 72 [1/1] (0.00ns)   --->   "%trunc_ln90_3 = trunc i32 %bitcast_ln90 to i23" [src/music.cpp:90]   --->   Operation 72 'trunc' 'trunc_ln90_3' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 73 [1/1] (0.00ns)   --->   "%bitcast_ln90_1 = bitcast float %tmp_3 to i32" [src/music.cpp:90]   --->   Operation 73 'bitcast' 'bitcast_ln90_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 74 [1/1] (0.00ns)   --->   "%tmp_5 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %bitcast_ln90_1, i32 23, i32 30)" [src/music.cpp:90]   --->   Operation 74 'partselect' 'tmp_5' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 75 [1/1] (0.00ns)   --->   "%trunc_ln90_4 = trunc i32 %bitcast_ln90_1 to i23" [src/music.cpp:90]   --->   Operation 75 'trunc' 'trunc_ln90_4' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 76 [1/1] (1.55ns)   --->   "%icmp_ln90 = icmp ne i8 %tmp_4, -1" [src/music.cpp:90]   --->   Operation 76 'icmp' 'icmp_ln90' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 77 [1/1] (2.44ns)   --->   "%icmp_ln90_1 = icmp eq i23 %trunc_ln90_3, 0" [src/music.cpp:90]   --->   Operation 77 'icmp' 'icmp_ln90_1' <Predicate = true> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 78 [1/1] (1.55ns)   --->   "%icmp_ln90_2 = icmp ne i8 %tmp_5, -1" [src/music.cpp:90]   --->   Operation 78 'icmp' 'icmp_ln90_2' <Predicate = true> <Delay = 1.55> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 79 [1/1] (2.44ns)   --->   "%icmp_ln90_3 = icmp eq i23 %trunc_ln90_4, 0" [src/music.cpp:90]   --->   Operation 79 'icmp' 'icmp_ln90_3' <Predicate = true> <Delay = 2.44> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.44> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 80 [2/2] (5.43ns)   --->   "%tmp_6 = fcmp ogt float %tmp_1, %tmp_3" [src/music.cpp:90]   --->   Operation 80 'fcmp' 'tmp_6' <Predicate = true> <Delay = 5.43> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 5.43> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
 
 State 6 <SV = 5> <Delay = 7.10>
-ST_6 : Operation 81 [1/1] (0.00ns) (grouped into LUT with out node and_ln87_1)   --->   "%or_ln87 = or i1 %icmp_ln87_1, %icmp_ln87" [src/music.cpp:87]   --->   Operation 81 'or' 'or_ln87' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 82 [1/1] (0.00ns) (grouped into LUT with out node and_ln87_1)   --->   "%or_ln87_1 = or i1 %icmp_ln87_3, %icmp_ln87_2" [src/music.cpp:87]   --->   Operation 82 'or' 'or_ln87_1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 83 [1/1] (0.00ns) (grouped into LUT with out node and_ln87_1)   --->   "%and_ln87 = and i1 %or_ln87, %or_ln87_1" [src/music.cpp:87]   --->   Operation 83 'and' 'and_ln87' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 84 [1/2] (5.43ns)   --->   "%tmp_6 = fcmp ogt float %tmp_1, %tmp_3" [src/music.cpp:87]   --->   Operation 84 'fcmp' 'tmp_6' <Predicate = true> <Delay = 5.43> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 5.43> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 85 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln87_1 = and i1 %and_ln87, %tmp_6" [src/music.cpp:87]   --->   Operation 85 'and' 'and_ln87_1' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
-ST_6 : Operation 86 [1/1] (0.69ns) (out node of the LUT)   --->   "%j = select i1 %and_ln87_1, i32 %j_2, i32 %flag_0" [src/music.cpp:87]   --->   Operation 86 'select' 'j' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_6 : Operation 87 [1/1] (0.00ns)   --->   "br label %.preheader" [src/music.cpp:86]   --->   Operation 87 'br' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 81 [1/1] (0.00ns) (grouped into LUT with out node and_ln90_1)   --->   "%or_ln90 = or i1 %icmp_ln90_1, %icmp_ln90" [src/music.cpp:90]   --->   Operation 81 'or' 'or_ln90' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 82 [1/1] (0.00ns) (grouped into LUT with out node and_ln90_1)   --->   "%or_ln90_1 = or i1 %icmp_ln90_3, %icmp_ln90_2" [src/music.cpp:90]   --->   Operation 82 'or' 'or_ln90_1' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 83 [1/1] (0.00ns) (grouped into LUT with out node and_ln90_1)   --->   "%and_ln90 = and i1 %or_ln90, %or_ln90_1" [src/music.cpp:90]   --->   Operation 83 'and' 'and_ln90' <Predicate = true> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 84 [1/2] (5.43ns)   --->   "%tmp_6 = fcmp ogt float %tmp_1, %tmp_3" [src/music.cpp:90]   --->   Operation 84 'fcmp' 'tmp_6' <Predicate = true> <Delay = 5.43> <Core = "FCmp">   --->   Core 111 'FCmp' <Latency = 1> <II = 1> <Delay = 5.43> <FuncUnit> <Opcode : 'fcmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 85 [1/1] (0.97ns) (out node of the LUT)   --->   "%and_ln90_1 = and i1 %and_ln90, %tmp_6" [src/music.cpp:90]   --->   Operation 85 'and' 'and_ln90_1' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 86 [1/1] (0.69ns) (out node of the LUT)   --->   "%j = select i1 %and_ln90_1, i32 %j_2, i32 %flag_0" [src/music.cpp:90]   --->   Operation 86 'select' 'j' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 87 [1/1] (0.00ns)   --->   "br label %.preheader" [src/music.cpp:89]   --->   Operation 87 'br' <Predicate = true> <Delay = 0.00>
 
 State 7 <SV = 4> <Delay = 3.91>
-ST_7 : Operation 88 [1/1] (0.00ns)   --->   "%phi_ln93 = phi i32 [ %sort_index_1_2, %branch5 ], [ %sort_index_2_2, %branch6 ], [ %sort_index_0_2, %3 ]" [src/music.cpp:93]   --->   Operation 88 'phi' 'phi_ln93' <Predicate = true> <Delay = 0.00>
-ST_7 : Operation 89 [1/1] (1.95ns)   --->   "%sort_index_3_3 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_3_2, i32 %sort_index_3_2, i32 %sort_index_3_2, i32 %phi_ln93, i2 %trunc_ln92)" [src/music.cpp:80]   --->   Operation 89 'mux' 'sort_index_3_3' <Predicate = true> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 90 [1/1] (1.95ns)   --->   "%sort_index_2_3 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_2_2, i32 %sort_index_2_2, i32 %phi_ln93, i32 %sort_index_2_2, i2 %trunc_ln92)" [src/music.cpp:92]   --->   Operation 90 'mux' 'sort_index_2_3' <Predicate = true> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 91 [1/1] (1.95ns)   --->   "%sort_index_1_3 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_1_2, i32 %phi_ln93, i32 %sort_index_1_2, i32 %sort_index_1_2, i2 %trunc_ln92)" [src/music.cpp:92]   --->   Operation 91 'mux' 'sort_index_1_3' <Predicate = true> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 92 [1/1] (1.95ns)   --->   "%sort_index_0_3 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %phi_ln93, i32 %sort_index_0_2, i32 %sort_index_0_2, i32 %sort_index_0_2, i2 %trunc_ln92)" [src/music.cpp:93]   --->   Operation 92 'mux' 'sort_index_0_3' <Predicate = true> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 93 [1/1] (1.95ns)   --->   "%sort_index_2_4 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_2_3, i32 %sort_index_2_3, i32 %temp, i32 %temp, i2 %flag)" [src/music.cpp:80]   --->   Operation 93 'mux' 'sort_index_2_4' <Predicate = true> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 94 [1/1] (1.95ns)   --->   "%sort_index_1_4 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_1_3, i32 %temp, i32 %sort_index_1_3, i32 %sort_index_1_3, i2 %flag)" [src/music.cpp:80]   --->   Operation 94 'mux' 'sort_index_1_4' <Predicate = true> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 95 [1/1] (1.95ns)   --->   "%sort_index_0_4 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %temp, i32 %sort_index_0_3, i32 %sort_index_0_3, i32 %sort_index_0_3, i2 %flag)" [src/music.cpp:92]   --->   Operation 95 'mux' 'sort_index_0_4' <Predicate = true> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 96 [1/1] (0.00ns)   --->   "br label %.preheader2" [src/music.cpp:84]   --->   Operation 96 'br' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 88 [1/1] (0.00ns)   --->   "%phi_ln96 = phi i32 [ %sort_index_1_2, %branch5 ], [ %sort_index_2_2, %branch6 ], [ %sort_index_0_2, %3 ]" [src/music.cpp:96]   --->   Operation 88 'phi' 'phi_ln96' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 89 [1/1] (1.95ns)   --->   "%sort_index_3_3 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_3_2, i32 %sort_index_3_2, i32 %sort_index_3_2, i32 %phi_ln96, i2 %trunc_ln95)" [src/music.cpp:83]   --->   Operation 89 'mux' 'sort_index_3_3' <Predicate = true> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 90 [1/1] (1.95ns)   --->   "%sort_index_2_3 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_2_2, i32 %sort_index_2_2, i32 %phi_ln96, i32 %sort_index_2_2, i2 %trunc_ln95)" [src/music.cpp:95]   --->   Operation 90 'mux' 'sort_index_2_3' <Predicate = true> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 91 [1/1] (1.95ns)   --->   "%sort_index_1_3 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_1_2, i32 %phi_ln96, i32 %sort_index_1_2, i32 %sort_index_1_2, i2 %trunc_ln95)" [src/music.cpp:95]   --->   Operation 91 'mux' 'sort_index_1_3' <Predicate = true> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 92 [1/1] (1.95ns)   --->   "%sort_index_0_3 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %phi_ln96, i32 %sort_index_0_2, i32 %sort_index_0_2, i32 %sort_index_0_2, i2 %trunc_ln95)" [src/music.cpp:96]   --->   Operation 92 'mux' 'sort_index_0_3' <Predicate = true> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 93 [1/1] (1.95ns)   --->   "%sort_index_2_4 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_2_3, i32 %sort_index_2_3, i32 %temp, i32 %temp, i2 %flag)" [src/music.cpp:83]   --->   Operation 93 'mux' 'sort_index_2_4' <Predicate = true> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 94 [1/1] (1.95ns)   --->   "%sort_index_1_4 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %sort_index_1_3, i32 %temp, i32 %sort_index_1_3, i32 %sort_index_1_3, i2 %flag)" [src/music.cpp:83]   --->   Operation 94 'mux' 'sort_index_1_4' <Predicate = true> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 95 [1/1] (1.95ns)   --->   "%sort_index_0_4 = call i32 @_ssdm_op_Mux.ap_auto.4i32.i2(i32 %temp, i32 %sort_index_0_3, i32 %sort_index_0_3, i32 %sort_index_0_3, i2 %flag)" [src/music.cpp:95]   --->   Operation 95 'mux' 'sort_index_0_4' <Predicate = true> <Delay = 1.95> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 96 [1/1] (0.00ns)   --->   "br label %.preheader2" [src/music.cpp:87]   --->   Operation 96 'br' <Predicate = true> <Delay = 0.00>
 
 
 ============================================================
@@ -201,39 +201,39 @@ Target clock period: 10ns, clock uncertainty: 1.25ns.
 
  <State 1>: 1.77ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation ('sort_index_0_0', src/music.cpp:80) with incoming values : ('sort_index[0]', src/music.cpp:80) ('sort_index_0_1', src/music.cpp:81) [19]  (1.77 ns)
+	multiplexor before 'phi' operation ('sort_index_0_0', src/music.cpp:83) with incoming values : ('sort_index[0]', src/music.cpp:83) ('sort_index_0_1', src/music.cpp:84) [19]  (1.77 ns)
 
  <State 2>: 1.96ns
 The critical path consists of the following:
-	'phi' operation ('sort_index_0_0', src/music.cpp:80) with incoming values : ('sort_index[0]', src/music.cpp:80) ('sort_index_0_1', src/music.cpp:81) [19]  (0 ns)
-	'mux' operation ('sort_index_0_1', src/music.cpp:81) [34]  (1.96 ns)
+	'phi' operation ('sort_index_0_0', src/music.cpp:83) with incoming values : ('sort_index[0]', src/music.cpp:83) ('sort_index_0_1', src/music.cpp:84) [19]  (0 ns)
+	'mux' operation ('sort_index_0_1', src/music.cpp:84) [34]  (1.96 ns)
 
  <State 3>: 1.77ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation ('j') with incoming values : ('zext_ln85', src/music.cpp:85) ('j', src/music.cpp:87) [52]  (1.77 ns)
+	multiplexor before 'phi' operation ('j') with incoming values : ('zext_ln88', src/music.cpp:88) ('j', src/music.cpp:90) [52]  (1.77 ns)
 
  <State 4>: 5.48ns
 The critical path consists of the following:
-	'phi' operation ('flag') with incoming values : ('zext_ln85', src/music.cpp:85) ('j', src/music.cpp:86) [53]  (0 ns)
-	'add' operation ('add_ln87', src/music.cpp:87) [64]  (1.56 ns)
-	'mux' operation ('tmp_2', src/music.cpp:87) [65]  (1.96 ns)
-	'mux' operation ('tmp_3', src/music.cpp:87) [67]  (1.96 ns)
+	'phi' operation ('flag') with incoming values : ('zext_ln88', src/music.cpp:88) ('j', src/music.cpp:89) [53]  (0 ns)
+	'add' operation ('add_ln90', src/music.cpp:90) [64]  (1.56 ns)
+	'mux' operation ('tmp_2', src/music.cpp:90) [65]  (1.96 ns)
+	'mux' operation ('tmp_3', src/music.cpp:90) [67]  (1.96 ns)
 
  <State 5>: 5.43ns
 The critical path consists of the following:
-	'fcmp' operation ('tmp_6', src/music.cpp:87) [81]  (5.43 ns)
+	'fcmp' operation ('tmp_6', src/music.cpp:90) [81]  (5.43 ns)
 
  <State 6>: 7.11ns
 The critical path consists of the following:
-	'fcmp' operation ('tmp_6', src/music.cpp:87) [81]  (5.43 ns)
-	'and' operation ('and_ln87_1', src/music.cpp:87) [82]  (0.978 ns)
-	'select' operation ('j', src/music.cpp:87) [83]  (0.698 ns)
+	'fcmp' operation ('tmp_6', src/music.cpp:90) [81]  (5.43 ns)
+	'and' operation ('and_ln90_1', src/music.cpp:90) [82]  (0.978 ns)
+	'select' operation ('j', src/music.cpp:90) [83]  (0.698 ns)
 
  <State 7>: 3.92ns
 The critical path consists of the following:
-	'phi' operation ('phi_ln93', src/music.cpp:93) with incoming values : ('sort_index[2]', src/music.cpp:80) ('sort_index[1]', src/music.cpp:80) ('sort_index[0]', src/music.cpp:80) ('sort_index_2_1', src/music.cpp:80) ('sort_index_1_1', src/music.cpp:80) ('sort_index_0_1', src/music.cpp:81) ('sort_index_2_4', src/music.cpp:80) ('sort_index_1_4', src/music.cpp:80) ('sort_index_0_4', src/music.cpp:92) [94]  (0 ns)
-	'mux' operation ('sort_index_2_3', src/music.cpp:92) [96]  (1.96 ns)
-	'mux' operation ('sort_index_2_4', src/music.cpp:80) [99]  (1.96 ns)
+	'phi' operation ('phi_ln96', src/music.cpp:96) with incoming values : ('sort_index[2]', src/music.cpp:83) ('sort_index[1]', src/music.cpp:83) ('sort_index[0]', src/music.cpp:83) ('sort_index_2_1', src/music.cpp:83) ('sort_index_1_1', src/music.cpp:83) ('sort_index_0_1', src/music.cpp:84) ('sort_index_2_4', src/music.cpp:83) ('sort_index_1_4', src/music.cpp:83) ('sort_index_0_4', src/music.cpp:95) [94]  (0 ns)
+	'mux' operation ('sort_index_2_3', src/music.cpp:95) [96]  (1.96 ns)
+	'mux' operation ('sort_index_2_4', src/music.cpp:83) [99]  (1.96 ns)
 
 
 ============================================================

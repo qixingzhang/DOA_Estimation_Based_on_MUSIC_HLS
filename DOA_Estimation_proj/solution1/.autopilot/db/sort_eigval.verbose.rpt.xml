@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'sort_eigval'" level="0">
-<item name = "Date">Thu Jul 30 14:37:35 2020
+<item name = "Date">Thu Jul 30 16:23:48 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">DOA_Estimation_proj</item>
@@ -52,35 +52,35 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 204, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 0, 66, 575, -</column>
+<column name="Instance">-, 0, 66, 1279, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 200, -</column>
 <column name="Register">-, -, 628, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 0, ~0, 1, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 3, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="music_fcmp_32ns_3pcA_U171">music_fcmp_32ns_3pcA, 0, 0, 66, 239, 0</column>
-<column name="music_mux_42_32_1_1_U172">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U173">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U174">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U175">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U176">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U177">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U178">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U179">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U180">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U181">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U182">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U183">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U184">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U185">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U186">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U187">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
+<column name="music_fcmp_32ns_3pcA_U156">music_fcmp_32ns_3pcA, 0, 0, 66, 239, 0</column>
+<column name="music_mux_42_32_1_1_U157">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U158">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U159">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U160">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U161">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U162">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U163">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U164">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U165">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U166">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U167">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U168">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U169">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U170">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U171">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U172">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -101,17 +101,17 @@
 <column name="i_fu_264_p2">+, 0, 0, 12, 3, 1</column>
 <column name="j_2_fu_374_p2">+, 0, 0, 39, 1, 32</column>
 <column name="tmp_2_fu_424_p5">+, 0, 0, 10, 1, 2</column>
-<column name="and_ln87_1_fu_542_p2">and, 0, 0, 2, 1, 1</column>
-<column name="and_ln87_fu_536_p2">and, 0, 0, 2, 1, 1</column>
-<column name="icmp_ln81_fu_258_p2">icmp, 0, 0, 9, 3, 4</column>
-<column name="icmp_ln84_fu_334_p2">icmp, 0, 0, 8, 2, 2</column>
-<column name="icmp_ln86_fu_380_p2">icmp, 0, 0, 18, 32, 2</column>
-<column name="icmp_ln87_1_fu_510_p2">icmp, 0, 0, 18, 23, 1</column>
-<column name="icmp_ln87_2_fu_516_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="icmp_ln87_3_fu_522_p2">icmp, 0, 0, 18, 23, 1</column>
-<column name="icmp_ln87_fu_504_p2">icmp, 0, 0, 11, 8, 2</column>
-<column name="or_ln87_1_fu_532_p2">or, 0, 0, 2, 1, 1</column>
-<column name="or_ln87_fu_528_p2">or, 0, 0, 2, 1, 1</column>
+<column name="and_ln90_1_fu_542_p2">and, 0, 0, 2, 1, 1</column>
+<column name="and_ln90_fu_536_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln84_fu_258_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln87_fu_334_p2">icmp, 0, 0, 8, 2, 2</column>
+<column name="icmp_ln89_fu_380_p2">icmp, 0, 0, 18, 32, 2</column>
+<column name="icmp_ln90_1_fu_510_p2">icmp, 0, 0, 18, 23, 1</column>
+<column name="icmp_ln90_2_fu_516_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="icmp_ln90_3_fu_522_p2">icmp, 0, 0, 18, 23, 1</column>
+<column name="icmp_ln90_fu_504_p2">icmp, 0, 0, 11, 8, 2</column>
+<column name="or_ln90_1_fu_532_p2">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln90_fu_528_p2">or, 0, 0, 2, 1, 1</column>
 <column name="j_fu_548_p3">select, 0, 0, 32, 1, 32</column>
 </table>
 </item>
@@ -126,7 +126,7 @@
 <column name="flag_reg_205">9, 2, 2, 4</column>
 <column name="i_0_reg_150">9, 2, 3, 6</column>
 <column name="j_0_in_reg_227">9, 2, 32, 64</column>
-<column name="phi_ln93_reg_236">15, 3, 32, 96</column>
+<column name="phi_ln96_reg_236">15, 3, 32, 96</column>
 <column name="sort_index_0_0_reg_110">9, 2, 32, 64</column>
 <column name="sort_index_0_2_reg_161">9, 2, 32, 64</column>
 <column name="sort_index_1_0_reg_120">9, 2, 32, 64</column>
@@ -148,13 +148,13 @@
 <column name="flag_reg_205">2, 0, 2, 0</column>
 <column name="i_0_reg_150">3, 0, 3, 0</column>
 <column name="i_1_reg_726">2, 0, 2, 0</column>
-<column name="icmp_ln87_1_reg_773">1, 0, 1, 0</column>
-<column name="icmp_ln87_2_reg_778">1, 0, 1, 0</column>
-<column name="icmp_ln87_3_reg_783">1, 0, 1, 0</column>
-<column name="icmp_ln87_reg_768">1, 0, 1, 0</column>
+<column name="icmp_ln90_1_reg_773">1, 0, 1, 0</column>
+<column name="icmp_ln90_2_reg_778">1, 0, 1, 0</column>
+<column name="icmp_ln90_3_reg_783">1, 0, 1, 0</column>
+<column name="icmp_ln90_reg_768">1, 0, 1, 0</column>
 <column name="j_0_in_reg_227">32, 0, 32, 0</column>
 <column name="j_2_reg_731">32, 0, 32, 0</column>
-<column name="phi_ln93_reg_236">32, 0, 32, 0</column>
+<column name="phi_ln96_reg_236">32, 0, 32, 0</column>
 <column name="sort_index_0_0_reg_110">32, 0, 32, 0</column>
 <column name="sort_index_0_2_reg_161">32, 0, 32, 0</column>
 <column name="sort_index_1_0_reg_120">32, 0, 32, 0</column>
@@ -166,7 +166,7 @@
 <column name="temp_reg_760">32, 0, 32, 0</column>
 <column name="tmp_1_reg_740">32, 0, 32, 0</column>
 <column name="tmp_3_reg_746">32, 0, 32, 0</column>
-<column name="trunc_ln92_reg_752">2, 0, 2, 0</column>
+<column name="trunc_ln95_reg_752">2, 0, 2, 0</column>
 </table>
 </item>
 </section>

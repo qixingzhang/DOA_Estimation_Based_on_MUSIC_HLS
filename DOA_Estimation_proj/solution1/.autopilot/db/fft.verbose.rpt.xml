@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'fft'" level="0">
-<item name = "Date">Thu Jul 30 14:37:23 2020
+<item name = "Date">Thu Jul 30 16:23:39 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">DOA_Estimation_proj</item>
@@ -55,12 +55,12 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 0, 172, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 42, 8206, 12211, -</column>
+<column name="Instance">-, 42, 8206, 12671, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 651, -</column>
 <column name="Register">-, -, 851, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 19, 8, 24, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 19, 8, 25, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
@@ -77,8 +77,8 @@
 <column name="music_fmul_32ns_3jbC_U28">music_fmul_32ns_3jbC, 0, 3, 143, 321, 0</column>
 <column name="music_fptrunc_64nkbM_U29">music_fptrunc_64nkbM, 0, 0, 128, 277, 0</column>
 <column name="music_sitodp_32nsmb6_U31">music_sitodp_32nsmb6, 0, 0, 412, 645, 0</column>
-<column name="grp_sin_or_cos_float_s_fu_152">sin_or_cos_float_s, 0, 13, 1642, 2686, 0</column>
-<column name="grp_sin_or_cos_float_s_fu_168">sin_or_cos_float_s, 0, 13, 1642, 2686, 0</column>
+<column name="grp_sin_or_cos_float_s_fu_152">sin_or_cos_float_s, 0, 13, 1642, 2916, 0</column>
+<column name="grp_sin_or_cos_float_s_fu_168">sin_or_cos_float_s, 0, 13, 1642, 2916, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -99,9 +99,9 @@
 <column name="i_lower_fu_325_p2">+, 0, 0, 39, 32, 32</column>
 <column name="j_fu_297_p2">+, 0, 0, 14, 10, 1</column>
 <column name="stage_fu_303_p2">+, 0, 0, 13, 4, 1</column>
-<column name="icmp_ln159_fu_258_p2">icmp, 0, 0, 9, 4, 4</column>
-<column name="icmp_ln169_fu_292_p2">icmp, 0, 0, 13, 10, 10</column>
-<column name="icmp_ln177_fu_319_p2">icmp, 0, 0, 18, 22, 1</column>
+<column name="icmp_ln163_fu_258_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="icmp_ln173_fu_292_p2">icmp, 0, 0, 13, 10, 10</column>
+<column name="icmp_ln181_fu_319_p2">icmp, 0, 0, 18, 22, 1</column>
 <column name="ap_block_state46_on_subcall_done">or, 0, 0, 2, 1, 1</column>
 <column name="DFTpts_fu_264_p2">shl, 0, 0, 25, 1, 11</column>
 </table>
@@ -159,16 +159,16 @@
 <column name="reg_248">32, 0, 32, 0</column>
 <column name="s_reg_406">32, 0, 32, 0</column>
 <column name="stage_0_reg_108">4, 0, 4, 0</column>
-<column name="tmp_19_reg_445">32, 0, 32, 0</column>
-<column name="tmp_20_reg_450">32, 0, 32, 0</column>
-<column name="tmp_21_reg_455">32, 0, 32, 0</column>
-<column name="tmp_22_reg_460">32, 0, 32, 0</column>
-<column name="tmp_23_reg_465">32, 0, 32, 0</column>
-<column name="tmp_24_reg_470">32, 0, 32, 0</column>
+<column name="tmp_10_reg_465">32, 0, 32, 0</column>
+<column name="tmp_11_reg_470">32, 0, 32, 0</column>
+<column name="tmp_6_reg_445">32, 0, 32, 0</column>
+<column name="tmp_7_reg_450">32, 0, 32, 0</column>
+<column name="tmp_8_reg_455">32, 0, 32, 0</column>
+<column name="tmp_9_reg_460">32, 0, 32, 0</column>
 <column name="tmp_reg_362">64, 0, 64, 0</column>
 <column name="tmp_s_reg_367">64, 0, 64, 0</column>
 <column name="trunc_ln_reg_356">10, 0, 10, 0</column>
-<column name="zext_ln161_reg_350">11, 0, 32, 21</column>
+<column name="zext_ln165_reg_350">11, 0, 32, 21</column>
 </table>
 </item>
 </section>

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'sin_or_cos_float_s'
 ================================================================
-* Date:           Thu Jul 30 14:37:22 2020
+* Date:           Thu Jul 30 16:23:38 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        DOA_Estimation_proj
@@ -54,14 +54,14 @@
 |       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
 +-----------------+---------+-------+--------+-------+-----+
 |DSP              |        -|      2|       -|      -|    -|
-|Expression       |        -|      6|      40|   1239|    -|
+|Expression       |        -|      6|      40|   1337|    -|
 |FIFO             |        -|      -|       -|      -|    -|
-|Instance         |        -|      5|     835|   1069|    -|
+|Instance         |        -|      5|     835|   1201|    -|
 |Memory           |        -|      -|     168|    293|    -|
 |Multiplexer      |        -|      -|       -|     85|    -|
 |Register         |        -|      -|     599|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |        0|     13|    1642|   2686|    0|
+|Total            |        0|     13|    1642|   2916|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
@@ -74,12 +74,12 @@
     |            Instance            |        Module        | BRAM_18K| DSP48E|  FF | LUT | URAM|
     +--------------------------------+----------------------+---------+-------+-----+-----+-----+
     |music_mul_80ns_24fYi_U5         |music_mul_80ns_24fYi  |        0|      5|  441|  256|    0|
-    |music_mux_164_1_1_1_U7          |music_mux_164_1_1_1   |        0|      0|    0|   21|    0|
-    |music_mux_164_1_1_1_U8          |music_mux_164_1_1_1   |        0|      0|    0|   21|    0|
-    |music_mux_83_1_1_1_U6           |music_mux_83_1_1_1    |        0|      0|    0|   21|    0|
+    |music_mux_164_1_1_1_U7          |music_mux_164_1_1_1   |        0|      0|    0|   65|    0|
+    |music_mux_164_1_1_1_U8          |music_mux_164_1_1_1   |        0|      0|    0|   65|    0|
+    |music_mux_83_1_1_1_U6           |music_mux_83_1_1_1    |        0|      0|    0|   65|    0|
     |grp_scaled_fixed2ieee_1_fu_218  |scaled_fixed2ieee_1   |        0|      0|  394|  750|    0|
     +--------------------------------+----------------------+---------+-------+-----+-----+-----+
-    |Total                           |                      |        0|      5|  835| 1069|    0|
+    |Total                           |                      |        0|      5|  835| 1201|    0|
     +--------------------------------+----------------------+---------+-------+-----+-----+-----+
 
     * DSP48E: 
@@ -113,8 +113,8 @@
     |r_V_14_fu_711_p2          |     *    |      4|   0|   28|          30|          29|
     |add_ln114_1_fu_256_p2     |     +    |      0|   0|   15|           7|           8|
     |add_ln114_fu_423_p2       |     +    |      0|   0|   15|           8|           8|
-    |ret_V_5_fu_693_p2         |     +    |      0|   0|   15|          30|          30|
-    |ret_V_9_fu_684_p2         |     +    |      0|   0|   15|          30|          30|
+    |ret_V_5_fu_693_p2         |     +    |      0|   0|   64|          30|          30|
+    |ret_V_9_fu_684_p2         |     +    |      0|   0|   64|          30|          30|
     |Ex_V_fu_456_p2            |     -    |      0|   0|   15|           8|           8|
     |Mx_bits_V_1_fu_363_p2     |     -    |      0|   0|   65|           1|          58|
     |ret_V_fu_732_p2           |     -    |      0|   0|   15|           1|           9|
@@ -156,7 +156,7 @@
     |xor_ln300_fu_902_p2       |    xor   |      0|   0|    2|           2|           1|
     |xor_ln311_fu_865_p2       |    xor   |      0|   0|    2|           1|           2|
     +--------------------------+----------+-------+----+-----+------------+------------+
-    |Total                     |          |      6|  40| 1239|         465|         617|
+    |Total                     |          |      6|  40| 1337|         465|         617|
     +--------------------------+----------+-------+----+-----+------------+------------+
 
     * Multiplexer: 
@@ -363,7 +363,7 @@ ST_10 : Operation 72 [1/1] (0.00ns) (grouped into LUT with out node select_ln131
 ST_10 : Operation 73 [1/1] (0.00ns) (grouped into LUT with out node select_ln1310)   --->   "%zext_ln1287_1 = zext i29 %lshr_ln1287 to i32" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:535->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:268]   --->   Operation 73 'zext' 'zext_ln1287_1' <Predicate = (isNeg)> <Delay = 0.00>
 ST_10 : Operation 74 [1/1] (0.00ns) (grouped into LUT with out node select_ln1310)   --->   "%shl_ln1253 = shl i32 %zext_ln1287, %sext_ln1311" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:535->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:268]   --->   Operation 74 'shl' 'shl_ln1253' <Predicate = (!isNeg)> <Delay = 0.00> <Core = "Shift">   --->   Core 28 'Shift' <Latency = 0> <II = 1> <Delay = 4.42> <FuncUnit> <Opcode : 'shl' 'lshr' 'ashr'> <InPorts = 2> <OutPorts = 1>
 ST_10 : Operation 75 [1/1] (4.33ns) (out node of the LUT)   --->   "%select_ln1310 = select i1 %isNeg, i32 %zext_ln1287_1, i32 %shl_ln1253" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:535->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:268]   --->   Operation 75 'select' 'select_ln1310' <Predicate = true> <Delay = 4.33> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_10 : Operation 76 [1/1] (2.47ns)   --->   "%tmp = call i1 @_ssdm_op_Mux.ap_auto.8i1.i3(i1 false, i1 true, i1 true, i1 false, i1 false, i1 true, i1 true, i1 false, i3 %p_Val2_25) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:271]   --->   Operation 76 'mux' 'tmp' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 76 [1/1] (2.47ns)   --->   "%tmp = call i1 @_ssdm_op_Mux.ap_auto.8i1.i3(i1 false, i1 true, i1 true, i1 false, i1 false, i1 true, i1 true, i1 false, i3 %p_Val2_25) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:271]   --->   Operation 76 'mux' 'tmp' <Predicate = true> <Delay = 2.47> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.06> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
 ST_10 : Operation 77 [1/1] (0.00ns)   --->   "%p_Result_i = call i7 @_ssdm_op_PartSelect.i7.i32.i32.i32(i32 %select_ln1310, i32 22, i32 28)" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:20->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 77 'partselect' 'p_Result_i' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 78 [1/1] (0.00ns)   --->   "%B_V = trunc i32 %select_ln1310 to i22" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:21->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 78 'trunc' 'B_V' <Predicate = true> <Delay = 0.00>
 ST_10 : Operation 79 [1/1] (0.00ns)   --->   "%B_trunc_V = call i15 @_ssdm_op_PartSelect.i15.i32.i32.i32(i32 %select_ln1310, i32 7, i32 21)" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:22->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 79 'partselect' 'B_trunc_V' <Predicate = true> <Delay = 0.00>
@@ -380,7 +380,7 @@ ST_10 : Operation 89 [2/2] (3.25ns)   --->   "%second_order_float_8 = load i15* 
 
 State 11 <SV = 10> <Delay = 6.38>
 ST_11 : Operation 90 [1/1] (0.00ns)   --->   "%r_V = zext i15 %B_trunc_V to i30" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:23->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 90 'zext' 'r_V' <Predicate = true> <Delay = 0.00>
-ST_11 : Operation 91 [1/1] (6.38ns) (root node of the DSP)   --->   "%r_V_11 = mul i30 %r_V, %r_V" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:23->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 91 'mul' 'r_V_11' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 4> <II = 1> <Delay = 2.05> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_11 : Operation 91 [1/1] (6.38ns) (root node of the DSP)   --->   "%r_V_11 = mul i30 %r_V, %r_V" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:23->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 91 'mul' 'r_V_11' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
 ST_11 : Operation 92 [1/1] (0.00ns)   --->   "%B_squared_V = call i15 @_ssdm_op_PartSelect.i15.i30.i32.i32(i30 %r_V_11, i32 15, i32 29)" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:23->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 92 'partselect' 'B_squared_V' <Predicate = true> <Delay = 0.00>
 ST_11 : Operation 93 [1/2] (3.25ns)   --->   "%p_Val2_13 = load i30* %second_order_float_4, align 4" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:28->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 93 'load' 'p_Val2_13' <Predicate = true> <Delay = 3.25> <Core = "ROM_1P_LUTRAM">   --->   Core 60 'ROM_1P_LUTRAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 1> <Width = 15> <Depth = 256> <ROM>
 ST_11 : Operation 94 [1/1] (0.00ns)   --->   "%t1_V = call i29 @_ssdm_op_PartSelect.i29.i30.i32.i32(i30 %p_Val2_13, i32 1, i32 29)" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:28->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 94 'partselect' 't1_V' <Predicate = true> <Delay = 0.00>
@@ -394,7 +394,7 @@ ST_12 : Operation 99 [1/1] (6.43ns)   --->   "%r_V_12 = mul nsw i45 %sext_ln1072
 ST_12 : Operation 100 [1/1] (0.00ns)   --->   "%trunc_ln4 = call i22 @_ssdm_op_PartSelect.i22.i45.i32.i32(i45 %r_V_12, i32 23, i32 44)" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:29->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 100 'partselect' 'trunc_ln4' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 101 [1/1] (0.00ns)   --->   "%r_V_6 = zext i15 %B_squared_V to i30" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:30->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 101 'zext' 'r_V_6' <Predicate = true> <Delay = 0.00>
 ST_12 : Operation 102 [1/1] (0.00ns)   --->   "%sext_ln1072_1 = sext i15 %second_order_float_8 to i30" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:30->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 102 'sext' 'sext_ln1072_1' <Predicate = true> <Delay = 0.00>
-ST_12 : Operation 103 [1/1] (6.38ns) (root node of the DSP)   --->   "%r_V_13 = mul i30 %r_V_6, %sext_ln1072_1" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:30->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 103 'mul' 'r_V_13' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 4> <II = 1> <Delay = 2.05> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
+ST_12 : Operation 103 [1/1] (6.38ns) (root node of the DSP)   --->   "%r_V_13 = mul i30 %r_V_6, %sext_ln1072_1" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:30->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 103 'mul' 'r_V_13' <Predicate = true> <Delay = 6.38> <Core = "DSP48">   --->   Core 88 'DSP48' <Latency = 0> <II = 1> <Delay = 6.38> <IPBlock> <Opcode : 'mul' 'add' 'sub' 'select'> <InPorts = 0> <OutPorts = 1> <Sync> <CReg>
 ST_12 : Operation 104 [1/1] (0.00ns)   --->   "%trunc_ln662_2 = call i14 @_ssdm_op_PartSelect.i14.i30.i32.i32(i30 %r_V_13, i32 16, i32 29)" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:30->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 104 'partselect' 'trunc_ln662_2' <Predicate = true> <Delay = 0.00>
 
 State 13 <SV = 12> <Delay = 4.31>
@@ -403,9 +403,9 @@ ST_13 : Operation 106 [1/1] (0.99ns) (out node of the LUT)   --->   "%cos_basis 
 ST_13 : Operation 107 [1/1] (0.80ns)   --->   "%select_ln272_1 = select i1 %cos_basis, i29 -1, i29 %Mx_V" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:272]   --->   Operation 107 'select' 'select_ln272_1' <Predicate = true> <Delay = 0.80> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_13 : Operation 108 [1/1] (0.00ns)   --->   "%lhs_V = sext i29 %t1_V to i30" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:32->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 108 'sext' 'lhs_V' <Predicate = true> <Delay = 0.00>
 ST_13 : Operation 109 [1/1] (0.00ns)   --->   "%rhs_V_2 = sext i22 %trunc_ln4 to i30" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:32->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 109 'sext' 'rhs_V_2' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 110 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%ret_V_9 = add nsw i30 %lhs_V, %rhs_V_2" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:32->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 110 'add' 'ret_V_9' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_13 : Operation 110 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%ret_V_9 = add nsw i30 %lhs_V, %rhs_V_2" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:32->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 110 'add' 'ret_V_9' <Predicate = true> <Delay = 0.00> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.65> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 ST_13 : Operation 111 [1/1] (0.00ns)   --->   "%sext_ln657 = sext i14 %trunc_ln662_2 to i30" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:32->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 111 'sext' 'sext_ln657' <Predicate = true> <Delay = 0.00>
-ST_13 : Operation 112 [1/1] (4.31ns) (root node of TernaryAdder)   --->   "%ret_V_5 = add i30 %ret_V_9, %sext_ln657" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:32->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 112 'add' 'ret_V_5' <Predicate = true> <Delay = 4.31> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 1.93> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_13 : Operation 112 [1/1] (4.31ns) (root node of TernaryAdder)   --->   "%ret_V_5 = add i30 %ret_V_9, %sext_ln657" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:32->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 112 'add' 'ret_V_5' <Predicate = true> <Delay = 4.31> <Core = "TAddSub">   --->   Core 83 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.65> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
 
 State 14 <SV = 13> <Delay = 7.97>
 ST_14 : Operation 113 [1/1] (0.00ns) (grouped into LUT with out node ret_V)   --->   "%select_ln272 = select i1 %cos_basis, i8 0, i8 %Ex_V" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:272]   --->   Operation 113 'select' 'select_ln272' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
@@ -424,8 +424,8 @@ ST_15 : Operation 123 [1/1] (0.00ns) (grouped into LUT with out node select_ln31
 ST_15 : Operation 124 [1/1] (0.00ns) (grouped into LUT with out node ret_V_6)   --->   "%tmp_V_2 = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %p_Val2_20, i32 23, i32 30)" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:317->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:319->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:288]   --->   Operation 124 'partselect' 'tmp_V_2' <Predicate = (!icmp_ln833_2)> <Delay = 0.00>
 ST_15 : Operation 125 [1/1] (0.00ns) (grouped into LUT with out node ret_V_7)   --->   "%tmp_V_3 = trunc i32 %p_Val2_20 to i23" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:318->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:319->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:288]   --->   Operation 125 'trunc' 'tmp_V_3' <Predicate = true> <Delay = 0.00>
 ST_15 : Operation 126 [1/1] (0.00ns)   --->   "%p_Result_20 = call i4 @_ssdm_op_BitConcatenate.i4.i1.i3(i1 %p_Result_s, i3 %p_Val2_25)" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:295]   --->   Operation 126 'bitconcatenate' 'p_Result_20' <Predicate = true> <Delay = 0.00>
-ST_15 : Operation 127 [1/1] (0.00ns) (grouped into LUT with out node select_ln311)   --->   "%tmp_s = call i1 @_ssdm_op_Mux.ap_auto.16i1.i4(i1 false, i1 false, i1 false, i1 true, i1 true, i1 true, i1 true, i1 false, i1 false, i1 true, i1 true, i1 true, i1 true, i1 false, i1 false, i1 false, i4 %p_Result_20) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:296]   --->   Operation 127 'mux' 'tmp_s' <Predicate = (cos_basis)> <Delay = 0.00> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
-ST_15 : Operation 128 [1/1] (0.00ns) (grouped into LUT with out node select_ln311)   --->   "%tmp_2 = call i1 @_ssdm_op_Mux.ap_auto.16i1.i4(i1 false, i1 false, i1 true, i1 false, i1 true, i1 true, i1 false, i1 true, i1 true, i1 false, i1 true, i1 true, i1 false, i1 true, i1 false, i1 false, i4 %p_Result_20) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:296]   --->   Operation 128 'mux' 'tmp_2' <Predicate = (!cos_basis)> <Delay = 0.00> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 1.95> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 127 [1/1] (0.00ns) (grouped into LUT with out node select_ln311)   --->   "%tmp_s = call i1 @_ssdm_op_Mux.ap_auto.16i1.i4(i1 false, i1 false, i1 false, i1 true, i1 true, i1 true, i1 true, i1 false, i1 false, i1 true, i1 true, i1 true, i1 true, i1 false, i1 false, i1 false, i4 %p_Result_20) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:296]   --->   Operation 127 'mux' 'tmp_s' <Predicate = (cos_basis)> <Delay = 0.00> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.06> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 128 [1/1] (0.00ns) (grouped into LUT with out node select_ln311)   --->   "%tmp_2 = call i1 @_ssdm_op_Mux.ap_auto.16i1.i4(i1 false, i1 false, i1 true, i1 false, i1 true, i1 true, i1 false, i1 true, i1 true, i1 false, i1 true, i1 true, i1 false, i1 true, i1 false, i1 false, i4 %p_Result_20) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:296]   --->   Operation 128 'mux' 'tmp_2' <Predicate = (!cos_basis)> <Delay = 0.00> <Core = "MuxnS">   --->   Core 31 'MuxnS' <Latency = 0> <II = 1> <Delay = 2.06> <FuncUnit> <Opcode : 'mux'> <InPorts = 2> <OutPorts = 1>
 ST_15 : Operation 129 [1/1] (0.00ns) (grouped into LUT with out node select_ln311)   --->   "%select_ln271 = select i1 %cos_basis, i1 %tmp_s, i1 %tmp_2" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:271]   --->   Operation 129 'select' 'select_ln271' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_15 : Operation 130 [1/1] (0.97ns)   --->   "%and_ln300 = and i1 %icmp_ln833, %icmp_ln833_1" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:300]   --->   Operation 130 'and' 'and_ln300' <Predicate = true> <Delay = 0.97> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_15 : Operation 131 [1/1] (0.00ns) (grouped into LUT with out node ret_V_6)   --->   "%select_ln307 = select i1 %do_cos_read, i8 127, i8 0" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:307]   --->   Operation 131 'select' 'select_ln307' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
@@ -441,10 +441,10 @@ ST_15 : Operation 140 [1/1] (0.00ns) (grouped into LUT with out node ret_V_7)   
 ST_15 : Operation 141 [1/1] (0.99ns) (out node of the LUT)   --->   "%ret_V_7 = select i1 %or_ln300, i23 %select_ln300_2, i23 %tmp_V_3" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:300]   --->   Operation 141 'select' 'ret_V_7' <Predicate = true> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 16 <SV = 15> <Delay = 0.99>
-ST_16 : Operation 142 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([13 x i100]* @ref_4oPi_table_100_V, [1 x i8]* @p_str52108, [14 x i8]* @p_str56112, [1 x i8]* @p_str52108, i32 -1, [1 x i8]* @p_str52108, [1 x i8]* @p_str52108, [1 x i8]* @p_str52108, [1 x i8]* @p_str52108, [1 x i8]* @p_str52108) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:404->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:496->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:268]   --->   Operation 142 'specmemcore' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 143 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([256 x i30]* @second_order_float_2, [1 x i8]* @p_str11951650, [14 x i8]* @p_str11961651, [1 x i8]* @p_str11951650, i32 -1, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:16->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 143 'specmemcore' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 144 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([256 x i23]* @second_order_float_3, [1 x i8]* @p_str11951650, [14 x i8]* @p_str11961651, [1 x i8]* @p_str11951650, i32 -1, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:17->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 144 'specmemcore' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 145 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([256 x i15]* @second_order_float_s, [1 x i8]* @p_str11951650, [14 x i8]* @p_str11961651, [1 x i8]* @p_str11951650, i32 -1, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:18->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 145 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 142 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([13 x i100]* @ref_4oPi_table_100_V, [1 x i8]* @p_str52, [14 x i8]* @p_str56, [1 x i8]* @p_str52, i32 -1, [1 x i8]* @p_str52, [1 x i8]* @p_str52, [1 x i8]* @p_str52, [1 x i8]* @p_str52, [1 x i8]* @p_str52) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:404->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:496->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:268]   --->   Operation 142 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 143 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([256 x i30]* @second_order_float_2, [1 x i8]* @p_str11951651, [14 x i8]* @p_str11961652, [1 x i8]* @p_str11951651, i32 -1, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:16->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 143 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 144 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([256 x i23]* @second_order_float_3, [1 x i8]* @p_str11951651, [14 x i8]* @p_str11961652, [1 x i8]* @p_str11951651, i32 -1, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:17->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 144 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 145 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([256 x i15]* @second_order_float_s, [1 x i8]* @p_str11951651, [14 x i8]* @p_str11961652, [1 x i8]* @p_str11951651, i32 -1, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:18->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 145 'specmemcore' <Predicate = true> <Delay = 0.00>
 ST_16 : Operation 146 [1/1] (0.00ns) (grouped into LUT with out node p_Repl2_3)   --->   "%and_ln307 = and i1 %p_Result_s, %xor_ln25" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:307]   --->   Operation 146 'and' 'and_ln307' <Predicate = (and_ln300)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_16 : Operation 147 [1/1] (0.99ns) (out node of the LUT)   --->   "%p_Repl2_3 = select i1 %and_ln300, i1 %and_ln307, i1 %select_ln311" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:300]   --->   Operation 147 'select' 'p_Repl2_3' <Predicate = true> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_16 : Operation 148 [1/1] (0.00ns)   --->   "%p_Result_21 = call i32 @_ssdm_op_BitConcatenate.i32.i1.i8.i23(i1 %p_Repl2_3, i8 %ret_V_6, i23 %ret_V_7) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:335->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:348->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:369->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:316]   --->   Operation 148 'bitconcatenate' 'p_Result_21' <Predicate = true> <Delay = 0.00>
@@ -465,10 +465,10 @@ STG Binding:
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
 Port [ t_in]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ do_cos]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ ref_4oPi_table_100_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
-Port [ second_order_float_2]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
-Port [ second_order_float_3]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
-Port [ second_order_float_s]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ ref_4oPi_table_100_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ second_order_float_2]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ second_order_float_3]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ second_order_float_s]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
@@ -1253,7 +1253,7 @@ ret_ln316              (ret           ) [ 00000000000000000]
 <pin id="143" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str52108"/></StgValue>
+<StgValue><ssdm name="p_str52"/></StgValue>
 </bind>
 </comp>
 
@@ -1262,7 +1262,7 @@ ret_ln316              (ret           ) [ 00000000000000000]
 <pin id="145" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str56112"/></StgValue>
+<StgValue><ssdm name="p_str56"/></StgValue>
 </bind>
 </comp>
 
@@ -1280,7 +1280,7 @@ ret_ln316              (ret           ) [ 00000000000000000]
 <pin id="149" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str11951650"/></StgValue>
+<StgValue><ssdm name="p_str11951651"/></StgValue>
 </bind>
 </comp>
 
@@ -1289,7 +1289,7 @@ ret_ln316              (ret           ) [ 00000000000000000]
 <pin id="151" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str11961651"/></StgValue>
+<StgValue><ssdm name="p_str11961652"/></StgValue>
 </bind>
 </comp>
 
@@ -4137,6 +4137,15 @@ ret_ln316              (ret           ) [ 00000000000000000]
 |          |         ret_V_7_fu_921         |    0    |    0    |    0    |    23   |
 |          |        p_Repl2_3_fu_933        |    0    |    0    |    0    |    2    |
 |----------|--------------------------------|---------|---------|---------|---------|
+|          |           tmp_fu_529           |    0    |    0    |    0    |    65   |
+|    mux   |          tmp_s_fu_771          |    0    |    0    |    0    |    65   |
+|          |          tmp_2_fu_809          |    0    |    0    |    0    |    65   |
+|----------|--------------------------------|---------|---------|---------|---------|
+|          |       add_ln114_1_fu_256       |    0    |    0    |    0    |    15   |
+|    add   |        add_ln114_fu_423        |    0    |    0    |    0    |    15   |
+|          |         ret_V_9_fu_684         |    0    |    0    |    0    |    64   |
+|          |         ret_V_5_fu_693         |    0    |    0    |    0    |    64   |
+|----------|--------------------------------|---------|---------|---------|---------|
 |          |       Mx_bits_V_1_fu_363       |    0    |    0    |    0    |    65   |
 |    sub   |           Ex_V_fu_456          |    0    |    0    |    0    |    15   |
 |          |        sub_ln1311_fu_474       |    0    |    0    |    0    |    15   |
@@ -4145,15 +4154,6 @@ ret_ln316              (ret           ) [ 00000000000000000]
 |   lshr   |       lshr_ln1287_fu_507       |    0    |    0    |    0    |    89   |
 |----------|--------------------------------|---------|---------|---------|---------|
 |   cttz   |        val_assign_fu_411       |    0    |    0    |    40   |    36   |
-|----------|--------------------------------|---------|---------|---------|---------|
-|          |           tmp_fu_529           |    0    |    0    |    0    |    21   |
-|    mux   |          tmp_s_fu_771          |    0    |    0    |    0    |    21   |
-|          |          tmp_2_fu_809          |    0    |    0    |    0    |    21   |
-|----------|--------------------------------|---------|---------|---------|---------|
-|          |       add_ln114_1_fu_256       |    0    |    0    |    0    |    15   |
-|    add   |        add_ln114_fu_423        |    0    |    0    |    0    |    15   |
-|          |         ret_V_9_fu_684         |    0    |    0    |    0    |    15   |
-|          |         ret_V_5_fu_693         |    0    |    0    |    0    |    15   |
 |----------|--------------------------------|---------|---------|---------|---------|
 |          |        closepath_fu_250        |    0    |    0    |    0    |    11   |
 |   icmp   |       icmp_ln833_1_fu_328      |    0    |    0    |    0    |    18   |
@@ -4236,7 +4236,7 @@ ret_ln316              (ret           ) [ 00000000000000000]
 |          |       sext_ln1070_fu_705       |    0    |    0    |    0    |    0    |
 |          |          rhs_V_fu_728          |    0    |    0    |    0    |    0    |
 |----------|--------------------------------|---------|---------|---------|---------|
-|   Total  |                                |    13   |  5.307  |   944   |   2235  |
+|   Total  |                                |    13   |  5.307  |   944   |   2465  |
 |----------|--------------------------------|---------|---------|---------|---------|
 
 Memories:
@@ -4316,10 +4316,10 @@ N/A
 +-----------+--------+--------+--------+--------+
 |           | DSP48E |  Delay |   FF   |   LUT  |
 +-----------+--------+--------+--------+--------+
-|  Function |   13   |    5   |   944  |  2235  |
+|  Function |   13   |    5   |   944  |  2465  |
 |   Memory  |    -   |    -   |    -   |    -   |
 |Multiplexer|    -   |   14   |    -   |   72   |
 |  Register |    -   |    -   |   819  |    -   |
 +-----------+--------+--------+--------+--------+
-|   Total   |   13   |   19   |  1763  |  2307  |
+|   Total   |   13   |   19   |  1763  |  2537  |
 +-----------+--------+--------+--------+--------+

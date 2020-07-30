@@ -14,19 +14,29 @@
 #define N_SAMPLE 10240
 #define N_STFT 10
 #define N_FREQ 1024
-#define PIE 3.14159265358979
+#define PIE 3.141592654
+#define PIE_DEG 0.01745329252
 
 #define M 10 			/* Number of Stages = Log2N */
 #define SIZE 1024 		/* SIZE OF FFT */
 #define SIZE2 SIZE>>1	/* SIZE/2 */
 
+
+
 using namespace std;
 
 typedef complex<float> complex_float;
+struct QRF_CONFIG : hls::qrf_traits<N_SENSOR, N_SENSOR, complex_float, complex_float>{
+	static const int ARCH          = 0; // Select implementation. 0=Basic. 1=Lower latency/thoughput architecture.
+	static const int CALC_ROT_II   = 8; // Specify the rotation calculation loop target II of the QRF_ALT architecture(1)
+	static const int UPDATE_II     = 8; // Specify the pipelining target for the Q & R update loops
+	static const int UNROLL_FACTOR = 8; // Specify the unrolling factor for Q & R update loops of the QRF_ALT architecture(1)
+};
 
 // top function
 void music(
 	float X[N_SAMPLE][N_SENSOR],	// input signal
+	complex_float Xj_f[N_FREQ][N_STFT][N_SENSOR],
 	float P_sm[361]					// Spatial spectrum
 //	float align_out					// Output aligned signal
 );

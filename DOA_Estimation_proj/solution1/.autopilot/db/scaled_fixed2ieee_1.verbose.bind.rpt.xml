@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'scaled_fixed2ieee_1'" level="0">
-<item name = "Date">Thu Jul 30 14:37:00 2020
+<item name = "Date">Thu Jul 30 16:23:18 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">DOA_Estimation_proj</item>

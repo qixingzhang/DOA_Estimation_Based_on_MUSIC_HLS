@@ -21,11 +21,11 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>19613</Best-caseLatency>
+<Best-caseLatency>14883</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>24545</Worst-caseLatency>
-<Interval-min>19613</Interval-min>
-<Interval-max>24545</Interval-max>
+<Worst-caseLatency>43195</Worst-caseLatency>
+<Interval-min>14883</Interval-min>
+<Interval-max>43195</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
@@ -82,14 +82,14 @@
 <TripCount>10</TripCount>
 <Latency>
 <range>
-<min>16870</min>
-<max>18570</max>
+<min>12140</min>
+<max>37220</max>
 </range>
 </Latency>
 <IterationLatency>
 <range>
-<min>1687</min>
-<max>1857</max>
+<min>1214</min>
+<max>3722</max>
 </range>
 </IterationLatency>
 <Loop6.1>
@@ -259,9 +259,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>8</BRAM_18K>
-<DSP48E>121</DSP48E>
-<FF>41616</FF>
-<LUT>39544</LUT>
+<DSP48E>138</DSP48E>
+<FF>22838</FF>
+<LUT>38010</LUT>
 <URAM>0</URAM>
 </Resources>
 <AvailableResources>

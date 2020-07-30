@@ -5,28 +5,28 @@
 <ModuleName>music</ModuleName>
 <InstancesList>
 <Instance>
-<InstName>grp_eig_decompose_fu_1399</InstName>
+<InstName>grp_eig_decompose_fu_1565</InstName>
 <ModuleName>eig_decompose</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>1399</ID>
+<ID>1565</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_qrf_alt_fu_970</InstName>
-<ModuleName>qrf_alt</ModuleName>
+<InstName>grp_qrf_basic_fu_974</InstName>
+<ModuleName>qrf_basic</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>970</ID>
+<ID>974</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_qrf_givens_float_s_fu_1090</InstName>
+<InstName>grp_qrf_givens_float_s_fu_556</InstName>
 <ModuleName>qrf_givens_float_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>1090</ID>
+<ID>556</ID>
 <InstancesList>
 <Instance>
-<InstName>grp_qrf_magnitude_float_s_fu_220</InstName>
+<InstName>grp_qrf_magnitude_float_s_fu_226</InstName>
 <ModuleName>qrf_magnitude_float_s</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>220</ID>
+<ID>226</ID>
 </Instance>
 </InstancesList>
 </Instance>
@@ -35,10 +35,10 @@
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_fft_fu_1419</InstName>
+<InstName>grp_fft_fu_1577</InstName>
 <ModuleName>fft</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>1419</ID>
+<ID>1577</ID>
 <InstancesList>
 <Instance>
 <InstName>grp_sin_or_cos_float_s_fu_152</InstName>
@@ -77,44 +77,50 @@
 </InstancesList>
 </Instance>
 <Instance>
-<InstName>grp_sin_or_cos_double_s_fu_1433</InstName>
-<ModuleName>sin_or_cos_double_s</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>1433</ID>
-<InstancesList>
-<Instance>
-<InstName>grp_scaled_fixed2ieee_fu_268</InstName>
-<ModuleName>scaled_fixed2ieee</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>268</ID>
-</Instance>
-</InstancesList>
-</Instance>
-<Instance>
-<InstName>grp_sin_or_cos_double_s_fu_1453</InstName>
-<ModuleName>sin_or_cos_double_s</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>1453</ID>
-<InstancesList>
-<Instance>
-<InstName>grp_scaled_fixed2ieee_fu_268</InstName>
-<ModuleName>scaled_fixed2ieee</ModuleName>
-<IsCompInst>true</IsCompInst>
-<ID>268</ID>
-</Instance>
-</InstancesList>
-</Instance>
-<Instance>
-<InstName>grp_Autocorrelation_fu_1472</InstName>
+<InstName>grp_Autocorrelation_fu_1591</InstName>
 <ModuleName>Autocorrelation</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>1472</ID>
+<ID>1591</ID>
 </Instance>
 <Instance>
-<InstName>grp_sort_eigval_fu_1480</InstName>
+<InstName>grp_sin_or_cos_float_s_fu_1599</InstName>
+<ModuleName>sin_or_cos_float_s</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>1599</ID>
+<InstancesList>
+<Instance>
+<InstName>grp_scaled_fixed2ieee_1_fu_218</InstName>
+<ModuleName>scaled_fixed2ieee_1</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>218</ID>
+</Instance>
+</InstancesList>
+</Instance>
+<Instance>
+<InstName>grp_sin_or_cos_float_s_fu_1615</InstName>
+<ModuleName>sin_or_cos_float_s</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>1615</ID>
+<InstancesList>
+<Instance>
+<InstName>grp_scaled_fixed2ieee_1_fu_218</InstName>
+<ModuleName>scaled_fixed2ieee_1</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>218</ID>
+</Instance>
+</InstancesList>
+</Instance>
+<Instance>
+<InstName>grp_sort_eigval_fu_1630</InstName>
 <ModuleName>sort_eigval</ModuleName>
 <IsCompInst>true</IsCompInst>
-<ID>1480</ID>
+<ID>1630</ID>
+</Instance>
+<Instance>
+<InstName>grp_scaled_fixed2ieee_fu_1642</InstName>
+<ModuleName>scaled_fixed2ieee</ModuleName>
+<IsCompInst>true</IsCompInst>
+<ID>1642</ID>
 </Instance>
 </InstancesList>
 </TopModule>
@@ -624,7 +630,7 @@
 <Resources>
 <DSP48E>13</DSP48E>
 <FF>1642</FF>
-<LUT>2686</LUT>
+<LUT>2916</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -779,7 +785,7 @@
 <Resources>
 <DSP48E>42</DSP48E>
 <FF>9057</FF>
-<LUT>13034</LUT>
+<LUT>13494</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -1419,20 +1425,19 @@
 <EstimatedClockPeriod>8.365</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>48</Best-caseLatency>
-<Average-caseLatency>48</Average-caseLatency>
+<Best-caseLatency>4</Best-caseLatency>
+<Average-caseLatency>26</Average-caseLatency>
 <Worst-caseLatency>48</Worst-caseLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>49</PipelineDepth>
-<PipelineType>function</PipelineType>
+<PipelineInitiationInterval>4 ~ 48</PipelineInitiationInterval>
+<PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
+<DSP48E>13</DSP48E>
+<FF>4778</FF>
+<LUT>8363</LUT>
 <BRAM_18K>0</BRAM_18K>
-<DSP48E>18</DSP48E>
-<FF>7027</FF>
-<LUT>9110</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>
@@ -1460,6 +1465,50 @@
 <Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
+<name>ap_start</name>
+<Object>qrf_magnitude&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>qrf_magnitude&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>qrf_magnitude&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>qrf_magnitude&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
 <name>ap_return</name>
 <Object>qrf_magnitude&lt;float&gt;</Object>
 <Type>return value</Type>
@@ -1469,17 +1518,6 @@
 <Dir>out</Dir>
 <Bits>32</Bits>
 <Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ce</name>
-<Object>qrf_magnitude&lt;float&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
 </RtlPorts>
 <RtlPorts>
 <name>a_M_real</name>
@@ -1533,24 +1571,22 @@
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>1.25</ClockUncertainty>
-<TargetInitiationInterval>1</TargetInitiationInterval>
 <EstimatedClockPeriod>8.365</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>75</Best-caseLatency>
-<Average-caseLatency>75</Average-caseLatency>
-<Worst-caseLatency>75</Worst-caseLatency>
-<PipelineInitiationInterval>1</PipelineInitiationInterval>
-<PipelineDepth>76</PipelineDepth>
-<PipelineType>function</PipelineType>
+<Best-caseLatency>8</Best-caseLatency>
+<Average-caseLatency>43</Average-caseLatency>
+<Worst-caseLatency>77</Worst-caseLatency>
+<PipelineInitiationInterval>8 ~ 77</PipelineInitiationInterval>
+<PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
+<DSP48E>50</DSP48E>
+<FF>11554</FF>
+<LUT>18463</LUT>
 <BRAM_18K>0</BRAM_18K>
-<DSP48E>61</DSP48E>
-<FF>29755</FF>
-<LUT>21750</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>
@@ -1574,6 +1610,50 @@
 <IOProtocol>ap_ctrl_hs</IOProtocol>
 <IOConfig></IOConfig>
 <Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_start</name>
+<Object>qrf_givens&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>in</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_done</name>
+<Object>qrf_givens&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_idle</name>
+<Object>qrf_givens&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
+<Bits>1</Bits>
+<Attribute>control</Attribute>
+</RtlPorts>
+<RtlPorts>
+<name>ap_ready</name>
+<Object>qrf_givens&lt;float&gt;</Object>
+<Type>return value</Type>
+<Scope></Scope>
+<IOProtocol>ap_ctrl_hs</IOProtocol>
+<IOConfig></IOConfig>
+<Dir>out</Dir>
 <Bits>1</Bits>
 <Attribute>control</Attribute>
 </RtlPorts>
@@ -1677,17 +1757,6 @@
 <Attribute>data</Attribute>
 </RtlPorts>
 <RtlPorts>
-<name>ap_ce</name>
-<Object>qrf_givens&lt;float&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
 <name>extra_pass</name>
 <Object>extra_pass</Object>
 <Type>scalar</Type>
@@ -1745,7 +1814,7 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>qrf_alt</Name>
+<Name>qrf_basic</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
@@ -1753,10 +1822,10 @@
 <EstimatedClockPeriod>8.365</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>684</Best-caseLatency>
-<Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>854</Worst-caseLatency>
-<PipelineInitiationInterval>684 ~ 854</PipelineInitiationInterval>
+<Best-caseLatency>211</Best-caseLatency>
+<Average-caseLatency>931</Average-caseLatency>
+<Worst-caseLatency>2719</Worst-caseLatency>
+<PipelineInitiationInterval>211 ~ 2719</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -1788,99 +1857,111 @@
 <PipelineDepth>1</PipelineDepth>
 </Loop2.1>
 </Loop2>
-<Loop3>
-<Name>Loop 3</Name>
-<TripCount>5</TripCount>
+<qrf_in_row_assign>
+<Name>qrf_in_row_assign</Name>
+<TripCount>4</TripCount>
+<Latency>60</Latency>
+<IterationLatency>15</IterationLatency>
+<PipelineDepth>15</PipelineDepth>
+<qrf_in_col_assign_Qi>
+<Name>qrf_in_col_assign_Qi</Name>
+<TripCount>4</TripCount>
 <Latency>4</Latency>
 <IterationLatency>1</IterationLatency>
 <PipelineDepth>1</PipelineDepth>
-</Loop3>
-<row_copy>
-<Name>row_copy</Name>
+</qrf_in_col_assign_Qi>
+<qrf_in_col_assign_Ri>
+<Name>qrf_in_col_assign_Ri</Name>
 <TripCount>4</TripCount>
-<Latency>28</Latency>
-<IterationLatency>7</IterationLatency>
-<PipelineDepth>7</PipelineDepth>
-<col_copy_q_i>
-<Name>col_copy_q_i</Name>
-<TripCount>4</TripCount>
-<Latency>4</Latency>
-<PipelineII>1</PipelineII>
+<Latency>8</Latency>
+<IterationLatency>2</IterationLatency>
 <PipelineDepth>2</PipelineDepth>
-</col_copy_q_i>
-</row_copy>
-<px>
-<Name>px</Name>
-<TripCount>5</TripCount>
-<Latency>580 ~ 750</Latency>
+</qrf_in_col_assign_Ri>
+</qrf_in_row_assign>
+<qrf_col_loop>
+<Name>qrf_col_loop</Name>
+<TripCount>4</TripCount>
+<Latency>32 ~ 2540</Latency>
 <IterationLatency>
 <range>
-<min>116</min>
-<max>150</max>
+<min>8</min>
+<max>635</max>
 </range>
 </IterationLatency>
-<PipelineDepth>116 ~ 150</PipelineDepth>
-<calc_rotations>
-<Name>calc_rotations</Name>
-<TripCount>
+<PipelineDepth>8 ~ 635</PipelineDepth>
+<qrf_row_loop>
+<Name>qrf_row_loop</Name>
+<TripCount>3</TripCount>
+<Latency>6 ~ 633</Latency>
+<IterationLatency>
 <range>
-<min>1</min>
-<max>2</max>
+<min>2</min>
+<max>211</max>
 </range>
-</TripCount>
-<Latency>78 ~ 79</Latency>
-<PipelineII>1</PipelineII>
-<PipelineDepth>79</PipelineDepth>
-</calc_rotations>
-<rotate>
-<Name>rotate</Name>
-<TripCount>
-<range>
-<min>1</min>
-<max>2</max>
-</range>
-</TripCount>
-<Latency>33 ~ 66</Latency>
-<IterationLatency>33</IterationLatency>
-<PipelineDepth>33</PipelineDepth>
-<update_r>
-<Name>update_r</Name>
+</IterationLatency>
+<PipelineDepth>2 ~ 211</PipelineDepth>
+<qrf_r_update>
+<Name>qrf_r_update</Name>
 <TripCount>4</TripCount>
-<Latency>30</Latency>
-<PipelineII>4</PipelineII>
+<Latency>8 ~ 64</Latency>
+<IterationLatency>
+<range>
+<min>2</min>
+<max>16</max>
+</range>
+</IterationLatency>
+<PipelineDepth>2 ~ 16</PipelineDepth>
+</qrf_r_update>
+<qrf_q_update>
+<Name>qrf_q_update</Name>
+<TripCount>4</TripCount>
+<Latency>8 ~ 64</Latency>
+<IterationLatency>
+<range>
+<min>2</min>
+<max>16</max>
+</range>
+</IterationLatency>
+<PipelineDepth>2 ~ 16</PipelineDepth>
+</qrf_q_update>
+</qrf_row_loop>
+</qrf_col_loop>
+<qrf_out_row_assign>
+<Name>qrf_out_row_assign</Name>
+<TripCount>4</TripCount>
+<Latency>76</Latency>
+<IterationLatency>19</IterationLatency>
 <PipelineDepth>19</PipelineDepth>
-</update_r>
-</rotate>
-</px>
-<row_assign_loop>
-<Name>row_assign_loop</Name>
+<qrf_out_col_assign_Q>
+<Name>qrf_out_col_assign_Q</Name>
 <TripCount>4</TripCount>
-<Latency>28</Latency>
-<IterationLatency>7</IterationLatency>
-<PipelineDepth>7</PipelineDepth>
-<col_r_assign_loop>
-<Name>col_r_assign_loop</Name>
-<TripCount>4</TripCount>
-<Latency>4</Latency>
-<PipelineII>1</PipelineII>
+<Latency>8</Latency>
+<IterationLatency>2</IterationLatency>
 <PipelineDepth>2</PipelineDepth>
-</col_r_assign_loop>
-</row_assign_loop>
+</qrf_out_col_assign_Q>
+<qrf_out_col_assign_R>
+<Name>qrf_out_col_assign_R</Name>
+<TripCount>4</TripCount>
+<Latency>8</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</qrf_out_col_assign_R>
+</qrf_out_row_assign>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
 <BRAM_18K>8</BRAM_18K>
-<DSP48E>97</DSP48E>
-<FF>35821</FF>
-<LUT>30112</LUT>
+<DSP48E>114</DSP48E>
+<FF>17043</FF>
+<LUT>28534</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>
 <InterfaceSummary>
 <RtlPorts>
 <name>ap_clk</name>
-<Object>qrf_alt</Object>
+<Object>qrf_basic</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1891,7 +1972,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_rst</name>
-<Object>qrf_alt</Object>
+<Object>qrf_basic</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1902,7 +1983,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_start</name>
-<Object>qrf_alt</Object>
+<Object>qrf_basic</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1913,7 +1994,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_done</name>
-<Object>qrf_alt</Object>
+<Object>qrf_basic</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1924,7 +2005,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_idle</name>
-<Object>qrf_alt</Object>
+<Object>qrf_basic</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -1935,7 +2016,7 @@
 </RtlPorts>
 <RtlPorts>
 <name>ap_ready</name>
-<Object>qrf_alt</Object>
+<Object>qrf_basic</Object>
 <Type>return value</Type>
 <Scope></Scope>
 <IOProtocol>ap_ctrl_hs</IOProtocol>
@@ -2197,10 +2278,10 @@
 <EstimatedClockPeriod>9.195</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>19613</Best-caseLatency>
+<Best-caseLatency>14883</Best-caseLatency>
 <Average-caseLatency>undef</Average-caseLatency>
-<Worst-caseLatency>24545</Worst-caseLatency>
-<PipelineInitiationInterval>19613 ~ 24545</PipelineInitiationInterval>
+<Worst-caseLatency>43195</Worst-caseLatency>
+<PipelineInitiationInterval>14883 ~ 43195</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -2277,14 +2358,14 @@
 <Loop6>
 <Name>Loop 6</Name>
 <TripCount>10</TripCount>
-<Latency>16870 ~ 18570</Latency>
+<Latency>12140 ~ 37220</Latency>
 <IterationLatency>
 <range>
-<min>1687</min>
-<max>1857</max>
+<min>1214</min>
+<max>3722</max>
 </range>
 </IterationLatency>
-<PipelineDepth>1687 ~ 1857</PipelineDepth>
+<PipelineDepth>1214 ~ 3722</PipelineDepth>
 <Loop6.1>
 <Name>Loop 6.1</Name>
 <TripCount>4</TripCount>
@@ -2432,9 +2513,9 @@
 <AreaEstimates>
 <Resources>
 <BRAM_18K>8</BRAM_18K>
-<DSP48E>121</DSP48E>
-<FF>41616</FF>
-<LUT>39544</LUT>
+<DSP48E>138</DSP48E>
+<FF>22838</FF>
+<LUT>38010</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>
@@ -2824,7 +2905,7 @@
 <Resources>
 <DSP48E>0</DSP48E>
 <FF>694</FF>
-<LUT>979</LUT>
+<LUT>1683</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -3077,7 +3158,7 @@
 <AreaEstimates>
 <Resources>
 <FF>788</FF>
-<LUT>1564</LUT>
+<LUT>1652</LUT>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>0</DSP48E>
 <URAM>0</URAM>
@@ -3186,139 +3267,12 @@
 </InterfaceSummary>
 </Module>
 <Module>
-<Name>sin_or_cos_double_s</Name>
-<PerformanceEstimates>
-<SummaryOfTimingAnalysis>
-<TargetClockPeriod>10.00</TargetClockPeriod>
-<ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>8.625</EstimatedClockPeriod>
-</SummaryOfTimingAnalysis>
-<SummaryOfOverallLatency>
-<Best-caseLatency>43</Best-caseLatency>
-<Average-caseLatency>47</Average-caseLatency>
-<Worst-caseLatency>51</Worst-caseLatency>
-<PipelineInitiationInterval>43 ~ 51</PipelineInitiationInterval>
-<PipelineType>none</PipelineType>
-</SummaryOfOverallLatency>
-</PerformanceEstimates>
-<AreaEstimates>
-<Resources>
-<BRAM_18K>8</BRAM_18K>
-<DSP48E>88</DSP48E>
-<FF>4885</FF>
-<LUT>6309</LUT>
-<URAM>0</URAM>
-</Resources>
-</AreaEstimates>
-<InterfaceSummary>
-<RtlPorts>
-<name>ap_clk</name>
-<Object>sin_or_cos&lt;double&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_rst</name>
-<Object>sin_or_cos&lt;double&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_start</name>
-<Object>sin_or_cos&lt;double&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_done</name>
-<Object>sin_or_cos&lt;double&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_idle</name>
-<Object>sin_or_cos&lt;double&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_ready</name>
-<Object>sin_or_cos&lt;double&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>1</Bits>
-<Attribute>control</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>ap_return</name>
-<Object>sin_or_cos&lt;double&gt;</Object>
-<Type>return value</Type>
-<Scope></Scope>
-<IOProtocol>ap_ctrl_hs</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>out</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>t_in</name>
-<Object>t_in</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>64</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-<RtlPorts>
-<name>do_cos</name>
-<Object>do_cos</Object>
-<Type>scalar</Type>
-<Scope></Scope>
-<IOProtocol>ap_none</IOProtocol>
-<IOConfig></IOConfig>
-<Dir>in</Dir>
-<Bits>1</Bits>
-<Attribute>data</Attribute>
-</RtlPorts>
-</InterfaceSummary>
-</Module>
-<Module>
 <Name>music</Name>
 <PerformanceEstimates>
 <SummaryOfTimingAnalysis>
 <TargetClockPeriod>10.00</TargetClockPeriod>
 <ClockUncertainty>1.25</ClockUncertainty>
-<EstimatedClockPeriod>9.195</EstimatedClockPeriod>
+<EstimatedClockPeriod>9.210</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <Best-caseLatency>undef</Best-caseLatency>
@@ -3380,13 +3334,13 @@
 <Loop4>
 <Name>Loop 4</Name>
 <TripCount>4</TripCount>
-<Latency>19</Latency>
-<IterationLatency>5</IterationLatency>
-<PipelineDepth>5</PipelineDepth>
+<Latency>11</Latency>
+<IterationLatency>3</IterationLatency>
+<PipelineDepth>3</PipelineDepth>
 <Loop4.1>
 <Name>Loop 4.1</Name>
-<TripCount>4</TripCount>
-<Latency>3</Latency>
+<TripCount>2</TripCount>
+<Latency>1</Latency>
 <IterationLatency>1</IterationLatency>
 <PipelineDepth>1</PipelineDepth>
 </Loop4.1>
@@ -3394,21 +3348,21 @@
 <Loop5>
 <Name>Loop 5</Name>
 <TripCount>4</TripCount>
-<Latency>11</Latency>
-<IterationLatency>3</IterationLatency>
-<PipelineDepth>3</PipelineDepth>
+<Latency>19</Latency>
+<IterationLatency>5</IterationLatency>
+<PipelineDepth>5</PipelineDepth>
 <Loop5.1>
 <Name>Loop 5.1</Name>
-<TripCount>2</TripCount>
-<Latency>1</Latency>
+<TripCount>4</TripCount>
+<Latency>3</Latency>
 <IterationLatency>1</IterationLatency>
 <PipelineDepth>1</PipelineDepth>
 </Loop5.1>
 </Loop5>
 <Loop6>
 <Name>Loop 6</Name>
-<TripCount>4</TripCount>
-<Latency>19</Latency>
+<TripCount>361</TripCount>
+<Latency>1804</Latency>
 <IterationLatency>5</IterationLatency>
 <PipelineDepth>5</PipelineDepth>
 <Loop6.1>
@@ -3422,201 +3376,187 @@
 <Loop7>
 <Name>Loop 7</Name>
 <TripCount>361</TripCount>
-<Latency>1804</Latency>
-<IterationLatency>5</IterationLatency>
-<PipelineDepth>5</PipelineDepth>
-<Loop7.1>
-<Name>Loop 7.1</Name>
-<TripCount>4</TripCount>
-<Latency>3</Latency>
-<IterationLatency>1</IterationLatency>
-<PipelineDepth>1</PipelineDepth>
-</Loop7.1>
-</Loop7>
-<Loop8>
-<Name>Loop 8</Name>
-<TripCount>361</TripCount>
 <Latency>360</Latency>
 <IterationLatency>1</IterationLatency>
 <PipelineDepth>1</PipelineDepth>
-</Loop8>
-<Loop9>
-<Name>Loop 9</Name>
+</Loop7>
+<Loop8>
+<Name>Loop 8</Name>
 <TripCount>4</TripCount>
 <Latency>1447</Latency>
 <IterationLatency>362</IterationLatency>
 <PipelineDepth>362</PipelineDepth>
-<Loop9.1>
-<Name>Loop 9.1</Name>
+<Loop8.1>
+<Name>Loop 8.1</Name>
 <TripCount>361</TripCount>
 <Latency>360</Latency>
 <IterationLatency>1</IterationLatency>
 <PipelineDepth>1</PipelineDepth>
+</Loop8.1>
+</Loop8>
+<Loop9>
+<Name>Loop 9</Name>
+<TripCount>10</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>undef</IterationLatency>
+<PipelineDepth>undef</PipelineDepth>
+<Loop9.1>
+<Name>Loop 9.1</Name>
+<TripCount>4</TripCount>
+<Latency>undef</Latency>
+<IterationLatency>undef</IterationLatency>
+<PipelineDepth>undef</PipelineDepth>
+<Loop9.1.1>
+<Name>Loop 9.1.1</Name>
+<TripCount>1024</TripCount>
+<Latency>2048</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop9.1.1>
+<Loop9.1.2>
+<Name>Loop 9.1.2</Name>
+<TripCount>1024</TripCount>
+<Latency>2048</Latency>
+<IterationLatency>2</IterationLatency>
+<PipelineDepth>2</PipelineDepth>
+</Loop9.1.2>
 </Loop9.1>
 </Loop9>
 <Loop10>
 <Name>Loop 10</Name>
-<TripCount>10</TripCount>
-<Latency>undef</Latency>
-<IterationLatency>undef</IterationLatency>
-<PipelineDepth>undef</PipelineDepth>
-<Loop10.1>
-<Name>Loop 10.1</Name>
-<TripCount>4</TripCount>
-<Latency>undef</Latency>
-<IterationLatency>undef</IterationLatency>
-<PipelineDepth>undef</PipelineDepth>
-<Loop10.1.1>
-<Name>Loop 10.1.1</Name>
 <TripCount>1024</TripCount>
-<Latency>2048</Latency>
-<IterationLatency>2</IterationLatency>
-<PipelineDepth>2</PipelineDepth>
-</Loop10.1.1>
-<Loop10.1.2>
-<Name>Loop 10.1.2</Name>
-<TripCount>1024</TripCount>
-<Latency>2048</Latency>
-<IterationLatency>2</IterationLatency>
-<PipelineDepth>2</PipelineDepth>
-</Loop10.1.2>
-</Loop10.1>
-</Loop10>
-<Loop11>
-<Name>Loop 11</Name>
-<TripCount>1024</TripCount>
-<Latency>416854016 ~ 445581312</Latency>
+<Latency>307040256 ~ 353794048</Latency>
 <IterationLatency>
 <range>
-<min>407084</min>
-<max>435138</max>
+<min>299844</min>
+<max>345502</max>
 </range>
 </IterationLatency>
-<PipelineDepth>407084 ~ 435138</PipelineDepth>
-<Loop11.1>
-<Name>Loop 11.1</Name>
+<PipelineDepth>299844 ~ 345502</PipelineDepth>
+<Loop10.1>
+<Name>Loop 10.1</Name>
 <TripCount>10</TripCount>
 <Latency>100</Latency>
 <IterationLatency>10</IterationLatency>
 <PipelineDepth>10</PipelineDepth>
-<Loop11.1.1>
-<Name>Loop 11.1.1</Name>
+<Loop10.1.1>
+<Name>Loop 10.1.1</Name>
 <TripCount>4</TripCount>
 <Latency>8</Latency>
 <IterationLatency>2</IterationLatency>
 <PipelineDepth>2</PipelineDepth>
-</Loop11.1.1>
-</Loop11.1>
-<Loop11.2>
-<Name>Loop 11.2</Name>
+</Loop10.1.1>
+</Loop10.1>
+<Loop10.2>
+<Name>Loop 10.2</Name>
 <TripCount>4</TripCount>
 <Latency>40</Latency>
 <IterationLatency>10</IterationLatency>
 <PipelineDepth>10</PipelineDepth>
-<Loop11.2.1>
-<Name>Loop 11.2.1</Name>
+<Loop10.2.1>
+<Name>Loop 10.2.1</Name>
 <TripCount>4</TripCount>
 <Latency>8</Latency>
 <IterationLatency>2</IterationLatency>
 <PipelineDepth>2</PipelineDepth>
-</Loop11.2.1>
-</Loop11.2>
-<Loop11.3>
-<Name>Loop 11.3</Name>
+</Loop10.2.1>
+</Loop10.2>
+<Loop10.3>
+<Name>Loop 10.3</Name>
 <TripCount>4</TripCount>
-<Latency>242600 ~ 265704</Latency>
+<Latency>140088 ~ 157416</Latency>
 <IterationLatency>
 <range>
-<min>60650</min>
-<max>66426</max>
+<min>35022</min>
+<max>39354</max>
 </range>
 </IterationLatency>
-<PipelineDepth>60650 ~ 66426</PipelineDepth>
-<Loop11.3.1>
-<Name>Loop 11.3.1</Name>
+<PipelineDepth>35022 ~ 39354</PipelineDepth>
+<Loop10.3.1>
+<Name>Loop 10.3.1</Name>
 <TripCount>361</TripCount>
-<Latency>60648 ~ 66424</Latency>
+<Latency>35017 ~ 39349</Latency>
 <IterationLatency>
 <range>
-<min>168</min>
-<max>184</max>
+<min>97</min>
+<max>109</max>
 </range>
 </IterationLatency>
-<PipelineDepth>168 ~ 184</PipelineDepth>
-</Loop11.3.1>
-</Loop11.3>
-<Loop11.4>
-<Name>Loop 11.4</Name>
+<PipelineDepth>97 ~ 109</PipelineDepth>
+</Loop10.3.1>
+</Loop10.3>
+<Loop10.4>
+<Name>Loop 10.4</Name>
 <TripCount>4</TripCount>
 <Latency>552</Latency>
 <IterationLatency>138</IterationLatency>
 <PipelineDepth>138</PipelineDepth>
-<Loop11.4.1>
-<Name>Loop 11.4.1</Name>
+<Loop10.4.1>
+<Name>Loop 10.4.1</Name>
 <TripCount>4</TripCount>
 <Latency>136</Latency>
 <IterationLatency>34</IterationLatency>
 <PipelineDepth>34</PipelineDepth>
-<Loop11.4.1.1>
-<Name>Loop 11.4.1.1</Name>
+<Loop10.4.1.1>
+<Name>Loop 10.4.1.1</Name>
 <TripCount>2</TripCount>
 <Latency>32</Latency>
 <IterationLatency>16</IterationLatency>
 <PipelineDepth>16</PipelineDepth>
-</Loop11.4.1.1>
-</Loop11.4.1>
-</Loop11.4>
-<Loop11.5>
-<Name>Loop 11.5</Name>
+</Loop10.4.1.1>
+</Loop10.4.1>
+</Loop10.4>
+<Loop10.5>
+<Name>Loop 10.5</Name>
 <TripCount>361</TripCount>
 <Latency>96026</Latency>
 <IterationLatency>266</IterationLatency>
 <PipelineDepth>266</PipelineDepth>
-<Loop11.5.1>
-<Name>Loop 11.5.1</Name>
+<Loop10.5.1>
+<Name>Loop 10.5.1</Name>
 <TripCount>4</TripCount>
 <Latency>264</Latency>
 <IterationLatency>66</IterationLatency>
 <PipelineDepth>66</PipelineDepth>
-<Loop11.5.1.1>
-<Name>Loop 11.5.1.1</Name>
+<Loop10.5.1.1>
+<Name>Loop 10.5.1.1</Name>
 <TripCount>4</TripCount>
 <Latency>64</Latency>
 <IterationLatency>16</IterationLatency>
 <PipelineDepth>16</PipelineDepth>
-</Loop11.5.1.1>
-</Loop11.5.1>
-</Loop11.5>
-<Loop11.6>
-<Name>Loop 11.6</Name>
+</Loop10.5.1.1>
+</Loop10.5.1>
+</Loop10.5>
+<Loop10.6>
+<Name>Loop 10.6</Name>
 <TripCount>361</TripCount>
 <Latency>45125</Latency>
 <IterationLatency>125</IterationLatency>
 <PipelineDepth>125</PipelineDepth>
-<Loop11.6.1>
-<Name>Loop 11.6.1</Name>
+<Loop10.6.1>
+<Name>Loop 10.6.1</Name>
 <TripCount>4</TripCount>
 <Latency>116</Latency>
 <IterationLatency>29</IterationLatency>
 <PipelineDepth>29</PipelineDepth>
-</Loop11.6.1>
-</Loop11.6>
-</Loop11>
-<Loop12>
-<Name>Loop 12</Name>
+</Loop10.6.1>
+</Loop10.6>
+</Loop10>
+<Loop11>
+<Name>Loop 11</Name>
 <TripCount>361</TripCount>
 <Latency>6859</Latency>
 <IterationLatency>19</IterationLatency>
 <PipelineDepth>19</PipelineDepth>
-</Loop12>
+</Loop11>
 </SummaryOfLoopLatency>
 </PerformanceEstimates>
 <AreaEstimates>
 <Resources>
-<BRAM_18K>309</BRAM_18K>
-<DSP48E>382</DSP48E>
-<FF>72770</FF>
-<LUT>83228</LUT>
+<BRAM_18K>301</BRAM_18K>
+<DSP48E>337</DSP48E>
+<FF>48632</FF>
+<LUT>78648</LUT>
 <URAM>0</URAM>
 </Resources>
 </AreaEstimates>

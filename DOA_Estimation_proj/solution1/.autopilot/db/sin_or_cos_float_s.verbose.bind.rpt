@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'sin_or_cos_float_s'
 ================================================================
-* Date:           Thu Jul 30 14:37:01 2020
+* Date:           Thu Jul 30 16:23:19 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        DOA_Estimation_proj
@@ -250,10 +250,10 @@ ST_15 : Operation 140 [1/1] (0.00ns) (grouped into LUT with out node ret_V_7)   
 ST_15 : Operation 141 [1/1] (0.99ns) (out node of the LUT)   --->   "%ret_V_7 = select i1 %or_ln300, i23 %select_ln300_2, i23 %tmp_V_3" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:300]   --->   Operation 141 'select' 'ret_V_7' <Predicate = true> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 
 State 16 <SV = 15> <Delay = 0.99>
-ST_16 : Operation 142 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([13 x i100]* @ref_4oPi_table_100_V, [1 x i8]* @p_str52108, [14 x i8]* @p_str56112, [1 x i8]* @p_str52108, i32 -1, [1 x i8]* @p_str52108, [1 x i8]* @p_str52108, [1 x i8]* @p_str52108, [1 x i8]* @p_str52108, [1 x i8]* @p_str52108) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:404->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:496->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:268]   --->   Operation 142 'specmemcore' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 143 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([256 x i30]* @second_order_float_2, [1 x i8]* @p_str11951650, [14 x i8]* @p_str11961651, [1 x i8]* @p_str11951650, i32 -1, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:16->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 143 'specmemcore' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 144 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([256 x i23]* @second_order_float_3, [1 x i8]* @p_str11951650, [14 x i8]* @p_str11961651, [1 x i8]* @p_str11951650, i32 -1, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:17->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 144 'specmemcore' <Predicate = true> <Delay = 0.00>
-ST_16 : Operation 145 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([256 x i15]* @second_order_float_s, [1 x i8]* @p_str11951650, [14 x i8]* @p_str11961651, [1 x i8]* @p_str11951650, i32 -1, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650, [1 x i8]* @p_str11951650) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:18->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 145 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 142 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([13 x i100]* @ref_4oPi_table_100_V, [1 x i8]* @p_str52, [14 x i8]* @p_str56, [1 x i8]* @p_str52, i32 -1, [1 x i8]* @p_str52, [1 x i8]* @p_str52, [1 x i8]* @p_str52, [1 x i8]* @p_str52, [1 x i8]* @p_str52) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:404->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:496->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:268]   --->   Operation 142 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 143 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([256 x i30]* @second_order_float_2, [1 x i8]* @p_str11951651, [14 x i8]* @p_str11961652, [1 x i8]* @p_str11951651, i32 -1, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:16->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 143 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 144 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([256 x i23]* @second_order_float_3, [1 x i8]* @p_str11951651, [14 x i8]* @p_str11961652, [1 x i8]* @p_str11951651, i32 -1, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:17->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 144 'specmemcore' <Predicate = true> <Delay = 0.00>
+ST_16 : Operation 145 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecMemCore([256 x i15]* @second_order_float_s, [1 x i8]* @p_str11951651, [14 x i8]* @p_str11961652, [1 x i8]* @p_str11951651, i32 -1, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651, [1 x i8]* @p_str11951651) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_float.cpp:18->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279]   --->   Operation 145 'specmemcore' <Predicate = true> <Delay = 0.00>
 ST_16 : Operation 146 [1/1] (0.00ns) (grouped into LUT with out node p_Repl2_3)   --->   "%and_ln307 = and i1 %p_Result_s, %xor_ln25" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:307]   --->   Operation 146 'and' 'and_ln307' <Predicate = (and_ln300)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
 ST_16 : Operation 147 [1/1] (0.99ns) (out node of the LUT)   --->   "%p_Repl2_3 = select i1 %and_ln300, i1 %and_ln307, i1 %select_ln311" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:300]   --->   Operation 147 'select' 'p_Repl2_3' <Predicate = true> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
 ST_16 : Operation 148 [1/1] (0.00ns)   --->   "%p_Result_21 = call i32 @_ssdm_op_BitConcatenate.i32.i1.i8.i23(i1 %p_Repl2_3, i8 %ret_V_6, i23 %ret_V_7) nounwind" [r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:335->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:348->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:369->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:316]   --->   Operation 148 'bitconcatenate' 'p_Result_21' <Predicate = true> <Delay = 0.00>
@@ -274,10 +274,10 @@ STG Binding:
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
 Port [ t_in]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 Port [ do_cos]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
-Port [ ref_4oPi_table_100_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
-Port [ second_order_float_2]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
-Port [ second_order_float_3]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
-Port [ second_order_float_s]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=1; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ ref_4oPi_table_100_V]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ second_order_float_2]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ second_order_float_3]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
+Port [ second_order_float_s]:  wired=0; compound=1; hidden=1; nouse=0; global=1; static=1; extern=0; dir=0; type=1; pingpong=0; private_global=0; linkage=7; visibility=0; MemPort=[1]; IO mode=ap_memory:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
@@ -1062,7 +1062,7 @@ ret_ln316              (ret           ) [ 00000000000000000]
 <pin id="143" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str52108"/></StgValue>
+<StgValue><ssdm name="p_str52"/></StgValue>
 </bind>
 </comp>
 
@@ -1071,7 +1071,7 @@ ret_ln316              (ret           ) [ 00000000000000000]
 <pin id="145" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str56112"/></StgValue>
+<StgValue><ssdm name="p_str56"/></StgValue>
 </bind>
 </comp>
 
@@ -1089,7 +1089,7 @@ ret_ln316              (ret           ) [ 00000000000000000]
 <pin id="149" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str11951650"/></StgValue>
+<StgValue><ssdm name="p_str11951651"/></StgValue>
 </bind>
 </comp>
 
@@ -1098,7 +1098,7 @@ ret_ln316              (ret           ) [ 00000000000000000]
 <pin id="151" dir="1" index="0" bw="1" slack="2147483647"/>
 </pin_list>
 <bind>
-<StgValue><ssdm name="p_str11961651"/></StgValue>
+<StgValue><ssdm name="p_str11961652"/></StgValue>
 </bind>
 </comp>
 

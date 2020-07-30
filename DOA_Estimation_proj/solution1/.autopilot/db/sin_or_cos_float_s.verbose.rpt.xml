@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'sin_or_cos_float_s'" level="0">
-<item name = "Date">Thu Jul 30 14:37:22 2020
+<item name = "Date">Thu Jul 30 16:23:38 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">DOA_Estimation_proj</item>
@@ -48,9 +48,9 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, 2, -, -, -</column>
-<column name="Expression">-, 6, 40, 1239, -</column>
+<column name="Expression">-, 6, 40, 1337, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 5, 835, 1069, -</column>
+<column name="Instance">-, 5, 835, 1201, -</column>
 <column name="Memory">-, -, 168, 293, -</column>
 <column name="Multiplexer">-, -, -, 85, -</column>
 <column name="Register">-, -, 599, -, -</column>
@@ -63,9 +63,9 @@
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="music_mul_80ns_24fYi_U5">music_mul_80ns_24fYi, 0, 5, 441, 256, 0</column>
-<column name="music_mux_164_1_1_1_U7">music_mux_164_1_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_164_1_1_1_U8">music_mux_164_1_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_83_1_1_1_U6">music_mux_83_1_1_1, 0, 0, 0, 21, 0</column>
+<column name="music_mux_164_1_1_1_U7">music_mux_164_1_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_164_1_1_1_U8">music_mux_164_1_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_83_1_1_1_U6">music_mux_83_1_1_1, 0, 0, 0, 65, 0</column>
 <column name="grp_scaled_fixed2ieee_1_fu_218">scaled_fixed2ieee_1, 0, 0, 394, 750, 0</column>
 </table>
 </item>
@@ -93,8 +93,8 @@
 <column name="r_V_14_fu_711_p2">*, 4, 0, 28, 30, 29</column>
 <column name="add_ln114_1_fu_256_p2">+, 0, 0, 15, 7, 8</column>
 <column name="add_ln114_fu_423_p2">+, 0, 0, 15, 8, 8</column>
-<column name="ret_V_5_fu_693_p2">+, 0, 0, 15, 30, 30</column>
-<column name="ret_V_9_fu_684_p2">+, 0, 0, 15, 30, 30</column>
+<column name="ret_V_5_fu_693_p2">+, 0, 0, 64, 30, 30</column>
+<column name="ret_V_9_fu_684_p2">+, 0, 0, 64, 30, 30</column>
 <column name="Ex_V_fu_456_p2">-, 0, 0, 15, 8, 8</column>
 <column name="Mx_bits_V_1_fu_363_p2">-, 0, 0, 65, 1, 58</column>
 <column name="ret_V_fu_732_p2">-, 0, 0, 15, 1, 9</column>

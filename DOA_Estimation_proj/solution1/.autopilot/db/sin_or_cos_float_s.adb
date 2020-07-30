@@ -10915,7 +10915,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>21</second>
+              <second>65</second>
             </item>
           </second>
         </item>
@@ -10930,7 +10930,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>21</second>
+              <second>65</second>
             </item>
           </second>
         </item>
@@ -10945,7 +10945,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>21</second>
+              <second>65</second>
             </item>
           </second>
         </item>
@@ -11529,7 +11529,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>15</second>
+              <second>64</second>
             </item>
           </second>
         </item>
@@ -11606,7 +11606,7 @@
             </item>
             <item>
               <first>LUT</first>
-              <second>15</second>
+              <second>64</second>
             </item>
           </second>
         </item>

@@ -1,46 +1,50 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'zhangqx' on host 'desktop-2l4t92t' (Windows NT_amd64 version 6.2) on Thu Jul 30 14:35:36 +0800 2020
+INFO: [HLS 200-10] For user 'zhangqx' on host 'desktop-2l4t92t' (Windows NT_amd64 version 6.2) on Thu Jul 30 19:04:38 +0800 2020
 INFO: [HLS 200-10] In directory 'C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS'
-Sourcing Tcl script 'C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/DOA_Estimation_proj/solution1/csynth.tcl'
+Sourcing Tcl script 'C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/DOA_Estimation_proj/solution2/csynth.tcl'
 INFO: [HLS 200-10] Opening project 'C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/DOA_Estimation_proj'.
 INFO: [HLS 200-10] Adding design file 'src/music.cpp' to the project
 INFO: [HLS 200-10] Adding test bench file 'src/main.cpp' to the project
 INFO: [HLS 200-10] Adding test bench file 'src/test.cpp' to the project
 INFO: [HLS 200-10] Adding test bench file 'src/test_audio' to the project
-INFO: [HLS 200-10] Opening solution 'C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/DOA_Estimation_proj/solution1'.
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Opening solution 'C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/DOA_Estimation_proj/solution2'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 20ns.
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 2.5ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg400-1'
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: config_export -vivado_optimization_level=2
+INFO: [HLS 200-435] Setting 'config_sdx -target' configuration: set_clock_uncertainty default
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
 INFO: [HLS 200-10] Analyzing design file 'src/music.cpp' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:29 . Memory (MB): peak = 185.980 ; gain = 95.195
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:29 . Memory (MB): peak = 185.980 ; gain = 95.195
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:31 . Memory (MB): peak = 185.391 ; gain = 95.223
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:31 . Memory (MB): peak = 185.391 ; gain = 95.223
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:36 ; elapsed = 00:01:06 . Memory (MB): peak = 646.926 ; gain = 556.141
+INFO: [XFORM 203-603] Inlining function 'reverse_bits' into 'bit_reverse' (src/music.cpp:124).
+INFO: [XFORM 203-603] Inlining function 'bit_reverse' into 'fft' (src/music.cpp:154).
+INFO: [XFORM 203-603] Inlining function 'fft' into 'music' (src/music.cpp:233).
+INFO: [XFORM 203-603] Inlining function 'Autocorrelation' into 'music' (src/music.cpp:249).
+INFO: [XFORM 203-603] Inlining function 'qr_decompose' into 'eig_decompose' (src/music.cpp:28).
+INFO: [XFORM 203-603] Inlining function 'eig_decompose' into 'music' (src/music.cpp:250).
+INFO: [XFORM 203-603] Inlining function 'sort_eigval' into 'music' (src/music.cpp:251).
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:43 ; elapsed = 00:01:15 . Memory (MB): peak = 615.691 ; gain = 525.523
 INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-602] Inlining function 'reverse_bits' into 'bit_reverse' (src/music.cpp:123) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'range_redux_payne_hanek_hotbm<29, float, 29, 29>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:470) automatically.
 INFO: [XFORM 203-602] Inlining function 'table_lookup_4oPi_hotbm<23, 29>' into 'range_redux_payne_hanek_hotbm<29, float, 29, 29>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:496) automatically.
 INFO: [XFORM 203-602] Inlining function 'clz<29, 58, 0>' into 'range_redux_payne_hanek_hotbm<29, float, 29, 29>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:524) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:348) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:369) automatically.
-INFO: [XFORM 203-602] Inlining function '_ZL3clzi125' into 'scaled_fixed2ieee<29, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:307) automatically.
+INFO: [XFORM 203-602] Inlining function 'clz' into 'scaled_fixed2ieee<29, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:307) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::set_mantissa' into 'scaled_fixed2ieee<29, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:340) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'scaled_fixed2ieee<29, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:342) automatically.
 INFO: [XFORM 203-602] Inlining function 'hotbm_::value_list<float>::sin_or_cos_approximation<29, 29>' into 'hotbm_::sin_or_cos<float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'hotbm_::sin_or_cos<float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:316) automatically.
-INFO: [XFORM 203-602] Inlining function 'hotbm_::cos.1' into 'cosf' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::cos' into 'cosf' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:12) automatically.
 INFO: [XFORM 203-602] Inlining function 'cosf' into 'std::cos' (C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:200) automatically.
 INFO: [XFORM 203-602] Inlining function 'hotbm_::sin.1' into 'sinf' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:8) automatically.
 INFO: [XFORM 203-602] Inlining function 'sinf' into 'std::sin' (C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:402) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::cos' into 'fft' (src/music.cpp:172) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::sin' into 'fft' (src/music.cpp:173) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>.2' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>.2' into 'std::operator*<float>.4' () automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator/=.1' into 'std::operator/<float>.1' () automatically.
-INFO: [XFORM 203-602] Inlining function 'std::conj<float>' into 'Autocorrelation' (src/music.cpp:102) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'Autocorrelation' (src/music.cpp:102) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>.1' into 'Autocorrelation' (src/music.cpp:102) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator/<float>.1' into 'Autocorrelation' (src/music.cpp:104) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'generic_copysign<float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_copysign<float>' into 'generic_fabs<float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_fabs.h:13) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_fabs<float>' into 'hls::abs' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c++/absfloat.cpp:7) automatically.
@@ -52,82 +56,73 @@ INFO: [XFORM 203-602] Inlining function 'hls::copysign' into 'hls::copysignf' (r
 INFO: [XFORM 203-602] Inlining function 'hls::copysignf' into 'hls::x_copysign' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/utils/x_hls_matrix_utils.h:124) automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::real.3' into 'hls::x_conj<float>.1' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/utils/std_complex_utils.h:154) automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::imag.3' into 'hls::x_conj<float>.1' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/utils/std_complex_utils.h:155) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::x_conj<float>.1' into 'hls::x_conj<float>.1190' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/utils/std_complex_utils.h:163) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::x_conj<float>.1' into 'hls::x_conj<float>.1168' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/utils/std_complex_utils.h:163) automatically.
 INFO: [XFORM 203-602] Inlining function 'hls::x_copysign' into 'hls::qrf_givens<float>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:285) automatically.
 INFO: [XFORM 203-602] Inlining function 'std::operator/<float>.1' into 'hls::qrf_givens<float>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:288) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::x_conj<float>.1190' into 'hls::qrf_givens<float>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:291) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::x_conj<float>.1168' into 'hls::qrf_givens<float>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:291) automatically.
 INFO: [XFORM 203-602] Inlining function 'std::operator-<float>.1' into 'hls::qrf_givens<float>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:294) automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::real.3' into 'hls::qrf_givens<float>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:296) automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>.2' into 'std::operator*<float>.5' () automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>.1' into 'std::operator+<float>' () automatically.
 INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.5' into 'hls::qrf_vm<std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:108) automatically.
 INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'hls::qrf_vm<std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:108) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::qrf_vm<std::complex<float> >' into 'hls::qrf_mm_or_mag<std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:123) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::x_real<float>' into 'hls::qrf_mm_or_mag<std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:131) automatically.
 INFO: [XFORM 203-602] Inlining function 'hls::qrf_vm<std::complex<float> >' into 'hls::qrf_mm<std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:114) automatically.
 INFO: [XFORM 203-602] Inlining function 'hls::x_conj<float>.1' into 'hls::x_conj<float>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/utils/std_complex_utils.h:163) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::x_conj<float>' into 'hls::qrf_alt<false, 4, 4, hls::qrf_traits<4, 4, std::complex<float>, std::complex<float> >, std::complex<float>, std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:692) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::qrf_top<false, 4, 4, hls::qrf_traits<4, 4, std::complex<float>, std::complex<float> >, std::complex<float>, std::complex<float> >' into 'hls::qrf<false, 4, 4, std::complex<float>, std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:747) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::qrf<false, 4, 4, std::complex<float>, std::complex<float> >' into 'qr_decompose' (src/music.cpp:8) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>.1231' into 'std::operator*<float>.1224' () automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::qrf_require_extra_pass<float>' into 'hls::qrf_basic<false, 4, 4, QRF_CONFIG, std::complex<float>, std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:467) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::x_real<float>' into 'hls::qrf_basic<false, 4, 4, QRF_CONFIG, std::complex<float>, std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:506) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::x_conj<float>' into 'hls::qrf_basic<false, 4, 4, QRF_CONFIG, std::complex<float>, std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:538) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>.3' () automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=' into 'std::operator-<float>' () automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>.1231' into 'std::operator*<float>.2' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>.1' () automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator/=<float>' into 'std::operator/<float>' () automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::real' into 'eig_decompose' (src/music.cpp:23) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::imag' into 'eig_decompose' (src/music.cpp:24) automatically.
-INFO: [XFORM 203-602] Inlining function 'qr_decompose' into 'eig_decompose' (src/music.cpp:28) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::real.3' into 'eig_decompose' (src/music.cpp:31) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::imag.3' into 'eig_decompose' (src/music.cpp:32) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1224' into 'eig_decompose' (src/music.cpp:34) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>.1' into 'eig_decompose' (src/music.cpp:34) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'eig_decompose' (src/music.cpp:45) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator/=<float>.1' into 'eig_decompose' (src/music.cpp:54) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.2' into 'eig_decompose' (src/music.cpp:59) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'eig_decompose' (src/music.cpp:59) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator-<float>.1' into 'eig_decompose' (src/music.cpp:70) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator/<float>' into 'eig_decompose' (src/music.cpp:70) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::sqrt' into 'eig_decompose' (src/music.cpp:74) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator/=' into 'eig_decompose' (src/music.cpp:76) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:470) automatically.
 INFO: [XFORM 203-602] Inlining function 'table_lookup_4oPi_hotbm<52, 61>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:496) automatically.
 INFO: [XFORM 203-602] Inlining function 'clz<61, 124, 0>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:524) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
-INFO: [XFORM 203-602] Inlining function 'clz' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZL3clzi133' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::set_mantissa' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:463) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:466) automatically.
 INFO: [XFORM 203-602] Inlining function 'hotbm_::value_list<double>::sin_or_cos_approximation<63, 63>' into 'hotbm_::sin_or_cos<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'hotbm_::sin_or_cos<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:316) automatically.
 INFO: [XFORM 203-602] Inlining function 'hotbm_::sin' into 'sin' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:8) automatically.
-INFO: [XFORM 203-602] Inlining function 'hotbm_::cos' into 'cos' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:13) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>.2' into 'std::operator*<float>.4' () automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>.3' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>.2' into 'std::operator*<float>.2' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>.1' into 'std::operator*<float>' () automatically.
+INFO: [XFORM 203-602] Inlining function 'std::cos' into 'music' (src/music.cpp:173->src/music.cpp:233) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::sin' into 'music' (src/music.cpp:174->src/music.cpp:233) automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::real.2' into 'music' (src/music.cpp:235) automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::imag.2' into 'music' (src/music.cpp:236) automatically.
-INFO: [XFORM 203-602] Inlining function 'sin' into 'music' (src/music.cpp:262) automatically.
-INFO: [XFORM 203-602] Inlining function 'cos' into 'music' (src/music.cpp:262) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::real.1' into 'music' (src/music.cpp:262) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::imag.1' into 'music' (src/music.cpp:263) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::real.3' into 'music' (src/music.cpp:268) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::imag.3' into 'music' (src/music.cpp:269) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::conj<float>.2' into 'music' (src/music.cpp:271) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.4' into 'music' (src/music.cpp:271) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>.1' into 'music' (src/music.cpp:271) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::conj<float>.1' into 'music' (src/music.cpp:281) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.2' into 'music' (src/music.cpp:281) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.3' into 'music' (src/music.cpp:290) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator/<float>.1' into 'music' (src/music.cpp:290) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'music' (src/music.cpp:292) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::conj<float>.2' into 'music' (src/music.cpp:103->src/music.cpp:249) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.4' into 'music' (src/music.cpp:103->src/music.cpp:249) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>.1' into 'music' (src/music.cpp:103->src/music.cpp:249) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator/<float>.1' into 'music' (src/music.cpp:105->src/music.cpp:249) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::real.1' into 'music' (src/music.cpp:23->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::imag.1' into 'music' (src/music.cpp:24->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::qrf_top<false, 4, 4, QRF_CONFIG, std::complex<float>, std::complex<float> >' into 'music' (src/music.cpp:8->src/music.cpp:28->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::real.3' into 'music' (src/music.cpp:31->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::imag.3' into 'music' (src/music.cpp:32->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.3' into 'music' (src/music.cpp:34->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'music' (src/music.cpp:45->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator/=<float>.1' into 'music' (src/music.cpp:54->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.1' into 'music' (src/music.cpp:59->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'music' (src/music.cpp:59->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>.1' into 'music' (src/music.cpp:70->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator/<float>' into 'music' (src/music.cpp:70->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::sqrt' into 'music' (src/music.cpp:74->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator/=' into 'music' (src/music.cpp:76->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'sin' into 'music' (src/music.cpp:265) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::real' into 'music' (src/music.cpp:266) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::imag' into 'music' (src/music.cpp:267) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::conj<float>.1' into 'music' (src/music.cpp:275) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>.2' into 'music' (src/music.cpp:275) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::conj<float>' into 'music' (src/music.cpp:285) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'music' (src/music.cpp:294) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'music' (src/music.cpp:296) automatically.
 WARNING: [SYNCHK 200-23] r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:425: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:39 ; elapsed = 00:01:09 . Memory (MB): peak = 646.926 ; gain = 556.141
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:46 ; elapsed = 00:01:18 . Memory (MB): peak = 615.691 ; gain = 525.523
 INFO: [XFORM 203-502] Unrolling small iteration loop 'Loop-1' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:295) in function 'scaled_fixed2ieee<29, 1>' automatically.
 INFO: [HLS 200-489] Unrolling loop 'Loop-1' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:295) in function 'scaled_fixed2ieee<29, 1>' completely with a factor of 1.
-INFO: [XFORM 203-102] Partitioning array 'CONFIG.SEQUENCE' in dimension 2 automatically.
-WARNING: [XFORM 203-105] Cannot partition array 'q_i._M_real' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:579): incorrect partition factor 1.
-WARNING: [XFORM 203-105] Cannot partition array 'q_i._M_imag' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:579): incorrect partition factor 1.
-WARNING: [XFORM 203-105] Cannot partition array 'r_i._M_real' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:580): incorrect partition factor 1.
-WARNING: [XFORM 203-105] Cannot partition array 'r_i._M_imag' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:580): incorrect partition factor 1.
 INFO: [XFORM 203-102] Automatically partitioning small array 'out_bits.V' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:422) completely based on array size.
 INFO: [XFORM 203-102] Automatically partitioning small array 'c' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:433) completely based on array size.
 INFO: [XFORM 203-102] Automatically partitioning small array 'out_bits.V' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:294) completely based on array size.
@@ -135,11 +130,8 @@ INFO: [XFORM 203-102] Automatically partitioning small array 'c' (r:/builds/2019
 INFO: [XFORM 203-102] Automatically partitioning small array 'eigval' (src/music.cpp:209) completely based on array size.
 INFO: [XFORM 203-102] Automatically partitioning small array 'sort_index' (src/music.cpp:210) completely based on array size.
 INFO: [XFORM 203-102] Automatically partitioning small array 'p' (src/music.cpp:211) completely based on array size.
-INFO: [XFORM 203-102] Automatically partitioning small array 'G_delay._M_real' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:596) completely based on array size.
-INFO: [XFORM 203-102] Automatically partitioning small array 'G_delay._M_imag' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:596) completely based on array size.
-INFO: [XFORM 203-102] Automatically partitioning streamed array 'to_rot.V' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:585) .
-INFO: [XFORM 203-102] Automatically partitioning streamed array 'rotations.V._M_real' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:594) .
-INFO: [XFORM 203-102] Automatically partitioning streamed array 'rotations.V._M_imag' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:594) .
+INFO: [XFORM 203-102] Automatically partitioning small array 'G._M_real' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:461) completely based on array size.
+INFO: [XFORM 203-102] Automatically partitioning small array 'G._M_imag' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:461) completely based on array size.
 INFO: [XFORM 203-101] Partitioning array 'swap_table.3'  in dimension 1 completely.
 INFO: [XFORM 203-101] Partitioning array 'swap_table.4'  in dimension 1 completely.
 INFO: [XFORM 203-101] Partitioning array 'swap_table'  in dimension 1 completely.
@@ -155,36 +147,26 @@ INFO: [XFORM 203-101] Partitioning array 'c' (r:/builds/2019.1/continuous/2019_0
 INFO: [XFORM 203-101] Partitioning array 'eigval' (src/music.cpp:209) in dimension 1 completely.
 INFO: [XFORM 203-101] Partitioning array 'sort_index' (src/music.cpp:210) in dimension 1 completely.
 INFO: [XFORM 203-101] Partitioning array 'p' (src/music.cpp:211) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'G_delay._M_real' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:596) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'G_delay._M_imag' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:596) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'to_rot.V' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:585) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'rotations.V._M_real' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:594) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'rotations.V._M_imag' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:594) in dimension 1 completely.
-INFO: [XFORM 203-101] Partitioning array 'G_delay._M_real' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:596) in dimension 2 completely.
-INFO: [XFORM 203-101] Partitioning array 'G_delay._M_imag' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:596) in dimension 2 completely.
-INFO: [XFORM 203-602] Inlining function 'reverse_bits' into 'bit_reverse' (src/music.cpp:123) automatically.
+INFO: [XFORM 203-101] Partitioning array 'G._M_real' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:461) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'G._M_imag' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:461) in dimension 1 completely.
+INFO: [XFORM 203-101] Partitioning array 'G._M_real' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:461) in dimension 2 completely.
+INFO: [XFORM 203-101] Partitioning array 'G._M_imag' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:461) in dimension 2 completely.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::expv' into 'range_redux_payne_hanek_hotbm<29, float, 29, 29>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:470) automatically.
 INFO: [XFORM 203-602] Inlining function 'table_lookup_4oPi_hotbm<23, 29>' into 'range_redux_payne_hanek_hotbm<29, float, 29, 29>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:496) automatically.
 INFO: [XFORM 203-602] Inlining function 'clz<29, 58, 0>' into 'range_redux_payne_hanek_hotbm<29, float, 29, 29>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:524) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::data' into 'fp_struct<float>::to_float' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:348) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_float' into 'fp_struct<float>::to_ieee' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:369) automatically.
-INFO: [XFORM 203-602] Inlining function '_ZL3clzi125' into 'scaled_fixed2ieee<29, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:307) automatically.
+INFO: [XFORM 203-602] Inlining function 'clz' into 'scaled_fixed2ieee<29, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:307) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::set_mantissa' into 'scaled_fixed2ieee<29, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:340) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'scaled_fixed2ieee<29, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:342) automatically.
 INFO: [XFORM 203-602] Inlining function 'hotbm_::value_list<float>::sin_or_cos_approximation<29, 29>' into 'hotbm_::sin_or_cos<float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'hotbm_::sin_or_cos<float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:316) automatically.
-INFO: [XFORM 203-602] Inlining function 'hotbm_::cos.1' into 'cosf' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:12) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::cos' into 'cosf' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:12) automatically.
 INFO: [XFORM 203-602] Inlining function 'cosf' into 'std::cos' (C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:200) automatically.
 INFO: [XFORM 203-602] Inlining function 'hotbm_::sin.1' into 'sinf' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/sincosfloat.cpp:8) automatically.
 INFO: [XFORM 203-602] Inlining function 'sinf' into 'std::sin' (C:/Xilinx/Vivado/2019.1/win64/tools/clang/bin\..\lib\clang\3.1/../../../include/c++/4.5.2\cmath:402) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::cos' into 'fft' (src/music.cpp:172) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::sin' into 'fft' (src/music.cpp:173) automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator*=<float>' into 'std::operator*<float>' () automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator/=' into 'std::operator/<float>.1' () automatically.
-INFO: [XFORM 203-602] Inlining function 'std::conj<float>' into 'Autocorrelation' (src/music.cpp:102) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'Autocorrelation' (src/music.cpp:102) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'Autocorrelation' (src/music.cpp:102) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator/<float>.1' into 'Autocorrelation' (src/music.cpp:104) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<float>::to_ieee' into 'generic_copysign<float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_copysign.h:14) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_copysign<float>' into 'generic_fabs<float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_fabs.h:13) automatically.
 INFO: [XFORM 203-602] Inlining function 'generic_fabs<float>' into 'hls::abs' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c++/absfloat.cpp:7) automatically.
@@ -206,272 +188,177 @@ INFO: [XFORM 203-602] Inlining function 'std::complex<float>::real' into 'hls::q
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'std::operator+<float>' () automatically.
 INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'hls::qrf_vm<std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:108) automatically.
 INFO: [XFORM 203-602] Inlining function 'std::operator+<float>' into 'hls::qrf_vm<std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:108) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::qrf_vm<std::complex<float> >' into 'hls::qrf_mm_or_mag<std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:123) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::x_real<float>' into 'hls::qrf_mm_or_mag<std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:131) automatically.
 INFO: [XFORM 203-602] Inlining function 'hls::qrf_vm<std::complex<float> >' into 'hls::qrf_mm<std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:114) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::qrf_mm_or_mag<std::complex<float> >' into 'hls::qrf_alt<false, 4, 4, hls::qrf_traits<4, 4, std::complex<float>, std::complex<float> >, std::complex<float>, std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:669) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::qrf_mm<std::complex<float> >' into 'hls::qrf_alt<false, 4, 4, hls::qrf_traits<4, 4, std::complex<float>, std::complex<float> >, std::complex<float>, std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:674) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::x_conj<float>' into 'hls::qrf_alt<false, 4, 4, hls::qrf_traits<4, 4, std::complex<float>, std::complex<float> >, std::complex<float>, std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:692) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::qrf_top<false, 4, 4, hls::qrf_traits<4, 4, std::complex<float>, std::complex<float> >, std::complex<float>, std::complex<float> >' into 'hls::qrf<false, 4, 4, std::complex<float>, std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:747) automatically.
-INFO: [XFORM 203-602] Inlining function 'hls::qrf<false, 4, 4, std::complex<float>, std::complex<float> >' into 'qr_decompose' (src/music.cpp:8) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::x_real<float>' into 'hls::qrf_basic<false, 4, 4, QRF_CONFIG, std::complex<float>, std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:508) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::x_conj<float>' into 'hls::qrf_basic<false, 4, 4, QRF_CONFIG, std::complex<float>, std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:538) automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=' into 'std::operator-<float>' () automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator/=<float>' into 'std::operator/<float>' () automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::real' into 'eig_decompose' (src/music.cpp:23) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::imag' into 'eig_decompose' (src/music.cpp:24) automatically.
-INFO: [XFORM 203-602] Inlining function 'qr_decompose' into 'eig_decompose' (src/music.cpp:28) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'eig_decompose' (src/music.cpp:34) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'eig_decompose' (src/music.cpp:34) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'eig_decompose' (src/music.cpp:45) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator/=<float>' into 'eig_decompose' (src/music.cpp:54) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'eig_decompose' (src/music.cpp:59) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator-<float>.1' into 'eig_decompose' (src/music.cpp:70) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator/<float>' into 'eig_decompose' (src/music.cpp:70) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::sqrt' into 'eig_decompose' (src/music.cpp:74) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator/=' into 'eig_decompose' (src/music.cpp:76) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:470) automatically.
 INFO: [XFORM 203-602] Inlining function 'table_lookup_4oPi_hotbm<52, 61>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:496) automatically.
 INFO: [XFORM 203-602] Inlining function 'clz<61, 124, 0>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:524) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
-INFO: [XFORM 203-602] Inlining function 'clz' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) automatically.
+INFO: [XFORM 203-602] Inlining function '_ZL3clzi133' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::set_mantissa' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:463) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:466) automatically.
 INFO: [XFORM 203-602] Inlining function 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' into 'hotbm_::sin_or_cos<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:268) automatically.
 INFO: [XFORM 203-602] Inlining function 'hotbm_::value_list<double>::sin_or_cos_approximation<63, 63>' into 'hotbm_::sin_or_cos<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279) automatically.
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'hotbm_::sin_or_cos<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:316) automatically.
 INFO: [XFORM 203-602] Inlining function 'hotbm_::sin' into 'sin' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:8) automatically.
-INFO: [XFORM 203-602] Inlining function 'hotbm_::cos' into 'cos' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:13) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::cos' into 'music' (src/music.cpp:173->src/music.cpp:233) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::sin' into 'music' (src/music.cpp:174->src/music.cpp:233) automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::real' into 'music' (src/music.cpp:235) automatically.
 INFO: [XFORM 203-602] Inlining function 'std::complex<float>::imag' into 'music' (src/music.cpp:236) automatically.
-INFO: [XFORM 203-602] Inlining function 'sin' into 'music' (src/music.cpp:262) automatically.
-INFO: [XFORM 203-602] Inlining function 'cos' into 'music' (src/music.cpp:262) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::conj<float>' into 'music' (src/music.cpp:271) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'music' (src/music.cpp:271) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'music' (src/music.cpp:271) automatically.
-INFO: [XFORM 203-602] Inlining function 'std::operator/<float>.1' into 'music' (src/music.cpp:290) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::conj<float>' into 'music' (src/music.cpp:103->src/music.cpp:249) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator*<float>' into 'music' (src/music.cpp:103->src/music.cpp:249) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator+=<float>' into 'music' (src/music.cpp:103->src/music.cpp:249) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator/<float>.1' into 'music' (src/music.cpp:105->src/music.cpp:249) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::qrf_top<false, 4, 4, QRF_CONFIG, std::complex<float>, std::complex<float> >' into 'music' (src/music.cpp:8->src/music.cpp:28->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>' into 'music' (src/music.cpp:45->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator/=<float>' into 'music' (src/music.cpp:54->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator-=<float>' into 'music' (src/music.cpp:59->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator-<float>.1' into 'music' (src/music.cpp:70->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::operator/<float>' into 'music' (src/music.cpp:70->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::sqrt' into 'music' (src/music.cpp:74->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'std::complex<float>::operator/=' into 'music' (src/music.cpp:76->src/music.cpp:250) automatically.
+INFO: [XFORM 203-602] Inlining function 'sin' into 'music' (src/music.cpp:265) automatically.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:452:51) to (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:467:1) in function 'scaled_fixed2ieee<63, 1>'... converting 3 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:314:9) to (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:316:9) in function 'scaled_fixed2ieee<29, 1>'... converting 4 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:324:50) to (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:343:1) in function 'scaled_fixed2ieee<29, 1>'... converting 3 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:461:7) to (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:544:1) in function 'range_redux_payne_hanek_hotbm<29, float, 29, 29>'... converting 6 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:238:18) to (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:316:12) in function 'hotbm_::sin_or_cos<float>'... converting 7 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:238:18) to (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:316:12) in function 'hotbm_::sin_or_cos<double>'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:238:18) to (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:316:12) in function 'hotbm_::sin_or_cos<double>'... converting 8 basic blocks.
 INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:173:14) to (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:201:5) in function 'hls::qrf_magnitude<float>'... converting 4 basic blocks.
-INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:662:41) to (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:662:35) in function 'hls::qrf_alt<false, 4, 4, hls::qrf_traits<4, 4, std::complex<float>, std::complex<float> >, std::complex<float>, std::complex<float> >'... converting 3 basic blocks.
 INFO: [XFORM 203-602] Inlining function 'range_redux_payne_hanek_hotbm<29, float, 29, 29>' into 'hotbm_::sin_or_cos<float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:268) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::qrf_mm<std::complex<float> >' into 'hls::qrf_basic<false, 4, 4, QRF_CONFIG, std::complex<float>, std::complex<float> >' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:516) automatically.
+INFO: [XFORM 203-602] Inlining function 'hotbm_::sin_or_cos<double>' into 'music' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/common/hls_hotbm_double.cpp:140->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:8->src/music.cpp:265) automatically.
 INFO: [XFORM 203-11] Balancing expressions in function 'hls::qrf_magnitude<float>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:11:22)...3 expression(s) balanced.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:47 ; elapsed = 00:01:18 . Memory (MB): peak = 677.051 ; gain = 586.266
-WARNING: [XFORM 203-542] Cannot flatten a loop nest 'row_copy' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:600:43) in function 'hls::qrf_alt<false, 4, 4, hls::qrf_traits<4, 4, std::complex<float>, std::complex<float> >, std::complex<float>, std::complex<float> >' : 
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:54 ; elapsed = 00:01:26 . Memory (MB): peak = 649.730 ; gain = 559.563
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'qrf_in_row_assign' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:471:54) in function 'hls::qrf_basic<false, 4, 4, QRF_CONFIG, std::complex<float>, std::complex<float> >' : 
 
 more than one sub loop.
-WARNING: [XFORM 203-542] Cannot flatten a loop nest 'rotate' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:643:85) in function 'hls::qrf_alt<false, 4, 4, hls::qrf_traits<4, 4, std::complex<float>, std::complex<float> >, std::complex<float>, std::complex<float> >' : 
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'qrf_row_loop' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:498:54) in function 'hls::qrf_basic<false, 4, 4, QRF_CONFIG, std::complex<float>, std::complex<float> >' : 
 
 more than one sub loop.
-WARNING: [XFORM 203-542] Cannot flatten a loop nest 'px' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:618:79) in function 'hls::qrf_alt<false, 4, 4, hls::qrf_traits<4, 4, std::complex<float>, std::complex<float> >, std::complex<float>, std::complex<float> >' : 
-
-more than one sub loop.
-WARNING: [XFORM 203-542] Cannot flatten a loop nest 'row_assign_loop' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:680:50) in function 'hls::qrf_alt<false, 4, 4, hls::qrf_traits<4, 4, std::complex<float>, std::complex<float> >, std::complex<float>, std::complex<float> >' : 
+INFO: [XFORM 203-541] Flattening a loop nest 'qrf_col_loop' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:486:50) in function 'hls::qrf_basic<false, 4, 4, QRF_CONFIG, std::complex<float>, std::complex<float> >'.
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'qrf_out_row_assign' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:532:55) in function 'hls::qrf_basic<false, 4, 4, QRF_CONFIG, std::complex<float>, std::complex<float> >' : 
 
 more than one sub loop.
 WARNING: [XFORM 203-631] Renaming function 'scaled_fixed2ieee<63, 1>' to 'scaled_fixed2ieee' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:110:37)
 WARNING: [XFORM 203-631] Renaming function 'scaled_fixed2ieee<29, 1>' to 'scaled_fixed2ieee.1' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:110:37)
 WARNING: [XFORM 203-631] Renaming function 'hotbm_::sin_or_cos<float>' to 'sin_or_cos<float>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:238)
-WARNING: [XFORM 203-631] Renaming function 'hotbm_::sin_or_cos<double>' to 'sin_or_cos<double>' (r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:238)
 WARNING: [XFORM 203-631] Renaming function 'hls::qrf_magnitude<float>' to 'qrf_magnitude<float>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:11:22)
 WARNING: [XFORM 203-631] Renaming function 'hls::qrf_givens<float>' to 'qrf_givens<float>' (C:/Xilinx/Vivado/2019.1/common/technology/autopilot\hls/linear_algebra/hls_qrf.h:271)
-WARNING: [XFORM 203-631] Renaming function 'hls::qrf_alt<false, 4, 4, hls::qrf_traits<4, 4, std::complex<float>, std::complex<float> >, std::complex<float>, std::complex<float> >' to 'qrf_alt' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:108:42)
-INFO: [XFORM 203-521] Merging 2 loops (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:603, C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:611) in function 'qrf_alt'.
-INFO: [XFORM 203-521] Merging 2 loops (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:662, C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:671) in function 'qrf_alt'.
-INFO: [XFORM 203-521] Merging 2 loops (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:683, C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:687) in function 'qrf_alt'.
-WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'col_copy_r_i' in function 'qrf_alt'.
-WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'update_r' in function 'qrf_alt'.
-WARNING: [XFORM 203-561] Ignored multiple trip count directives for loop 'col_r_assign_loop' in function 'qrf_alt'.
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:53 ; elapsed = 00:01:24 . Memory (MB): peak = 828.551 ; gain = 737.766
+WARNING: [XFORM 203-631] Renaming function 'hls::qrf_basic<false, 4, 4, QRF_CONFIG, std::complex<float>, std::complex<float> >' to 'qrf_basic' (C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:108:13)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:58 ; elapsed = 00:01:30 . Memory (MB): peak = 743.277 ; gain = 653.109
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'music' ...
 WARNING: [SYN 201-103] Legalizing function name 'scaled_fixed2ieee.1' to 'scaled_fixed2ieee_1'.
 WARNING: [SYN 201-103] Legalizing function name 'sin_or_cos<float>' to 'sin_or_cos_float_s'.
 WARNING: [SYN 201-103] Legalizing function name 'qrf_magnitude<float>' to 'qrf_magnitude_float_s'.
 WARNING: [SYN 201-103] Legalizing function name 'qrf_givens<float>' to 'qrf_givens_float_s'.
-WARNING: [SYN 201-103] Legalizing function name 'sin_or_cos<double>' to 'sin_or_cos_double_s'.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'bit_reverse' 
+INFO: [HLS 200-42] -- Implementing module 'scaled_fixed2ieee_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 83.908 seconds; current allocated memory: 747.872 MB.
+INFO: [HLS 200-111]  Elapsed time: 90.206 seconds; current allocated memory: 662.574 MB.
 INFO: [HLS 200-434] Only 0 loops out of a total 2 loops have been pipelined in this design.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.278 seconds; current allocated memory: 748.027 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'scaled_fixed2ieee_1' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.358 seconds; current allocated memory: 748.204 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.289 seconds; current allocated memory: 748.435 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.24 seconds; current allocated memory: 662.844 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'sin_or_cos_float_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.44 seconds; current allocated memory: 749.027 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.344 seconds; current allocated memory: 663.433 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.386 seconds; current allocated memory: 749.559 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'fft' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.517 seconds; current allocated memory: 750.019 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.496 seconds; current allocated memory: 750.460 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'Autocorrelation' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.704 seconds; current allocated memory: 750.927 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.409 seconds; current allocated memory: 751.280 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.336 seconds; current allocated memory: 663.921 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'qrf_magnitude_float_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining function 'qrf_magnitude<float>'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 49.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.513 seconds; current allocated memory: 751.693 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.474 seconds; current allocated memory: 664.432 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.455 seconds; current allocated memory: 752.259 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.371 seconds; current allocated memory: 664.846 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'qrf_givens_float_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining function 'qrf_givens<float>'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 76.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.685 seconds; current allocated memory: 753.080 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.591 seconds; current allocated memory: 665.396 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.701 seconds; current allocated memory: 754.144 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.483 seconds; current allocated memory: 666.074 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'qrf_alt' 
+INFO: [HLS 200-42] -- Implementing module 'qrf_basic' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-61] Pipelining loop 'col_copy_q_i'.
+INFO: [SCHED 204-61] Pipelining loop 'qrf_in_col_assign_Qi'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 1.
+INFO: [SCHED 204-61] Pipelining loop 'qrf_in_col_assign_Ri'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
-INFO: [SCHED 204-61] Pipelining loop 'calc_rotations'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 79.
-INFO: [SCHED 204-61] Pipelining loop 'update_r'.
-INFO: [SCHED 204-61] Pipelining result : Target II = 4, Final II = 4, Depth = 19.
-INFO: [SCHED 204-61] Pipelining loop 'col_r_assign_loop'.
+INFO: [SCHED 204-61] Pipelining loop 'qrf_r_update'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 8, Final II = 8, Depth = 18.
+INFO: [SCHED 204-61] Pipelining loop 'qrf_q_update'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 8, Final II = 8, Depth = 18.
+INFO: [SCHED 204-61] Pipelining loop 'qrf_out_col_assign_Q'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'qrf_out_col_assign_R'.
 INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.354 seconds; current allocated memory: 755.666 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.117 seconds; current allocated memory: 667.290 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.234 seconds; current allocated memory: 757.887 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'eig_decompose' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.664 seconds; current allocated memory: 759.461 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 1.26 seconds; current allocated memory: 761.519 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'sort_eigval' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.575 seconds; current allocated memory: 761.935 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.323 seconds; current allocated memory: 762.342 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.874 seconds; current allocated memory: 668.620 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'scaled_fixed2ieee' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.433 seconds; current allocated memory: 762.627 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.065 seconds; current allocated memory: 669.089 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.357 seconds; current allocated memory: 763.026 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'sin_or_cos_double_s' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 0.739 seconds; current allocated memory: 763.745 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 0.447 seconds; current allocated memory: 764.364 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.313 seconds; current allocated memory: 669.463 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-42] -- Implementing module 'music' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 1.031 seconds; current allocated memory: 766.222 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.716 seconds; current allocated memory: 673.433 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 2.803 seconds; current allocated memory: 769.485 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'bit_reverse' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Finished creating RTL model for 'bit_reverse'.
-INFO: [HLS 200-111]  Elapsed time: 2.477 seconds; current allocated memory: 770.426 MB.
+INFO: [HLS 200-111]  Elapsed time: 3.043 seconds; current allocated memory: 679.422 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'scaled_fixed2ieee_1' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Finished creating RTL model for 'scaled_fixed2ieee_1'.
-INFO: [HLS 200-111]  Elapsed time: 0.43 seconds; current allocated memory: 770.917 MB.
+INFO: [HLS 200-111]  Elapsed time: 3.06 seconds; current allocated memory: 680.420 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'sin_or_cos_float_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -479,201 +366,122 @@ INFO: [SYN 201-210] Renamed object name 'sin_or_cos_float_s_ref_4oPi_table_100_V
 INFO: [SYN 201-210] Renamed object name 'sin_or_cos_float_s_second_order_float_2' to 'sin_or_cos_float_cud' due to the length limit 20
 INFO: [SYN 201-210] Renamed object name 'sin_or_cos_float_s_second_order_float_3' to 'sin_or_cos_float_dEe' due to the length limit 20
 INFO: [SYN 201-210] Renamed object name 'sin_or_cos_float_s_second_order_float_s' to 'sin_or_cos_float_eOg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_mul_80ns_24ns_104_5_1' to 'music_mul_80ns_24fYi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_mul_mul_15ns_15ns_30_1_1' to 'music_mul_mul_15ng8j' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_mul_mul_15ns_15s_30_1_1' to 'music_mul_mul_15nhbi' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'music_mul_80ns_24fYi': 1 instance(s).
+INFO: [SYN 201-210] Renamed object name 'music_mul_mul_15ns_15ns_30_1_1' to 'music_mul_mul_15nfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_mul_mul_15ns_15s_30_1_1' to 'music_mul_mul_15ng8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'music_mul_mul_15nfYi': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'music_mul_mul_15ng8j': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_mul_mul_15nhbi': 1 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'music_mux_164_1_1_1': 2 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'music_mux_83_1_1_1': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'sin_or_cos_float_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.575 seconds; current allocated memory: 772.138 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'fft' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'music_faddfsub_32ns_32ns_32_5_full_dsp_1' to 'music_faddfsub_32ibs' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_fmul_32ns_32ns_32_4_max_dsp_1' to 'music_fmul_32ns_3jbC' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_fptrunc_64ns_32_2_1' to 'music_fptrunc_64nkbM' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_ddiv_64ns_64ns_64_31_1' to 'music_ddiv_64ns_6lbW' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_sitodp_32ns_64_6_1' to 'music_sitodp_32nsmb6' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'music_ddiv_64ns_6lbW': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_faddfsub_32ibs': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fmul_32ns_3jbC': 4 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fptrunc_64nkbM': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_sitodp_32nsmb6': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'fft'.
-INFO: [HLS 200-111]  Elapsed time: 0.795 seconds; current allocated memory: 773.536 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'Autocorrelation' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'music_fdiv_32ns_32ns_32_16_1' to 'music_fdiv_32ns_3ncg' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'music_faddfsub_32ibs': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fdiv_32ns_3ncg': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fmul_32ns_3jbC': 4 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'Autocorrelation'.
-INFO: [HLS 200-111]  Elapsed time: 1.011 seconds; current allocated memory: 774.455 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.498 seconds; current allocated memory: 681.603 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'qrf_magnitude_float_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'music_fadd_32ns_32ns_32_5_full_dsp_1' to 'music_fadd_32ns_3ocq' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_fcmp_32ns_32ns_1_2_1' to 'music_fcmp_32ns_3pcA' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_fsqrt_32ns_32ns_32_12_1' to 'music_fsqrt_32ns_qcK' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'music_fadd_32ns_3ocq': 3 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fcmp_32ns_3pcA': 10 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fdiv_32ns_3ncg': 3 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fmul_32ns_3jbC': 4 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fsqrt_32ns_qcK': 1 instance(s).
+INFO: [SYN 201-210] Renamed object name 'music_fadd_32ns_32ns_32_4_full_dsp_1' to 'music_fadd_32ns_3hbi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_fmul_32ns_32ns_32_2_max_dsp_1' to 'music_fmul_32ns_3ibs' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_fdiv_32ns_32ns_32_8_1' to 'music_fdiv_32ns_3jbC' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_fcmp_32ns_32ns_1_2_1' to 'music_fcmp_32ns_3kbM' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_fsqrt_32ns_32ns_32_7_1' to 'music_fsqrt_32ns_lbW' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'music_fadd_32ns_3hbi': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fcmp_32ns_3kbM': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fdiv_32ns_3jbC': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fmul_32ns_3ibs': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fsqrt_32ns_lbW': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'qrf_magnitude_float_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.89 seconds; current allocated memory: 776.015 MB.
+INFO: [HLS 200-111]  Elapsed time: 0.717 seconds; current allocated memory: 682.937 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'qrf_givens_float_s' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'music_fsub_32ns_32ns_32_5_full_dsp_0' to 'music_fsub_32ns_3rcU' due to the length limit 20
-INFO: [RTGEN 206-104] Estimated max fanout for 'qrf_givens_float_s' is 31226 from HDL expression: ((1'b1 == ap_ce_reg) & (1'b0 == ap_block_pp0_stage0_11001))
-INFO: [RTGEN 206-100] Generating core module 'music_fadd_32ns_3ocq': 3 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fcmp_32ns_3pcA': 4 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fdiv_32ns_3ncg': 4 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fmul_32ns_3jbC': 11 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fsub_32ns_3rcU': 2 instance(s).
+INFO: [SYN 201-210] Renamed object name 'music_fsub_32ns_32ns_32_4_full_dsp_1' to 'music_fsub_32ns_3mb6' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'music_fadd_32ns_3hbi': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fcmp_32ns_3kbM': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fdiv_32ns_3jbC': 4 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fmul_32ns_3ibs': 9 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fsub_32ns_3mb6': 2 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'qrf_givens_float_s'.
-INFO: [HLS 200-111]  Elapsed time: 1.488 seconds; current allocated memory: 781.550 MB.
+INFO: [HLS 200-111]  Elapsed time: 1.021 seconds; current allocated memory: 684.665 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'qrf_alt' 
+INFO: [HLS 200-10] -- Generating RTL for module 'qrf_basic' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'qrf_alt_CONFIG_BATCH_CNTS' to 'qrf_alt_CONFIG_BAsc4' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'qrf_alt_CONFIG_SEQUENCE_0' to 'qrf_alt_CONFIG_SEtde' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'qrf_alt_CONFIG_SEQUENCE_1' to 'qrf_alt_CONFIG_SEudo' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'qrf_alt_CONFIG_SEQUENCE_2' to 'qrf_alt_CONFIG_SEvdy' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'music_fadd_32ns_3ocq': 4 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fmul_32ns_3jbC': 8 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fsub_32ns_3rcU': 2 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'qrf_alt'.
-INFO: [HLS 200-111]  Elapsed time: 2.212 seconds; current allocated memory: 786.257 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'eig_decompose' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'eig_decompose_Q_temp_M_real' to 'eig_decompose_Q_twdI' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'eig_decompose_Q_temp_M_imag' to 'eig_decompose_Q_txdS' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'eig_decompose_R_temp_M_real' to 'eig_decompose_R_tyd2' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'eig_decompose_R_temp_M_imag' to 'eig_decompose_R_tzec' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'eig_decompose_Rx_temp_M_real' to 'eig_decompose_Rx_Aem' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'eig_decompose_Rx_temp_M_imag' to 'eig_decompose_Rx_Bew' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'eig_decompose_eig_mat_M_real' to 'eig_decompose_eigCeG' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'eig_decompose_eig_mat_M_imag' to 'eig_decompose_eigDeQ' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'music_faddfsub_32ibs': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fdiv_32ns_3ncg': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fmul_32ns_3jbC': 6 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fsqrt_32ns_qcK': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fsub_32ns_3rcU': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_mux_42_32_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'eig_decompose'.
-INFO: [HLS 200-111]  Elapsed time: 3.277 seconds; current allocated memory: 790.359 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'sort_eigval' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-100] Generating core module 'music_fcmp_32ns_3pcA': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_mux_42_32_1_1': 16 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'sort_eigval'.
-INFO: [HLS 200-111]  Elapsed time: 3.155 seconds; current allocated memory: 791.844 MB.
+INFO: [SYN 201-210] Renamed object name 'music_faddfsub_32ns_32ns_32_4_full_dsp_1' to 'music_faddfsub_32ncg' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'music_faddfsub_32ncg': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fmul_32ns_3ibs': 2 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'qrf_basic'.
+INFO: [HLS 200-111]  Elapsed time: 1.294 seconds; current allocated memory: 687.290 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'scaled_fixed2ieee' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-100] Generating core module 'music_mux_42_32_1_1': 2 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'scaled_fixed2ieee'.
-INFO: [HLS 200-111]  Elapsed time: 0.855 seconds; current allocated memory: 792.594 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'sin_or_cos_double_s' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SYN 201-210] Renamed object name 'sin_or_cos_double_s_ref_4oPi_table_256_V' to 'sin_or_cos_doubleEe0' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'sin_or_cos_double_s_fourth_order_double_4' to 'sin_or_cos_doubleFfa' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'sin_or_cos_double_s_fourth_order_double_5' to 'sin_or_cos_doubleGfk' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'sin_or_cos_double_s_fourth_order_double_6' to 'sin_or_cos_doubleHfu' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'sin_or_cos_double_s_fourth_order_double_7' to 'sin_or_cos_doubleIfE' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'sin_or_cos_double_s_fourth_order_double_s' to 'sin_or_cos_doubleJfO' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_mul_170ns_53ns_223_5_1' to 'music_mul_170ns_5KfY' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_mul_49ns_49ns_98_2_1' to 'music_mul_49ns_49Lf8' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_mul_56ns_52s_108_2_1' to 'music_mul_56ns_52Mgi' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_mul_49ns_44s_93_2_1' to 'music_mul_49ns_44Ngs' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_mul_42ns_33ns_75_2_1' to 'music_mul_42ns_33OgC' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_mul_64s_63ns_126_5_1' to 'music_mul_64s_63nPgM' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'music_mul_170ns_5KfY': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_mul_42ns_33OgC': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_mul_49ns_44Ngs': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_mul_49ns_49Lf8': 3 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_mul_56ns_52Mgi': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_mul_64s_63nPgM': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_mux_164_1_1_1': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_mux_83_1_1_1': 1 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'sin_or_cos_double_s'.
-INFO: [HLS 200-111]  Elapsed time: 0.958 seconds; current allocated memory: 794.235 MB.
+INFO: [HLS 200-111]  Elapsed time: 2.197 seconds; current allocated memory: 688.354 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'music' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [RTGEN 206-500] Setting interface mode on port 'music/X' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'music/Xj_f_M_real' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'music/Xj_f_M_imag' to 'ap_memory'.
 INFO: [RTGEN 206-500] Setting interface mode on port 'music/P_sm' to 'ap_memory'.
 INFO: [RTGEN 206-500] Setting interface mode on function 'music' to 'ap_ctrl_hs'.
-INFO: [SYN 201-210] Renamed object name 'music_Autocorr_Buffer_M_r' to 'music_Autocorr_BuQgW' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_Autocorr_Buffer_M_i' to 'music_Autocorr_BuRg6' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_a_theta_M_real' to 'music_a_theta_M_rShg' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_a_theta_M_imag' to 'music_a_theta_M_iThq' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_fpext_32ns_64_2_1' to 'music_fpext_32ns_UhA' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'music_dmul_64ns_64ns_64_6_max_dsp_1' to 'music_dmul_64ns_6VhK' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'music_ddiv_64ns_6lbW': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_dmul_64ns_6VhK': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_faddfsub_32ibs': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fdiv_32ns_3ncg': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fmul_32ns_3jbC': 4 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fpext_32ns_UhA': 1 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_fptrunc_64nkbM': 2 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'music_mux_42_32_1_1': 2 instance(s).
+INFO: [SYN 201-210] Renamed object name 'music_ref_4oPi_table_256_V' to 'music_ref_4oPi_taocq' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_fourth_order_double_4' to 'music_fourth_ordepcA' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_fourth_order_double_5' to 'music_fourth_ordeqcK' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_fourth_order_double_6' to 'music_fourth_ordercU' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_fourth_order_double_7' to 'music_fourth_ordesc4' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_fourth_order_double_s' to 'music_fourth_ordetde' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_Rx_temp_M_real' to 'music_Rx_temp_M_rudo' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_Rx_temp_M_imag' to 'music_Rx_temp_M_ivdy' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_eig_mat_M_real' to 'music_eig_mat_M_rwdI' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_eig_mat_M_imag' to 'music_eig_mat_M_ixdS' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_Autocorr_Buffer_M_r' to 'music_Autocorr_Buyd2' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_Autocorr_Buffer_M_i' to 'music_Autocorr_Buzec' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_temp_mat_M_real' to 'music_temp_mat_M_Aem' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_temp_mat_M_imag' to 'music_temp_mat_M_Bew' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_a_theta_M_real' to 'music_a_theta_M_rCeG' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_a_theta_M_imag' to 'music_a_theta_M_iDeQ' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_fptrunc_64ns_32_2_1' to 'music_fptrunc_64nEe0' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_fpext_32ns_64_2_1' to 'music_fpext_32ns_Ffa' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_dmul_64ns_64ns_64_4_max_dsp_1' to 'music_dmul_64ns_6Gfk' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_ddiv_64ns_64ns_64_17_1' to 'music_ddiv_64ns_6Hfu' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_sitodp_32ns_64_3_1' to 'music_sitodp_32nsIfE' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'music_mul_170ns_53ns_223_2_1' to 'music_mul_170ns_5JfO' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'music_ddiv_64ns_6Hfu': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_dmul_64ns_6Gfk': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_faddfsub_32ncg': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fcmp_32ns_3kbM': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fdiv_32ns_3jbC': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fmul_32ns_3ibs': 6 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fpext_32ns_Ffa': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fptrunc_64nEe0': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fsqrt_32ns_lbW': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_fsub_32ns_3mb6': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_mul_170ns_5JfO': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_mux_164_1_1_1': 2 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_mux_42_32_1_1': 7 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_mux_83_1_1_1': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'music_sitodp_32nsIfE': 1 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'music'.
-INFO: [HLS 200-111]  Elapsed time: 1.639 seconds; current allocated memory: 799.409 MB.
-INFO: [RTMG 210-282] Generating pipelined core: 'music_mul_80ns_24fYi_MulnS_0'
+INFO: [HLS 200-111]  Elapsed time: 1.785 seconds; current allocated memory: 697.720 MB.
 INFO: [RTMG 210-279] Implementing memory 'sin_or_cos_float_bkb_rom' using distributed ROMs.
 INFO: [RTMG 210-279] Implementing memory 'sin_or_cos_float_cud_rom' using distributed ROMs.
 INFO: [RTMG 210-279] Implementing memory 'sin_or_cos_float_dEe_rom' using distributed ROMs.
 INFO: [RTMG 210-279] Implementing memory 'sin_or_cos_float_eOg_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'qrf_alt_CONFIG_BAsc4_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'qrf_alt_CONFIG_SEtde_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'qrf_alt_CONFIG_SEudo_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'qrf_alt_CONFIG_SEvdy_rom' using distributed ROMs.
-INFO: [RTMG 210-278] Implementing memory 'qrf_alt_q_i_M_real_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-285] Implementing FIFO 'to_rot_0_V_U(fifo_w32_d2_A)' using Shift Registers.
-INFO: [RTMG 210-285] Implementing FIFO 'to_rot_1_V_U(fifo_w32_d2_A)' using Shift Registers.
-INFO: [RTMG 210-285] Implementing FIFO 'to_rot_2_V_U(fifo_w32_d2_A)' using Shift Registers.
-INFO: [RTMG 210-285] Implementing FIFO 'rotations_V_M_real_s_U(fifo_w32_d2_A)' using Shift Registers.
-INFO: [RTMG 210-285] Implementing FIFO 'rotations_V_M_real_1_U(fifo_w32_d2_A)' using Shift Registers.
-INFO: [RTMG 210-285] Implementing FIFO 'rotations_V_M_real_2_U(fifo_w32_d2_A)' using Shift Registers.
-INFO: [RTMG 210-285] Implementing FIFO 'rotations_V_M_real_3_U(fifo_w32_d2_A)' using Shift Registers.
-INFO: [RTMG 210-285] Implementing FIFO 'rotations_V_M_real_4_U(fifo_w32_d2_A)' using Shift Registers.
-INFO: [RTMG 210-285] Implementing FIFO 'rotations_V_M_imag_s_U(fifo_w32_d2_A)' using Shift Registers.
-INFO: [RTMG 210-285] Implementing FIFO 'rotations_V_M_imag_1_U(fifo_w32_d2_A)' using Shift Registers.
-INFO: [RTMG 210-285] Implementing FIFO 'rotations_V_M_imag_2_U(fifo_w32_d2_A)' using Shift Registers.
-INFO: [RTMG 210-285] Implementing FIFO 'rotations_V_M_imag_3_U(fifo_w32_d2_A)' using Shift Registers.
-INFO: [RTMG 210-285] Implementing FIFO 'rotations_V_M_imag_4_U(fifo_w32_d2_A)' using Shift Registers.
-INFO: [RTMG 210-278] Implementing memory 'eig_decompose_Q_twdI_ram (RAM)' using distributed RAMs.
-INFO: [RTMG 210-282] Generating pipelined core: 'music_mul_170ns_5KfY_MulnS_1'
-INFO: [RTMG 210-282] Generating pipelined core: 'music_mul_49ns_49Lf8_MulnS_2'
-INFO: [RTMG 210-282] Generating pipelined core: 'music_mul_56ns_52Mgi_MulnS_3'
-INFO: [RTMG 210-282] Generating pipelined core: 'music_mul_49ns_44Ngs_MulnS_4'
-INFO: [RTMG 210-282] Generating pipelined core: 'music_mul_42ns_33OgC_MulnS_5'
-INFO: [RTMG 210-282] Generating pipelined core: 'music_mul_64s_63nPgM_MulnS_6'
-INFO: [RTMG 210-279] Implementing memory 'sin_or_cos_doubleEe0_rom' using auto ROMs.
-INFO: [RTMG 210-279] Implementing memory 'sin_or_cos_doubleFfa_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'sin_or_cos_doubleGfk_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'sin_or_cos_doubleHfu_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'sin_or_cos_doubleIfE_rom' using distributed ROMs.
-INFO: [RTMG 210-279] Implementing memory 'sin_or_cos_doubleJfO_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'qrf_basic_Qi_M_real_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-282] Generating pipelined core: 'music_mul_170ns_5JfO_MulnS_0'
 INFO: [RTMG 210-279] Implementing memory 'music_fc_rom' using auto ROMs.
 INFO: [RTMG 210-279] Implementing memory 'music_theta_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'music_ref_4oPi_taocq_rom' using auto ROMs.
+INFO: [RTMG 210-279] Implementing memory 'music_fourth_ordepcA_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'music_fourth_ordeqcK_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'music_fourth_ordercU_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'music_fourth_ordesc4_rom' using distributed ROMs.
+INFO: [RTMG 210-279] Implementing memory 'music_fourth_ordetde_rom' using distributed ROMs.
+INFO: [RTMG 210-278] Implementing memory 'music_Q_temp_M_real_ram (RAM)' using distributed RAMs.
 INFO: [RTMG 210-278] Implementing memory 'music_FFT_Buffer_re_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-278] Implementing memory 'music_Xj_f_M_real_ram (RAM)' using block RAMs.
-INFO: [RTMG 210-278] Implementing memory 'music_Autocorr_BuQgW_ram (RAM)' using block RAMs.
+INFO: [RTMG 210-278] Implementing memory 'music_Autocorr_Buyd2_ram (RAM)' using block RAMs.
 INFO: [RTMG 210-278] Implementing memory 'music_Un_M_real_ram (RAM)' using distributed RAMs.
 INFO: [RTMG 210-278] Implementing memory 'music_AUU_M_real_ram (RAM)' using block RAMs.
 INFO: [RTMG 210-278] Implementing memory 'music_w_M_real_ram (RAM)' using block RAMs.
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:34 ; elapsed = 00:02:16 . Memory (MB): peak = 940.262 ; gain = 849.477
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:01:24 ; elapsed = 00:02:05 . Memory (MB): peak = 830.340 ; gain = 740.172
 INFO: [VHDL 208-304] Generating VHDL RTL for music.
 INFO: [VLOG 209-307] Generating Verilog RTL for music.
-INFO: [HLS 200-112] Total elapsed time: 136.769 seconds; peak allocated memory: 799.409 MB.
+INFO: [HLS 200-112] Total elapsed time: 125.355 seconds; peak allocated memory: 697.720 MB.

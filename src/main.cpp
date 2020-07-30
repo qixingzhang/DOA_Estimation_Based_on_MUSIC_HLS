@@ -8,6 +8,7 @@ int main() {
 	int DOA1, DOA2;
 	float align_out[N_SAMPLE];
 	float P_sm[361];
+	complex_float Xj_f[N_FREQ][N_STFT][N_SENSOR];
 
 	AudioFile<double> ch1, ch2, ch3, ch4;
 	ch1.load ("test_audio/test_2_ch_1.wav");
@@ -28,7 +29,7 @@ int main() {
 		X[i][3] = ch4.samples[0][i];
 	}
 
-	music(X, P_sm);
+	music(X, Xj_f, P_sm);
 
 	float p_max[361];
 	int index[361];

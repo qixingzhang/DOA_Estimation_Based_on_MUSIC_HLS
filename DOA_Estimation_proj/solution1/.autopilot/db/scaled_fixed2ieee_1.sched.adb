@@ -947,7 +947,7 @@
 					<Obj>
 						<type>0</type>
 						<id>24</id>
-						<name>p_Result_43</name>
+						<name>p_Result_22</name>
 						<fileName>r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h</fileName>
 						<fileDirectory>r:\builds\2019.1\continuous\2019_05_24_2552052\src\products</fileDirectory>
 						<lineNumber>307</lineNumber>
@@ -2368,7 +2368,7 @@
 					<Obj>
 						<type>0</type>
 						<id>59</id>
-						<name>tmp_10</name>
+						<name>tmp_7</name>
 						<fileName>r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h</fileName>
 						<fileDirectory>r:\builds\2019.1\continuous\2019_05_24_2552052\src\products</fileDirectory>
 						<lineNumber>330</lineNumber>
@@ -2715,7 +2715,7 @@
 					<Obj>
 						<type>0</type>
 						<id>66</id>
-						<name>p_Result_44</name>
+						<name>p_Result_23</name>
 						<fileName>r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h</fileName>
 						<fileDirectory>r:\builds\2019.1\continuous\2019_05_24_2552052\src\products</fileDirectory>
 						<lineNumber>335</lineNumber>

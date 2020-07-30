@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'scaled_fixed2ieee'" level="0">
-<item name = "Date">Thu Jul 30 14:37:36 2020
+<item name = "Date">Thu Jul 30 16:23:49 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">DOA_Estimation_proj</item>
@@ -52,20 +52,20 @@
 <column name="DSP">-, -, -, -, -</column>
 <column name="Expression">-, -, 40, 1391, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, -, 0, 42, -</column>
+<column name="Instance">-, -, 0, 130, -</column>
 <column name="Memory">-, -, -, -, -</column>
 <column name="Multiplexer">-, -, -, 131, -</column>
 <column name="Register">-, -, 748, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 0, ~0, 2, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, 3, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="music_mux_42_32_1_1_U196">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U197">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
+<column name="music_mux_42_32_1_1_U181">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
+<column name="music_mux_42_32_1_1_U182">music_mux_42_32_1_1, 0, 0, 0, 65, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -108,13 +108,13 @@
 <column name="lshr_ln566_fu_346_p2">lshr, 0, 0, 180, 63, 63</column>
 <column name="or_ln453_fu_588_p2">or, 0, 0, 2, 1, 1</column>
 <column name="out_exp_V_fu_615_p3">select, 0, 0, 11, 1, 1</column>
-<column name="r_V_44_fu_548_p3">select, 0, 0, 63, 1, 63</column>
+<column name="r_V_17_fu_548_p3">select, 0, 0, 63, 1, 63</column>
 <column name="select_ln566_1_fu_321_p3">select, 0, 0, 63, 1, 63</column>
 <column name="select_ln566_2_fu_327_p3">select, 0, 0, 6, 1, 6</column>
 <column name="select_ln566_fu_314_p3">select, 0, 0, 6, 1, 6</column>
 <column name="significand_V_fu_607_p3">select, 0, 0, 52, 1, 1</column>
 <column name="ush_fu_527_p3">select, 0, 0, 32, 1, 32</column>
-<column name="r_V_42_fu_542_p2">shl, 0, 0, 180, 63, 63</column>
+<column name="r_V_15_fu_542_p2">shl, 0, 0, 180, 63, 63</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
@@ -125,7 +125,7 @@
 <column name="i2_0_reg_190">9, 2, 3, 6</column>
 <column name="i_0_reg_134">9, 2, 2, 4</column>
 <column name="p_0119_0_reg_168">9, 2, 63, 126</column>
-<column name="p_Val2_63_reg_201">9, 2, 63, 126</column>
+<column name="p_Val2_31_reg_201">9, 2, 63, 126</column>
 <column name="p_Val2_s_reg_146">15, 3, 32, 96</column>
 <column name="shift_0_reg_178">9, 2, 32, 64</column>
 <column name="shift_1_reg_211">9, 2, 32, 64</column>
@@ -155,8 +155,8 @@
 <column name="out_bits_2_V_fu_94">32, 0, 32, 0</column>
 <column name="out_bits_2_V_load_reg_669">32, 0, 32, 0</column>
 <column name="p_0119_0_reg_168">63, 0, 63, 0</column>
-<column name="p_Result_45_reg_744">32, 0, 32, 0</column>
-<column name="p_Val2_63_reg_201">63, 0, 63, 0</column>
+<column name="p_Result_24_reg_744">32, 0, 32, 0</column>
+<column name="p_Val2_31_reg_201">63, 0, 63, 0</column>
 <column name="p_Val2_s_reg_146">32, 0, 32, 0</column>
 <column name="sh_assign_reg_774">32, 0, 32, 0</column>
 <column name="shift_0_reg_178">32, 0, 32, 0</column>

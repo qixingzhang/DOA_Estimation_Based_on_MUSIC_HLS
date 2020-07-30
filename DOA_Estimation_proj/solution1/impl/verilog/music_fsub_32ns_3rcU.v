@@ -7,7 +7,7 @@
 
 module music_fsub_32ns_3rcU
 #(parameter
-    ID         = 82,
+    ID         = 79,
     NUM_STAGE  = 5,
     din0_WIDTH = 32,
     din1_WIDTH = 32,
@@ -31,6 +31,9 @@ wire                  r_tvalid;
 wire [31:0]           r_tdata;
 reg  [din0_WIDTH-1:0] din0_buf1;
 reg  [din1_WIDTH-1:0] din1_buf1;
+reg                   ce_r;
+wire [dout_WIDTH-1:0] dout_i;
+reg  [dout_WIDTH-1:0] dout_r;
 //------------------------Instantiation------------------
 music_ap_fsub_3_full_dsp_32 music_ap_fsub_3_full_dsp_32_u (
     .aclk                 ( aclk ),
@@ -44,12 +47,12 @@ music_ap_fsub_3_full_dsp_32 music_ap_fsub_3_full_dsp_32_u (
 );
 //------------------------Body---------------------------
 assign aclk     = clk;
-assign aclken   = ce;
+assign aclken   = ce_r;
 assign a_tvalid = 1'b1;
 assign a_tdata  = din0_buf1;
 assign b_tvalid = 1'b1;
 assign b_tdata  = din1_buf1;
-assign dout     = r_tdata;
+assign dout_i   = r_tdata;
 
 always @(posedge clk) begin
     if (ce) begin
@@ -58,4 +61,15 @@ always @(posedge clk) begin
     end
 end
 
+always @ (posedge clk) begin
+    ce_r <= ce;
+end
+
+always @ (posedge clk) begin
+    if (ce_r) begin
+        dout_r <= dout_i;
+    end
+end
+
+assign dout = ce_r?dout_i:dout_r;
 endmodule
