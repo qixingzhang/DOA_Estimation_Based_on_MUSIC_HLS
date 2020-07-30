@@ -3,7 +3,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 `timescale 1 ns / 1 ps
-module fft_X_R_ram (addr0, ce0, d0, we0, q0, addr1, ce1, d1, we1, q1,  clk);
+module music_FFT_Buffer_re_ram (addr0, ce0, d0, we0, q0, addr1, ce1, d1, we1, q1,  clk);
 
 parameter DWIDTH = 32;
 parameter AWIDTH = 10;
@@ -55,7 +55,7 @@ end
 endmodule
 
 `timescale 1 ns / 1 ps
-module fft_X_R(
+module music_FFT_Buffer_re(
     reset,
     clk,
     address0,
@@ -87,7 +87,7 @@ output[DataWidth - 1:0] q1;
 
 
 
-fft_X_R_ram fft_X_R_ram_U(
+music_FFT_Buffer_re_ram music_FFT_Buffer_re_ram_U(
     .clk( clk ),
     .addr0( address0 ),
     .ce0( ce0 ),

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'sin_or_cos_double_s'
 ================================================================
-* Date:           Wed Jul 29 20:31:42 2020
+* Date:           Thu Jul 30 14:37:37 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        DOA_Estimation_proj
@@ -73,17 +73,17 @@
     +------------------------------+----------------------+---------+-------+-----+------+-----+
     |           Instance           |        Module        | BRAM_18K| DSP48E|  FF |  LUT | URAM|
     +------------------------------+----------------------+---------+-------+-----+------+-----+
-    |music_mul_170ns_5KfY_U201     |music_mul_170ns_5KfY  |        0|     21|  441|   256|    0|
-    |music_mul_42ns_33OgC_U208     |music_mul_42ns_33OgC  |        0|      4|  205|    88|    0|
-    |music_mul_49ns_44Ngs_U207     |music_mul_49ns_44Ngs  |        0|      9|  233|    85|    0|
+    |music_mul_170ns_5KfY_U200     |music_mul_170ns_5KfY  |        0|     21|  441|   256|    0|
+    |music_mul_42ns_33OgC_U207     |music_mul_42ns_33OgC  |        0|      4|  205|    88|    0|
+    |music_mul_49ns_44Ngs_U206     |music_mul_49ns_44Ngs  |        0|      9|  233|    85|    0|
+    |music_mul_49ns_49Lf8_U202     |music_mul_49ns_49Lf8  |        0|      9|  233|    85|    0|
     |music_mul_49ns_49Lf8_U203     |music_mul_49ns_49Lf8  |        0|      9|  233|    85|    0|
     |music_mul_49ns_49Lf8_U204     |music_mul_49ns_49Lf8  |        0|      9|  233|    85|    0|
-    |music_mul_49ns_49Lf8_U205     |music_mul_49ns_49Lf8  |        0|      9|  233|    85|    0|
-    |music_mul_56ns_52Mgi_U206     |music_mul_56ns_52Mgi  |        0|      9|  176|   219|    0|
-    |music_mul_64s_63nPgM_U209     |music_mul_64s_63nPgM  |        0|     16|  441|   256|    0|
+    |music_mul_56ns_52Mgi_U205     |music_mul_56ns_52Mgi  |        0|      9|  176|   219|    0|
+    |music_mul_64s_63nPgM_U208     |music_mul_64s_63nPgM  |        0|     16|  441|   256|    0|
+    |music_mux_164_1_1_1_U209      |music_mux_164_1_1_1   |        0|      0|    0|    21|    0|
     |music_mux_164_1_1_1_U210      |music_mux_164_1_1_1   |        0|      0|    0|    21|    0|
-    |music_mux_164_1_1_1_U211      |music_mux_164_1_1_1   |        0|      0|    0|    21|    0|
-    |music_mux_83_1_1_1_U202       |music_mux_83_1_1_1    |        0|      0|    0|    21|    0|
+    |music_mux_83_1_1_1_U201       |music_mux_83_1_1_1    |        0|      0|    0|    21|    0|
     |grp_scaled_fixed2ieee_fu_268  |scaled_fixed2ieee     |        0|      0|  788|  1564|    0|
     +------------------------------+----------------------+---------+-------+-----+------+-----+
     |Total                         |                      |        0|     86| 2983|  2786|    0|

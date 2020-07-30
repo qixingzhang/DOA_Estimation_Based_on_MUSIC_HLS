@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'sin_or_cos_double_s'" level="0">
-<item name = "Date">Wed Jul 29 20:31:42 2020
+<item name = "Date">Thu Jul 30 14:37:37 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">DOA_Estimation_proj</item>
@@ -62,17 +62,17 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
-<column name="music_mul_170ns_5KfY_U201">music_mul_170ns_5KfY, 0, 21, 441, 256, 0</column>
-<column name="music_mul_42ns_33OgC_U208">music_mul_42ns_33OgC, 0, 4, 205, 88, 0</column>
-<column name="music_mul_49ns_44Ngs_U207">music_mul_49ns_44Ngs, 0, 9, 233, 85, 0</column>
+<column name="music_mul_170ns_5KfY_U200">music_mul_170ns_5KfY, 0, 21, 441, 256, 0</column>
+<column name="music_mul_42ns_33OgC_U207">music_mul_42ns_33OgC, 0, 4, 205, 88, 0</column>
+<column name="music_mul_49ns_44Ngs_U206">music_mul_49ns_44Ngs, 0, 9, 233, 85, 0</column>
+<column name="music_mul_49ns_49Lf8_U202">music_mul_49ns_49Lf8, 0, 9, 233, 85, 0</column>
 <column name="music_mul_49ns_49Lf8_U203">music_mul_49ns_49Lf8, 0, 9, 233, 85, 0</column>
 <column name="music_mul_49ns_49Lf8_U204">music_mul_49ns_49Lf8, 0, 9, 233, 85, 0</column>
-<column name="music_mul_49ns_49Lf8_U205">music_mul_49ns_49Lf8, 0, 9, 233, 85, 0</column>
-<column name="music_mul_56ns_52Mgi_U206">music_mul_56ns_52Mgi, 0, 9, 176, 219, 0</column>
-<column name="music_mul_64s_63nPgM_U209">music_mul_64s_63nPgM, 0, 16, 441, 256, 0</column>
+<column name="music_mul_56ns_52Mgi_U205">music_mul_56ns_52Mgi, 0, 9, 176, 219, 0</column>
+<column name="music_mul_64s_63nPgM_U208">music_mul_64s_63nPgM, 0, 16, 441, 256, 0</column>
+<column name="music_mux_164_1_1_1_U209">music_mux_164_1_1_1, 0, 0, 0, 21, 0</column>
 <column name="music_mux_164_1_1_1_U210">music_mux_164_1_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_164_1_1_1_U211">music_mux_164_1_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_83_1_1_1_U202">music_mux_83_1_1_1, 0, 0, 0, 21, 0</column>
+<column name="music_mux_83_1_1_1_U201">music_mux_83_1_1_1, 0, 0, 0, 21, 0</column>
 <column name="grp_scaled_fixed2ieee_fu_268">scaled_fixed2ieee, 0, 0, 788, 1564, 0</column>
 </table>
 </item>

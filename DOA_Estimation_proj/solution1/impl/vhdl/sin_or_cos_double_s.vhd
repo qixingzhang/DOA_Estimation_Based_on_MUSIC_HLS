@@ -704,7 +704,7 @@ begin
         prescale => ret_V_reg_1420,
         ap_return => grp_scaled_fixed2ieee_fu_268_ap_return);
 
-    music_mul_170ns_5KfY_U201 : component music_mul_170ns_5KfY
+    music_mul_170ns_5KfY_U200 : component music_mul_170ns_5KfY
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -719,7 +719,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_372_p2);
 
-    music_mux_83_1_1_1_U202 : component music_mux_83_1_1_1
+    music_mux_83_1_1_1_U201 : component music_mux_83_1_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -745,7 +745,7 @@ begin
         din8 => p_Val2_58_reg_1164,
         dout => tmp_fu_594_p10);
 
-    music_mul_49ns_49Lf8_U203 : component music_mul_49ns_49Lf8
+    music_mul_49ns_49Lf8_U202 : component music_mul_49ns_49Lf8
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -760,7 +760,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_618_p2);
 
-    music_mul_49ns_49Lf8_U204 : component music_mul_49ns_49Lf8
+    music_mul_49ns_49Lf8_U203 : component music_mul_49ns_49Lf8
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -775,7 +775,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_662_p2);
 
-    music_mul_49ns_49Lf8_U205 : component music_mul_49ns_49Lf8
+    music_mul_49ns_49Lf8_U204 : component music_mul_49ns_49Lf8
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -790,7 +790,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_667_p2);
 
-    music_mul_56ns_52Mgi_U206 : component music_mul_56ns_52Mgi
+    music_mul_56ns_52Mgi_U205 : component music_mul_56ns_52Mgi
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -805,7 +805,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_679_p2);
 
-    music_mul_49ns_44Ngs_U207 : component music_mul_49ns_44Ngs
+    music_mul_49ns_44Ngs_U206 : component music_mul_49ns_44Ngs
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -820,7 +820,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_691_p2);
 
-    music_mul_42ns_33OgC_U208 : component music_mul_42ns_33OgC
+    music_mul_42ns_33OgC_U207 : component music_mul_42ns_33OgC
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -835,7 +835,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_750_p2);
 
-    music_mul_64s_63nPgM_U209 : component music_mul_64s_63nPgM
+    music_mul_64s_63nPgM_U208 : component music_mul_64s_63nPgM
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -850,7 +850,7 @@ begin
         ce => ap_const_logic_1,
         dout => grp_fu_851_p2);
 
-    music_mux_164_1_1_1_U210 : component music_mux_164_1_1_1
+    music_mux_164_1_1_1_U209 : component music_mux_164_1_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -892,7 +892,7 @@ begin
         din16 => p_Result_41_fu_911_p3,
         dout => tmp_s_fu_917_p18);
 
-    music_mux_164_1_1_1_U211 : component music_mux_164_1_1_1
+    music_mux_164_1_1_1_U210 : component music_mux_164_1_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

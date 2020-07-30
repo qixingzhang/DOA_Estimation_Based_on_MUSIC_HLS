@@ -13,7 +13,6 @@ music_fmul_32ns_3jbC
 music_fptrunc_64nkbM
 music_ddiv_64ns_6lbW
 music_sitodp_32nsmb6
-fft_X_R
 music_fdiv_32ns_3ncg
 music_fadd_32ns_3ocq
 music_fcmp_32ns_3pcA
@@ -51,13 +50,13 @@ sin_or_cos_doubleGfk
 sin_or_cos_doubleHfu
 sin_or_cos_doubleIfE
 sin_or_cos_doubleJfO
-music_fpext_32ns_WhU
-music_dmul_64ns_6Xh4
+music_fpext_32ns_UhA
+music_dmul_64ns_6VhK
 music_fc
 music_theta
-music_FFT_Buffer_QgW
+music_FFT_Buffer_re
 music_Xj_f_M_real
-music_Autocorr_BuShg
+music_Autocorr_BuQgW
 music_Un_M_real
 music_AUU_M_real
 music_w_M_real

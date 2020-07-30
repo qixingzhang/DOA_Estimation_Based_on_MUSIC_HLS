@@ -37,16 +37,6 @@
 			<location>C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/DOA_Estimation_proj/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/complex</name>
-			<type>1</type>
-			<location>C:/Xilinx/Vivado/2019.1/msys64/mingw64/include/c++/6.2.0/complex</location>
-		</link>
-		<link>
-			<name>.reference/hls_qrf.h</name>
-			<type>1</type>
-			<location>C:/Xilinx/Vivado/2019.1/include/hls/linear_algebra/hls_qrf.h</location>
-		</link>
-		<link>
 			<name>.reference/music.h</name>
 			<type>1</type>
 			<location>C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/src/music.h</location>
@@ -60,6 +50,11 @@
 			<name>source/music.cpp</name>
 			<type>1</type>
 			<location>C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/src/music.cpp</location>
+		</link>
+		<link>
+			<name>testbench/main.cpp</name>
+			<type>1</type>
+			<location>C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/src/main.cpp</location>
 		</link>
 		<link>
 			<name>testbench/test.cpp</name>

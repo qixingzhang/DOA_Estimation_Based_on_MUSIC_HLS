@@ -368,7 +368,7 @@ music_mul_170ns_5KfY #(
     .din0_WIDTH( 170 ),
     .din1_WIDTH( 53 ),
     .dout_WIDTH( 223 ))
-music_mul_170ns_5KfY_U201(
+music_mul_170ns_5KfY_U200(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_372_p0),
@@ -390,7 +390,7 @@ music_mux_83_1_1_1 #(
     .din7_WIDTH( 1 ),
     .din8_WIDTH( 3 ),
     .dout_WIDTH( 1 ))
-music_mux_83_1_1_1_U202(
+music_mux_83_1_1_1_U201(
     .din0(1'd0),
     .din1(1'd1),
     .din2(1'd1),
@@ -409,7 +409,7 @@ music_mul_49ns_49Lf8 #(
     .din0_WIDTH( 49 ),
     .din1_WIDTH( 49 ),
     .dout_WIDTH( 98 ))
-music_mul_49ns_49Lf8_U203(
+music_mul_49ns_49Lf8_U202(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_618_p0),
@@ -424,7 +424,7 @@ music_mul_49ns_49Lf8 #(
     .din0_WIDTH( 49 ),
     .din1_WIDTH( 49 ),
     .dout_WIDTH( 98 ))
-music_mul_49ns_49Lf8_U204(
+music_mul_49ns_49Lf8_U203(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_662_p0),
@@ -439,7 +439,7 @@ music_mul_49ns_49Lf8 #(
     .din0_WIDTH( 49 ),
     .din1_WIDTH( 49 ),
     .dout_WIDTH( 98 ))
-music_mul_49ns_49Lf8_U205(
+music_mul_49ns_49Lf8_U204(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_667_p0),
@@ -454,7 +454,7 @@ music_mul_56ns_52Mgi #(
     .din0_WIDTH( 56 ),
     .din1_WIDTH( 52 ),
     .dout_WIDTH( 108 ))
-music_mul_56ns_52Mgi_U206(
+music_mul_56ns_52Mgi_U205(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_679_p0),
@@ -469,7 +469,7 @@ music_mul_49ns_44Ngs #(
     .din0_WIDTH( 49 ),
     .din1_WIDTH( 44 ),
     .dout_WIDTH( 93 ))
-music_mul_49ns_44Ngs_U207(
+music_mul_49ns_44Ngs_U206(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_691_p0),
@@ -484,7 +484,7 @@ music_mul_42ns_33OgC #(
     .din0_WIDTH( 42 ),
     .din1_WIDTH( 33 ),
     .dout_WIDTH( 75 ))
-music_mul_42ns_33OgC_U208(
+music_mul_42ns_33OgC_U207(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_750_p0),
@@ -499,7 +499,7 @@ music_mul_64s_63nPgM #(
     .din0_WIDTH( 64 ),
     .din1_WIDTH( 63 ),
     .dout_WIDTH( 126 ))
-music_mul_64s_63nPgM_U209(
+music_mul_64s_63nPgM_U208(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(ret_V_17_reg_1400),
@@ -529,7 +529,7 @@ music_mux_164_1_1_1 #(
     .din15_WIDTH( 1 ),
     .din16_WIDTH( 4 ),
     .dout_WIDTH( 1 ))
-music_mux_164_1_1_1_U210(
+music_mux_164_1_1_1_U209(
     .din0(1'd0),
     .din1(1'd0),
     .din2(1'd0),
@@ -571,7 +571,7 @@ music_mux_164_1_1_1 #(
     .din15_WIDTH( 1 ),
     .din16_WIDTH( 4 ),
     .dout_WIDTH( 1 ))
-music_mux_164_1_1_1_U211(
+music_mux_164_1_1_1_U210(
     .din0(1'd0),
     .din1(1'd0),
     .din2(1'd1),

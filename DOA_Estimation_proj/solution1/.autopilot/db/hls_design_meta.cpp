@@ -9,7 +9,9 @@ const Port_Property HLS_Design_Meta::port_props[]={
 	Port_Property("X_address0", 16, hls_out, 0, "ap_memory", "mem_address", 1),
 	Port_Property("X_ce0", 1, hls_out, 0, "ap_memory", "mem_ce", 1),
 	Port_Property("X_q0", 32, hls_in, 0, "ap_memory", "mem_dout", 1),
-	Port_Property("DOA_src", 32, hls_in, 1, "ap_none", "in_data", 1),
-	Port_Property("DOA_interfer", 32, hls_in, 2, "ap_none", "in_data", 1),
+	Port_Property("P_sm_address0", 9, hls_out, 1, "ap_memory", "mem_address", 1),
+	Port_Property("P_sm_ce0", 1, hls_out, 1, "ap_memory", "mem_ce", 1),
+	Port_Property("P_sm_we0", 1, hls_out, 1, "ap_memory", "mem_we", 1),
+	Port_Property("P_sm_d0", 32, hls_out, 1, "ap_memory", "mem_din", 1),
 };
 const char* HLS_Design_Meta::dut_name = "music";

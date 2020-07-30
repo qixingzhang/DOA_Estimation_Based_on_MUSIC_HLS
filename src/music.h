@@ -14,7 +14,7 @@
 #define N_SAMPLE 10240
 #define N_STFT 10
 #define N_FREQ 1024
-#define PIE 3.1415926
+#define PIE 3.14159265358979
 
 #define M 10 			/* Number of Stages = Log2N */
 #define SIZE 1024 		/* SIZE OF FFT */
@@ -27,8 +27,7 @@ typedef complex<float> complex_float;
 // top function
 void music(
 	float X[N_SAMPLE][N_SENSOR],	// input signal
-	int DOA_src,					// DOA of source signal
-	int DOA_interfer				// DOA of interfering signal
+	float P_sm[361]					// Spatial spectrum
 //	float align_out					// Output aligned signal
 );
 

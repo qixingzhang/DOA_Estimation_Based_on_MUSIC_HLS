@@ -57,20 +57,20 @@ const sc_lv<64> scaled_fixed2ieee::ap_const_lv64_0 = "00000000000000000000000000
 const bool scaled_fixed2ieee::ap_const_boolean_1 = true;
 
 scaled_fixed2ieee::scaled_fixed2ieee(sc_module_name name) : sc_module(name), mVcdFile(0) {
+    music_mux_42_32_1_1_U196 = new music_mux_42_32_1_1<1,1,32,32,32,32,2,32>("music_mux_42_32_1_1_U196");
+    music_mux_42_32_1_1_U196->din0(out_bits_2_V_load_reg_669);
+    music_mux_42_32_1_1_U196->din1(out_bits_2_V_1_load_reg_675);
+    music_mux_42_32_1_1_U196->din2(out_bits_2_V_2_load_reg_681);
+    music_mux_42_32_1_1_U196->din3(p_Result_45_reg_744);
+    music_mux_42_32_1_1_U196->din4(p_Val2_59_fu_418_p5);
+    music_mux_42_32_1_1_U196->dout(p_Val2_59_fu_418_p6);
     music_mux_42_32_1_1_U197 = new music_mux_42_32_1_1<1,1,32,32,32,32,2,32>("music_mux_42_32_1_1_U197");
-    music_mux_42_32_1_1_U197->din0(out_bits_2_V_load_reg_669);
-    music_mux_42_32_1_1_U197->din1(out_bits_2_V_1_load_reg_675);
-    music_mux_42_32_1_1_U197->din2(out_bits_2_V_2_load_reg_681);
-    music_mux_42_32_1_1_U197->din3(p_Result_45_reg_744);
-    music_mux_42_32_1_1_U197->din4(p_Val2_59_fu_418_p5);
-    music_mux_42_32_1_1_U197->dout(p_Val2_59_fu_418_p6);
-    music_mux_42_32_1_1_U198 = new music_mux_42_32_1_1<1,1,32,32,32,32,2,32>("music_mux_42_32_1_1_U198");
-    music_mux_42_32_1_1_U198->din0(c_3_1_fu_110);
-    music_mux_42_32_1_1_U198->din1(c_3_2_fu_114);
-    music_mux_42_32_1_1_U198->din2(c_3_3_fu_118);
-    music_mux_42_32_1_1_U198->din3(c_3_fu_106);
-    music_mux_42_32_1_1_U198->din4(sh_assign_fu_494_p5);
-    music_mux_42_32_1_1_U198->dout(sh_assign_fu_494_p6);
+    music_mux_42_32_1_1_U197->din0(c_3_1_fu_110);
+    music_mux_42_32_1_1_U197->din1(c_3_2_fu_114);
+    music_mux_42_32_1_1_U197->din2(c_3_3_fu_118);
+    music_mux_42_32_1_1_U197->din3(c_3_fu_106);
+    music_mux_42_32_1_1_U197->din4(sh_assign_fu_494_p5);
+    music_mux_42_32_1_1_U197->dout(sh_assign_fu_494_p6);
 
     SC_METHOD(thread_ap_clk_no_reset_);
     dont_initialize();
@@ -455,8 +455,8 @@ scaled_fixed2ieee::~scaled_fixed2ieee() {
     if (mVcdFile) 
         sc_close_vcd_trace_file(mVcdFile);
 
+    delete music_mux_42_32_1_1_U196;
     delete music_mux_42_32_1_1_U197;
-    delete music_mux_42_32_1_1_U198;
 }
 
 void scaled_fixed2ieee::thread_ap_clk_no_reset_() {

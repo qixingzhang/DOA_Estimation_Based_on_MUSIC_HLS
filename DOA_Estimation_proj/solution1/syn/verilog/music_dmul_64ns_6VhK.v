@@ -5,9 +5,9 @@
 
 `timescale 1ns/1ps
 
-module music_dmul_64ns_6Xh4
+module music_dmul_64ns_6VhK
 #(parameter
-    ID         = 241,
+    ID         = 235,
     NUM_STAGE  = 6,
     din0_WIDTH = 64,
     din1_WIDTH = 64,

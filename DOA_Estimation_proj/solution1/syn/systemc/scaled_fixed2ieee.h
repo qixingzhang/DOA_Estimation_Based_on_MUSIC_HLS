@@ -36,8 +36,8 @@ struct scaled_fixed2ieee : public sc_module {
 
     sc_trace_file* mVcdFile;
 
+    music_mux_42_32_1_1<1,1,32,32,32,32,2,32>* music_mux_42_32_1_1_U196;
     music_mux_42_32_1_1<1,1,32,32,32,32,2,32>* music_mux_42_32_1_1_U197;
-    music_mux_42_32_1_1<1,1,32,32,32,32,2,32>* music_mux_42_32_1_1_U198;
     sc_signal< sc_lv<8> > ap_CS_fsm;
     sc_signal< sc_logic > ap_CS_fsm_state1;
     sc_signal< sc_lv<32> > out_bits_2_V_load_reg_669;

@@ -2464,7 +2464,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fcmp_32ns_3pcA_U63</rtlName>
+              <rtlName>music_fcmp_32ns_3pcA_U62</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -2809,7 +2809,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fcmp_32ns_3pcA_U64</rtlName>
+              <rtlName>music_fcmp_32ns_3pcA_U63</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -3154,7 +3154,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fcmp_32ns_3pcA_U65</rtlName>
+              <rtlName>music_fcmp_32ns_3pcA_U64</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -3350,7 +3350,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fcmp_32ns_3pcA_U66</rtlName>
+              <rtlName>music_fcmp_32ns_3pcA_U65</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -3497,7 +3497,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fcmp_32ns_3pcA_U67</rtlName>
+              <rtlName>music_fcmp_32ns_3pcA_U66</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -3644,7 +3644,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fcmp_32ns_3pcA_U68</rtlName>
+              <rtlName>music_fcmp_32ns_3pcA_U67</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -3742,7 +3742,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fcmp_32ns_3pcA_U69</rtlName>
+              <rtlName>music_fcmp_32ns_3pcA_U68</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -3840,7 +3840,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fcmp_32ns_3pcA_U70</rtlName>
+              <rtlName>music_fcmp_32ns_3pcA_U69</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -3987,7 +3987,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fcmp_32ns_3pcA_U71</rtlName>
+              <rtlName>music_fcmp_32ns_3pcA_U70</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -5173,7 +5173,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fcmp_32ns_3pcA_U72</rtlName>
+              <rtlName>music_fcmp_32ns_3pcA_U71</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -5321,7 +5321,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>x1</originalName>
-              <rtlName>music_fdiv_32ns_3ncg_U60</rtlName>
+              <rtlName>music_fdiv_32ns_3ncg_U59</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5370,7 +5370,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>x2</originalName>
-              <rtlName>music_fdiv_32ns_3ncg_U61</rtlName>
+              <rtlName>music_fdiv_32ns_3ncg_U60</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5419,7 +5419,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>x3</originalName>
-              <rtlName>music_fdiv_32ns_3ncg_U62</rtlName>
+              <rtlName>music_fdiv_32ns_3ncg_U61</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5468,7 +5468,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>x1_sqd</originalName>
-              <rtlName>music_fmul_32ns_3jbC_U56</rtlName>
+              <rtlName>music_fmul_32ns_3jbC_U55</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5517,7 +5517,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>x2_sqd</originalName>
-              <rtlName>music_fmul_32ns_3jbC_U57</rtlName>
+              <rtlName>music_fmul_32ns_3jbC_U56</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5566,7 +5566,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>x3_sqd</originalName>
-              <rtlName>music_fmul_32ns_3jbC_U58</rtlName>
+              <rtlName>music_fmul_32ns_3jbC_U57</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5615,7 +5615,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>s1</originalName>
-              <rtlName>music_fadd_32ns_3ocq_U53</rtlName>
+              <rtlName>music_fadd_32ns_3ocq_U52</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5664,7 +5664,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>s2</originalName>
-              <rtlName>music_fadd_32ns_3ocq_U54</rtlName>
+              <rtlName>music_fadd_32ns_3ocq_U53</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5713,7 +5713,7 @@
                 </item>
               </inlineStackInfo>
               <originalName>s3</originalName>
-              <rtlName>music_fadd_32ns_3ocq_U55</rtlName>
+              <rtlName>music_fadd_32ns_3ocq_U54</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5783,7 +5783,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fsqrt_32ns_qcK_U73</rtlName>
+              <rtlName>music_fsqrt_32ns_qcK_U72</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -5832,7 +5832,7 @@
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fmul_32ns_3jbC_U59</rtlName>
+              <rtlName>music_fmul_32ns_3jbC_U58</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -9891,11 +9891,30 @@
         <count>21</count>
         <item_version>0</item_version>
         <item class_id="36" tracking_level="0" version="0">
-          <first>music_fadd_32ns_3ocq_U53 (music_fadd_32ns_3ocq)</first>
+          <first>music_fadd_32ns_3ocq_U52 (music_fadd_32ns_3ocq)</first>
           <second class_id="37" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
             <item class_id="38" tracking_level="0" version="0">
+              <first>DSP48E</first>
+              <second>2</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>205</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>390</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>music_fadd_32ns_3ocq_U53 (music_fadd_32ns_3ocq)</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
               <first>DSP48E</first>
               <second>2</second>
             </item>
@@ -9929,21 +9948,21 @@
           </second>
         </item>
         <item>
-          <first>music_fadd_32ns_3ocq_U55 (music_fadd_32ns_3ocq)</first>
+          <first>music_fcmp_32ns_3pcA_U62 (music_fcmp_32ns_3pcA)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
             <item>
               <first>DSP48E</first>
-              <second>2</second>
+              <second>0</second>
             </item>
             <item>
               <first>FF</first>
-              <second>205</second>
+              <second>66</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>390</second>
+              <second>239</second>
             </item>
           </second>
         </item>
@@ -10119,7 +10138,7 @@
           </second>
         </item>
         <item>
-          <first>music_fcmp_32ns_3pcA_U72 (music_fcmp_32ns_3pcA)</first>
+          <first>music_fdiv_32ns_3ncg_U59 (music_fdiv_32ns_3ncg)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -10129,11 +10148,11 @@
             </item>
             <item>
               <first>FF</first>
-              <second>66</second>
+              <second>761</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>239</second>
+              <second>994</second>
             </item>
           </second>
         </item>
@@ -10176,21 +10195,21 @@
           </second>
         </item>
         <item>
-          <first>music_fdiv_32ns_3ncg_U62 (music_fdiv_32ns_3ncg)</first>
+          <first>music_fmul_32ns_3jbC_U55 (music_fmul_32ns_3jbC)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
             <item>
               <first>DSP48E</first>
-              <second>0</second>
+              <second>3</second>
             </item>
             <item>
               <first>FF</first>
-              <second>761</second>
+              <second>143</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>994</second>
+              <second>321</second>
             </item>
           </second>
         </item>
@@ -10252,26 +10271,7 @@
           </second>
         </item>
         <item>
-          <first>music_fmul_32ns_3jbC_U59 (music_fmul_32ns_3jbC)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP48E</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>143</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>321</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>music_fsqrt_32ns_qcK_U73 (music_fsqrt_32ns_qcK)</first>
+          <first>music_fsqrt_32ns_qcK_U72 (music_fsqrt_32ns_qcK)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -13085,6 +13085,13 @@
         <count>21</count>
         <item_version>0</item_version>
         <item>
+          <first>music_fadd_32ns_3ocq_U52</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
+        <item>
           <first>music_fadd_32ns_3ocq_U53</first>
           <second>
             <count>0</count>
@@ -13099,7 +13106,7 @@
           </second>
         </item>
         <item>
-          <first>music_fadd_32ns_3ocq_U55</first>
+          <first>music_fcmp_32ns_3pcA_U62</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -13169,7 +13176,7 @@
           </second>
         </item>
         <item>
-          <first>music_fcmp_32ns_3pcA_U72</first>
+          <first>music_fdiv_32ns_3ncg_U59</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -13190,7 +13197,7 @@
           </second>
         </item>
         <item>
-          <first>music_fdiv_32ns_3ncg_U62</first>
+          <first>music_fmul_32ns_3jbC_U55</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -13218,14 +13225,7 @@
           </second>
         </item>
         <item>
-          <first>music_fmul_32ns_3jbC_U59</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
-        <item>
-          <first>music_fsqrt_32ns_qcK_U73</first>
+          <first>music_fsqrt_32ns_qcK_U72</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -13236,7 +13236,7 @@
         <count>21</count>
         <item_version>0</item_version>
         <item class_id="40" tracking_level="0" version="0">
-          <first>music_fadd_32ns_3ocq_U53 (music_fadd_32ns_3ocq)</first>
+          <first>music_fadd_32ns_3ocq_U52 (music_fadd_32ns_3ocq)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13244,7 +13244,7 @@
           </second>
         </item>
         <item>
-          <first>music_fadd_32ns_3ocq_U54 (music_fadd_32ns_3ocq)</first>
+          <first>music_fadd_32ns_3ocq_U53 (music_fadd_32ns_3ocq)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13252,7 +13252,7 @@
           </second>
         </item>
         <item>
-          <first>music_fadd_32ns_3ocq_U55 (music_fadd_32ns_3ocq)</first>
+          <first>music_fadd_32ns_3ocq_U54 (music_fadd_32ns_3ocq)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13260,7 +13260,7 @@
           </second>
         </item>
         <item>
-          <first>music_fcmp_32ns_3pcA_U63 (music_fcmp_32ns_3pcA)</first>
+          <first>music_fcmp_32ns_3pcA_U62 (music_fcmp_32ns_3pcA)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13268,7 +13268,7 @@
           </second>
         </item>
         <item>
-          <first>music_fcmp_32ns_3pcA_U64 (music_fcmp_32ns_3pcA)</first>
+          <first>music_fcmp_32ns_3pcA_U63 (music_fcmp_32ns_3pcA)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13276,7 +13276,7 @@
           </second>
         </item>
         <item>
-          <first>music_fcmp_32ns_3pcA_U65 (music_fcmp_32ns_3pcA)</first>
+          <first>music_fcmp_32ns_3pcA_U64 (music_fcmp_32ns_3pcA)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13284,7 +13284,7 @@
           </second>
         </item>
         <item>
-          <first>music_fcmp_32ns_3pcA_U66 (music_fcmp_32ns_3pcA)</first>
+          <first>music_fcmp_32ns_3pcA_U65 (music_fcmp_32ns_3pcA)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13292,7 +13292,7 @@
           </second>
         </item>
         <item>
-          <first>music_fcmp_32ns_3pcA_U67 (music_fcmp_32ns_3pcA)</first>
+          <first>music_fcmp_32ns_3pcA_U66 (music_fcmp_32ns_3pcA)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13300,7 +13300,7 @@
           </second>
         </item>
         <item>
-          <first>music_fcmp_32ns_3pcA_U68 (music_fcmp_32ns_3pcA)</first>
+          <first>music_fcmp_32ns_3pcA_U67 (music_fcmp_32ns_3pcA)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13308,7 +13308,7 @@
           </second>
         </item>
         <item>
-          <first>music_fcmp_32ns_3pcA_U69 (music_fcmp_32ns_3pcA)</first>
+          <first>music_fcmp_32ns_3pcA_U68 (music_fcmp_32ns_3pcA)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13316,7 +13316,7 @@
           </second>
         </item>
         <item>
-          <first>music_fcmp_32ns_3pcA_U70 (music_fcmp_32ns_3pcA)</first>
+          <first>music_fcmp_32ns_3pcA_U69 (music_fcmp_32ns_3pcA)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13324,7 +13324,7 @@
           </second>
         </item>
         <item>
-          <first>music_fcmp_32ns_3pcA_U71 (music_fcmp_32ns_3pcA)</first>
+          <first>music_fcmp_32ns_3pcA_U70 (music_fcmp_32ns_3pcA)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13332,7 +13332,7 @@
           </second>
         </item>
         <item>
-          <first>music_fcmp_32ns_3pcA_U72 (music_fcmp_32ns_3pcA)</first>
+          <first>music_fcmp_32ns_3pcA_U71 (music_fcmp_32ns_3pcA)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13340,7 +13340,7 @@
           </second>
         </item>
         <item>
-          <first>music_fdiv_32ns_3ncg_U60 (music_fdiv_32ns_3ncg)</first>
+          <first>music_fdiv_32ns_3ncg_U59 (music_fdiv_32ns_3ncg)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13348,7 +13348,7 @@
           </second>
         </item>
         <item>
-          <first>music_fdiv_32ns_3ncg_U61 (music_fdiv_32ns_3ncg)</first>
+          <first>music_fdiv_32ns_3ncg_U60 (music_fdiv_32ns_3ncg)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13356,7 +13356,7 @@
           </second>
         </item>
         <item>
-          <first>music_fdiv_32ns_3ncg_U62 (music_fdiv_32ns_3ncg)</first>
+          <first>music_fdiv_32ns_3ncg_U61 (music_fdiv_32ns_3ncg)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13364,7 +13364,7 @@
           </second>
         </item>
         <item>
-          <first>music_fmul_32ns_3jbC_U56 (music_fmul_32ns_3jbC)</first>
+          <first>music_fmul_32ns_3jbC_U55 (music_fmul_32ns_3jbC)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13372,7 +13372,7 @@
           </second>
         </item>
         <item>
-          <first>music_fmul_32ns_3jbC_U57 (music_fmul_32ns_3jbC)</first>
+          <first>music_fmul_32ns_3jbC_U56 (music_fmul_32ns_3jbC)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13380,7 +13380,7 @@
           </second>
         </item>
         <item>
-          <first>music_fmul_32ns_3jbC_U58 (music_fmul_32ns_3jbC)</first>
+          <first>music_fmul_32ns_3jbC_U57 (music_fmul_32ns_3jbC)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13388,7 +13388,7 @@
           </second>
         </item>
         <item>
-          <first>music_fmul_32ns_3jbC_U59 (music_fmul_32ns_3jbC)</first>
+          <first>music_fmul_32ns_3jbC_U58 (music_fmul_32ns_3jbC)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -13396,7 +13396,7 @@
           </second>
         </item>
         <item>
-          <first>music_fsqrt_32ns_qcK_U73 (music_fsqrt_32ns_qcK)</first>
+          <first>music_fsqrt_32ns_qcK_U72 (music_fsqrt_32ns_qcK)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>

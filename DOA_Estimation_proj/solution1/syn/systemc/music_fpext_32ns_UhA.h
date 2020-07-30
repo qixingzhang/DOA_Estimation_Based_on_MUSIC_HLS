@@ -2,8 +2,8 @@
 // Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.1 (64-bit)
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
-#ifndef __music_fpext_32ns_WhU__HH__
-#define __music_fpext_32ns_WhU__HH__
+#ifndef __music_fpext_32ns_UhA__HH__
+#define __music_fpext_32ns_UhA__HH__
 #include "ACMP_fpext.h"
 #include <systemc>
 
@@ -12,7 +12,7 @@ template<
     int NUM_STAGE,
     int din0_WIDTH,
     int dout_WIDTH>
-SC_MODULE(music_fpext_32ns_WhU) {
+SC_MODULE(music_fpext_32ns_UhA) {
     sc_core::sc_in_clk clk;
     sc_core::sc_in<sc_dt::sc_logic> reset;
     sc_core::sc_in<sc_dt::sc_logic> ce;
@@ -23,7 +23,7 @@ SC_MODULE(music_fpext_32ns_WhU) {
 
     ACMP_fpext<ID, 2, din0_WIDTH, dout_WIDTH> ACMP_fpext_U;
 
-    SC_CTOR(music_fpext_32ns_WhU):  ACMP_fpext_U ("ACMP_fpext_U") {
+    SC_CTOR(music_fpext_32ns_UhA):  ACMP_fpext_U ("ACMP_fpext_U") {
         ACMP_fpext_U.clk(clk);
         ACMP_fpext_U.reset(reset);
         ACMP_fpext_U.ce(ce);

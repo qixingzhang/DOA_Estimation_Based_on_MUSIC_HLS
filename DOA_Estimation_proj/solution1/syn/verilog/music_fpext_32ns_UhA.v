@@ -5,9 +5,9 @@
 
 `timescale 1ns/1ps
 
-module music_fpext_32ns_WhU
+module music_fpext_32ns_UhA
 #(parameter
-    ID         = 240,
+    ID         = 234,
     NUM_STAGE  = 2,
     din0_WIDTH = 32,
     dout_WIDTH = 64

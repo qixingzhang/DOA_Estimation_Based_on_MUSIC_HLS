@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 53
+set id 52
 set name music_fadd_32ns_3ocq
 set corename simcore_fadd
 set op fadd
@@ -91,7 +91,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 63
+set id 62
 set name music_fcmp_32ns_3pcA
 set corename simcore_fcmp
 set op fcmp
@@ -185,7 +185,7 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-set id 73
+set id 72
 set name music_fsqrt_32ns_qcK
 set corename simcore_fsqrt
 set op fsqrt
@@ -283,7 +283,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 77 \
+    id 76 \
     name a_M_real \
     type other \
     dir I \
@@ -298,7 +298,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 78 \
+    id 77 \
     name a_M_imag \
     type other \
     dir I \
@@ -313,7 +313,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 79 \
+    id 78 \
     name b_M_real \
     type other \
     dir I \
@@ -328,7 +328,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 80 \
+    id 79 \
     name b_M_imag \
     type other \
     dir I \

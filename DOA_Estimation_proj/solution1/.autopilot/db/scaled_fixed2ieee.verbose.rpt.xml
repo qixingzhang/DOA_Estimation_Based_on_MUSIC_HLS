@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'scaled_fixed2ieee'" level="0">
-<item name = "Date">Wed Jul 29 20:31:41 2020
+<item name = "Date">Thu Jul 30 14:37:36 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">DOA_Estimation_proj</item>
@@ -64,8 +64,8 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="music_mux_42_32_1_1_U196">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
 <column name="music_mux_42_32_1_1_U197">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
-<column name="music_mux_42_32_1_1_U198">music_mux_42_32_1_1, 0, 0, 0, 21, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

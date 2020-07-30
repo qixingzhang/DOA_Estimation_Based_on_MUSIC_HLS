@@ -440,91 +440,6 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_XILINX_FPV6::fpv6_gen, check your p
 }
 
 
-# Memory (RAM/ROM)  definition:
-set ID 37
-set hasByteEnable 0
-set MemName fft_X_R
-set CoreName ap_simcore_mem
-set PortList { 2 2 }
-set DataWd 32
-set AddrRange 1024
-set AddrWd 10
-set impl_style block
-set TrueReset 0
-set HasInitializer 0
-set IsROM 0
-set ROMData {}
-set NumOfStage 2
-set MaxLatency -1
-set DelayBudget 3.254
-set ClkPeriod 10
-set RegisteredInput 0
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mem] == "ap_gen_simcore_mem"} {
-    eval "ap_gen_simcore_mem { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 2 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    style ${impl_style} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-} else {
-    puts "@W \[IMPL-102\] Cannot find ap_gen_simcore_mem, check your platform lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-  ::AP::rtl_comp_handler $MemName
-}
-
-
-set CoreName RAM
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_RAM] == "::AESL_LIB_VIRTEX::xil_gen_RAM"} {
-    eval "::AESL_LIB_VIRTEX::xil_gen_RAM { \
-    id ${ID} \
-    name ${MemName} \
-    corename ${CoreName}  \
-    op mem \
-    hasByteEnable ${hasByteEnable} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${NumOfStage}  \
-    registered_input ${RegisteredInput} \
-    port_num 2 \
-    port_list \{${PortList}\} \
-    data_wd ${DataWd} \
-    addr_wd ${AddrWd} \
-    addr_range ${AddrRange} \
-    style ${impl_style} \
-    true_reset ${TrueReset} \
-    delay_budget ${DelayBudget} \
-    clk_period ${ClkPeriod} \
-    HasInitializer ${HasInitializer} \
-    rom_data \{${ROMData}\} \
- } "
-  } else {
-    puts "@W \[IMPL-104\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_RAM, check your platform lib"
-  }
-}
-
-
 # clear list
 if {${::AESL::PGuard_autoexp_gen}} {
     cg_default_interface_gen_dc_begin
@@ -536,17 +451,17 @@ if {${::AESL::PGuard_autoexp_gen}} {
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 38 \
-    name x_M_real \
+    id 37 \
+    name X_R \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename x_M_real \
+    corename X_R \
     op interface \
-    ports { x_M_real_address0 { O 10 vector } x_M_real_ce0 { O 1 bit } x_M_real_we0 { O 1 bit } x_M_real_d0 { O 32 vector } x_M_real_q0 { I 32 vector } } \
+    ports { X_R_address0 { O 10 vector } X_R_ce0 { O 1 bit } X_R_we0 { O 1 bit } X_R_d0 { O 32 vector } X_R_q0 { I 32 vector } X_R_address1 { O 10 vector } X_R_ce1 { O 1 bit } X_R_we1 { O 1 bit } X_R_d1 { O 32 vector } X_R_q1 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'x_M_real'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'X_R'"
 }
 }
 
@@ -555,17 +470,17 @@ puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored ge
 if {${::AESL::PGuard_autoexp_gen}} {
 if {[info proc ::AESL_LIB_XILADAPTER::xil_bram_gen] == "::AESL_LIB_XILADAPTER::xil_bram_gen"} {
 eval "::AESL_LIB_XILADAPTER::xil_bram_gen { \
-    id 39 \
-    name x_M_imag \
+    id 38 \
+    name X_I \
     reset_level 1 \
     sync_rst true \
     dir IO \
-    corename x_M_imag \
+    corename X_I \
     op interface \
-    ports { x_M_imag_address0 { O 10 vector } x_M_imag_ce0 { O 1 bit } x_M_imag_we0 { O 1 bit } x_M_imag_d0 { O 32 vector } x_M_imag_q0 { I 32 vector } } \
+    ports { X_I_address0 { O 10 vector } X_I_ce0 { O 1 bit } X_I_we0 { O 1 bit } X_I_d0 { O 32 vector } X_I_q0 { I 32 vector } X_I_address1 { O 10 vector } X_I_ce1 { O 1 bit } X_I_we1 { O 1 bit } X_I_d1 { O 32 vector } X_I_q1 { I 32 vector } } \
 } "
 } else {
-puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'x_M_imag'"
+puts "@W \[IMPL-110\] Cannot find bus interface model in the library. Ignored generation of bus interface for 'X_I'"
 }
 }
 

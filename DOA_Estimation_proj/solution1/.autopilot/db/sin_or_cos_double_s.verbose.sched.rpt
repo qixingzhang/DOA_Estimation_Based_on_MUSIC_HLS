@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'sin_or_cos_double_s'
 ================================================================
-* Date:           Wed Jul 29 20:31:19 2020
+* Date:           Thu Jul 30 14:37:15 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        DOA_Estimation_proj
@@ -370,7 +370,7 @@ The critical path consists of the following:
 The critical path consists of the following:
 	'sub' operation ('sub_ln1311', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:535->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:268) [51]  (1.64 ns)
 	'select' operation ('sh', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:535->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:268) [52]  (0.697 ns)
-	'shl' operation ('r.V', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:535->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:268) [56]  (0 ns)
+	'lshr' operation ('r.V', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:535->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:268) [55]  (0 ns)
 	'select' operation ('r.V', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:535->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:268) [57]  (4.6 ns)
 
  <State 12>: 8.63ns

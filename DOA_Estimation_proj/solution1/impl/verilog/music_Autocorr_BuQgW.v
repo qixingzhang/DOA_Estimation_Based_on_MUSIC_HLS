@@ -3,7 +3,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 `timescale 1 ns / 1 ps
-module music_Autocorr_BuShg_ram (addr0, ce0, d0, we0, q0, addr1, ce1, q1,  clk);
+module music_Autocorr_BuQgW_ram (addr0, ce0, d0, we0, q0, addr1, ce1, q1,  clk);
 
 parameter DWIDTH = 32;
 parameter AWIDTH = 6;
@@ -49,7 +49,7 @@ end
 endmodule
 
 `timescale 1 ns / 1 ps
-module music_Autocorr_BuShg(
+module music_Autocorr_BuQgW(
     reset,
     clk,
     address0,
@@ -77,7 +77,7 @@ output[DataWidth - 1:0] q1;
 
 
 
-music_Autocorr_BuShg_ram music_Autocorr_BuShg_ram_U(
+music_Autocorr_BuQgW_ram music_Autocorr_BuQgW_ram_U(
     .clk( clk ),
     .addr0( address0 ),
     .ce0( ce0 ),

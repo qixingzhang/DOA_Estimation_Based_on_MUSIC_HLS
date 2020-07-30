@@ -7,7 +7,7 @@ library ieee;
 use ieee.std_logic_1164.all; 
 use ieee.std_logic_unsigned.all;
 
-entity fft_X_R_ram is 
+entity music_FFT_Buffer_re_ram is 
     generic(
             MEM_TYPE    : string := "block"; 
             DWIDTH     : integer := 32; 
@@ -30,7 +30,7 @@ entity fft_X_R_ram is
 end entity; 
 
 
-architecture rtl of fft_X_R_ram is 
+architecture rtl of music_FFT_Buffer_re_ram is 
 
 signal addr0_tmp : std_logic_vector(AWIDTH-1 downto 0); 
 signal addr1_tmp : std_logic_vector(AWIDTH-1 downto 0); 
@@ -99,7 +99,7 @@ end rtl;
 Library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity fft_X_R is
+entity music_FFT_Buffer_re is
     generic (
         DataWidth : INTEGER := 32;
         AddressRange : INTEGER := 1024;
@@ -119,8 +119,8 @@ entity fft_X_R is
         q1 : OUT STD_LOGIC_VECTOR(DataWidth - 1 DOWNTO 0));
 end entity;
 
-architecture arch of fft_X_R is
-    component fft_X_R_ram is
+architecture arch of music_FFT_Buffer_re is
+    component music_FFT_Buffer_re_ram is
         port (
             clk : IN STD_LOGIC;
             addr0 : IN STD_LOGIC_VECTOR;
@@ -138,7 +138,7 @@ architecture arch of fft_X_R is
 
 
 begin
-    fft_X_R_ram_U :  component fft_X_R_ram
+    music_FFT_Buffer_re_ram_U :  component music_FFT_Buffer_re_ram
     port map (
         clk => clk,
         addr0 => address0,

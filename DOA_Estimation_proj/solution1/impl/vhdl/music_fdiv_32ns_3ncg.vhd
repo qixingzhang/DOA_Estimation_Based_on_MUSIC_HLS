@@ -7,7 +7,7 @@ use ieee.std_logic_1164.all;
 
 entity music_fdiv_32ns_3ncg is
     generic (
-        ID         : integer := 46;
+        ID         : integer := 45;
         NUM_STAGE  : integer := 16;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;

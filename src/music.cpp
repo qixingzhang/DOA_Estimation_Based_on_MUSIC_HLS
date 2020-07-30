@@ -20,9 +20,11 @@ void eig_decompose(complex_float Rx[N_SENSOR][N_SENSOR], complex_float U[N_SENSO
 		for(int j = 0; j < N_SENSOR; j++) {
 			eig_mat[i][j] = Rx[i][j];
 			Rx_temp[i][j] = Rx[i][j];
+			U[i][j].real(0);
+			U[i][j].imag(0);
 		}
 	}
-	for(int i = 0; i < 30; i++) {
+	for(int i = 0; i < 10; i++) {
 		qr_decompose(eig_mat, Q_temp, R_temp);
 		for(int i = 0; i < N_SENSOR; i++) {
 			for(int j = 0; j < N_SENSOR; j++) {
@@ -38,7 +40,13 @@ void eig_decompose(complex_float Rx[N_SENSOR][N_SENSOR], complex_float U[N_SENSO
 	for(int count = 0; count < N_SENSOR; count++) {
 		eigval[count] = eig_mat[count][count].real();
 		for(int i = 0; i < N_SENSOR; i++) {
-			Rx_temp[i][i] = Rx[i][i] - eigval[count];
+			for(int j = 0; j < N_SENSOR; j++) {
+				if (i == j) {
+					Rx_temp[i][j] = Rx[i][j] - eigval[count];
+				} else {
+					Rx_temp[i][j] = Rx[i][j];
+				}
+			}
 		}
 		for(int i = 0; i < N_SENSOR - 1; i++) {
 			mid = Rx_temp[i][i];
@@ -128,11 +136,6 @@ void bit_reverse(float X_R[N_FREQ], float X_I[N_FREQ]) {
 }
 void fft(float X_R[N_FREQ], float X_I[N_FREQ])
 {
-	cout << "fft input real: " << endl;
-	for(int i = 0; i < N_FREQ; i++) {
-		cout << X_R[i] << ",";
-	}
-	cout << endl;
 	float temp_R;		/*temporary storage complex variable*/
 	float temp_I;		/*temporary storage complex variable*/
 
@@ -187,13 +190,8 @@ void fft(float X_R[N_FREQ], float X_I[N_FREQ])
 		}
 		step=step/2;
 	}
-	cout << "fft output real: " << endl;
-	for(int i = 0; i < N_FREQ; i++) {
-		cout << X_R[i] << ",";
-	}
-	cout << endl;
 }
-void music(float X[N_SAMPLE][N_SENSOR], int DOA_src, int DOA_interfer) {
+void music(float X[N_SAMPLE][N_SENSOR], float P_sm[361]) {
 	
 	float FFT_Buffer_re[N_FREQ];
 	float FFT_Buffer_im[N_FREQ];
@@ -208,25 +206,22 @@ void music(float X[N_SAMPLE][N_SENSOR], int DOA_src, int DOA_interfer) {
 	complex_float w[361];
 	complex_float a_theta[N_SENSOR][361];
 	complex_float temp;
-	float P_sm[361];
 	float eigval[N_SENSOR];
 	int sort_index[N_SENSOR];
 	float p[N_SENSOR] = {-0.375, -0.125, 0.125, 0.375};
 	float theta[361];
 	float fc[N_FREQ];
-	DOA_src = 0;
-	DOA_interfer = 0;
 
 	for(int j = 0; j < N_FREQ; j++) {
 		if (j < N_FREQ/2) {
-			fc[j] = j * FS / N_FREQ;
+			fc[j] = (float)j * (float)FS / (float)N_FREQ;
 		} else {
-			fc[j] = (j - N_FREQ) * FS / N_FREQ;
+			fc[j] = (float)(j - N_FREQ) * (float)FS / (float)N_FREQ;
 		}
 	}
 
 	for (int i = 0; i < 361; i++) {
-		theta[i] = 0.5 * i + 90;
+		theta[i] = (float)0.5 * (float)i - (float)90;
 	}
 
 	for(int l = 0; l < N_STFT; l++) {
@@ -235,19 +230,10 @@ void music(float X[N_SAMPLE][N_SENSOR], int DOA_src, int DOA_interfer) {
 				FFT_Buffer_re[j] = X[l*N_FREQ+j][n];
 				FFT_Buffer_im[j] = 0;
 			}
-//			cout << "fft input: " << endl;
-//			for(int i = 0; i < N_FREQ; i++) {
-//				cout << FFT_Buffer[i] << ",";
-//			}
-//			cout << endl;
 			fft(FFT_Buffer_re, FFT_Buffer_im);
-//			cout << "fft output: " << endl;
-//			for(int i = 0; i < N_FREQ; i++) {
-//				cout << FFT_Buffer[i] << ",";
-//			}
-//			cout << endl;
 			for(int j = 0; j< N_FREQ; j++) {
-				Xj_f[j][l][n] = {FFT_Buffer_re[j], FFT_Buffer_im[j]};
+				Xj_f[j][l][n].real(FFT_Buffer_re[j]);
+				Xj_f[j][l][n].imag(FFT_Buffer_im[j]);
 			}
 		}
 	}
@@ -259,69 +245,55 @@ void music(float X[N_SAMPLE][N_SENSOR], int DOA_src, int DOA_interfer) {
 			}
 		}
 		Autocorrelation(Autocorr_Buffer, Rx);
-		cout << "Autocorr_Buffer: " << endl;
-		for(int i = 0; i < N_STFT; i++) {
-			for(int j = 0; j < N_SENSOR; j++) {
-				cout << Autocorr_Buffer[i][j].real() << "+" << Autocorr_Buffer[i][j].imag() << "i  ";
+		eig_decompose(Rx, U, eigval);
+		sort_eigval(eigval, sort_index);
+		for(int x = 0; x < N_SENSOR; x++) {
+			for(int y = 0; y < N_SENSOR; y++) {
+				if (sort_index[y] == 1) {
+					Un[x][0] = U[x][y];
+				} else if (sort_index[y] == 0) {
+					Un[x][1] = U[x][y];
+				}
 			}
-			cout << endl;
 		}
-		cout << "Rx: " << endl;
-		for(int i = 0; i < 4; i++) {
-			for(int j = 0; j < 4; j++) {
-				cout << Rx[i][j].real() << "+" << Rx[i][j].imag() << "i  ";
+
+		for (int x = 0; x < N_SENSOR; x++) {
+			for (int y = 0; y < 361; y++) {
+				a_theta[x][y].real(cos(2*PIE*fc[jj]*p[x]*sin(theta[y]*PIE/180)/VELOCITY));
+				a_theta[x][y].imag(-sin(2*PIE*fc[jj]*p[x]*sin(theta[y]*PIE/180)/VELOCITY));
 			}
-			cout << endl;
+		}
+		for(int i = 0; i < N_SENSOR; i++) {
+			for(int j = 0; j < N_SENSOR; j++) {
+				temp.real(0.0);
+				temp.imag(0.0);
+				for(int k = 0; k < N_SENSOR-N_SOURCE; k++) {
+					temp += Un[i][k] * conj(Un[j][k]);
+				}
+				UU[i][j] = temp;
+			}
+		}
+		for(int i = 0; i < 361; i++) {
+			for(int j = 0; j < N_SENSOR; j++) {
+				temp.real(0.0);
+				temp.imag(0.0);
+				for (int k = 0; k < N_SENSOR; k++) {
+					temp += conj(a_theta[k][i]) * UU[k][j];
+				}
+				AUU[i][j] = temp;
+			}
+		}
+		for(int i = 0; i < 361; i++) {
+			temp.real(0.0);
+			temp.imag(0.0);
+			for (int k = 0; k < N_SENSOR; k++) {
+				temp += AUU[i][k] * a_theta[k][i] / (float)N_FREQ;
+			}
+			w[i] += temp;
 		}
 	}
-//		eig_decompose(Rx, U, eigval);
-//		sort_eigval(eigval, sort_index);
-//		for(int x = 0; x < N_SENSOR; x++) {
-//			for(int y = 0; y < N_SENSOR; y++) {
-//				if (sort_index[y] == 2) {
-//					Un[x][0] = U[x][y];
-//				} else if (sort_index[y] == 3) {
-//					Un[x][1] = U[x][y];
-//				}
-//			}
-//		}
-//		for (int x = 0; x < N_SENSOR; x++) {
-//			for (int y = 0; y < 361; y++) {
-//				a_theta[x][y].real(cos(2*PIE*fc[jj]*p[x]*sin(theta[y]*PIE/180)/VELOCITY));
-//				a_theta[x][y].imag(sin(2*PIE*fc[jj]*p[x]*sin(theta[y]*PIE/180)/VELOCITY));
-//			}
-//		}
-//
-//		for(int i = 0; i < N_SENSOR; i++) {
-//			for(int j = 0; j < N_SENSOR; j++) {
-//				UU[i][j] = Un[i][0] * conj(Un[j][0]) + Un[i][1] * conj(Un[j][1]);
-//			}
-//		}
-//		for(int i = 0; i < 361; i++) {
-//			for(int j = 0; j < N_SENSOR; j++) {
-//				temp.real(0.0);
-//				temp.imag(0.0);
-//				for (int k = 0; k < N_SENSOR; k++) {
-//					temp += conj(a_theta[i][k]) * UU[k][j];
-//				}
-//				AUU[i][j] = temp;
-//			}
-//		}
-//		for(int i = 0; i < 361; i++) {
-//			temp.real(0.0);
-//			temp.imag(0.0);
-//			for (int k = 0; k < N_SENSOR; k++) {
-//				temp += AUU[i][k] * conj(a_theta[i][k]);
-//			}
-//			w[i] += temp;
-//		}
-//	}
-//	for (int i = 0; i < 361; i++) {
-//		P_sm[i] = 1/w[i].real();
-//	}
-//	cout << "Psm: " << endl;
-//	for(int i = 0; i < 361; i++) {
-//		cout << P_sm[i] << "  ";
-//	}
-//	cout << endl;
+
+	for (int i = 0; i < 361; i++) {
+		P_sm[i] = 1/w[i].real();
+	}
 }

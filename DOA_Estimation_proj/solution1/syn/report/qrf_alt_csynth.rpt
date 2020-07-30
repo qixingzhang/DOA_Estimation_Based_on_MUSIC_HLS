@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'qrf_alt'
 ================================================================
-* Date:           Wed Jul 29 20:31:34 2020
+* Date:           Thu Jul 30 14:37:29 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        DOA_Estimation_proj
@@ -90,10 +90,11 @@
     +--------------------------------+----------------------+---------+-------+-------+-------+-----+
     |            Instance            |        Module        | BRAM_18K| DSP48E|   FF  |  LUT  | URAM|
     +--------------------------------+----------------------+---------+-------+-------+-------+-----+
-    |music_fadd_32ns_3ocq_U112       |music_fadd_32ns_3ocq  |        0|      2|    205|    390|    0|
+    |music_fadd_32ns_3ocq_U111       |music_fadd_32ns_3ocq  |        0|      2|    205|    390|    0|
+    |music_fadd_32ns_3ocq_U113       |music_fadd_32ns_3ocq  |        0|      2|    205|    390|    0|
     |music_fadd_32ns_3ocq_U114       |music_fadd_32ns_3ocq  |        0|      2|    205|    390|    0|
     |music_fadd_32ns_3ocq_U115       |music_fadd_32ns_3ocq  |        0|      2|    205|    390|    0|
-    |music_fadd_32ns_3ocq_U116       |music_fadd_32ns_3ocq  |        0|      2|    205|    390|    0|
+    |music_fmul_32ns_3jbC_U116       |music_fmul_32ns_3jbC  |        0|      3|    143|    321|    0|
     |music_fmul_32ns_3jbC_U117       |music_fmul_32ns_3jbC  |        0|      3|    143|    321|    0|
     |music_fmul_32ns_3jbC_U118       |music_fmul_32ns_3jbC  |        0|      3|    143|    321|    0|
     |music_fmul_32ns_3jbC_U119       |music_fmul_32ns_3jbC  |        0|      3|    143|    321|    0|
@@ -101,9 +102,8 @@
     |music_fmul_32ns_3jbC_U121       |music_fmul_32ns_3jbC  |        0|      3|    143|    321|    0|
     |music_fmul_32ns_3jbC_U122       |music_fmul_32ns_3jbC  |        0|      3|    143|    321|    0|
     |music_fmul_32ns_3jbC_U123       |music_fmul_32ns_3jbC  |        0|      3|    143|    321|    0|
-    |music_fmul_32ns_3jbC_U124       |music_fmul_32ns_3jbC  |        0|      3|    143|    321|    0|
-    |music_fsub_32ns_3rcU_U111       |music_fsub_32ns_3rcU  |        0|      2|    205|    390|    0|
-    |music_fsub_32ns_3rcU_U113       |music_fsub_32ns_3rcU  |        0|      2|    205|    390|    0|
+    |music_fsub_32ns_3rcU_U110       |music_fsub_32ns_3rcU  |        0|      2|    205|    390|    0|
+    |music_fsub_32ns_3rcU_U112       |music_fsub_32ns_3rcU  |        0|      2|    205|    390|    0|
     |grp_qrf_givens_float_s_fu_1090  |qrf_givens_float_s    |        0|     61|  29755|  21750|    0|
     +--------------------------------+----------------------+---------+-------+-------+-------+-----+
     |Total                           |                      |        0|     97|  32129|  26658|    0|

@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'scaled_fixed2ieee'
 ================================================================
-* Date:           Wed Jul 29 20:31:18 2020
+* Date:           Thu Jul 30 14:37:13 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        DOA_Estimation_proj
@@ -256,7 +256,7 @@ The critical path consists of the following:
 	'phi' operation ('i') with incoming values : ('i', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:434) [68]  (0 ns)
 	'mux' operation ('value', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) [75]  (1.96 ns)
 	'cttz' operation ('c[0]', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_normalize.h:110->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) [77]  (3.4 ns)
-	'store' operation ('store_ln435', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) of variable 'c[0]', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_normalize.h:110->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435 on local variable 'c[3]' [86]  (0 ns)
+	'store' operation ('store_ln435', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) of variable 'c[0]', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_normalize.h:110->r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435 on local variable 'c[3]' [80]  (0 ns)
 
  <State 6>: 4.51ns
 The critical path consists of the following:

@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'qrf_magnitude_float_s'" level="0">
-<item name = "Date">Wed Jul 29 20:31:30 2020
+<item name = "Date">Thu Jul 30 14:37:25 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">DOA_Estimation_proj</item>
@@ -61,9 +61,10 @@
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="music_fadd_32ns_3ocq_U52">music_fadd_32ns_3ocq, 0, 2, 205, 390, 0</column>
 <column name="music_fadd_32ns_3ocq_U53">music_fadd_32ns_3ocq, 0, 2, 205, 390, 0</column>
 <column name="music_fadd_32ns_3ocq_U54">music_fadd_32ns_3ocq, 0, 2, 205, 390, 0</column>
-<column name="music_fadd_32ns_3ocq_U55">music_fadd_32ns_3ocq, 0, 2, 205, 390, 0</column>
+<column name="music_fcmp_32ns_3pcA_U62">music_fcmp_32ns_3pcA, 0, 0, 66, 239, 0</column>
 <column name="music_fcmp_32ns_3pcA_U63">music_fcmp_32ns_3pcA, 0, 0, 66, 239, 0</column>
 <column name="music_fcmp_32ns_3pcA_U64">music_fcmp_32ns_3pcA, 0, 0, 66, 239, 0</column>
 <column name="music_fcmp_32ns_3pcA_U65">music_fcmp_32ns_3pcA, 0, 0, 66, 239, 0</column>
@@ -73,15 +74,14 @@
 <column name="music_fcmp_32ns_3pcA_U69">music_fcmp_32ns_3pcA, 0, 0, 66, 239, 0</column>
 <column name="music_fcmp_32ns_3pcA_U70">music_fcmp_32ns_3pcA, 0, 0, 66, 239, 0</column>
 <column name="music_fcmp_32ns_3pcA_U71">music_fcmp_32ns_3pcA, 0, 0, 66, 239, 0</column>
-<column name="music_fcmp_32ns_3pcA_U72">music_fcmp_32ns_3pcA, 0, 0, 66, 239, 0</column>
+<column name="music_fdiv_32ns_3ncg_U59">music_fdiv_32ns_3ncg, 0, 0, 761, 994, 0</column>
 <column name="music_fdiv_32ns_3ncg_U60">music_fdiv_32ns_3ncg, 0, 0, 761, 994, 0</column>
 <column name="music_fdiv_32ns_3ncg_U61">music_fdiv_32ns_3ncg, 0, 0, 761, 994, 0</column>
-<column name="music_fdiv_32ns_3ncg_U62">music_fdiv_32ns_3ncg, 0, 0, 761, 994, 0</column>
+<column name="music_fmul_32ns_3jbC_U55">music_fmul_32ns_3jbC, 0, 3, 143, 321, 0</column>
 <column name="music_fmul_32ns_3jbC_U56">music_fmul_32ns_3jbC, 0, 3, 143, 321, 0</column>
 <column name="music_fmul_32ns_3jbC_U57">music_fmul_32ns_3jbC, 0, 3, 143, 321, 0</column>
 <column name="music_fmul_32ns_3jbC_U58">music_fmul_32ns_3jbC, 0, 3, 143, 321, 0</column>
-<column name="music_fmul_32ns_3jbC_U59">music_fmul_32ns_3jbC, 0, 3, 143, 321, 0</column>
-<column name="music_fsqrt_32ns_qcK_U73">music_fsqrt_32ns_qcK, 0, 0, 405, 615, 0</column>
+<column name="music_fsqrt_32ns_qcK_U72">music_fsqrt_32ns_qcK, 0, 0, 405, 615, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">

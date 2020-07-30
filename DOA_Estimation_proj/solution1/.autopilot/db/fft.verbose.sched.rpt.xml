@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'fft'" level="0">
-<item name = "Date">Wed Jul 29 20:31:05 2020
+<item name = "Date">Thu Jul 30 14:37:02 2020
 </item>
 <item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
 <item name = "Project">DOA_Estimation_proj</item>
@@ -35,11 +35,9 @@
 </item>
 <item name = "Loop"><table name="" hasTotal="0">
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
-<column name="- Loop 1">2048, 2048, 2, -, -, 1024, no</column>
-<column name="- stage_loop">?, ?, ?, -, -, 10, no</column>
-<column name=" + butterfly_loop">?, ?, ?, -, -, 1 ~ 512, no</column>
-<column name="  ++ dft_loop">?, ?, 25, -, -, ?, no</column>
-<column name="- Loop 3">2048, 2048, 2, -, -, 1024, no</column>
+<column name="- stages">?, ?, ?, -, -, 10, no</column>
+<column name=" + butterfly">?, ?, ?, -, -, 1 ~ 512, no</column>
+<column name="  ++ DFTpts">?, ?, 25, -, -, ?, no</column>
 </table>
 </item>
 </section>

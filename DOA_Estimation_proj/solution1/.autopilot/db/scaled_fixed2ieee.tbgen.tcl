@@ -62,8 +62,8 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "in_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "prescale", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.music_mux_42_32_1_1_U197", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.music_mux_42_32_1_1_U198", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.music_mux_42_32_1_1_U196", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.music_mux_42_32_1_1_U197", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {

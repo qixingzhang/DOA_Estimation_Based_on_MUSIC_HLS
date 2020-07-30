@@ -158,7 +158,7 @@ music_mux_42_32_1_1 #(
     .din3_WIDTH( 32 ),
     .din4_WIDTH( 2 ),
     .dout_WIDTH( 32 ))
-music_mux_42_32_1_1_U197(
+music_mux_42_32_1_1_U196(
     .din0(out_bits_2_V_load_reg_669),
     .din1(out_bits_2_V_1_load_reg_675),
     .din2(out_bits_2_V_2_load_reg_681),
@@ -176,7 +176,7 @@ music_mux_42_32_1_1 #(
     .din3_WIDTH( 32 ),
     .din4_WIDTH( 2 ),
     .dout_WIDTH( 32 ))
-music_mux_42_32_1_1_U198(
+music_mux_42_32_1_1_U197(
     .din0(c_3_1_fu_110),
     .din1(c_3_2_fu_114),
     .din2(c_3_3_fu_118),

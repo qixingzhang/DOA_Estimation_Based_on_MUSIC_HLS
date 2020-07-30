@@ -52,11 +52,12 @@ struct qrf_givens_float_s : public sc_module {
     sc_trace_file* mVcdFile;
 
     qrf_magnitude_float_s* grp_qrf_magnitude_float_s_fu_220;
+    music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U80;
     music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U81;
-    music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U82;
-    music_fsub_32ns_3rcU<1,5,32,32,32>* music_fsub_32ns_3rcU_U83;
-    music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U84;
-    music_fsub_32ns_3rcU<1,5,32,32,32>* music_fsub_32ns_3rcU_U85;
+    music_fsub_32ns_3rcU<1,5,32,32,32>* music_fsub_32ns_3rcU_U82;
+    music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U83;
+    music_fsub_32ns_3rcU<1,5,32,32,32>* music_fsub_32ns_3rcU_U84;
+    music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U85;
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U86;
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U87;
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U88;
@@ -67,15 +68,14 @@ struct qrf_givens_float_s : public sc_module {
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U93;
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U94;
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U95;
-    music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U96;
+    music_fdiv_32ns_3ncg<1,16,32,32,32>* music_fdiv_32ns_3ncg_U96;
     music_fdiv_32ns_3ncg<1,16,32,32,32>* music_fdiv_32ns_3ncg_U97;
     music_fdiv_32ns_3ncg<1,16,32,32,32>* music_fdiv_32ns_3ncg_U98;
     music_fdiv_32ns_3ncg<1,16,32,32,32>* music_fdiv_32ns_3ncg_U99;
-    music_fdiv_32ns_3ncg<1,16,32,32,32>* music_fdiv_32ns_3ncg_U100;
+    music_fcmp_32ns_3pcA<1,2,32,32,1>* music_fcmp_32ns_3pcA_U100;
     music_fcmp_32ns_3pcA<1,2,32,32,1>* music_fcmp_32ns_3pcA_U101;
     music_fcmp_32ns_3pcA<1,2,32,32,1>* music_fcmp_32ns_3pcA_U102;
     music_fcmp_32ns_3pcA<1,2,32,32,1>* music_fcmp_32ns_3pcA_U103;
-    music_fcmp_32ns_3pcA<1,2,32,32,1>* music_fcmp_32ns_3pcA_U104;
     sc_signal< sc_lv<32> > grp_qrf_magnitude_float_s_fu_220_ap_return;
     sc_signal< sc_lv<32> > reg_341;
     sc_signal< bool > ap_block_state1_pp0_stage0_iter0;

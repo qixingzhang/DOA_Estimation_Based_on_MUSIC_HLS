@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'scaled_fixed2ieee_1'
 ================================================================
-* Date:           Wed Jul 29 20:31:04 2020
+* Date:           Thu Jul 30 14:37:00 2020
 
 * Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
 * Project:        DOA_Estimation_proj
@@ -174,7 +174,7 @@ The critical path consists of the following:
 	'select' operation ('sh', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:314) [41]  (0.698 ns)
 	'sub' operation ('sub_ln1311', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:315) [44]  (2.55 ns)
 	'select' operation ('sh', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:315) [45]  (0.698 ns)
-	'shl' operation ('shl_ln1253', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:315) [49]  (0 ns)
+	'lshr' operation ('lshr_ln1287', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:315) [47]  (0 ns)
 	'select' operation ('r.V', r:/builds/2019.1/continuous/2019_05_24_2552052/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:315) [50]  (4.34 ns)
 
  <State 4>: 6.6ns

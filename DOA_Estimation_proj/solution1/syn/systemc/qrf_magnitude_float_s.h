@@ -43,16 +43,17 @@ struct qrf_magnitude_float_s : public sc_module {
 
     sc_trace_file* mVcdFile;
 
+    music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U52;
     music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U53;
     music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U54;
-    music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U55;
+    music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U55;
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U56;
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U57;
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U58;
-    music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U59;
+    music_fdiv_32ns_3ncg<1,16,32,32,32>* music_fdiv_32ns_3ncg_U59;
     music_fdiv_32ns_3ncg<1,16,32,32,32>* music_fdiv_32ns_3ncg_U60;
     music_fdiv_32ns_3ncg<1,16,32,32,32>* music_fdiv_32ns_3ncg_U61;
-    music_fdiv_32ns_3ncg<1,16,32,32,32>* music_fdiv_32ns_3ncg_U62;
+    music_fcmp_32ns_3pcA<1,2,32,32,1>* music_fcmp_32ns_3pcA_U62;
     music_fcmp_32ns_3pcA<1,2,32,32,1>* music_fcmp_32ns_3pcA_U63;
     music_fcmp_32ns_3pcA<1,2,32,32,1>* music_fcmp_32ns_3pcA_U64;
     music_fcmp_32ns_3pcA<1,2,32,32,1>* music_fcmp_32ns_3pcA_U65;
@@ -62,8 +63,7 @@ struct qrf_magnitude_float_s : public sc_module {
     music_fcmp_32ns_3pcA<1,2,32,32,1>* music_fcmp_32ns_3pcA_U69;
     music_fcmp_32ns_3pcA<1,2,32,32,1>* music_fcmp_32ns_3pcA_U70;
     music_fcmp_32ns_3pcA<1,2,32,32,1>* music_fcmp_32ns_3pcA_U71;
-    music_fcmp_32ns_3pcA<1,2,32,32,1>* music_fcmp_32ns_3pcA_U72;
-    music_fsqrt_32ns_qcK<1,12,32,32,32>* music_fsqrt_32ns_qcK_U73;
+    music_fsqrt_32ns_qcK<1,12,32,32,32>* music_fsqrt_32ns_qcK_U72;
     sc_signal< sc_lv<32> > d1_4_fu_175_p1;
     sc_signal< sc_lv<32> > d1_4_reg_605;
     sc_signal< bool > ap_block_state1_pp0_stage0_iter0;

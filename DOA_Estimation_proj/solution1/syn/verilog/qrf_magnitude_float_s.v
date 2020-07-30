@@ -376,7 +376,7 @@ music_fadd_32ns_3ocq #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-music_fadd_32ns_3ocq_U53(
+music_fadd_32ns_3ocq_U52(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(x1_sqd_reg_750),
@@ -391,7 +391,7 @@ music_fadd_32ns_3ocq #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-music_fadd_32ns_3ocq_U54(
+music_fadd_32ns_3ocq_U53(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(x2_sqd_reg_755),
@@ -406,7 +406,7 @@ music_fadd_32ns_3ocq #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-music_fadd_32ns_3ocq_U55(
+music_fadd_32ns_3ocq_U54(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(s1_reg_765),
@@ -421,7 +421,7 @@ music_fmul_32ns_3jbC #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-music_fmul_32ns_3jbC_U56(
+music_fmul_32ns_3jbC_U55(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(x1_reg_732),
@@ -436,7 +436,7 @@ music_fmul_32ns_3jbC #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-music_fmul_32ns_3jbC_U57(
+music_fmul_32ns_3jbC_U56(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(x2_reg_738),
@@ -451,7 +451,7 @@ music_fmul_32ns_3jbC #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-music_fmul_32ns_3jbC_U58(
+music_fmul_32ns_3jbC_U57(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(x3_reg_744),
@@ -466,7 +466,7 @@ music_fmul_32ns_3jbC #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-music_fmul_32ns_3jbC_U59(
+music_fmul_32ns_3jbC_U58(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(largest_3_reg_718_pp0_iter44_reg),
@@ -481,7 +481,7 @@ music_fdiv_32ns_3ncg #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-music_fdiv_32ns_3ncg_U60(
+music_fdiv_32ns_3ncg_U59(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(d1_3_reg_703),
@@ -496,7 +496,7 @@ music_fdiv_32ns_3ncg #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-music_fdiv_32ns_3ncg_U61(
+music_fdiv_32ns_3ncg_U60(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(d2_3_reg_708),
@@ -511,7 +511,7 @@ music_fdiv_32ns_3ncg #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-music_fdiv_32ns_3ncg_U62(
+music_fdiv_32ns_3ncg_U61(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(d3_3_reg_713),
@@ -526,7 +526,7 @@ music_fcmp_32ns_3pcA #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-music_fcmp_32ns_3pcA_U63(
+music_fcmp_32ns_3pcA_U62(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(d1_4_fu_175_p1),
@@ -542,7 +542,7 @@ music_fcmp_32ns_3pcA #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-music_fcmp_32ns_3pcA_U64(
+music_fcmp_32ns_3pcA_U63(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(d1_4_fu_175_p1),
@@ -558,7 +558,7 @@ music_fcmp_32ns_3pcA #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-music_fcmp_32ns_3pcA_U65(
+music_fcmp_32ns_3pcA_U64(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(d1_4_fu_175_p1),
@@ -574,7 +574,7 @@ music_fcmp_32ns_3pcA #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-music_fcmp_32ns_3pcA_U66(
+music_fcmp_32ns_3pcA_U65(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(d2_4_fu_204_p1),
@@ -590,7 +590,7 @@ music_fcmp_32ns_3pcA #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-music_fcmp_32ns_3pcA_U67(
+music_fcmp_32ns_3pcA_U66(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(d2_4_fu_204_p1),
@@ -606,7 +606,7 @@ music_fcmp_32ns_3pcA #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-music_fcmp_32ns_3pcA_U68(
+music_fcmp_32ns_3pcA_U67(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(d2_4_fu_204_p1),
@@ -622,7 +622,7 @@ music_fcmp_32ns_3pcA #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-music_fcmp_32ns_3pcA_U69(
+music_fcmp_32ns_3pcA_U68(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(largest_4_fu_233_p1),
@@ -638,7 +638,7 @@ music_fcmp_32ns_3pcA #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-music_fcmp_32ns_3pcA_U70(
+music_fcmp_32ns_3pcA_U69(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(largest_4_fu_233_p1),
@@ -654,7 +654,7 @@ music_fcmp_32ns_3pcA #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-music_fcmp_32ns_3pcA_U71(
+music_fcmp_32ns_3pcA_U70(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(largest_4_fu_233_p1),
@@ -670,7 +670,7 @@ music_fcmp_32ns_3pcA #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 1 ))
-music_fcmp_32ns_3pcA_U72(
+music_fcmp_32ns_3pcA_U71(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(grp_fu_145_p0),
@@ -686,7 +686,7 @@ music_fsqrt_32ns_qcK #(
     .din0_WIDTH( 32 ),
     .din1_WIDTH( 32 ),
     .dout_WIDTH( 32 ))
-music_fsqrt_32ns_qcK_U73(
+music_fsqrt_32ns_qcK_U72(
     .clk(ap_clk),
     .reset(ap_rst),
     .din0(32'd0),

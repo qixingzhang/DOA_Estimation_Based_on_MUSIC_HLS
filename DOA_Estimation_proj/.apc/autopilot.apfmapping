@@ -4,6 +4,7 @@
     <originFiles name="music.cpp" path="C:\Users\zhangqx\workspace\Xilinx_Intern\summer\project\DOA_Estimation_Based_on_MUSIC_HLS\src\music.cpp"/>
   </source>
   <testbench>
+    <originFiles name="main.cpp" path="C:\Users\zhangqx\workspace\Xilinx_Intern\summer\project\DOA_Estimation_Based_on_MUSIC_HLS\src\main.cpp"/>
     <originFiles name="test.cpp" path="C:\Users\zhangqx\workspace\Xilinx_Intern\summer\project\DOA_Estimation_Based_on_MUSIC_HLS\src\test.cpp"/>
     <originFiles name="test_audio" path="C:\Users\zhangqx\workspace\Xilinx_Intern\summer\project\DOA_Estimation_Based_on_MUSIC_HLS\src\test_audio"/>
   </testbench>

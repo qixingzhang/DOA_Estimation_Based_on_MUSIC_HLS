@@ -199,7 +199,7 @@ architecture behav of scaled_fixed2ieee is
 
 
 begin
-    music_mux_42_32_1_1_U197 : component music_mux_42_32_1_1
+    music_mux_42_32_1_1_U196 : component music_mux_42_32_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,
@@ -217,7 +217,7 @@ begin
         din4 => p_Val2_59_fu_418_p5,
         dout => p_Val2_59_fu_418_p6);
 
-    music_mux_42_32_1_1_U198 : component music_mux_42_32_1_1
+    music_mux_42_32_1_1_U197 : component music_mux_42_32_1_1
     generic map (
         ID => 1,
         NUM_STAGE => 1,

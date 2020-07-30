@@ -131,10 +131,10 @@
             <Obj>
               <type>0</type>
               <id>5</id>
-              <name>_ln90</name>
+              <name>_ln98</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>90</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -149,7 +149,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>90</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -216,10 +216,10 @@
             <Obj>
               <type>0</type>
               <id>8</id>
-              <name>icmp_ln90</name>
+              <name>icmp_ln98</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>90</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -234,13 +234,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>90</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln90_fu_251_p2</rtlName>
+              <rtlName>icmp_ln98_fu_251_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -268,7 +268,7 @@
               <name>x</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>90</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -283,7 +283,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>90</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -314,10 +314,10 @@
             <Obj>
               <type>0</type>
               <id>11</id>
-              <name>_ln90</name>
+              <name>_ln98</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>90</lineNumber>
+              <lineNumber>98</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -332,7 +332,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>90</second>
+                      <second>98</second>
                     </item>
                   </second>
                 </item>
@@ -364,10 +364,10 @@
             <Obj>
               <type>0</type>
               <id>13</id>
-              <name>zext_ln96</name>
+              <name>zext_ln104</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -382,13 +382,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln96_fu_263_p1</rtlName>
+              <rtlName>zext_ln104_fu_263_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>7</bitwidth>
@@ -415,7 +415,7 @@
               <name>tmp</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -430,7 +430,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
@@ -462,10 +462,10 @@
             <Obj>
               <type>0</type>
               <id>15</id>
-              <name>zext_ln91</name>
+              <name>zext_ln99</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -480,13 +480,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln91_fu_275_p1</rtlName>
+              <rtlName>zext_ln99_fu_275_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -510,10 +510,10 @@
             <Obj>
               <type>0</type>
               <id>16</id>
-              <name>_ln91</name>
+              <name>_ln99</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -528,7 +528,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -595,10 +595,10 @@
             <Obj>
               <type>0</type>
               <id>19</id>
-              <name>icmp_ln91</name>
+              <name>icmp_ln99</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -613,13 +613,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln91_fu_279_p2</rtlName>
+              <rtlName>icmp_ln99_fu_279_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -647,7 +647,7 @@
               <name>y</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -662,7 +662,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -693,10 +693,10 @@
             <Obj>
               <type>0</type>
               <id>22</id>
-              <name>_ln91</name>
+              <name>_ln99</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -711,7 +711,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -743,10 +743,10 @@
             <Obj>
               <type>0</type>
               <id>24</id>
-              <name>zext_ln96_1</name>
+              <name>zext_ln104_1</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -761,13 +761,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln96_1_fu_291_p1</rtlName>
+              <rtlName>zext_ln104_1_fu_291_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>7</bitwidth>
@@ -791,10 +791,10 @@
             <Obj>
               <type>0</type>
               <id>25</id>
-              <name>zext_ln96_2</name>
+              <name>zext_ln104_2</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -809,13 +809,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln96_2_fu_295_p1</rtlName>
+              <rtlName>zext_ln104_2_fu_295_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -839,10 +839,10 @@
             <Obj>
               <type>0</type>
               <id>26</id>
-              <name>add_ln96</name>
+              <name>add_ln104</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -857,13 +857,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln96_fu_299_p2</rtlName>
+              <rtlName>add_ln104_fu_299_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>6</bitwidth>
@@ -888,10 +888,10 @@
             <Obj>
               <type>0</type>
               <id>27</id>
-              <name>zext_ln96_3</name>
+              <name>zext_ln104_3</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -906,13 +906,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln96_3_fu_304_p1</rtlName>
+              <rtlName>zext_ln104_3_fu_304_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -939,7 +939,7 @@
               <name>Rx_M_real_addr11</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -954,7 +954,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
@@ -989,7 +989,7 @@
               <name>Rx_M_imag_addr</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1004,7 +1004,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
@@ -1036,10 +1036,10 @@
             <Obj>
               <type>0</type>
               <id>30</id>
-              <name>_ln93</name>
+              <name>_ln101</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>101</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1054,7 +1054,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>93</second>
+                      <second>101</second>
                     </item>
                   </second>
                 </item>
@@ -1195,10 +1195,10 @@
             <Obj>
               <type>0</type>
               <id>35</id>
-              <name>icmp_ln93</name>
+              <name>icmp_ln101</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>101</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1213,13 +1213,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>93</second>
+                      <second>101</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>icmp_ln93_fu_310_p2</rtlName>
+              <rtlName>icmp_ln101_fu_310_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>1</bitwidth>
@@ -1247,7 +1247,7 @@
               <name>l</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>101</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1262,7 +1262,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>93</second>
+                      <second>101</second>
                     </item>
                   </second>
                 </item>
@@ -1293,10 +1293,10 @@
             <Obj>
               <type>0</type>
               <id>38</id>
-              <name>_ln93</name>
+              <name>_ln101</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>101</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1311,7 +1311,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>93</second>
+                      <second>101</second>
                     </item>
                   </second>
                 </item>
@@ -1346,7 +1346,7 @@
               <name>tmp_s</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1361,7 +1361,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
@@ -1393,10 +1393,10 @@
             <Obj>
               <type>0</type>
               <id>41</id>
-              <name>zext_ln94</name>
+              <name>zext_ln102</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1411,13 +1411,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln94_fu_330_p1</rtlName>
+              <rtlName>zext_ln102_fu_330_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>7</bitwidth>
@@ -1441,10 +1441,10 @@
             <Obj>
               <type>0</type>
               <id>42</id>
-              <name>add_ln94</name>
+              <name>add_ln102</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1459,13 +1459,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln94_fu_334_p2</rtlName>
+              <rtlName>add_ln102_fu_334_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>7</bitwidth>
@@ -1490,10 +1490,10 @@
             <Obj>
               <type>0</type>
               <id>43</id>
-              <name>zext_ln94_1</name>
+              <name>zext_ln102_1</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1508,13 +1508,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln94_1_fu_339_p1</rtlName>
+              <rtlName>zext_ln102_1_fu_339_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1541,7 +1541,7 @@
               <name>X_M_real_addr</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1556,7 +1556,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
@@ -1588,10 +1588,10 @@
             <Obj>
               <type>0</type>
               <id>45</id>
-              <name>add_ln94_1</name>
+              <name>add_ln102_1</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1606,13 +1606,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>add_ln94_1_fu_345_p2</rtlName>
+              <rtlName>add_ln102_1_fu_345_p2</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>7</bitwidth>
@@ -1637,10 +1637,10 @@
             <Obj>
               <type>0</type>
               <id>46</id>
-              <name>zext_ln94_2</name>
+              <name>zext_ln102_2</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1655,13 +1655,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>zext_ln94_2_fu_350_p1</rtlName>
+              <rtlName>zext_ln102_2_fu_350_p1</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>64</bitwidth>
@@ -1688,7 +1688,7 @@
               <name>X_M_real_addr_1</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1703,7 +1703,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
@@ -1738,7 +1738,7 @@
               <name>X_M_imag_addr</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1753,7 +1753,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
@@ -1788,7 +1788,7 @@
               <name>X_M_imag_addr_1</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1803,7 +1803,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
@@ -1838,7 +1838,7 @@
               <name>p_t_real</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1853,7 +1853,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
@@ -1886,7 +1886,7 @@
               <name>X_M_imag_load</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1901,7 +1901,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
@@ -1934,7 +1934,7 @@
               <name>bitcast_ln667</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1949,7 +1949,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
@@ -1982,7 +1982,7 @@
               <name>xor_ln667</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -1997,7 +1997,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
@@ -2031,7 +2031,7 @@
               <name>p_t_imag</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2046,7 +2046,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
@@ -2076,10 +2076,10 @@
             <Obj>
               <type>0</type>
               <id>55</id>
-              <name>p_r_M_real_17</name>
+              <name>p_r_M_real_16</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2094,7 +2094,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
@@ -2124,10 +2124,10 @@
             <Obj>
               <type>0</type>
               <id>56</id>
-              <name>p_r_M_imag_16</name>
+              <name>p_r_M_imag_15</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2142,7 +2142,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
@@ -2175,7 +2175,7 @@
               <name>tmp_i_i</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2190,13 +2190,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fmul_32ns_3jbC_U42</rtlName>
+              <rtlName>music_fmul_32ns_3jbC_U41</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2224,7 +2224,7 @@
               <name>tmp_i_i_269</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2239,13 +2239,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fmul_32ns_3jbC_U43</rtlName>
+              <rtlName>music_fmul_32ns_3jbC_U42</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2273,7 +2273,7 @@
               <name>complex_M_real_writ</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2288,13 +2288,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>complex&amp;lt;float&amp;gt;._M_real</originalName>
-              <rtlName>music_faddfsub_32ibs_U40</rtlName>
+              <rtlName>music_faddfsub_32ibs_U39</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2322,7 +2322,7 @@
               <name>tmp_1_i_i</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2337,13 +2337,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fmul_32ns_3jbC_U44</rtlName>
+              <rtlName>music_fmul_32ns_3jbC_U43</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2371,7 +2371,7 @@
               <name>tmp_2_i_i</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2386,13 +2386,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fmul_32ns_3jbC_U45</rtlName>
+              <rtlName>music_fmul_32ns_3jbC_U44</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2420,7 +2420,7 @@
               <name>complex_M_imag_writ</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2435,13 +2435,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>complex&amp;lt;float&amp;gt;._M_imag</originalName>
-              <rtlName>music_faddfsub_32ibs_U41</rtlName>
+              <rtlName>music_faddfsub_32ibs_U40</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2469,7 +2469,7 @@
               <name>temp_M_real</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2484,13 +2484,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>complex&amp;lt;float&amp;gt;._M_real</originalName>
-              <rtlName>music_faddfsub_32ibs_U40</rtlName>
+              <rtlName>music_faddfsub_32ibs_U39</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2518,7 +2518,7 @@
               <name>temp_M_imag</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>94</lineNumber>
+              <lineNumber>102</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2533,13 +2533,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>94</second>
+                      <second>102</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>complex&amp;lt;float&amp;gt;._M_imag</originalName>
-              <rtlName>music_faddfsub_32ibs_U41</rtlName>
+              <rtlName>music_faddfsub_32ibs_U40</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2564,10 +2564,10 @@
             <Obj>
               <type>0</type>
               <id>65</id>
-              <name>_ln93</name>
+              <name>_ln101</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>93</lineNumber>
+              <lineNumber>101</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2582,7 +2582,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>93</second>
+                      <second>101</second>
                     </item>
                   </second>
                 </item>
@@ -2615,7 +2615,7 @@
               <name>tmp_i_i3</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2630,13 +2630,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fmul_32ns_3jbC_U42</rtlName>
+              <rtlName>music_fmul_32ns_3jbC_U41</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2664,7 +2664,7 @@
               <name>tmp_i_i8</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2679,13 +2679,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fmul_32ns_3jbC_U43</rtlName>
+              <rtlName>music_fmul_32ns_3jbC_U42</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2713,7 +2713,7 @@
               <name>tmp_2_i_i9</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2728,13 +2728,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_faddfsub_32ibs_U40</rtlName>
+              <rtlName>music_faddfsub_32ibs_U39</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2762,7 +2762,7 @@
               <name>tmp_5_i_i</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2777,13 +2777,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fmul_32ns_3jbC_U44</rtlName>
+              <rtlName>music_fmul_32ns_3jbC_U43</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2811,7 +2811,7 @@
               <name>tmp_6_i_i</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2826,13 +2826,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_fmul_32ns_3jbC_U45</rtlName>
+              <rtlName>music_fmul_32ns_3jbC_U44</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2860,7 +2860,7 @@
               <name>tmp_7_i_i</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2875,13 +2875,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName/>
-              <rtlName>music_faddfsub_32ibs_U41</rtlName>
+              <rtlName>music_faddfsub_32ibs_U40</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2906,10 +2906,10 @@
             <Obj>
               <type>0</type>
               <id>73</id>
-              <name>complex_M_real_writ_7</name>
+              <name>complex_M_real_writ_6</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2924,13 +2924,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>complex&amp;lt;float&amp;gt;._M_real</originalName>
-              <rtlName>music_fdiv_32ns_3ncg_U46</rtlName>
+              <rtlName>music_fdiv_32ns_3ncg_U45</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -2955,10 +2955,10 @@
             <Obj>
               <type>0</type>
               <id>74</id>
-              <name>complex_M_imag_writ_8</name>
+              <name>complex_M_imag_writ_7</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -2973,13 +2973,13 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
               </inlineStackInfo>
               <originalName>complex&amp;lt;float&amp;gt;._M_imag</originalName>
-              <rtlName>music_fdiv_32ns_3ncg_U47</rtlName>
+              <rtlName>music_fdiv_32ns_3ncg_U46</rtlName>
               <coreName/>
             </Obj>
             <bitwidth>32</bitwidth>
@@ -3004,10 +3004,10 @@
             <Obj>
               <type>0</type>
               <id>75</id>
-              <name>Rx_M_real_addr11_write_ln96</name>
+              <name>Rx_M_real_addr11_write_ln104</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3022,7 +3022,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
@@ -3053,10 +3053,10 @@
             <Obj>
               <type>0</type>
               <id>76</id>
-              <name>Rx_M_imag_addr_write_ln96</name>
+              <name>Rx_M_imag_addr_write_ln104</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>96</lineNumber>
+              <lineNumber>104</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3071,7 +3071,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>96</second>
+                      <second>104</second>
                     </item>
                   </second>
                 </item>
@@ -3102,10 +3102,10 @@
             <Obj>
               <type>0</type>
               <id>77</id>
-              <name>_ln91</name>
+              <name>_ln99</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>91</lineNumber>
+              <lineNumber>99</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3120,7 +3120,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>91</second>
+                      <second>99</second>
                     </item>
                   </second>
                 </item>
@@ -3184,10 +3184,10 @@
             <Obj>
               <type>0</type>
               <id>81</id>
-              <name>_ln99</name>
+              <name>_ln107</name>
               <fileName>src/music.cpp</fileName>
               <fileDirectory>..</fileDirectory>
-              <lineNumber>99</lineNumber>
+              <lineNumber>107</lineNumber>
               <contextFuncName>Autocorrelation</contextFuncName>
               <inlineStackInfo>
                 <count>1</count>
@@ -3202,7 +3202,7 @@
                         <first>src/music.cpp</first>
                         <second>Autocorrelation</second>
                       </first>
-                      <second>99</second>
+                      <second>107</second>
                     </item>
                   </second>
                 </item>
@@ -6783,7 +6783,7 @@
         <count>8</count>
         <item_version>0</item_version>
         <item class_id="38" tracking_level="0" version="0">
-          <first>music_faddfsub_32ibs_U40 (music_faddfsub_32ibs)</first>
+          <first>music_faddfsub_32ibs_U39 (music_faddfsub_32ibs)</first>
           <second class_id="39" tracking_level="0" version="0">
             <count>3</count>
             <item_version>0</item_version>
@@ -6802,7 +6802,7 @@
           </second>
         </item>
         <item>
-          <first>music_faddfsub_32ibs_U41 (music_faddfsub_32ibs)</first>
+          <first>music_faddfsub_32ibs_U40 (music_faddfsub_32ibs)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -6817,6 +6817,25 @@
             <item>
               <first>LUT</first>
               <second>390</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>music_fdiv_32ns_3ncg_U45 (music_fdiv_32ns_3ncg)</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>DSP48E</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>761</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>994</second>
             </item>
           </second>
         </item>
@@ -6840,21 +6859,21 @@
           </second>
         </item>
         <item>
-          <first>music_fdiv_32ns_3ncg_U47 (music_fdiv_32ns_3ncg)</first>
+          <first>music_fmul_32ns_3jbC_U41 (music_fmul_32ns_3jbC)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
             <item>
               <first>DSP48E</first>
-              <second>0</second>
+              <second>3</second>
             </item>
             <item>
               <first>FF</first>
-              <second>761</second>
+              <second>143</second>
             </item>
             <item>
               <first>LUT</first>
-              <second>994</second>
+              <second>321</second>
             </item>
           </second>
         </item>
@@ -6915,31 +6934,12 @@
             </item>
           </second>
         </item>
-        <item>
-          <first>music_fmul_32ns_3jbC_U45 (music_fmul_32ns_3jbC)</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>DSP48E</first>
-              <second>3</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>143</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>321</second>
-            </item>
-          </second>
-        </item>
       </dp_component_resource>
       <dp_expression_resource>
         <count>10</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln94_1_fu_345_p2 ( + ) </first>
+          <first>add_ln102_1_fu_345_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6962,7 +6962,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln94_fu_334_p2 ( + ) </first>
+          <first>add_ln102_fu_334_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -6985,7 +6985,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln96_fu_299_p2 ( + ) </first>
+          <first>add_ln104_fu_299_p2 ( + ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7008,7 +7008,30 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln90_fu_251_p2 ( icmp ) </first>
+          <first>icmp_ln101_fu_310_p2 ( icmp ) </first>
+          <second>
+            <count>4</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(0P0)</first>
+              <second>4</second>
+            </item>
+            <item>
+              <first>(1P1)</first>
+              <second>4</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>0</second>
+            </item>
+            <item>
+              <first>LUT</first>
+              <second>9</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>icmp_ln98_fu_251_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
@@ -7031,36 +7054,13 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln91_fu_279_p2 ( icmp ) </first>
+          <first>icmp_ln99_fu_279_p2 ( icmp ) </first>
           <second>
             <count>4</count>
             <item_version>0</item_version>
             <item>
               <first>(0P0)</first>
               <second>3</second>
-            </item>
-            <item>
-              <first>(1P1)</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>0</second>
-            </item>
-            <item>
-              <first>LUT</first>
-              <second>9</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>icmp_ln93_fu_310_p2 ( icmp ) </first>
-          <second>
-            <count>4</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(0P0)</first>
-              <second>4</second>
             </item>
             <item>
               <first>(1P1)</first>
@@ -7759,7 +7759,7 @@
           </second>
         </item>
         <item>
-          <first>p_r_M_imag_16_reg_457</first>
+          <first>p_r_M_imag_15_reg_457</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -7797,7 +7797,7 @@
           </second>
         </item>
         <item>
-          <first>p_r_M_real_17_reg_451</first>
+          <first>p_r_M_real_16_reg_451</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8044,7 +8044,45 @@
           </second>
         </item>
         <item>
-          <first>zext_ln91_reg_384</first>
+          <first>zext_ln104_1_reg_397</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>7</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>4</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>3</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>zext_ln104_reg_379</first>
+          <second>
+            <count>3</count>
+            <item_version>0</item_version>
+            <item>
+              <first>(Bits)</first>
+              <second>7</second>
+            </item>
+            <item>
+              <first>(Consts)</first>
+              <second>4</second>
+            </item>
+            <item>
+              <first>FF</first>
+              <second>3</second>
+            </item>
+          </second>
+        </item>
+        <item>
+          <first>zext_ln99_reg_384</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8062,48 +8100,17 @@
             </item>
           </second>
         </item>
-        <item>
-          <first>zext_ln96_1_reg_397</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>7</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>3</second>
-            </item>
-          </second>
-        </item>
-        <item>
-          <first>zext_ln96_reg_379</first>
-          <second>
-            <count>3</count>
-            <item_version>0</item_version>
-            <item>
-              <first>(Bits)</first>
-              <second>7</second>
-            </item>
-            <item>
-              <first>(Consts)</first>
-              <second>4</second>
-            </item>
-            <item>
-              <first>FF</first>
-              <second>3</second>
-            </item>
-          </second>
-        </item>
       </dp_register_resource>
       <dp_dsp_resource>
         <count>8</count>
         <item_version>0</item_version>
+        <item>
+          <first>music_faddfsub_32ibs_U39</first>
+          <second>
+            <count>0</count>
+            <item_version>0</item_version>
+          </second>
+        </item>
         <item>
           <first>music_faddfsub_32ibs_U40</first>
           <second>
@@ -8112,7 +8119,7 @@
           </second>
         </item>
         <item>
-          <first>music_faddfsub_32ibs_U41</first>
+          <first>music_fdiv_32ns_3ncg_U45</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -8126,7 +8133,7 @@
           </second>
         </item>
         <item>
-          <first>music_fdiv_32ns_3ncg_U47</first>
+          <first>music_fmul_32ns_3jbC_U41</first>
           <second>
             <count>0</count>
             <item_version>0</item_version>
@@ -8153,19 +8160,12 @@
             <item_version>0</item_version>
           </second>
         </item>
-        <item>
-          <first>music_fmul_32ns_3jbC_U45</first>
-          <second>
-            <count>0</count>
-            <item_version>0</item_version>
-          </second>
-        </item>
       </dp_dsp_resource>
       <dp_component_map class_id="41" tracking_level="0" version="0">
         <count>8</count>
         <item_version>0</item_version>
         <item class_id="42" tracking_level="0" version="0">
-          <first>music_faddfsub_32ibs_U40 (music_faddfsub_32ibs)</first>
+          <first>music_faddfsub_32ibs_U39 (music_faddfsub_32ibs)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8175,7 +8175,7 @@
           </second>
         </item>
         <item>
-          <first>music_faddfsub_32ibs_U41 (music_faddfsub_32ibs)</first>
+          <first>music_faddfsub_32ibs_U40 (music_faddfsub_32ibs)</first>
           <second>
             <count>3</count>
             <item_version>0</item_version>
@@ -8185,7 +8185,7 @@
           </second>
         </item>
         <item>
-          <first>music_fdiv_32ns_3ncg_U46 (music_fdiv_32ns_3ncg)</first>
+          <first>music_fdiv_32ns_3ncg_U45 (music_fdiv_32ns_3ncg)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8193,7 +8193,7 @@
           </second>
         </item>
         <item>
-          <first>music_fdiv_32ns_3ncg_U47 (music_fdiv_32ns_3ncg)</first>
+          <first>music_fdiv_32ns_3ncg_U46 (music_fdiv_32ns_3ncg)</first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8201,7 +8201,7 @@
           </second>
         </item>
         <item>
-          <first>music_fmul_32ns_3jbC_U42 (music_fmul_32ns_3jbC)</first>
+          <first>music_fmul_32ns_3jbC_U41 (music_fmul_32ns_3jbC)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -8210,7 +8210,7 @@
           </second>
         </item>
         <item>
-          <first>music_fmul_32ns_3jbC_U43 (music_fmul_32ns_3jbC)</first>
+          <first>music_fmul_32ns_3jbC_U42 (music_fmul_32ns_3jbC)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -8219,7 +8219,7 @@
           </second>
         </item>
         <item>
-          <first>music_fmul_32ns_3jbC_U44 (music_fmul_32ns_3jbC)</first>
+          <first>music_fmul_32ns_3jbC_U43 (music_fmul_32ns_3jbC)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -8228,7 +8228,7 @@
           </second>
         </item>
         <item>
-          <first>music_fmul_32ns_3jbC_U45 (music_fmul_32ns_3jbC)</first>
+          <first>music_fmul_32ns_3jbC_U44 (music_fmul_32ns_3jbC)</first>
           <second>
             <count>2</count>
             <item_version>0</item_version>
@@ -8241,7 +8241,7 @@
         <count>10</count>
         <item_version>0</item_version>
         <item>
-          <first>add_ln94_1_fu_345_p2 ( + ) </first>
+          <first>add_ln102_1_fu_345_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8249,7 +8249,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln94_fu_334_p2 ( + ) </first>
+          <first>add_ln102_fu_334_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8257,7 +8257,7 @@
           </second>
         </item>
         <item>
-          <first>add_ln96_fu_299_p2 ( + ) </first>
+          <first>add_ln104_fu_299_p2 ( + ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8265,7 +8265,15 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln90_fu_251_p2 ( icmp ) </first>
+          <first>icmp_ln101_fu_310_p2 ( icmp ) </first>
+          <second>
+            <count>1</count>
+            <item_version>0</item_version>
+            <item>35</item>
+          </second>
+        </item>
+        <item>
+          <first>icmp_ln98_fu_251_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
@@ -8273,19 +8281,11 @@
           </second>
         </item>
         <item>
-          <first>icmp_ln91_fu_279_p2 ( icmp ) </first>
+          <first>icmp_ln99_fu_279_p2 ( icmp ) </first>
           <second>
             <count>1</count>
             <item_version>0</item_version>
             <item>19</item>
-          </second>
-        </item>
-        <item>
-          <first>icmp_ln93_fu_310_p2 ( icmp ) </first>
-          <second>
-            <count>1</count>
-            <item_version>0</item_version>
-            <item>35</item>
           </second>
         </item>
         <item>
@@ -9375,7 +9375,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln94_1_fu_345</first>
+        <first>add_ln102_1_fu_345</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9383,7 +9383,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln94_fu_334</first>
+        <first>add_ln102_fu_334</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9391,7 +9391,7 @@
         </second>
       </item>
       <item>
-        <first>add_ln96_fu_299</first>
+        <first>add_ln104_fu_299</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9407,7 +9407,15 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln90_fu_251</first>
+        <first>icmp_ln101_fu_310</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>35</item>
+        </second>
+      </item>
+      <item>
+        <first>icmp_ln98_fu_251</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9415,19 +9423,11 @@
         </second>
       </item>
       <item>
-        <first>icmp_ln91_fu_279</first>
+        <first>icmp_ln99_fu_279</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>19</item>
-        </second>
-      </item>
-      <item>
-        <first>icmp_ln93_fu_310</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>35</item>
         </second>
       </item>
       <item>
@@ -9527,15 +9527,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln91_fu_275</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>15</item>
-        </second>
-      </item>
-      <item>
-        <first>zext_ln94_1_fu_339</first>
+        <first>zext_ln102_1_fu_339</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9543,7 +9535,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln94_2_fu_350</first>
+        <first>zext_ln102_2_fu_350</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9551,7 +9543,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln94_fu_330</first>
+        <first>zext_ln102_fu_330</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9559,7 +9551,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln96_1_fu_291</first>
+        <first>zext_ln104_1_fu_291</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9567,7 +9559,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln96_2_fu_295</first>
+        <first>zext_ln104_2_fu_295</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9575,7 +9567,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln96_3_fu_304</first>
+        <first>zext_ln104_3_fu_304</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -9583,11 +9575,19 @@
         </second>
       </item>
       <item>
-        <first>zext_ln96_fu_263</first>
+        <first>zext_ln104_fu_263</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>13</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln99_fu_275</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>15</item>
         </second>
       </item>
     </dp_fu_nodes_expression>
@@ -10153,7 +10153,7 @@
         </second>
       </item>
       <item>
-        <first>p_r_M_imag_16_reg_457</first>
+        <first>p_r_M_imag_15_reg_457</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10169,7 +10169,7 @@
         </second>
       </item>
       <item>
-        <first>p_r_M_real_17_reg_451</first>
+        <first>p_r_M_real_16_reg_451</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10303,15 +10303,7 @@
         </second>
       </item>
       <item>
-        <first>zext_ln91_reg_384</first>
-        <second>
-          <count>1</count>
-          <item_version>0</item_version>
-          <item>15</item>
-        </second>
-      </item>
-      <item>
-        <first>zext_ln96_1_reg_397</first>
+        <first>zext_ln104_1_reg_397</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
@@ -10319,11 +10311,19 @@
         </second>
       </item>
       <item>
-        <first>zext_ln96_reg_379</first>
+        <first>zext_ln104_reg_379</first>
         <second>
           <count>1</count>
           <item_version>0</item_version>
           <item>13</item>
+        </second>
+      </item>
+      <item>
+        <first>zext_ln99_reg_384</first>
+        <second>
+          <count>1</count>
+          <item_version>0</item_version>
+          <item>15</item>
         </second>
       </item>
     </dp_regname_nodes>

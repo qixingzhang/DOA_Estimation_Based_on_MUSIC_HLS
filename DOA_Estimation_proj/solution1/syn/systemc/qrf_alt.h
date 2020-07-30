@@ -75,12 +75,13 @@ struct qrf_alt : public sc_module {
     qrf_alt_q_i_M_real* r_i_M_real_U;
     qrf_alt_q_i_M_real* r_i_M_imag_U;
     qrf_givens_float_s* grp_qrf_givens_float_s_fu_1090;
-    music_fsub_32ns_3rcU<1,5,32,32,32>* music_fsub_32ns_3rcU_U111;
-    music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U112;
-    music_fsub_32ns_3rcU<1,5,32,32,32>* music_fsub_32ns_3rcU_U113;
+    music_fsub_32ns_3rcU<1,5,32,32,32>* music_fsub_32ns_3rcU_U110;
+    music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U111;
+    music_fsub_32ns_3rcU<1,5,32,32,32>* music_fsub_32ns_3rcU_U112;
+    music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U113;
     music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U114;
     music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U115;
-    music_fadd_32ns_3ocq<1,5,32,32,32>* music_fadd_32ns_3ocq_U116;
+    music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U116;
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U117;
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U118;
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U119;
@@ -88,7 +89,6 @@ struct qrf_alt : public sc_module {
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U121;
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U122;
     music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U123;
-    music_fmul_32ns_3jbC<1,4,32,32,32>* music_fmul_32ns_3jbC_U124;
     fifo_w32_d2_A* to_rot_0_V_fifo_U;
     fifo_w32_d2_A* to_rot_1_V_fifo_U;
     fifo_w32_d2_A* to_rot_2_V_fifo_U;

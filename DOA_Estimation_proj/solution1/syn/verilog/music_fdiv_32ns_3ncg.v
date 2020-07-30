@@ -7,7 +7,7 @@
 
 module music_fdiv_32ns_3ncg
 #(parameter
-    ID         = 46,
+    ID         = 45,
     NUM_STAGE  = 16,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

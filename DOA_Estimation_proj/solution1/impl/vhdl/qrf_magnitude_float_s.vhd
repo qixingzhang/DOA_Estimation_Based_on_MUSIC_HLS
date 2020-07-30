@@ -468,7 +468,7 @@ architecture behav of qrf_magnitude_float_s is
 
 
 begin
-    music_fadd_32ns_3ocq_U53 : component music_fadd_32ns_3ocq
+    music_fadd_32ns_3ocq_U52 : component music_fadd_32ns_3ocq
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -483,7 +483,7 @@ begin
         ce => grp_fu_67_ce,
         dout => grp_fu_67_p2);
 
-    music_fadd_32ns_3ocq_U54 : component music_fadd_32ns_3ocq
+    music_fadd_32ns_3ocq_U53 : component music_fadd_32ns_3ocq
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -498,7 +498,7 @@ begin
         ce => grp_fu_72_ce,
         dout => grp_fu_72_p2);
 
-    music_fadd_32ns_3ocq_U55 : component music_fadd_32ns_3ocq
+    music_fadd_32ns_3ocq_U54 : component music_fadd_32ns_3ocq
     generic map (
         ID => 1,
         NUM_STAGE => 5,
@@ -513,7 +513,7 @@ begin
         ce => grp_fu_76_ce,
         dout => grp_fu_76_p2);
 
-    music_fmul_32ns_3jbC_U56 : component music_fmul_32ns_3jbC
+    music_fmul_32ns_3jbC_U55 : component music_fmul_32ns_3jbC
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -528,7 +528,7 @@ begin
         ce => grp_fu_80_ce,
         dout => grp_fu_80_p2);
 
-    music_fmul_32ns_3jbC_U57 : component music_fmul_32ns_3jbC
+    music_fmul_32ns_3jbC_U56 : component music_fmul_32ns_3jbC
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -543,7 +543,7 @@ begin
         ce => grp_fu_84_ce,
         dout => grp_fu_84_p2);
 
-    music_fmul_32ns_3jbC_U58 : component music_fmul_32ns_3jbC
+    music_fmul_32ns_3jbC_U57 : component music_fmul_32ns_3jbC
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -558,7 +558,7 @@ begin
         ce => grp_fu_88_ce,
         dout => grp_fu_88_p2);
 
-    music_fmul_32ns_3jbC_U59 : component music_fmul_32ns_3jbC
+    music_fmul_32ns_3jbC_U58 : component music_fmul_32ns_3jbC
     generic map (
         ID => 1,
         NUM_STAGE => 4,
@@ -573,7 +573,7 @@ begin
         ce => grp_fu_92_ce,
         dout => grp_fu_92_p2);
 
-    music_fdiv_32ns_3ncg_U60 : component music_fdiv_32ns_3ncg
+    music_fdiv_32ns_3ncg_U59 : component music_fdiv_32ns_3ncg
     generic map (
         ID => 1,
         NUM_STAGE => 16,
@@ -588,7 +588,7 @@ begin
         ce => grp_fu_97_ce,
         dout => grp_fu_97_p2);
 
-    music_fdiv_32ns_3ncg_U61 : component music_fdiv_32ns_3ncg
+    music_fdiv_32ns_3ncg_U60 : component music_fdiv_32ns_3ncg
     generic map (
         ID => 1,
         NUM_STAGE => 16,
@@ -603,7 +603,7 @@ begin
         ce => grp_fu_101_ce,
         dout => grp_fu_101_p2);
 
-    music_fdiv_32ns_3ncg_U62 : component music_fdiv_32ns_3ncg
+    music_fdiv_32ns_3ncg_U61 : component music_fdiv_32ns_3ncg
     generic map (
         ID => 1,
         NUM_STAGE => 16,
@@ -618,7 +618,7 @@ begin
         ce => grp_fu_105_ce,
         dout => grp_fu_105_p2);
 
-    music_fcmp_32ns_3pcA_U63 : component music_fcmp_32ns_3pcA
+    music_fcmp_32ns_3pcA_U62 : component music_fcmp_32ns_3pcA
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -634,7 +634,7 @@ begin
         opcode => ap_const_lv5_2,
         dout => grp_fu_109_p2);
 
-    music_fcmp_32ns_3pcA_U64 : component music_fcmp_32ns_3pcA
+    music_fcmp_32ns_3pcA_U63 : component music_fcmp_32ns_3pcA
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -650,7 +650,7 @@ begin
         opcode => ap_const_lv5_2,
         dout => grp_fu_113_p2);
 
-    music_fcmp_32ns_3pcA_U65 : component music_fcmp_32ns_3pcA
+    music_fcmp_32ns_3pcA_U64 : component music_fcmp_32ns_3pcA
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -666,7 +666,7 @@ begin
         opcode => ap_const_lv5_2,
         dout => grp_fu_117_p2);
 
-    music_fcmp_32ns_3pcA_U66 : component music_fcmp_32ns_3pcA
+    music_fcmp_32ns_3pcA_U65 : component music_fcmp_32ns_3pcA
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -682,7 +682,7 @@ begin
         opcode => ap_const_lv5_2,
         dout => grp_fu_121_p2);
 
-    music_fcmp_32ns_3pcA_U67 : component music_fcmp_32ns_3pcA
+    music_fcmp_32ns_3pcA_U66 : component music_fcmp_32ns_3pcA
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -698,7 +698,7 @@ begin
         opcode => ap_const_lv5_2,
         dout => grp_fu_125_p2);
 
-    music_fcmp_32ns_3pcA_U68 : component music_fcmp_32ns_3pcA
+    music_fcmp_32ns_3pcA_U67 : component music_fcmp_32ns_3pcA
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -714,7 +714,7 @@ begin
         opcode => ap_const_lv5_2,
         dout => grp_fu_129_p2);
 
-    music_fcmp_32ns_3pcA_U69 : component music_fcmp_32ns_3pcA
+    music_fcmp_32ns_3pcA_U68 : component music_fcmp_32ns_3pcA
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -730,7 +730,7 @@ begin
         opcode => ap_const_lv5_2,
         dout => grp_fu_133_p2);
 
-    music_fcmp_32ns_3pcA_U70 : component music_fcmp_32ns_3pcA
+    music_fcmp_32ns_3pcA_U69 : component music_fcmp_32ns_3pcA
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -746,7 +746,7 @@ begin
         opcode => ap_const_lv5_2,
         dout => grp_fu_137_p2);
 
-    music_fcmp_32ns_3pcA_U71 : component music_fcmp_32ns_3pcA
+    music_fcmp_32ns_3pcA_U70 : component music_fcmp_32ns_3pcA
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -762,7 +762,7 @@ begin
         opcode => ap_const_lv5_2,
         dout => grp_fu_141_p2);
 
-    music_fcmp_32ns_3pcA_U72 : component music_fcmp_32ns_3pcA
+    music_fcmp_32ns_3pcA_U71 : component music_fcmp_32ns_3pcA
     generic map (
         ID => 1,
         NUM_STAGE => 2,
@@ -778,7 +778,7 @@ begin
         opcode => ap_const_lv5_1,
         dout => grp_fu_145_p2);
 
-    music_fsqrt_32ns_qcK_U73 : component music_fsqrt_32ns_qcK
+    music_fsqrt_32ns_qcK_U72 : component music_fsqrt_32ns_qcK
     generic map (
         ID => 1,
         NUM_STAGE => 12,
