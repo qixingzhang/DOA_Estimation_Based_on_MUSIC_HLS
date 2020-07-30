@@ -18,7 +18,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../../src/main.cpp ../../../../src/test.cpp ../../../../src/music.cpp
+HLS_SOURCES = ../../../../src/main.cpp ../../../../src/music.cpp
 
 TARGET := csim.exe
 
@@ -55,6 +55,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E1__
+IFLAG += -Wno-unknown-pragmas 
 IFLAG += -g
 IFLAG += -DNT
 LFLAG += -Wl,--enable-auto-import 
@@ -72,15 +73,9 @@ all: $(TARGET)
 
 $(ObjDir)/main.o: ../../../../src/main.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../src/main.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/main.d
-
-$(ObjDir)/test.o: ../../../../src/test.cpp $(ObjDir)/.dir
-	$(Echo) "   Compiling ../../../../src/test.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
-
--include $(ObjDir)/test.d
 
 $(ObjDir)/music.o: ../../../../src/music.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../../src/music.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)

@@ -52,7 +52,7 @@ set RtlHierarchyInfo {[
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "14", "EstimateLatencyMax" : "17",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "19", "EstimateLatencyMax" : "27",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -62,8 +62,8 @@ set RtlHierarchyInfo {[
 		"Port" : [
 			{"Name" : "in_V", "Type" : "None", "Direction" : "I"},
 			{"Name" : "prescale", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.music_mux_42_32_1_1_U83", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.music_mux_42_32_1_1_U84", "Parent" : "0"}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.out_bits_V_U", "Parent" : "0"},
+	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.c_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
@@ -74,8 +74,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "14", "Max" : "17"}
-	, {"Name" : "Interval", "Min" : "14", "Max" : "17"}
+	{"Name" : "Latency", "Min" : "19", "Max" : "27"}
+	, {"Name" : "Interval", "Min" : "19", "Max" : "27"}
 ]}
 
 set PipelineEnableSignalInfo {[

@@ -2,84 +2,6 @@
       "name": "",
       "directive": [
         {
-          "functionName": "qrf_basic",
-          "label": "qrf_r_update",
-          "functionLabel": "",
-          "pragma": {
-            "name": "PIPELINE",
-            "option": [{
-                "name": "off",
-                "value": "",
-                "positionalBoolean": "1"
-              }]
-          }
-        },
-        {
-          "functionName": "qrf_basic",
-          "label": "qrf_q_update",
-          "functionLabel": "",
-          "pragma": {
-            "name": "PIPELINE",
-            "option": [{
-                "name": "off",
-                "value": "",
-                "positionalBoolean": "1"
-              }]
-          }
-        },
-        {
-          "functionName": "qrf_basic",
-          "label": "qrf_out_col_assign_Q",
-          "functionLabel": "",
-          "pragma": {
-            "name": "PIPELINE",
-            "option": [{
-                "name": "off",
-                "value": "",
-                "positionalBoolean": "1"
-              }]
-          }
-        },
-        {
-          "functionName": "qrf_basic",
-          "label": "qrf_out_col_assign_R",
-          "functionLabel": "",
-          "pragma": {
-            "name": "PIPELINE",
-            "option": [{
-                "name": "off",
-                "value": "",
-                "positionalBoolean": "1"
-              }]
-          }
-        },
-        {
-          "functionName": "qrf_basic",
-          "label": "qrf_in_col_assign_Qi",
-          "functionLabel": "",
-          "pragma": {
-            "name": "PIPELINE",
-            "option": [{
-                "name": "off",
-                "value": "",
-                "positionalBoolean": "1"
-              }]
-          }
-        },
-        {
-          "functionName": "qrf_basic",
-          "label": "qrf_in_col_assign_Ri",
-          "functionLabel": "",
-          "pragma": {
-            "name": "PIPELINE",
-            "option": [{
-                "name": "off",
-                "value": "",
-                "positionalBoolean": "1"
-              }]
-          }
-        },
-        {
           "functionName": "fft",
           "label": "DFTpts",
           "functionLabel": "",
@@ -96,18 +18,6 @@
               }
             ]
           }
-        },
-        {
-          "functionName": "qr_decompose",
-          "label": "",
-          "functionLabel": "",
-          "pragma": {"name": "INLINE"}
-        },
-        {
-          "functionName": "eig_decompose",
-          "label": "",
-          "functionLabel": "",
-          "pragma": {"name": "INLINE"}
         },
         {
           "functionName": "sort_eigval",
@@ -234,6 +144,114 @@
           "label": "music_label16",
           "functionLabel": "",
           "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "Autocorrelation",
+          "label": "Autocorrelation_label17",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "func_pack",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "DATAFLOW"}
+        },
+        {
+          "functionName": "qr_decompose",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "eig_decompose",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_vm",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_mm",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_magnitude",
+          "label": "Function_qrf_magnitude_real",
+          "functionLabel": "Function_qrf_magnitude_real",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_magnitude",
+          "label": "Function_qrf_magnitude_complex",
+          "functionLabel": "Function_qrf_magnitude_complex",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_givens",
+          "label": "Function_qrf_givens_real",
+          "functionLabel": "Function_qrf_givens_real",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_givens",
+          "label": "Function_qrf_givens_complex",
+          "functionLabel": "Function_qrf_givens_complex",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_basic",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_givens",
+          "label": "Function_qrf_givens_real",
+          "functionLabel": "Function_qrf_givens_real",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_givens",
+          "label": "Function_qrf_givens_complex",
+          "functionLabel": "Function_qrf_givens_complex",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_magnitude",
+          "label": "Function_qrf_magnitude_complex",
+          "functionLabel": "Function_qrf_magnitude_complex",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_magnitude",
+          "label": "Function_qrf_magnitude_real",
+          "functionLabel": "Function_qrf_magnitude_real",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_mm",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_vm",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_basic",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "DATAFLOW"}
         }
       ]
     }]}

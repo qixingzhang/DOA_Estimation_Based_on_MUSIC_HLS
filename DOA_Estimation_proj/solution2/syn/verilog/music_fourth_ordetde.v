@@ -6,7 +6,7 @@
 (* rom_style = "distributed" *) module music_fourth_ordetde_rom (
 addr0, ce0, q0, clk);
 
-parameter DWIDTH = 25;
+parameter DWIDTH = 52;
 parameter AWIDTH = 8;
 parameter MEM_SIZE = 256;
 
@@ -43,7 +43,7 @@ module music_fourth_ordetde(
     ce0,
     q0);
 
-parameter DataWidth = 32'd25;
+parameter DataWidth = 32'd52;
 parameter AddressRange = 32'd256;
 parameter AddressWidth = 32'd8;
 input reset;

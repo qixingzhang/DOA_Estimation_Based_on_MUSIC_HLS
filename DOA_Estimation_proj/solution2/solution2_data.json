@@ -20,15 +20,7 @@
       "config_export -vivado_report_level=0"
     ],
     "DirectiveTcl": [
-      "set_directive_pipeline qrf_basic\/qrf_r_update -off",
-      "set_directive_pipeline qrf_basic\/qrf_q_update -off",
-      "set_directive_pipeline qrf_basic\/qrf_out_col_assign_Q -off",
-      "set_directive_pipeline qrf_basic\/qrf_out_col_assign_R -off",
-      "set_directive_pipeline qrf_basic\/qrf_in_col_assign_Qi -off",
-      "set_directive_pipeline qrf_basic\/qrf_in_col_assign_Ri -off",
       "set_directive_loop_tripcount fft\/DFTpts -min 1 -max 1024",
-      "set_directive_inline qr_decompose ",
-      "set_directive_inline eig_decompose ",
       "set_directive_inline sort_eigval ",
       "set_directive_inline Autocorrelation ",
       "set_directive_inline reverse_bits ",
@@ -49,18 +41,28 @@
       "set_directive_expression_balance eig_decompose\/eig_decompose_label13 ",
       "set_directive_expression_balance reverse_bits\/reverse_bits_label14 ",
       "set_directive_expression_balance music\/music_label15 ",
-      "set_directive_expression_balance music\/music_label16 "
+      "set_directive_expression_balance music\/music_label16 ",
+      "set_directive_expression_balance Autocorrelation\/Autocorrelation_label17 ",
+      "set_directive_dataflow func_pack ",
+      "set_directive_inline qr_decompose ",
+      "set_directive_inline eig_decompose ",
+      "set_directive_inline qrf_vm ",
+      "set_directive_inline qrf_mm ",
+      "set_directive_inline qrf_magnitude\/Function_qrf_magnitude_real\/Function_qrf_magnitude_real ",
+      "set_directive_inline qrf_magnitude\/Function_qrf_magnitude_complex\/Function_qrf_magnitude_complex ",
+      "set_directive_inline qrf_givens\/Function_qrf_givens_real\/Function_qrf_givens_real ",
+      "set_directive_inline qrf_givens\/Function_qrf_givens_complex\/Function_qrf_givens_complex ",
+      "set_directive_inline qrf_basic ",
+      "set_directive_expression_balance qrf_givens\/Function_qrf_givens_real\/Function_qrf_givens_real ",
+      "set_directive_expression_balance qrf_givens\/Function_qrf_givens_complex\/Function_qrf_givens_complex ",
+      "set_directive_expression_balance qrf_magnitude\/Function_qrf_magnitude_complex\/Function_qrf_magnitude_complex ",
+      "set_directive_expression_balance qrf_magnitude\/Function_qrf_magnitude_real\/Function_qrf_magnitude_real ",
+      "set_directive_expression_balance qrf_mm ",
+      "set_directive_expression_balance qrf_vm ",
+      "set_directive_dataflow qrf_basic "
     ],
     "DirectiveInfo": [
-      "pipeline qrf_basic\/qrf_r_update {{off positionBoolean1}} {}",
-      "pipeline qrf_basic\/qrf_q_update {{off positionBoolean1}} {}",
-      "pipeline qrf_basic\/qrf_out_col_assign_Q {{off positionBoolean1}} {}",
-      "pipeline qrf_basic\/qrf_out_col_assign_R {{off positionBoolean1}} {}",
-      "pipeline qrf_basic\/qrf_in_col_assign_Qi {{off positionBoolean1}} {}",
-      "pipeline qrf_basic\/qrf_in_col_assign_Ri {{off positionBoolean1}} {}",
       "loop_tripcount fft\/DFTpts {{tripcount positionBooleanCmd} {min 1} {max 1024}} {}",
-      "inline qr_decompose {} {}",
-      "inline eig_decompose {} {}",
       "inline sort_eigval {} {}",
       "inline Autocorrelation {} {}",
       "inline reverse_bits {} {}",
@@ -81,7 +83,25 @@
       "expression_balance eig_decompose\/eig_decompose_label13 {{balance positionBooleanCmd}} {}",
       "expression_balance reverse_bits\/reverse_bits_label14 {{balance positionBooleanCmd}} {}",
       "expression_balance music\/music_label15 {{balance positionBooleanCmd}} {}",
-      "expression_balance music\/music_label16 {{balance positionBooleanCmd}} {}"
+      "expression_balance music\/music_label16 {{balance positionBooleanCmd}} {}",
+      "expression_balance Autocorrelation\/Autocorrelation_label17 {{balance positionBooleanCmd}} {}",
+      "dataflow func_pack {} {}",
+      "inline qr_decompose {} {}",
+      "inline eig_decompose {} {}",
+      "inline qrf_vm {} {}",
+      "inline qrf_mm {} {}",
+      "inline qrf_magnitude\/Function_qrf_magnitude_real\/Function_qrf_magnitude_real {} {}",
+      "inline qrf_magnitude\/Function_qrf_magnitude_complex\/Function_qrf_magnitude_complex {} {}",
+      "inline qrf_givens\/Function_qrf_givens_real\/Function_qrf_givens_real {} {}",
+      "inline qrf_givens\/Function_qrf_givens_complex\/Function_qrf_givens_complex {} {}",
+      "inline qrf_basic {} {}",
+      "expression_balance qrf_givens\/Function_qrf_givens_real\/Function_qrf_givens_real {{balance positionBooleanCmd}} {}",
+      "expression_balance qrf_givens\/Function_qrf_givens_complex\/Function_qrf_givens_complex {{balance positionBooleanCmd}} {}",
+      "expression_balance qrf_magnitude\/Function_qrf_magnitude_complex\/Function_qrf_magnitude_complex {{balance positionBooleanCmd}} {}",
+      "expression_balance qrf_magnitude\/Function_qrf_magnitude_real\/Function_qrf_magnitude_real {{balance positionBooleanCmd}} {}",
+      "expression_balance qrf_mm {{balance positionBooleanCmd}} {}",
+      "expression_balance qrf_vm {{balance positionBooleanCmd}} {}",
+      "dataflow qrf_basic {} {}"
     ]
   },
   "Args": {
@@ -135,7 +155,7 @@
     "ClockPeriod": "20",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "186303478",
+    "Latency": "185488550",
     "Uncertainty": "2.5"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 20.000 [get_ports ap_clk]"]},
@@ -153,106 +173,121 @@
   "Files": {
     "CSource": ["..\/..\/src\/music.cpp"],
     "Vhdl": [
-      "impl\/vhdl\/music_Autocorr_Buyd2.vhd",
+      "impl\/vhdl\/music_Autocorr_BuBew.vhd",
       "impl\/vhdl\/music_AUU_M_real.vhd",
-      "impl\/vhdl\/music_ddiv_64ns_6Hfu.vhd",
-      "impl\/vhdl\/music_dmul_64ns_6Gfk.vhd",
-      "impl\/vhdl\/music_fadd_32ns_3hbi.vhd",
-      "impl\/vhdl\/music_faddfsub_32ncg.vhd",
+      "impl\/vhdl\/music_ddiv_64ns_6KfY.vhd",
+      "impl\/vhdl\/music_dmul_64ns_6JfO.vhd",
+      "impl\/vhdl\/music_eigval.vhd",
+      "impl\/vhdl\/music_fadd_32ns_3lbW.vhd",
+      "impl\/vhdl\/music_faddfsub_32jbC.vhd",
       "impl\/vhdl\/music_fc.vhd",
-      "impl\/vhdl\/music_fcmp_32ns_3kbM.vhd",
-      "impl\/vhdl\/music_fdiv_32ns_3jbC.vhd",
+      "impl\/vhdl\/music_fcmp_32ns_3ocq.vhd",
+      "impl\/vhdl\/music_fdiv_32ns_3ncg.vhd",
       "impl\/vhdl\/music_FFT_Buffer_re.vhd",
-      "impl\/vhdl\/music_fmul_32ns_3ibs.vhd",
-      "impl\/vhdl\/music_fourth_ordepcA.vhd",
-      "impl\/vhdl\/music_fourth_ordeqcK.vhd",
-      "impl\/vhdl\/music_fourth_ordercU.vhd",
+      "impl\/vhdl\/music_fmul_32ns_3mb6.vhd",
       "impl\/vhdl\/music_fourth_ordesc4.vhd",
       "impl\/vhdl\/music_fourth_ordetde.vhd",
-      "impl\/vhdl\/music_fpext_32ns_Ffa.vhd",
-      "impl\/vhdl\/music_fptrunc_64nEe0.vhd",
-      "impl\/vhdl\/music_fsqrt_32ns_lbW.vhd",
-      "impl\/vhdl\/music_fsub_32ns_3mb6.vhd",
-      "impl\/vhdl\/music_mul_170ns_5JfO.vhd",
-      "impl\/vhdl\/music_mul_mul_15nfYi.vhd",
-      "impl\/vhdl\/music_mul_mul_15ng8j.vhd",
-      "impl\/vhdl\/music_mux_42_32_1_1.vhd",
+      "impl\/vhdl\/music_fourth_ordeudo.vhd",
+      "impl\/vhdl\/music_fourth_ordevdy.vhd",
+      "impl\/vhdl\/music_fourth_ordewdI.vhd",
+      "impl\/vhdl\/music_fpext_32ns_IfE.vhd",
+      "impl\/vhdl\/music_fptrunc_64nHfu.vhd",
+      "impl\/vhdl\/music_fsqrt_32ns_pcA.vhd",
+      "impl\/vhdl\/music_fsub_32ns_3kbM.vhd",
+      "impl\/vhdl\/music_mul_170ns_5Mgi.vhd",
+      "impl\/vhdl\/music_mul_mul_15nhbi.vhd",
+      "impl\/vhdl\/music_mul_mul_15nibs.vhd",
       "impl\/vhdl\/music_mux_83_1_1_1.vhd",
       "impl\/vhdl\/music_mux_164_1_1_1.vhd",
+      "impl\/vhdl\/music_p.vhd",
       "impl\/vhdl\/music_Q_temp_M_real.vhd",
-      "impl\/vhdl\/music_ref_4oPi_taocq.vhd",
-      "impl\/vhdl\/music_sitodp_32nsIfE.vhd",
+      "impl\/vhdl\/music_ref_4oPi_tarcU.vhd",
+      "impl\/vhdl\/music_sitodp_32nsLf8.vhd",
+      "impl\/vhdl\/music_sort_index.vhd",
       "impl\/vhdl\/music_theta.vhd",
       "impl\/vhdl\/music_Un_M_real.vhd",
       "impl\/vhdl\/music_w_M_real.vhd",
-      "impl\/vhdl\/qrf_basic.vhd",
-      "impl\/vhdl\/qrf_basic_Qi_M_real.vhd",
-      "impl\/vhdl\/qrf_givens_float_s.vhd",
-      "impl\/vhdl\/qrf_magnitude_float_s.vhd",
+      "impl\/vhdl\/qrf_top.vhd",
+      "impl\/vhdl\/qrf_top_Loop_1_proc3.vhd",
+      "impl\/vhdl\/qrf_top_Loop_qrf_out.vhd",
+      "impl\/vhdl\/qrf_top_Qi_M_real.vhd",
+      "impl\/vhdl\/qrf_top_Qi_M_real_memcore.vhd",
       "impl\/vhdl\/scaled_fixed2ieee.vhd",
       "impl\/vhdl\/scaled_fixed2ieee_1.vhd",
-      "impl\/vhdl\/sin_or_cos_float_bkb.vhd",
-      "impl\/vhdl\/sin_or_cos_float_cud.vhd",
+      "impl\/vhdl\/scaled_fixed2ieee_c.vhd",
+      "impl\/vhdl\/scaled_fixed2ieeebkb.vhd",
+      "impl\/vhdl\/scaled_fixed2ieeecud.vhd",
+      "impl\/vhdl\/scaled_fixed2ieeeqcK.vhd",
       "impl\/vhdl\/sin_or_cos_float_dEe.vhd",
       "impl\/vhdl\/sin_or_cos_float_eOg.vhd",
+      "impl\/vhdl\/sin_or_cos_float_fYi.vhd",
+      "impl\/vhdl\/sin_or_cos_float_g8j.vhd",
       "impl\/vhdl\/sin_or_cos_float_s.vhd",
       "impl\/vhdl\/music.vhd"
     ],
     "Verilog": [
-      "impl\/verilog\/music_Autocorr_Buyd2.v",
+      "impl\/verilog\/music_Autocorr_BuBew.v",
       "impl\/verilog\/music_AUU_M_real.v",
-      "impl\/verilog\/music_ddiv_64ns_6Hfu.v",
-      "impl\/verilog\/music_dmul_64ns_6Gfk.v",
-      "impl\/verilog\/music_fadd_32ns_3hbi.v",
-      "impl\/verilog\/music_faddfsub_32ncg.v",
+      "impl\/verilog\/music_ddiv_64ns_6KfY.v",
+      "impl\/verilog\/music_dmul_64ns_6JfO.v",
+      "impl\/verilog\/music_eigval.v",
+      "impl\/verilog\/music_fadd_32ns_3lbW.v",
+      "impl\/verilog\/music_faddfsub_32jbC.v",
       "impl\/verilog\/music_fc.v",
       "impl\/verilog\/music_fc_rom.dat",
-      "impl\/verilog\/music_fcmp_32ns_3kbM.v",
-      "impl\/verilog\/music_fdiv_32ns_3jbC.v",
+      "impl\/verilog\/music_fcmp_32ns_3ocq.v",
+      "impl\/verilog\/music_fdiv_32ns_3ncg.v",
       "impl\/verilog\/music_FFT_Buffer_re.v",
-      "impl\/verilog\/music_fmul_32ns_3ibs.v",
-      "impl\/verilog\/music_fourth_ordepcA.v",
-      "impl\/verilog\/music_fourth_ordepcA_rom.dat",
-      "impl\/verilog\/music_fourth_ordeqcK.v",
-      "impl\/verilog\/music_fourth_ordeqcK_rom.dat",
-      "impl\/verilog\/music_fourth_ordercU.v",
-      "impl\/verilog\/music_fourth_ordercU_rom.dat",
+      "impl\/verilog\/music_fmul_32ns_3mb6.v",
       "impl\/verilog\/music_fourth_ordesc4.v",
       "impl\/verilog\/music_fourth_ordesc4_rom.dat",
       "impl\/verilog\/music_fourth_ordetde.v",
       "impl\/verilog\/music_fourth_ordetde_rom.dat",
-      "impl\/verilog\/music_fpext_32ns_Ffa.v",
-      "impl\/verilog\/music_fptrunc_64nEe0.v",
-      "impl\/verilog\/music_fsqrt_32ns_lbW.v",
-      "impl\/verilog\/music_fsub_32ns_3mb6.v",
-      "impl\/verilog\/music_mul_170ns_5JfO.v",
-      "impl\/verilog\/music_mul_mul_15nfYi.v",
-      "impl\/verilog\/music_mul_mul_15ng8j.v",
-      "impl\/verilog\/music_mux_42_32_1_1.v",
+      "impl\/verilog\/music_fourth_ordeudo.v",
+      "impl\/verilog\/music_fourth_ordeudo_rom.dat",
+      "impl\/verilog\/music_fourth_ordevdy.v",
+      "impl\/verilog\/music_fourth_ordevdy_rom.dat",
+      "impl\/verilog\/music_fourth_ordewdI.v",
+      "impl\/verilog\/music_fourth_ordewdI_rom.dat",
+      "impl\/verilog\/music_fpext_32ns_IfE.v",
+      "impl\/verilog\/music_fptrunc_64nHfu.v",
+      "impl\/verilog\/music_fsqrt_32ns_pcA.v",
+      "impl\/verilog\/music_fsub_32ns_3kbM.v",
+      "impl\/verilog\/music_mul_170ns_5Mgi.v",
+      "impl\/verilog\/music_mul_mul_15nhbi.v",
+      "impl\/verilog\/music_mul_mul_15nibs.v",
       "impl\/verilog\/music_mux_83_1_1_1.v",
       "impl\/verilog\/music_mux_164_1_1_1.v",
+      "impl\/verilog\/music_p.v",
+      "impl\/verilog\/music_p_rom.dat",
       "impl\/verilog\/music_Q_temp_M_real.v",
-      "impl\/verilog\/music_ref_4oPi_taocq.v",
-      "impl\/verilog\/music_ref_4oPi_taocq_rom.dat",
-      "impl\/verilog\/music_sitodp_32nsIfE.v",
+      "impl\/verilog\/music_ref_4oPi_tarcU.v",
+      "impl\/verilog\/music_ref_4oPi_tarcU_rom.dat",
+      "impl\/verilog\/music_sitodp_32nsLf8.v",
+      "impl\/verilog\/music_sort_index.v",
       "impl\/verilog\/music_theta.v",
       "impl\/verilog\/music_theta_rom.dat",
       "impl\/verilog\/music_Un_M_real.v",
       "impl\/verilog\/music_w_M_real.v",
-      "impl\/verilog\/qrf_basic.v",
-      "impl\/verilog\/qrf_basic_Qi_M_real.v",
-      "impl\/verilog\/qrf_givens_float_s.v",
-      "impl\/verilog\/qrf_magnitude_float_s.v",
+      "impl\/verilog\/qrf_top.v",
+      "impl\/verilog\/qrf_top_Loop_1_proc3.v",
+      "impl\/verilog\/qrf_top_Loop_qrf_out.v",
+      "impl\/verilog\/qrf_top_Qi_M_real.v",
+      "impl\/verilog\/qrf_top_Qi_M_real_memcore.v",
       "impl\/verilog\/scaled_fixed2ieee.v",
       "impl\/verilog\/scaled_fixed2ieee_1.v",
-      "impl\/verilog\/sin_or_cos_float_bkb.v",
-      "impl\/verilog\/sin_or_cos_float_bkb_rom.dat",
-      "impl\/verilog\/sin_or_cos_float_cud.v",
-      "impl\/verilog\/sin_or_cos_float_cud_rom.dat",
+      "impl\/verilog\/scaled_fixed2ieee_c.v",
+      "impl\/verilog\/scaled_fixed2ieeebkb.v",
+      "impl\/verilog\/scaled_fixed2ieeecud.v",
+      "impl\/verilog\/scaled_fixed2ieeeqcK.v",
       "impl\/verilog\/sin_or_cos_float_dEe.v",
       "impl\/verilog\/sin_or_cos_float_dEe_rom.dat",
       "impl\/verilog\/sin_or_cos_float_eOg.v",
       "impl\/verilog\/sin_or_cos_float_eOg_rom.dat",
+      "impl\/verilog\/sin_or_cos_float_fYi.v",
+      "impl\/verilog\/sin_or_cos_float_fYi_rom.dat",
+      "impl\/verilog\/sin_or_cos_float_g8j.v",
+      "impl\/verilog\/sin_or_cos_float_g8j_rom.dat",
       "impl\/verilog\/sin_or_cos_float_s.v",
       "impl\/verilog\/music.v"
     ],
@@ -576,20 +611,22 @@
       "ModuleName": "music",
       "Instances": [
         {
-          "ModuleName": "qrf_basic",
-          "InstanceName": "grp_qrf_basic_fu_2991",
-          "Instances": [{
-              "ModuleName": "qrf_givens_float_s",
-              "InstanceName": "grp_qrf_givens_float_s_fu_584",
-              "Instances": [{
-                  "ModuleName": "qrf_magnitude_float_s",
-                  "InstanceName": "grp_qrf_magnitude_float_s_fu_226"
-                }]
-            }]
+          "ModuleName": "qrf_top",
+          "InstanceName": "grp_qrf_top_fu_2711",
+          "Instances": [
+            {
+              "ModuleName": "qrf_top_Loop_1_proc3",
+              "InstanceName": "qrf_top_Loop_1_proc3_U0"
+            },
+            {
+              "ModuleName": "qrf_top_Loop_qrf_out",
+              "InstanceName": "qrf_top_Loop_qrf_out_U0"
+            }
+          ]
         },
         {
           "ModuleName": "sin_or_cos_float_s",
-          "InstanceName": "grp_sin_or_cos_float_s_fu_3001",
+          "InstanceName": "grp_sin_or_cos_float_s_fu_2721",
           "Instances": [{
               "ModuleName": "scaled_fixed2ieee_1",
               "InstanceName": "grp_scaled_fixed2ieee_1_fu_218"
@@ -597,7 +634,7 @@
         },
         {
           "ModuleName": "sin_or_cos_float_s",
-          "InstanceName": "grp_sin_or_cos_float_s_fu_3017",
+          "InstanceName": "grp_sin_or_cos_float_s_fu_2737",
           "Instances": [{
               "ModuleName": "scaled_fixed2ieee_1",
               "InstanceName": "grp_scaled_fixed2ieee_1_fu_218"
@@ -605,7 +642,7 @@
         },
         {
           "ModuleName": "scaled_fixed2ieee",
-          "InstanceName": "grp_scaled_fixed2ieee_fu_3034"
+          "InstanceName": "grp_scaled_fixed2ieee_fu_2754"
         }
       ]
     },
@@ -624,24 +661,24 @@
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
-      "qrf_magnitude_float_s": {
+      "qrf_top_Loop_1_proc3": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
-      "qrf_givens_float_s": {
+      "qrf_top_Loop_qrf_out": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
-      "qrf_basic": {
+      "qrf_top": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
-        "isPipelined": "0",
+        "isPipelined": "1",
         "isCombinational": "0",
         "isOneStateSeq": "0"
       },
@@ -663,54 +700,54 @@
     "Metrics": {
       "scaled_fixed2ieee_1": {
         "Latency": {
-          "LatencyBest": "5",
-          "LatencyAvg": "5",
-          "LatencyWorst": "6",
-          "PipelineIIMin": "5",
-          "PipelineIIMax": "6",
-          "PipelineII": "5 ~ 6",
+          "LatencyBest": "8",
+          "LatencyAvg": "10",
+          "LatencyWorst": "12",
+          "PipelineIIMin": "8",
+          "PipelineIIMax": "12",
+          "PipelineII": "8 ~ 12",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "20.00",
           "Uncertainty": "2.50",
-          "Estimate": "10.754"
+          "Estimate": "12.459"
         },
         "Loops": [
           {
             "Name": "Loop 1",
             "TripCount": "2",
-            "Latency": "2",
+            "Latency": "4",
             "PipelineII": "",
-            "PipelineDepth": "1"
+            "PipelineDepth": "2"
           },
           {
             "Name": "Loop 2",
             "TripCount": "",
-            "LatencyMin": "1",
-            "LatencyMax": "2",
-            "Latency": "1 ~ 2",
+            "LatencyMin": "2",
+            "LatencyMax": "5",
+            "Latency": "2 ~ 5",
             "PipelineII": "",
-            "PipelineDepth": "1"
+            "PipelineDepth": "2"
           }
         ],
         "Area": {
-          "FF": "267",
-          "LUT": "738",
-          "BRAM_18K": "0",
-          "DSP48E": "0",
-          "URAM": "0"
+          "BRAM_18K": "2",
+          "FF": "272",
+          "LUT": "686",
+          "URAM": "0",
+          "DSP48E": "0"
         }
       },
       "sin_or_cos_float_s": {
         "Latency": {
-          "LatencyBest": "12",
-          "LatencyAvg": "12",
-          "LatencyWorst": "13",
-          "PipelineIIMin": "12",
-          "PipelineIIMax": "13",
-          "PipelineII": "12 ~ 13",
+          "LatencyBest": "15",
+          "LatencyAvg": "17",
+          "LatencyWorst": "19",
+          "PipelineIIMin": "15",
+          "PipelineIIMax": "19",
+          "PipelineII": "15 ~ 19",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -720,76 +757,28 @@
           "Estimate": "17.495"
         },
         "Area": {
+          "BRAM_18K": "2",
           "DSP48E": "13",
-          "FF": "937",
-          "LUT": "2698",
-          "BRAM_18K": "0",
+          "FF": "928",
+          "LUT": "2585",
           "URAM": "0"
         }
       },
-      "qrf_magnitude_float_s": {
+      "qrf_top_Loop_1_proc3": {
         "Latency": {
-          "LatencyBest": "3",
-          "LatencyAvg": "16",
-          "LatencyWorst": "28",
-          "PipelineIIMin": "3",
-          "PipelineIIMax": "28",
-          "PipelineII": "3 ~ 28",
+          "LatencyBest": "118",
+          "LatencyAvg": "790",
+          "LatencyWorst": "1666",
+          "PipelineIIMin": "118",
+          "PipelineIIMax": "1666",
+          "PipelineII": "118 ~ 1666",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "20.00",
           "Uncertainty": "2.50",
-          "Estimate": "16.877"
-        },
-        "Area": {
-          "DSP48E": "13",
-          "FF": "3397",
-          "LUT": "8271",
-          "BRAM_18K": "0",
-          "URAM": "0"
-        }
-      },
-      "qrf_givens_float_s": {
-        "Latency": {
-          "LatencyBest": "7",
-          "LatencyAvg": "27",
-          "LatencyWorst": "46",
-          "PipelineIIMin": "7",
-          "PipelineIIMax": "46",
-          "PipelineII": "7 ~ 46",
-          "PipelineDepth": "",
-          "PipelineType": "none"
-        },
-        "Timing": {
-          "Target": "20.00",
-          "Uncertainty": "2.50",
-          "Estimate": "16.877"
-        },
-        "Area": {
-          "DSP48E": "50",
-          "FF": "8664",
-          "LUT": "18347",
-          "BRAM_18K": "0",
-          "URAM": "0"
-        }
-      },
-      "qrf_basic": {
-        "Latency": {
-          "LatencyBest": "171",
-          "LatencyAvg": "855",
-          "LatencyWorst": "1767",
-          "PipelineIIMin": "171",
-          "PipelineIIMax": "1767",
-          "PipelineII": "171 ~ 1767",
-          "PipelineDepth": "",
-          "PipelineType": "none"
-        },
-        "Timing": {
-          "Target": "20.00",
-          "Uncertainty": "2.50",
-          "Estimate": "16.877"
+          "Estimate": "17.323"
         },
         "Loops": [
           {
@@ -847,12 +836,12 @@
             "Name": "qrf_col_loop_qrf_row_loop",
             "TripCount": "12",
             "LatencyMin": "24",
-            "LatencyMax": "1620",
-            "Latency": "24 ~ 1620",
+            "LatencyMax": "1572",
+            "Latency": "24 ~ 1572",
             "PipelineII": "",
             "PipelineDepthMin": "2",
-            "PipelineDepthMax": "135",
-            "PipelineDepth": "2 ~ 135",
+            "PipelineDepthMax": "131",
+            "PipelineDepth": "2 ~ 131",
             "Loops": [
               {
                 "Name": "qrf_r_update",
@@ -869,8 +858,31 @@
                 "PipelineDepth": "18"
               }
             ]
-          },
-          {
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "0",
+          "DSP48E": "37",
+          "FF": "7542",
+          "LUT": "15255",
+          "URAM": "0"
+        }
+      },
+      "qrf_top_Loop_qrf_out": {
+        "Latency": {
+          "LatencyBest": "53",
+          "LatencyAvg": "53",
+          "LatencyWorst": "53",
+          "PipelineII": "53",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "20.00",
+          "Uncertainty": "2.50",
+          "Estimate": "5.637"
+        },
+        "Loops": [{
             "Name": "qrf_out_row_assign",
             "TripCount": "4",
             "Latency": "52",
@@ -892,31 +904,54 @@
                 "PipelineDepth": "2"
               }
             ]
-          }
-        ],
+          }],
+        "Area": {
+          "FF": "40",
+          "LUT": "264",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "qrf_top": {
+        "Latency": {
+          "LatencyBest": "118",
+          "LatencyAvg": "790",
+          "LatencyWorst": "1666",
+          "PipelineIIMin": "119",
+          "PipelineIIMax": "1667",
+          "PipelineII": "119 ~ 1667",
+          "PipelineDepth": "",
+          "PipelineType": "dataflow"
+        },
+        "Timing": {
+          "Target": "20.00",
+          "Uncertainty": "2.50",
+          "Estimate": "17.323"
+        },
         "Area": {
           "BRAM_18K": "8",
-          "DSP48E": "60",
-          "FF": "11074",
-          "LUT": "21927",
+          "DSP48E": "37",
+          "FF": "7586",
+          "LUT": "15577",
           "URAM": "0"
         }
       },
       "scaled_fixed2ieee": {
         "Latency": {
-          "LatencyBest": "14",
-          "LatencyAvg": "15",
-          "LatencyWorst": "17",
-          "PipelineIIMin": "14",
-          "PipelineIIMax": "17",
-          "PipelineII": "14 ~ 17",
+          "LatencyBest": "19",
+          "LatencyAvg": "23",
+          "LatencyWorst": "27",
+          "PipelineIIMin": "19",
+          "PipelineIIMax": "27",
+          "PipelineII": "19 ~ 27",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "20.00",
           "Uncertainty": "2.50",
-          "Estimate": "12.528"
+          "Estimate": "13.509"
         },
         "Loops": [
           {
@@ -929,43 +964,43 @@
           {
             "Name": "Loop 2",
             "TripCount": "4",
-            "Latency": "4",
+            "Latency": "8",
             "PipelineII": "",
-            "PipelineDepth": "1"
+            "PipelineDepth": "2"
           },
           {
             "Name": "Loop 3",
             "TripCount": "",
-            "LatencyMin": "1",
-            "LatencyMax": "4",
-            "Latency": "1 ~ 4",
+            "LatencyMin": "2",
+            "LatencyMax": "9",
+            "Latency": "2 ~ 9",
             "PipelineII": "",
-            "PipelineDepth": "1"
+            "PipelineDepth": "2"
           }
         ],
         "Area": {
-          "FF": "613",
-          "LUT": "1653",
           "BRAM_18K": "0",
-          "DSP48E": "0",
-          "URAM": "0"
+          "FF": "450",
+          "LUT": "1598",
+          "URAM": "0",
+          "DSP48E": "0"
         }
       },
       "music": {
         "Latency": {
-          "LatencyBest": "186303478",
+          "LatencyBest": "185488550",
           "LatencyAvg": "",
-          "LatencyWorst": "3569819750",
-          "PipelineIIMin": "186303479",
-          "PipelineIIMax": "3569819751",
-          "PipelineII": "186303479 ~ 3569819751",
+          "LatencyWorst": "3578412134",
+          "PipelineIIMin": "185488551",
+          "PipelineIIMax": "3578412135",
+          "PipelineII": "185488551 ~ 3578412135",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
         "Timing": {
           "Target": "20.00",
           "Uncertainty": "2.50",
-          "Estimate": "17.787"
+          "Estimate": "17.801"
         },
         "Loops": [
           {
@@ -1062,23 +1097,23 @@
           {
             "Name": "Loop 8",
             "TripCount": "10",
-            "LatencyMin": "719340",
-            "LatencyMax": "3359876700",
-            "Latency": "719340 ~ 3359876700",
+            "LatencyMin": "720540",
+            "LatencyMax": "3361105500",
+            "Latency": "720540 ~ 3361105500",
             "PipelineII": "",
-            "PipelineDepthMin": "71934",
-            "PipelineDepthMax": "335987670",
-            "PipelineDepth": "71934 ~ 335987670",
+            "PipelineDepthMin": "72054",
+            "PipelineDepthMax": "336110550",
+            "PipelineDepth": "72054 ~ 336110550",
             "Loops": [{
                 "Name": "Loop 8.1",
                 "TripCount": "4",
-                "LatencyMin": "71932",
-                "LatencyMax": "335987668",
-                "Latency": "71932 ~ 335987668",
+                "LatencyMin": "72052",
+                "LatencyMax": "336110548",
+                "Latency": "72052 ~ 336110548",
                 "PipelineII": "",
-                "PipelineDepthMin": "17983",
-                "PipelineDepthMax": "83996917",
-                "PipelineDepth": "17983 ~ 83996917",
+                "PipelineDepthMin": "18013",
+                "PipelineDepthMax": "84027637",
+                "PipelineDepth": "18013 ~ 84027637",
                 "Loops": [
                   {
                     "Name": "Loop 8.1.1",
@@ -1108,23 +1143,23 @@
                   {
                     "Name": "stages",
                     "TripCount": "10",
-                    "LatencyMin": "570",
-                    "LatencyMax": "83978480",
-                    "Latency": "570 ~ 83978480",
+                    "LatencyMin": "600",
+                    "LatencyMax": "84009200",
+                    "Latency": "600 ~ 84009200",
                     "PipelineII": "",
-                    "PipelineDepthMin": "57",
-                    "PipelineDepthMax": "8397848",
-                    "PipelineDepth": "57 ~ 8397848",
+                    "PipelineDepthMin": "60",
+                    "PipelineDepthMax": "8400920",
+                    "PipelineDepth": "60 ~ 8400920",
                     "Loops": [{
                         "Name": "butterfly",
                         "TripCount": "",
-                        "LatencyMin": "33",
-                        "LatencyMax": "8397824",
-                        "Latency": "33 ~ 8397824",
+                        "LatencyMin": "36",
+                        "LatencyMax": "8400896",
+                        "Latency": "36 ~ 8400896",
                         "PipelineII": "",
-                        "PipelineDepthMin": "33",
-                        "PipelineDepthMax": "16402",
-                        "PipelineDepth": "33 ~ 16402",
+                        "PipelineDepthMin": "36",
+                        "PipelineDepthMax": "16408",
+                        "PipelineDepth": "36 ~ 16408",
                         "Loops": [{
                             "Name": "DFTpts",
                             "TripCount": "",
@@ -1149,13 +1184,13 @@
           {
             "Name": "music_label1",
             "TripCount": "1024",
-            "LatencyMin": "185576448",
-            "LatencyMax": "209935360",
-            "Latency": "185576448 ~ 209935360",
+            "LatencyMin": "184760320",
+            "LatencyMax": "217298944",
+            "Latency": "184760320 ~ 217298944",
             "PipelineII": "",
-            "PipelineDepthMin": "181227",
-            "PipelineDepthMax": "205015",
-            "PipelineDepth": "181227 ~ 205015",
+            "PipelineDepthMin": "180430",
+            "PipelineDepthMax": "212206",
+            "PipelineDepth": "180430 ~ 212206",
             "Loops": [
               {
                 "Name": "music_label1.1",
@@ -1184,7 +1219,7 @@
                     "PipelineII": "",
                     "PipelineDepth": "126",
                     "Loops": [{
-                        "Name": "music_label1.2.1.1",
+                        "Name": "Autocorrelation_label17",
                         "TripCount": "10",
                         "Latency": "110",
                         "PipelineII": "",
@@ -1264,14 +1299,14 @@
               },
               {
                 "Name": "music_label1.8",
-                "TripCount": "10",
-                "LatencyMin": "9180",
-                "LatencyMax": "25140",
-                "Latency": "9180 ~ 25140",
+                "TripCount": "8",
+                "LatencyMin": "6920",
+                "LatencyMax": "19304",
+                "Latency": "6920 ~ 19304",
                 "PipelineII": "",
-                "PipelineDepthMin": "918",
-                "PipelineDepthMax": "2514",
-                "PipelineDepth": "918 ~ 2514",
+                "PipelineDepthMin": "865",
+                "PipelineDepthMax": "2413",
+                "PipelineDepth": "865 ~ 2413",
                 "Loops": [{
                     "Name": "music_label1.8.1",
                     "TripCount": "4",
@@ -1393,64 +1428,64 @@
               {
                 "Name": "music_label1.10",
                 "TripCount": "4",
-                "Latency": "8",
+                "Latency": "4",
                 "PipelineII": "",
-                "PipelineDepth": "2"
+                "PipelineDepth": "1"
               },
               {
                 "Name": "music_label1.11",
                 "TripCount": "3",
-                "LatencyMin": "21",
-                "LatencyMax": "33",
-                "Latency": "21 ~ 33",
+                "LatencyMin": "24",
+                "LatencyMax": "48",
+                "Latency": "24 ~ 48",
                 "PipelineII": "",
-                "PipelineDepthMin": "7",
-                "PipelineDepthMax": "11",
-                "PipelineDepth": "7 ~ 11",
+                "PipelineDepthMin": "8",
+                "PipelineDepthMax": "16",
+                "PipelineDepth": "8 ~ 16",
                 "Loops": [{
                     "Name": "music_label1.11.1",
                     "TripCount": "",
-                    "LatencyMin": "2",
-                    "LatencyMax": "6",
-                    "Latency": "2 ~ 6",
+                    "LatencyMin": "4",
+                    "LatencyMax": "12",
+                    "Latency": "4 ~ 12",
                     "PipelineII": "",
-                    "PipelineDepth": "2"
+                    "PipelineDepth": "4"
                   }]
               },
               {
                 "Name": "music_label1.12",
                 "TripCount": "4",
-                "Latency": "40",
+                "Latency": "56",
                 "PipelineII": "",
-                "PipelineDepth": "10",
+                "PipelineDepth": "14",
                 "Loops": [{
                     "Name": "music_label1.12.1",
                     "TripCount": "4",
-                    "Latency": "8",
+                    "Latency": "12",
                     "PipelineII": "",
-                    "PipelineDepth": "2"
+                    "PipelineDepth": "3"
                   }]
               },
               {
                 "Name": "music_label1.13",
                 "TripCount": "4",
-                "LatencyMin": "70768",
-                "LatencyMax": "76544",
-                "Latency": "70768 ~ 76544",
+                "LatencyMin": "83768",
+                "LatencyMax": "101096",
+                "Latency": "83768 ~ 101096",
                 "PipelineII": "",
-                "PipelineDepthMin": "17692",
-                "PipelineDepthMax": "19136",
-                "PipelineDepth": "17692 ~ 19136",
+                "PipelineDepthMin": "20942",
+                "PipelineDepthMax": "25274",
+                "PipelineDepth": "20942 ~ 25274",
                 "Loops": [{
                     "Name": "music_label2",
                     "TripCount": "361",
-                    "LatencyMin": "17689",
-                    "LatencyMax": "19133",
-                    "Latency": "17689 ~ 19133",
+                    "LatencyMin": "20938",
+                    "LatencyMax": "25270",
+                    "Latency": "20938 ~ 25270",
                     "PipelineII": "",
-                    "PipelineDepthMin": "49",
-                    "PipelineDepthMax": "53",
-                    "PipelineDepth": "49 ~ 53"
+                    "PipelineDepthMin": "58",
+                    "PipelineDepthMax": "70",
+                    "PipelineDepth": "58 ~ 70"
                   }]
               },
               {
@@ -1498,15 +1533,15 @@
               {
                 "Name": "music_label1.16",
                 "TripCount": "361",
-                "Latency": "29602",
+                "Latency": "18050",
                 "PipelineII": "",
-                "PipelineDepth": "82",
+                "PipelineDepth": "50",
                 "Loops": [{
                     "Name": "music_label5",
                     "TripCount": "4",
-                    "Latency": "76",
+                    "Latency": "44",
                     "PipelineII": "",
-                    "PipelineDepth": "19"
+                    "PipelineDepth": "11"
                   }]
               }
             ]
@@ -1520,10 +1555,10 @@
           }
         ],
         "Area": {
-          "BRAM_18K": "45",
-          "DSP48E": "218",
-          "FF": "25338",
-          "LUT": "52528",
+          "BRAM_18K": "50",
+          "DSP48E": "195",
+          "FF": "20905",
+          "LUT": "45202",
           "URAM": "0"
         }
       }
@@ -1539,7 +1574,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2020-07-30 19:06:42 +0800",
+    "Time": "2020-07-31 00:56:46 +0800",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.1"
   }

@@ -6,7 +6,7 @@
 (* rom_style = "distributed" *) module sin_or_cos_float_eOg_rom (
 addr0, ce0, q0, clk);
 
-parameter DWIDTH = 15;
+parameter DWIDTH = 30;
 parameter AWIDTH = 8;
 parameter MEM_SIZE = 256;
 
@@ -43,7 +43,7 @@ module sin_or_cos_float_eOg(
     ce0,
     q0);
 
-parameter DataWidth = 32'd15;
+parameter DataWidth = 32'd30;
 parameter AddressRange = 32'd256;
 parameter AddressWidth = 32'd8;
 input reset;

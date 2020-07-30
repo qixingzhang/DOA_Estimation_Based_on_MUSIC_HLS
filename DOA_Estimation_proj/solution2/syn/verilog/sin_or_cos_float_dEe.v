@@ -6,9 +6,9 @@
 (* rom_style = "distributed" *) module sin_or_cos_float_dEe_rom (
 addr0, ce0, q0, clk);
 
-parameter DWIDTH = 23;
-parameter AWIDTH = 8;
-parameter MEM_SIZE = 256;
+parameter DWIDTH = 100;
+parameter AWIDTH = 4;
+parameter MEM_SIZE = 13;
 
 input[AWIDTH-1:0] addr0;
 input ce0;
@@ -43,9 +43,9 @@ module sin_or_cos_float_dEe(
     ce0,
     q0);
 
-parameter DataWidth = 32'd23;
-parameter AddressRange = 32'd256;
-parameter AddressWidth = 32'd8;
+parameter DataWidth = 32'd100;
+parameter AddressRange = 32'd13;
+parameter AddressWidth = 32'd4;
 input reset;
 input clk;
 input[AddressWidth - 1:0] address0;

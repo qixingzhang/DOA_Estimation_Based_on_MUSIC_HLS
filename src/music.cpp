@@ -15,16 +15,16 @@ void eig_decompose(complex_float Rx[N_SENSOR][N_SENSOR], complex_float U[N_SENSO
 	complex_float temp;
 	complex_float mid, sum;
 	float midsum;
+	float eigval_temp;
 
 	for(int i = 0; i < N_SENSOR; i++) {
 		for(int j = 0; j < N_SENSOR; j++) {
 			eig_mat[i][j] = Rx[i][j];
-			Rx_temp[i][j] = Rx[i][j];
 			U[i][j].real(0);
 			U[i][j].imag(0);
 		}
 	}
-	for(int i = 0; i < 10; i++) {
+	for(int i = 0; i < 8; i++) {
 		qr_decompose(eig_mat, Q_temp, R_temp);
 		for(int i = 0; i < N_SENSOR; i++) {
 			for(int j = 0; j < N_SENSOR; j++) {
@@ -38,11 +38,11 @@ void eig_decompose(complex_float Rx[N_SENSOR][N_SENSOR], complex_float U[N_SENSO
 		}
 	}
 	for(int count = 0; count < N_SENSOR; count++) {
-		eigval[count] = eig_mat[count][count].real();
+		eigval_temp = eigval[count] = eig_mat[count][count].real();
 		for(int i = 0; i < N_SENSOR; i++) {
 			eig_decompose_label12:for(int j = 0; j < N_SENSOR; j++) {
 				if (i == j) {
-					Rx_temp[i][j] = Rx[i][j] - eigval[count];
+					Rx_temp[i][j] = Rx[i][j] - eigval_temp;
 				} else {
 					Rx_temp[i][j] = Rx[i][j];
 				}
@@ -73,7 +73,7 @@ void eig_decompose(complex_float Rx[N_SENSOR][N_SENSOR], complex_float U[N_SENSO
 		}
 		midsum = sqrt(midsum);
 		eig_decompose_label13:for(int i = 0; i < N_SENSOR; i++) {
-			U[i][count] /= midsum;
+			U[i][count] = U[i][count] / midsum;
 		}
 	}
 }
@@ -98,8 +98,7 @@ void Autocorrelation(complex_float X[N_STFT][N_SENSOR], complex_float Rx[N_SENSO
 	for (int x = 0; x < N_SENSOR; x++) {
 		for (int y = 0; y < N_SENSOR; y++) {
 			complex_float temp(0.0, 0.0);
-			for(int l = 0; l < N_STFT; l++) {
-#pragma HLS EXPRESSION_BALANCE
+			Autocorrelation_label17:for(int l = 0; l < N_STFT; l++) {
 				temp += X[l][x] * conj(X[l][y]);
 			}
 			Rx[x][y] = temp / (float)N_STFT;
@@ -208,21 +207,6 @@ void music(float X[N_SAMPLE][N_SENSOR], complex_float Xj_f[N_FREQ][N_STFT][N_SEN
 	complex_float temp;
 	float eigval[N_SENSOR];
 	int sort_index[N_SENSOR];
-	float p[N_SENSOR] = {-0.375, -0.125, 0.125, 0.375};
-	float theta[361];
-	float fc[N_FREQ];
-
-	music_label15:for(int j = 0; j < N_FREQ; j++) {
-		if (j < N_FREQ/2) {
-			fc[j] = (float)j * (float)FS / (float)N_FREQ;
-		} else {
-			fc[j] = (float)(j - N_FREQ) * (float)FS / (float)N_FREQ;
-		}
-	}
-
-	music_label16:for (int i = 0; i < 361; i++) {
-		theta[i] = 0.5 * (float)i - (float)90;
-	}
 
 	for(int l = 0; l < N_STFT; l++) {
 		for(int n = 0; n < N_SENSOR; n++) {
@@ -291,7 +275,7 @@ void music(float X[N_SAMPLE][N_SENSOR], complex_float Xj_f[N_FREQ][N_STFT][N_SEN
 			temp.real(0.0);
 			temp.imag(0.0);
 			music_label5:for (int k = 0; k < N_SENSOR; k++) {
-				temp += AUU[i][k] * a_theta[k][i] / (float)N_FREQ;
+				temp += AUU[i][k] * a_theta[k][i];
 			}
 			w[i] += temp;
 		}

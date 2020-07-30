@@ -1,6 +1,6 @@
 # This script segment is generated automatically by AutoPilot
 
-set id 3
+set id 5
 set name music_mux_83_1_1_1
 set corename simcore_mux
 set op mux
@@ -109,322 +109,322 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your
 }
 
 
-set id 4
-set name music_mux_164_1_1_1
-set corename simcore_mux
-set op mux
-set stage_num 1
-set max_latency -1
-set registered_input 1
-set din0_width 1
-set din0_signed 0
-set din1_width 1
-set din1_signed 0
-set din2_width 1
-set din2_signed 0
-set din3_width 1
-set din3_signed 1
-set din4_width 1
-set din4_signed 1
-set din5_width 1
-set din5_signed 1
-set din6_width 1
-set din6_signed 1
-set din7_width 1
-set din7_signed 0
-set din8_width 1
-set din8_signed 0
-set din9_width 1
-set din9_signed 1
-set din10_width 1
-set din10_signed 1
-set din11_width 1
-set din11_signed 1
-set din12_width 1
-set din12_signed 1
-set din13_width 1
-set din13_signed 0
-set din14_width 1
-set din14_signed 0
-set din15_width 1
-set din15_signed 0
-set din16_width 4
-set din16_signed 0
-set dout_width 1
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
-eval "ap_gen_simcore_mux { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    din0_width ${din0_width} \
-    din0_signed ${din0_signed} \
-    din1_width ${din1_width} \
-    din1_signed ${din1_signed} \
-    din2_width ${din2_width} \
-    din2_signed ${din2_signed} \
-    din3_width ${din3_width} \
-    din3_signed ${din3_signed} \
-    din4_width ${din4_width} \
-    din4_signed ${din4_signed} \
-    din5_width ${din5_width} \
-    din5_signed ${din5_signed} \
-    din6_width ${din6_width} \
-    din6_signed ${din6_signed} \
-    din7_width ${din7_width} \
-    din7_signed ${din7_signed} \
-    din8_width ${din8_width} \
-    din8_signed ${din8_signed} \
-    din9_width ${din9_width} \
-    din9_signed ${din9_signed} \
-    din10_width ${din10_width} \
-    din10_signed ${din10_signed} \
-    din11_width ${din11_width} \
-    din11_signed ${din11_signed} \
-    din12_width ${din12_width} \
-    din12_signed ${din12_signed} \
-    din13_width ${din13_width} \
-    din13_signed ${din13_signed} \
-    din14_width ${din14_width} \
-    din14_signed ${din14_signed} \
-    din15_width ${din15_width} \
-    din15_signed ${din15_signed} \
-    din16_width ${din16_width} \
-    din16_signed ${din16_signed} \
-    dout_width ${dout_width} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mux, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mux
-set corename MuxnS
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_pipemux] == "::AESL_LIB_VIRTEX::xil_gen_pipemux"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    din0_width ${din0_width} \
-    din0_signed ${din0_signed} \
-    din1_width ${din1_width} \
-    din1_signed ${din1_signed} \
-    din2_width ${din2_width} \
-    din2_signed ${din2_signed} \
-    din3_width ${din3_width} \
-    din3_signed ${din3_signed} \
-    din4_width ${din4_width} \
-    din4_signed ${din4_signed} \
-    din5_width ${din5_width} \
-    din5_signed ${din5_signed} \
-    din6_width ${din6_width} \
-    din6_signed ${din6_signed} \
-    din7_width ${din7_width} \
-    din7_signed ${din7_signed} \
-    din8_width ${din8_width} \
-    din8_signed ${din8_signed} \
-    din9_width ${din9_width} \
-    din9_signed ${din9_signed} \
-    din10_width ${din10_width} \
-    din10_signed ${din10_signed} \
-    din11_width ${din11_width} \
-    din11_signed ${din11_signed} \
-    din12_width ${din12_width} \
-    din12_signed ${din12_signed} \
-    din13_width ${din13_width} \
-    din13_signed ${din13_signed} \
-    din14_width ${din14_width} \
-    din14_signed ${din14_signed} \
-    din15_width ${din15_width} \
-    din15_signed ${din15_signed} \
-    din16_width ${din16_width} \
-    din16_signed ${din16_signed} \
-    dout_width ${dout_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your platform lib"
-}
-}
-
-
-set id 5
-set name music_mux_164_1_1_1
-set corename simcore_mux
-set op mux
-set stage_num 1
-set max_latency -1
-set registered_input 1
-set din0_width 1
-set din0_signed 0
-set din1_width 1
-set din1_signed 0
-set din2_width 1
-set din2_signed 0
-set din3_width 1
-set din3_signed 1
-set din4_width 1
-set din4_signed 1
-set din5_width 1
-set din5_signed 1
-set din6_width 1
-set din6_signed 1
-set din7_width 1
-set din7_signed 0
-set din8_width 1
-set din8_signed 0
-set din9_width 1
-set din9_signed 1
-set din10_width 1
-set din10_signed 1
-set din11_width 1
-set din11_signed 1
-set din12_width 1
-set din12_signed 1
-set din13_width 1
-set din13_signed 0
-set din14_width 1
-set din14_signed 0
-set din15_width 1
-set din15_signed 0
-set din16_width 4
-set din16_signed 0
-set dout_width 1
-if {${::AESL::PGuard_simmodel_gen}} {
-if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
-eval "ap_gen_simcore_mux { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    din0_width ${din0_width} \
-    din0_signed ${din0_signed} \
-    din1_width ${din1_width} \
-    din1_signed ${din1_signed} \
-    din2_width ${din2_width} \
-    din2_signed ${din2_signed} \
-    din3_width ${din3_width} \
-    din3_signed ${din3_signed} \
-    din4_width ${din4_width} \
-    din4_signed ${din4_signed} \
-    din5_width ${din5_width} \
-    din5_signed ${din5_signed} \
-    din6_width ${din6_width} \
-    din6_signed ${din6_signed} \
-    din7_width ${din7_width} \
-    din7_signed ${din7_signed} \
-    din8_width ${din8_width} \
-    din8_signed ${din8_signed} \
-    din9_width ${din9_width} \
-    din9_signed ${din9_signed} \
-    din10_width ${din10_width} \
-    din10_signed ${din10_signed} \
-    din11_width ${din11_width} \
-    din11_signed ${din11_signed} \
-    din12_width ${din12_width} \
-    din12_signed ${din12_signed} \
-    din13_width ${din13_width} \
-    din13_signed ${din13_signed} \
-    din14_width ${din14_width} \
-    din14_signed ${din14_signed} \
-    din15_width ${din15_width} \
-    din15_signed ${din15_signed} \
-    din16_width ${din16_width} \
-    din16_signed ${din16_signed} \
-    dout_width ${dout_width} \
-}"
-} else {
-puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mux, check your AutoPilot builtin lib"
-}
-}
-
-
-if {${::AESL::PGuard_rtl_comp_handler}} {
-	::AP::rtl_comp_handler ${name}
-}
-
-
-set op mux
-set corename MuxnS
-if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
-if {[info proc ::AESL_LIB_VIRTEX::xil_gen_pipemux] == "::AESL_LIB_VIRTEX::xil_gen_pipemux"} {
-eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
-    id ${id} \
-    name ${name} \
-    corename ${corename} \
-    op ${op} \
-    reset_level 1 \
-    sync_rst true \
-    stage_num ${stage_num} \
-    max_latency ${max_latency} \
-    registered_input ${registered_input} \
-    din0_width ${din0_width} \
-    din0_signed ${din0_signed} \
-    din1_width ${din1_width} \
-    din1_signed ${din1_signed} \
-    din2_width ${din2_width} \
-    din2_signed ${din2_signed} \
-    din3_width ${din3_width} \
-    din3_signed ${din3_signed} \
-    din4_width ${din4_width} \
-    din4_signed ${din4_signed} \
-    din5_width ${din5_width} \
-    din5_signed ${din5_signed} \
-    din6_width ${din6_width} \
-    din6_signed ${din6_signed} \
-    din7_width ${din7_width} \
-    din7_signed ${din7_signed} \
-    din8_width ${din8_width} \
-    din8_signed ${din8_signed} \
-    din9_width ${din9_width} \
-    din9_signed ${din9_signed} \
-    din10_width ${din10_width} \
-    din10_signed ${din10_signed} \
-    din11_width ${din11_width} \
-    din11_signed ${din11_signed} \
-    din12_width ${din12_width} \
-    din12_signed ${din12_signed} \
-    din13_width ${din13_width} \
-    din13_signed ${din13_signed} \
-    din14_width ${din14_width} \
-    din14_signed ${din14_signed} \
-    din15_width ${din15_width} \
-    din15_signed ${din15_signed} \
-    din16_width ${din16_width} \
-    din16_signed ${din16_signed} \
-    dout_width ${dout_width} \
-}"
-} else {
-puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your platform lib"
-}
-}
-
-
 set id 6
-set name music_mul_mul_15nfYi
+set name music_mux_164_1_1_1
+set corename simcore_mux
+set op mux
+set stage_num 1
+set max_latency -1
+set registered_input 1
+set din0_width 1
+set din0_signed 0
+set din1_width 1
+set din1_signed 0
+set din2_width 1
+set din2_signed 0
+set din3_width 1
+set din3_signed 1
+set din4_width 1
+set din4_signed 1
+set din5_width 1
+set din5_signed 1
+set din6_width 1
+set din6_signed 1
+set din7_width 1
+set din7_signed 0
+set din8_width 1
+set din8_signed 0
+set din9_width 1
+set din9_signed 1
+set din10_width 1
+set din10_signed 1
+set din11_width 1
+set din11_signed 1
+set din12_width 1
+set din12_signed 1
+set din13_width 1
+set din13_signed 0
+set din14_width 1
+set din14_signed 0
+set din15_width 1
+set din15_signed 0
+set din16_width 4
+set din16_signed 0
+set dout_width 1
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
+eval "ap_gen_simcore_mux { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    din0_width ${din0_width} \
+    din0_signed ${din0_signed} \
+    din1_width ${din1_width} \
+    din1_signed ${din1_signed} \
+    din2_width ${din2_width} \
+    din2_signed ${din2_signed} \
+    din3_width ${din3_width} \
+    din3_signed ${din3_signed} \
+    din4_width ${din4_width} \
+    din4_signed ${din4_signed} \
+    din5_width ${din5_width} \
+    din5_signed ${din5_signed} \
+    din6_width ${din6_width} \
+    din6_signed ${din6_signed} \
+    din7_width ${din7_width} \
+    din7_signed ${din7_signed} \
+    din8_width ${din8_width} \
+    din8_signed ${din8_signed} \
+    din9_width ${din9_width} \
+    din9_signed ${din9_signed} \
+    din10_width ${din10_width} \
+    din10_signed ${din10_signed} \
+    din11_width ${din11_width} \
+    din11_signed ${din11_signed} \
+    din12_width ${din12_width} \
+    din12_signed ${din12_signed} \
+    din13_width ${din13_width} \
+    din13_signed ${din13_signed} \
+    din14_width ${din14_width} \
+    din14_signed ${din14_signed} \
+    din15_width ${din15_width} \
+    din15_signed ${din15_signed} \
+    din16_width ${din16_width} \
+    din16_signed ${din16_signed} \
+    dout_width ${dout_width} \
+}"
+} else {
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mux, check your AutoPilot builtin lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler ${name}
+}
+
+
+set op mux
+set corename MuxnS
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_pipemux] == "::AESL_LIB_VIRTEX::xil_gen_pipemux"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    din0_width ${din0_width} \
+    din0_signed ${din0_signed} \
+    din1_width ${din1_width} \
+    din1_signed ${din1_signed} \
+    din2_width ${din2_width} \
+    din2_signed ${din2_signed} \
+    din3_width ${din3_width} \
+    din3_signed ${din3_signed} \
+    din4_width ${din4_width} \
+    din4_signed ${din4_signed} \
+    din5_width ${din5_width} \
+    din5_signed ${din5_signed} \
+    din6_width ${din6_width} \
+    din6_signed ${din6_signed} \
+    din7_width ${din7_width} \
+    din7_signed ${din7_signed} \
+    din8_width ${din8_width} \
+    din8_signed ${din8_signed} \
+    din9_width ${din9_width} \
+    din9_signed ${din9_signed} \
+    din10_width ${din10_width} \
+    din10_signed ${din10_signed} \
+    din11_width ${din11_width} \
+    din11_signed ${din11_signed} \
+    din12_width ${din12_width} \
+    din12_signed ${din12_signed} \
+    din13_width ${din13_width} \
+    din13_signed ${din13_signed} \
+    din14_width ${din14_width} \
+    din14_signed ${din14_signed} \
+    din15_width ${din15_width} \
+    din15_signed ${din15_signed} \
+    din16_width ${din16_width} \
+    din16_signed ${din16_signed} \
+    dout_width ${dout_width} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your platform lib"
+}
+}
+
+
+set id 7
+set name music_mux_164_1_1_1
+set corename simcore_mux
+set op mux
+set stage_num 1
+set max_latency -1
+set registered_input 1
+set din0_width 1
+set din0_signed 0
+set din1_width 1
+set din1_signed 0
+set din2_width 1
+set din2_signed 0
+set din3_width 1
+set din3_signed 1
+set din4_width 1
+set din4_signed 1
+set din5_width 1
+set din5_signed 1
+set din6_width 1
+set din6_signed 1
+set din7_width 1
+set din7_signed 0
+set din8_width 1
+set din8_signed 0
+set din9_width 1
+set din9_signed 1
+set din10_width 1
+set din10_signed 1
+set din11_width 1
+set din11_signed 1
+set din12_width 1
+set din12_signed 1
+set din13_width 1
+set din13_signed 0
+set din14_width 1
+set din14_signed 0
+set din15_width 1
+set din15_signed 0
+set din16_width 4
+set din16_signed 0
+set dout_width 1
+if {${::AESL::PGuard_simmodel_gen}} {
+if {[info proc ap_gen_simcore_mux] == "ap_gen_simcore_mux"} {
+eval "ap_gen_simcore_mux { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    din0_width ${din0_width} \
+    din0_signed ${din0_signed} \
+    din1_width ${din1_width} \
+    din1_signed ${din1_signed} \
+    din2_width ${din2_width} \
+    din2_signed ${din2_signed} \
+    din3_width ${din3_width} \
+    din3_signed ${din3_signed} \
+    din4_width ${din4_width} \
+    din4_signed ${din4_signed} \
+    din5_width ${din5_width} \
+    din5_signed ${din5_signed} \
+    din6_width ${din6_width} \
+    din6_signed ${din6_signed} \
+    din7_width ${din7_width} \
+    din7_signed ${din7_signed} \
+    din8_width ${din8_width} \
+    din8_signed ${din8_signed} \
+    din9_width ${din9_width} \
+    din9_signed ${din9_signed} \
+    din10_width ${din10_width} \
+    din10_signed ${din10_signed} \
+    din11_width ${din11_width} \
+    din11_signed ${din11_signed} \
+    din12_width ${din12_width} \
+    din12_signed ${din12_signed} \
+    din13_width ${din13_width} \
+    din13_signed ${din13_signed} \
+    din14_width ${din14_width} \
+    din14_signed ${din14_signed} \
+    din15_width ${din15_width} \
+    din15_signed ${din15_signed} \
+    din16_width ${din16_width} \
+    din16_signed ${din16_signed} \
+    dout_width ${dout_width} \
+}"
+} else {
+puts "@W \[IMPL-100\] Cannot find ap_gen_simcore_mux, check your AutoPilot builtin lib"
+}
+}
+
+
+if {${::AESL::PGuard_rtl_comp_handler}} {
+	::AP::rtl_comp_handler ${name}
+}
+
+
+set op mux
+set corename MuxnS
+if {${::AESL::PGuard_autocg_gen} && ${::AESL::PGuard_autocg_ipmgen}} {
+if {[info proc ::AESL_LIB_VIRTEX::xil_gen_pipemux] == "::AESL_LIB_VIRTEX::xil_gen_pipemux"} {
+eval "::AESL_LIB_VIRTEX::xil_gen_pipemux { \
+    id ${id} \
+    name ${name} \
+    corename ${corename} \
+    op ${op} \
+    reset_level 1 \
+    sync_rst true \
+    stage_num ${stage_num} \
+    max_latency ${max_latency} \
+    registered_input ${registered_input} \
+    din0_width ${din0_width} \
+    din0_signed ${din0_signed} \
+    din1_width ${din1_width} \
+    din1_signed ${din1_signed} \
+    din2_width ${din2_width} \
+    din2_signed ${din2_signed} \
+    din3_width ${din3_width} \
+    din3_signed ${din3_signed} \
+    din4_width ${din4_width} \
+    din4_signed ${din4_signed} \
+    din5_width ${din5_width} \
+    din5_signed ${din5_signed} \
+    din6_width ${din6_width} \
+    din6_signed ${din6_signed} \
+    din7_width ${din7_width} \
+    din7_signed ${din7_signed} \
+    din8_width ${din8_width} \
+    din8_signed ${din8_signed} \
+    din9_width ${din9_width} \
+    din9_signed ${din9_signed} \
+    din10_width ${din10_width} \
+    din10_signed ${din10_signed} \
+    din11_width ${din11_width} \
+    din11_signed ${din11_signed} \
+    din12_width ${din12_width} \
+    din12_signed ${din12_signed} \
+    din13_width ${din13_width} \
+    din13_signed ${din13_signed} \
+    din14_width ${din14_width} \
+    din14_signed ${din14_signed} \
+    din15_width ${din15_width} \
+    din15_signed ${din15_signed} \
+    din16_width ${din16_width} \
+    din16_signed ${din16_signed} \
+    dout_width ${dout_width} \
+}"
+} else {
+puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_pipemux, check your platform lib"
+}
+}
+
+
+set id 8
+set name music_mul_mul_15nhbi
 set corename simcore_mul
 set op mul
 set stage_num 1
@@ -499,8 +499,8 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 }
 
 
-set id 7
-set name music_mul_mul_15ng8j
+set id 9
+set name music_mul_mul_15nibs
 set corename simcore_mul
 set op mul
 set stage_num 1
@@ -576,9 +576,9 @@ puts "@W \[IMPL-101\] Cannot find ::AESL_LIB_VIRTEX::xil_gen_dsp48, check your p
 
 
 # Memory (RAM/ROM)  definition:
-set ID 13
+set ID 15
 set hasByteEnable 0
-set MemName sin_or_cos_float_bkb
+set MemName sin_or_cos_float_dEe
 set CoreName ap_simcore_mem
 set PortList { 1 }
 set DataWd 100
@@ -662,9 +662,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 14
+set ID 16
 set hasByteEnable 0
-set MemName sin_or_cos_float_cud
+set MemName sin_or_cos_float_eOg
 set CoreName ap_simcore_mem
 set PortList { 1 }
 set DataWd 30
@@ -748,9 +748,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 15
+set ID 17
 set hasByteEnable 0
-set MemName sin_or_cos_float_dEe
+set MemName sin_or_cos_float_fYi
 set CoreName ap_simcore_mem
 set PortList { 1 }
 set DataWd 23
@@ -834,9 +834,9 @@ if {[info proc ::AESL_LIB_VIRTEX::xil_gen_ROM] == "::AESL_LIB_VIRTEX::xil_gen_RO
 
 
 # Memory (RAM/ROM)  definition:
-set ID 16
+set ID 18
 set hasByteEnable 0
-set MemName sin_or_cos_float_eOg
+set MemName sin_or_cos_float_g8j
 set CoreName ap_simcore_mem
 set PortList { 1 }
 set DataWd 15
@@ -929,7 +929,7 @@ if {${::AESL::PGuard_autoexp_gen}} {
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 17 \
+    id 19 \
     name t_in \
     type other \
     dir I \
@@ -944,7 +944,7 @@ eval "cg_default_interface_gen_dc { \
 # Direct connection:
 if {${::AESL::PGuard_autoexp_gen}} {
 eval "cg_default_interface_gen_dc { \
-    id 18 \
+    id 20 \
     name do_cos \
     type other \
     dir I \

@@ -2,11 +2,10 @@
     <includePaths/>
     <libraryPaths/>
     <Simulation>
-        <SimFlow name="csim" csimMode="0" lastCsimMode="0"/>
+        <SimFlow name="csim" clean="true" csimMode="0" lastCsimMode="0"/>
     </Simulation>
     <files xmlns="">
         <file name="../../src/test_audio" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
-        <file name="../../src/test.cpp" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
         <file name="../../src/main.cpp" sc="0" tb="1" cflags=" -Wno-unknown-pragmas" csimflags=" -Wno-unknown-pragmas" blackbox="false"/>
         <file name="src/music.cpp" sc="0" tb="false" cflags="" csimflags="" blackbox="false"/>
     </files>
