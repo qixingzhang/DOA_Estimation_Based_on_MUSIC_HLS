@@ -4,11 +4,13 @@
 using namespace std;
 
 int main() {
-	float X[N_SAMPLE][N_SENSOR];
+	float X_re[N_SAMPLE][N_SENSOR];
+	float X_im[N_SAMPLE][N_SENSOR];
 	int DOA1, DOA2;
 	float align_out[N_SAMPLE];
 	float P_sm[361];
-	complex_float Xj_f[N_FREQ][N_STFT][N_SENSOR];
+//	float Xj_f_re[N_FREQ][N_STFT][N_SENSOR];
+//	float Xj_f_im[N_FREQ][N_STFT][N_SENSOR];
 
 	AudioFile<double> ch1, ch2, ch3, ch4;
 	ch1.load ("test_audio/test_2_ch_1.wav");
@@ -17,19 +19,26 @@ int main() {
 	ch4.load ("test_audio/test_2_ch_4.wav");
 
 	for(int i = 0; i < N_SAMPLE; i++) {
-		X[i][0] = ch1.samples[0][i];
+		X_re[i][0] = ch1.samples[0][i];
+		X_im[i][0] = 0;
 	}
 	for(int i = 0; i < N_SAMPLE; i++) {
-		X[i][1] = ch2.samples[0][i];
+		X_re[i][1] = ch2.samples[0][i];
+		X_im[i][1] = 0;
 	}
 	for(int i = 0; i < N_SAMPLE; i++) {
-		X[i][2] = ch3.samples[0][i];
+		X_re[i][2] = ch3.samples[0][i];
+		X_im[i][2] = 0;
 	}
 	for(int i = 0; i < N_SAMPLE; i++) {
-		X[i][3] = ch4.samples[0][i];
+		X_re[i][3] = ch4.samples[0][i];
+		X_im[i][3] = 0;
 	}
 
-	music(X, Xj_f, P_sm);
+	int done = music(X_re, X_im, P_sm);
+	if (done == 0) {
+		cout << "Done" << endl;
+	}
 
 	float p_max[361];
 	int index[361];

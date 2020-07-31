@@ -1,0 +1,257 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "fft",
+          "label": "DFTpts",
+          "functionLabel": "",
+          "pragma": {
+            "name": "LOOP_TRIPCOUNT",
+            "option": [
+              {
+                "name": "min",
+                "value": "1"
+              },
+              {
+                "name": "max",
+                "value": "1024"
+              }
+            ]
+          }
+        },
+        {
+          "functionName": "sort_eigval",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "Autocorrelation",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "reverse_bits",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "bit_reverse",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "fft",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "fft",
+          "label": "DFTpts",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "music",
+          "label": "music_label2",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "music",
+          "label": "music_label3",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "music",
+          "label": "music_label4",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "music",
+          "label": "music_label5",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "music",
+          "label": "music_label6",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "eig_decompose",
+          "label": "eig_decompose_label7",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "eig_decompose",
+          "label": "eig_decompose_label8",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "eig_decompose",
+          "label": "eig_decompose_label9",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "eig_decompose",
+          "label": "eig_decompose_label10",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "eig_decompose",
+          "label": "eig_decompose_label11",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "eig_decompose",
+          "label": "eig_decompose_label12",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "eig_decompose",
+          "label": "eig_decompose_label13",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "reverse_bits",
+          "label": "reverse_bits_label14",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "music",
+          "label": "music_label15",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "music",
+          "label": "music_label16",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "Autocorrelation",
+          "label": "Autocorrelation_label17",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "func_pack",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "DATAFLOW"}
+        },
+        {
+          "functionName": "qr_decompose",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "eig_decompose",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_vm",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_mm",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_magnitude",
+          "label": "Function_qrf_magnitude_real",
+          "functionLabel": "Function_qrf_magnitude_real",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_magnitude",
+          "label": "Function_qrf_magnitude_complex",
+          "functionLabel": "Function_qrf_magnitude_complex",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_givens",
+          "label": "Function_qrf_givens_real",
+          "functionLabel": "Function_qrf_givens_real",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_givens",
+          "label": "Function_qrf_givens_complex",
+          "functionLabel": "Function_qrf_givens_complex",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_basic",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_givens",
+          "label": "Function_qrf_givens_real",
+          "functionLabel": "Function_qrf_givens_real",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_givens",
+          "label": "Function_qrf_givens_complex",
+          "functionLabel": "Function_qrf_givens_complex",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_magnitude",
+          "label": "Function_qrf_magnitude_complex",
+          "functionLabel": "Function_qrf_magnitude_complex",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_magnitude",
+          "label": "Function_qrf_magnitude_real",
+          "functionLabel": "Function_qrf_magnitude_real",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_mm",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_vm",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_basic",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "DATAFLOW"}
+        }
+      ]
+    }]}

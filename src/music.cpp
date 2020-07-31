@@ -192,7 +192,11 @@ void fft(float X_R[N_FREQ], float X_I[N_FREQ])
 		step=step/2;
 	}
 }
-void music(float X[N_SAMPLE][N_SENSOR], complex_float Xj_f[N_FREQ][N_STFT][N_SENSOR], float P_sm[361]) {
+int music(float data_re[N_SAMPLE][N_SENSOR], float data_im[N_SAMPLE][N_SENSOR], float P_sm[361]) {
+#pragma HLS INTERFACE s_axilite port=P_sm
+#pragma HLS INTERFACE s_axilite port=return
+#pragma HLS INTERFACE m_axi depth=40960 port=data_re offset=slave bundle=data
+#pragma HLS INTERFACE m_axi depth=40960 port=data_im offset=slave bundle=data
 	
 	float FFT_Buffer_re[N_FREQ];
 	float FFT_Buffer_im[N_FREQ];
@@ -211,13 +215,13 @@ void music(float X[N_SAMPLE][N_SENSOR], complex_float Xj_f[N_FREQ][N_STFT][N_SEN
 	for(int l = 0; l < N_STFT; l++) {
 		for(int n = 0; n < N_SENSOR; n++) {
 			for(int j = 0; j < N_FREQ; j++) {
-				FFT_Buffer_re[j] = X[l*N_FREQ+j][n];
+				FFT_Buffer_re[j] = data_re[l*N_FREQ+j][n];
 				FFT_Buffer_im[j] = 0;
 			}
 			fft(FFT_Buffer_re, FFT_Buffer_im);
 			for(int j = 0; j< N_FREQ; j++) {
-				Xj_f[j][l][n].real(FFT_Buffer_re[j]);
-				Xj_f[j][l][n].imag(FFT_Buffer_im[j]);
+				data_re[l*N_FREQ+j][n] = FFT_Buffer_re[j];
+				data_im[l*N_FREQ+j][n] = FFT_Buffer_im[j];
 			}
 		}
 	}
@@ -227,7 +231,8 @@ void music(float X[N_SAMPLE][N_SENSOR], complex_float Xj_f[N_FREQ][N_STFT][N_SEN
 		for (int l = 0; l < N_STFT; l++) {
 			for (int n = 0; n < N_SENSOR; n++) {
 
-				Autocorr_Buffer[l][n] = Xj_f[jj][l][n];
+				Autocorr_Buffer[l][n].real(data_re[l*N_FREQ+jj][n]);
+				Autocorr_Buffer[l][n].imag(data_im[l*N_FREQ+jj][n]);
 			}
 		}
 		Autocorrelation(Autocorr_Buffer, temp_mat);
@@ -284,4 +289,5 @@ void music(float X[N_SAMPLE][N_SENSOR], complex_float Xj_f[N_FREQ][N_STFT][N_SEN
 	music_label6:for (int i = 0; i < 361; i++) {
 		P_sm[i] = 1/w[i].real();
 	}
+	return 0;
 }

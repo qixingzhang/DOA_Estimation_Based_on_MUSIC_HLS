@@ -6,8 +6,8 @@
 open_project DOA_Estimation_proj
 set_top music
 add_files src/music.cpp
-add_files -tb src/main.cpp -cflags "-Wno-unknown-pragmas"
-add_files -tb src/test_audio -cflags "-Wno-unknown-pragmas"
+add_files -tb src/test_audio -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files -tb src/main.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
 open_solution "solution2"
 set_part {xc7z020-clg400-1}
 create_clock -period 20 -name default

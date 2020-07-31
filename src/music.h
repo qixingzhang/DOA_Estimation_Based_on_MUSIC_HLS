@@ -26,15 +26,15 @@ using namespace std;
 typedef complex<float> complex_float;
 struct QRF_CONFIG : hls::qrf_traits<N_SENSOR, N_SENSOR, complex_float, complex_float>{
 	static const int ARCH          = 0; // Select implementation. 0=Basic. 1=Lower latency/thoughput architecture.
-	static const int CALC_ROT_II   = 8; // Specify the rotation calculation loop target II of the QRF_ALT architecture(1)
-	static const int UPDATE_II     = 8; // Specify the pipelining target for the Q & R update loops
-	static const int UNROLL_FACTOR = 8; // Specify the unrolling factor for Q & R update loops of the QRF_ALT architecture(1)
+	static const int CALC_ROT_II   = 4; // Specify the rotation calculation loop target II of the QRF_ALT architecture(1)
+	static const int UPDATE_II     = 1; // Specify the pipelining target for the Q & R update loops
+	static const int UNROLL_FACTOR = 1; // Specify the unrolling factor for Q & R update loops of the QRF_ALT architecture(1)
 };
 
 // top function
-void music(
-	float X[N_SAMPLE][N_SENSOR],	// input signal
-	complex_float Xj_f[N_FREQ][N_STFT][N_SENSOR],
+int music(
+	float data_re[N_SAMPLE][N_SENSOR],
+	float data_im[N_SAMPLE][N_SENSOR],
 	float P_sm[361]					// Spatial spectrum
 //	float align_out					// Output aligned signal
 );

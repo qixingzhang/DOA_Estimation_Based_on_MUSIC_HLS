@@ -37,11 +37,6 @@
 			<location>C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/DOA_Estimation_proj/.apc/.tb</location>
 		</link>
 		<link>
-			<name>.reference/hls_qrf.h</name>
-			<type>1</type>
-			<location>C:/Xilinx/Vivado/2019.1/include/hls/linear_algebra/hls_qrf.h</location>
-		</link>
-		<link>
 			<name>.reference/music.h</name>
 			<type>1</type>
 			<location>C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/src/music.h</location>
@@ -55,6 +50,11 @@
 			<name>solution2/constraints</name>
 			<type>2</type>
 			<location>C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/DOA_Estimation_proj/solution2/.tcls</location>
+		</link>
+		<link>
+			<name>solution3/constraints</name>
+			<type>2</type>
+			<location>C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/DOA_Estimation_proj/solution3/.tcls</location>
 		</link>
 		<link>
 			<name>source/music.cpp</name>
@@ -100,6 +100,21 @@
 			<name>solution2/constraints/script.tcl</name>
 			<type>1</type>
 			<location>C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/DOA_Estimation_proj/solution2/script.tcl</location>
+		</link>
+		<link>
+			<name>solution3/constraints/.xml.directive</name>
+			<type>1</type>
+			<location>C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/DOA_Estimation_proj/solution3/solution3.directive</location>
+		</link>
+		<link>
+			<name>solution3/constraints/directives.tcl</name>
+			<type>1</type>
+			<location>C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/DOA_Estimation_proj/solution3/directives.tcl</location>
+		</link>
+		<link>
+			<name>solution3/constraints/script.tcl</name>
+			<type>1</type>
+			<location>C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/DOA_Estimation_proj/solution3/script.tcl</location>
 		</link>
 	</linkedResources>
 </projectDescription>
