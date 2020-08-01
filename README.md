@@ -2,7 +2,7 @@
 2020 Xilinx Summer Camp Project
 
 ## Project Description
-FPGA implementation of DOA estimation based on Multiple Signal Classification(MUSIC) Algorithm.
+FPGA implementation of DOA estimation based on [Multiple Signal Classification](https://en.wikipedia.org/wiki/MUSIC_(algorithm))(MUSIC) Algorithm.
 
 ## Platform
 * Board: Pynq-z2
