@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-//Date        : Sat Aug  1 18:01:30 2020
+//Date        : Sat Aug  1 20:14:10 2020
 //Host        : DESKTOP-2L4T92T running 64-bit major release  (build 9200)
 //Command     : generate_target music_wrapper.bd
 //Design      : music_wrapper
