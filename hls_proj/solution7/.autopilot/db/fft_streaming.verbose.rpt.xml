@@ -1,0 +1,290 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'fft_streaming'" level="0">
+<item name = "Date">Sat Aug  1 17:58:06 2020
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">hls_proj</item>
+<item name = "Solution">solution7</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.148, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">23733, 24757, 13314, 14338, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="fft_stage_119_U0">fft_stage_119, 1041, 1041, 1041, 1041, none</column>
+<column name="fft_stage_122_U0">fft_stage_122, 1041, 1041, 1041, 1041, none</column>
+<column name="fft_stage_120_U0">fft_stage_120, 1041, 1041, 1041, 1041, none</column>
+<column name="fft_stage_121_U0">fft_stage_121, 1041, 1041, 1041, 1041, none</column>
+<column name="fft_stage_123_U0">fft_stage_123, 1041, 1041, 1041, 1041, none</column>
+<column name="fft_stage_124_U0">fft_stage_124, 1041, 1041, 1041, 1041, none</column>
+<column name="fft_stage_125_U0">fft_stage_125, 1041, 1041, 1041, 1041, none</column>
+<column name="fft_stage_126_U0">fft_stage_126, 1041, 1041, 1041, 1041, none</column>
+<column name="fft_stage_U0">fft_stage, 1041, 1041, 1041, 1041, none</column>
+<column name="fft_stage_118_U0">fft_stage_118, 1041, 1041, 1041, 1041, none</column>
+<column name="fft_streaming_Loop_1_U0">fft_streaming_Loop_1, 13313, 14337, 13313, 14337, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 122, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">18, 117, 16854, 22598, -</column>
+<column name="Memory">40, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 180, -</column>
+<column name="Register">-, -, 20, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">20, 53, 15, 43, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="fft_stage_U0">fft_stage, 2, 12, 1596, 2152, 0</column>
+<column name="fft_stage_118_U0">fft_stage_118, 0, 9, 1560, 1989, 0</column>
+<column name="fft_stage_119_U0">fft_stage_119, 2, 12, 1701, 2281, 0</column>
+<column name="fft_stage_120_U0">fft_stage_120, 2, 12, 1700, 2283, 0</column>
+<column name="fft_stage_121_U0">fft_stage_121, 2, 12, 1699, 2282, 0</column>
+<column name="fft_stage_122_U0">fft_stage_122, 2, 12, 1698, 2284, 0</column>
+<column name="fft_stage_123_U0">fft_stage_123, 2, 12, 1697, 2284, 0</column>
+<column name="fft_stage_124_U0">fft_stage_124, 2, 12, 1696, 2282, 0</column>
+<column name="fft_stage_125_U0">fft_stage_125, 2, 12, 1695, 2279, 0</column>
+<column name="fft_stage_126_U0">fft_stage_126, 2, 12, 1694, 2276, 0</column>
+<column name="fft_streaming_Loop_1_U0">fft_streaming_Loop_1, 0, 0, 118, 206, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="Stage_R_0_U">fft_streaming_Stavdy, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_I_0_U">fft_streaming_Stavdy, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_R_1_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_R_2_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_R_3_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_R_4_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_R_5_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_R_6_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_R_7_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_R_8_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_R_9_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_I_1_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_I_2_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_I_3_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_I_4_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_I_5_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_I_6_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_I_7_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_I_8_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+<column name="Stage_I_9_U">fft_streaming_StawdI, 2, 0, 0, 0, 1024, 32, 2, 65536</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_channel_done_Stage_I_0">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_I_1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_I_2">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_I_3">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_I_4">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_I_5">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_I_6">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_I_7">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_I_8">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_I_9">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_R_0">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_R_1">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_R_2">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_R_3">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_R_4">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_R_5">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_R_6">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_R_7">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_R_8">and, 0, 0, 2, 1, 1</column>
+<column name="ap_channel_done_Stage_R_9">and, 0, 0, 2, 1, 1</column>
+<column name="ap_idle">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_118_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_118_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_119_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_119_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_120_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_120_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_121_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_121_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_122_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_122_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_123_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_123_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_124_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_124_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_125_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_125_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_126_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_126_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="fft_stage_U0_ap_start">and, 0, 0, 2, 1, 1</column>
+<column name="fft_streaming_Loop_1_U0_ap_continue">and, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_I_0">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_I_1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_I_2">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_I_3">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_I_4">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_I_5">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_I_6">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_I_7">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_I_8">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_I_9">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_R_0">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_R_1">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_R_2">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_R_3">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_R_4">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_R_5">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_R_6">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_R_7">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_R_8">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_channel_write_Stage_R_9">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_sync_reg_channel_write_Stage_I_0">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_I_1">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_I_2">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_I_3">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_I_4">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_I_5">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_I_6">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_I_7">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_I_8">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_I_9">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_R_0">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_R_1">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_R_2">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_R_3">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_R_4">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_R_5">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_R_6">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_R_7">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_R_8">9, 2, 1, 2</column>
+<column name="ap_sync_reg_channel_write_Stage_R_9">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_sync_reg_channel_write_Stage_I_0">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_I_1">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_I_2">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_I_3">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_I_4">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_I_5">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_I_6">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_I_7">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_I_8">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_I_9">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_R_0">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_R_1">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_R_2">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_R_3">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_R_4">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_R_5">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_R_6">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_R_7">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_R_8">1, 0, 1, 0</column>
+<column name="ap_sync_reg_channel_write_Stage_R_9">1, 0, 1, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, fft_streaming, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, fft_streaming, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, fft_streaming, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, fft_streaming, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, fft_streaming, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, fft_streaming, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, fft_streaming, return value</column>
+<column name="X_R_address0">out, 10, ap_memory, X_R, array</column>
+<column name="X_R_ce0">out, 1, ap_memory, X_R, array</column>
+<column name="X_R_d0">out, 32, ap_memory, X_R, array</column>
+<column name="X_R_q0">in, 32, ap_memory, X_R, array</column>
+<column name="X_R_we0">out, 1, ap_memory, X_R, array</column>
+<column name="X_R_address1">out, 10, ap_memory, X_R, array</column>
+<column name="X_R_ce1">out, 1, ap_memory, X_R, array</column>
+<column name="X_R_d1">out, 32, ap_memory, X_R, array</column>
+<column name="X_R_q1">in, 32, ap_memory, X_R, array</column>
+<column name="X_R_we1">out, 1, ap_memory, X_R, array</column>
+<column name="X_I_address0">out, 10, ap_memory, X_I, array</column>
+<column name="X_I_ce0">out, 1, ap_memory, X_I, array</column>
+<column name="X_I_d0">out, 32, ap_memory, X_I, array</column>
+<column name="X_I_q0">in, 32, ap_memory, X_I, array</column>
+<column name="X_I_we0">out, 1, ap_memory, X_I, array</column>
+<column name="X_I_address1">out, 10, ap_memory, X_I, array</column>
+<column name="X_I_ce1">out, 1, ap_memory, X_I, array</column>
+<column name="X_I_d1">out, 32, ap_memory, X_I, array</column>
+<column name="X_I_q1">in, 32, ap_memory, X_I, array</column>
+<column name="X_I_we1">out, 1, ap_memory, X_I, array</column>
+<column name="OUT_R_address0">out, 10, ap_memory, OUT_R, array</column>
+<column name="OUT_R_ce0">out, 1, ap_memory, OUT_R, array</column>
+<column name="OUT_R_d0">out, 32, ap_memory, OUT_R, array</column>
+<column name="OUT_R_q0">in, 32, ap_memory, OUT_R, array</column>
+<column name="OUT_R_we0">out, 1, ap_memory, OUT_R, array</column>
+<column name="OUT_R_address1">out, 10, ap_memory, OUT_R, array</column>
+<column name="OUT_R_ce1">out, 1, ap_memory, OUT_R, array</column>
+<column name="OUT_R_d1">out, 32, ap_memory, OUT_R, array</column>
+<column name="OUT_R_q1">in, 32, ap_memory, OUT_R, array</column>
+<column name="OUT_R_we1">out, 1, ap_memory, OUT_R, array</column>
+<column name="OUT_I_address0">out, 10, ap_memory, OUT_I, array</column>
+<column name="OUT_I_ce0">out, 1, ap_memory, OUT_I, array</column>
+<column name="OUT_I_d0">out, 32, ap_memory, OUT_I, array</column>
+<column name="OUT_I_q0">in, 32, ap_memory, OUT_I, array</column>
+<column name="OUT_I_we0">out, 1, ap_memory, OUT_I, array</column>
+<column name="OUT_I_address1">out, 10, ap_memory, OUT_I, array</column>
+<column name="OUT_I_ce1">out, 1, ap_memory, OUT_I, array</column>
+<column name="OUT_I_d1">out, 32, ap_memory, OUT_I, array</column>
+<column name="OUT_I_q1">in, 32, ap_memory, OUT_I, array</column>
+<column name="OUT_I_we1">out, 1, ap_memory, OUT_I, array</column>
+</table>
+</item>
+</section>
+</profile>

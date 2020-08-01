@@ -1,0 +1,51 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'music'" level="0">
+<item name = "Date">Sat Aug  1 17:57:57 2020
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">hls_proj</item>
+<item name = "Solution">solution7</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.750, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">1728825, 1769785, 1728825, 1769785, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_fft_streaming_fu_368">fft_streaming, 23733, 24757, 13314, 14338, dataflow</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">1727740, 1768700, 172774 ~ 176870, -, -, 10, no</column>
+<column name=" + Loop 1.1">172772, 176868, 43193 ~ 44217, -, -, 4, no</column>
+<column name="  ++ Loop 1.1.1">10240, 10240, 10, -, -, 1024, no</column>
+<column name="  ++ Loop 1.1.2">9216, 9216, 9, -, -, 1024, no</column>
+<column name="- Loop 2">1083, 1083, 3, -, -, 361, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

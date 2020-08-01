@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Aug  1 18:07:55 2020
+# Process ID: 1416
+# Current directory: C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/vivado_proj/vivado_proj.runs/impl_1
+# Command line: vivado.exe -log music_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source music_wrapper.tcl -notrace
+# Log file: C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/vivado_proj/vivado_proj.runs/impl_1/music_wrapper.vdi
+# Journal file: C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/vivado_proj/vivado_proj.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source music_wrapper.tcl -notrace

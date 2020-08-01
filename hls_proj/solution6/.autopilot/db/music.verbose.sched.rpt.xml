@@ -1,0 +1,107 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'music'" level="0">
+<item name = "Date">Sat Aug  1 16:07:52 2020
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">hls_proj</item>
+<item name = "Solution">solution6</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 9.195, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">274716901, 318208229, 274716901, 318208229, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">49, 49, 5, -, -, 10, no</column>
+<column name=" + Loop 1.1">3, 3, 1, -, -, 4, no</column>
+<column name="- Loop 2">19, 19, 5, -, -, 4, no</column>
+<column name=" + Loop 2.1">3, 3, 1, -, -, 4, no</column>
+<column name="- Loop 3">11, 11, 3, -, -, 4, no</column>
+<column name=" + Loop 3.1">1, 1, 1, -, -, 2, no</column>
+<column name="- Loop 4">19, 19, 5, -, -, 4, no</column>
+<column name=" + Loop 4.1">3, 3, 1, -, -, 4, no</column>
+<column name="- Loop 5">1804, 1804, 5, -, -, 361, no</column>
+<column name=" + Loop 5.1">3, 3, 1, -, -, 4, no</column>
+<column name="- Loop 6">1447, 1447, 362, -, -, 4, no</column>
+<column name=" + Loop 6.1">360, 360, 1, -, -, 361, no</column>
+<column name="- Loop 7">1522940, 1563900, 152294 ~ 156390, -, -, 10, no</column>
+<column name=" + Loop 7.1">152292, 156388, 38073 ~ 39097, -, -, 4, no</column>
+<column name="  ++ Loop 7.1.1">10240, 10240, 10, -, -, 1024, no</column>
+<column name="  ++ Loop 7.1.2">9216, 9216, 9, -, -, 1024, no</column>
+<column name="- music_label1">273183744, 316634112, 266781 ~ 309213, -, -, 1024, no</column>
+<column name=" + music_label1.1">460, 460, 46, -, -, 10, no</column>
+<column name="  ++ music_label1.1.1">44, 44, 11, -, -, 4, no</column>
+<column name=" + music_label1.2">2984, 2984, 746, -, -, 4, no</column>
+<column name="  ++ music_label1.2.1">744, 744, 186, -, -, 4, no</column>
+<column name="   +++ Autocorrelation_label17">160, 160, 16, -, -, 10, no</column>
+<column name=" + music_label1.3">19, 19, 5, -, -, 4, no</column>
+<column name="  ++ music_label1.3.1">3, 3, 1, -, -, 4, no</column>
+<column name=" + music_label1.4">19, 19, 5, -, -, 4, no</column>
+<column name="  ++ music_label1.4.1">3, 3, 1, -, -, 4, no</column>
+<column name=" + music_label1.5">19, 19, 5, -, -, 4, no</column>
+<column name="  ++ music_label1.5.1">3, 3, 1, -, -, 4, no</column>
+<column name=" + music_label1.6">19, 19, 5, -, -, 4, no</column>
+<column name="  ++ music_label1.6.1">3, 3, 1, -, -, 4, no</column>
+<column name=" + music_label1.7">40, 40, 10, -, -, 4, no</column>
+<column name="  ++ music_label1.7.1">8, 8, 2, -, -, 4, no</column>
+<column name=" + music_label1.8">8968, 22408, 1121 ~ 2801, -, -, 8, no</column>
+<column name="  ++ music_label1.8.1">1000, 1000, 250, -, -, 4, no</column>
+<column name="   +++ music_label1.8.1.1">248, 248, 62, -, -, 4, no</column>
+<column name="    ++++ eig_decompose_label7">60, 60, 15, -, -, 4, no</column>
+<column name=" + music_label1.9">2636, 5612, 659 ~ 1403, -, -, 4, no</column>
+<column name="  ++ music_label1.9.1">64, 64, 16, -, -, 4, no</column>
+<column name="   +++ eig_decompose_label12">8, 8, 2, -, -, 4, no</column>
+<column name="  ++ music_label1.9.2">297, 951, 99 ~ 317, -, -, 3, no</column>
+<column name="   +++ eig_decompose_label9">52, 104, 26, -, -, 2 ~ 4, no</column>
+<column name="   +++ music_label1.9.2.2">35, 201, 35 ~ 67, -, -, 1 ~ 3, no</column>
+<column name="    ++++ eig_decompose_label8">32, 64, 16, -, -, 2 ~ 4, no</column>
+<column name="  ++ eig_decompose_label11">168, 258, 56 ~ 86, -, -, 3, no</column>
+<column name="   +++ eig_decompose_label10">15, 45, 15, -, -, 1 ~ 3, no</column>
+<column name="  ++ eig_decompose_label13">104, 104, 26, -, -, 4, no</column>
+<column name=" + music_label1.10">4, 4, 1, -, -, 4, no</column>
+<column name=" + music_label1.11">24, 48, 8 ~ 16, -, -, 3, no</column>
+<column name="  ++ music_label1.11.1">4, 12, 4, -, -, 1 ~ 3, no</column>
+<column name=" + music_label1.12">56, 56, 14, -, -, 4, no</column>
+<column name="  ++ music_label1.12.1">12, 12, 3, -, -, 4, no</column>
+<column name=" + music_label1.13">128544, 154536, 32136 ~ 38634, -, -, 4, no</column>
+<column name="  ++ music_label2">32129, 38627, 89 ~ 107, -, -, 361, no</column>
+<column name=" + music_label1.14">552, 552, 138, -, -, 4, no</column>
+<column name="  ++ music_label1.14.1">136, 136, 34, -, -, 4, no</column>
+<column name="   +++ music_label3">32, 32, 16, -, -, 2, no</column>
+<column name=" + music_label1.15">96026, 96026, 266, -, -, 361, no</column>
+<column name="  ++ music_label1.15.1">264, 264, 66, -, -, 4, no</column>
+<column name="   +++ music_label4">64, 64, 16, -, -, 4, no</column>
+<column name=" + music_label1.16">26353, 26353, 73, -, -, 361, no</column>
+<column name="  ++ music_label5">64, 64, 16, -, -, 4, no</column>
+<column name="- Loop 9">6859, 6859, 19, -, -, 361, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

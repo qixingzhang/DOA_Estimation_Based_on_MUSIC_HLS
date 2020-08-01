@@ -1,4 +1,0 @@
-Running: xsim.dir/music/xsimk.exe -simmode gui -wdb music.wdb -simrunnum 0 -socket 6070
-Design successfully loaded
-Design Loading Memory Usage: 46092 KB (Peak: 46092 KB)
-Design Loading CPU Usage: 156 ms

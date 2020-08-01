@@ -1,0 +1,135 @@
+
+
+================================================================
+== Vivado HLS Report for 'qrf_top'
+================================================================
+* Date:           Sat Aug  1 17:19:06 2020
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        hls_proj
+* Solution:       solution5
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  50.00|    42.963|        6.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |  118|  946|  119|  947| dataflow |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 0
+* Dataflow Pipeline: 1
+  DF-Pipeline-0: Size = 4, States = { 1 2 3 4 }
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%Qi_M_real = alloca [16 x float], align 4"   --->   Operation 5 'alloca' 'Qi_M_real' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%Qi_M_imag = alloca [16 x float], align 4"   --->   Operation 6 'alloca' 'Qi_M_imag' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%Ri_M_real = alloca [16 x float], align 4"   --->   Operation 7 'alloca' 'Ri_M_real' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%Ri_M_imag = alloca [16 x float], align 4"   --->   Operation 8 'alloca' 'Ri_M_imag' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [2/2] (0.00ns)   --->   "call fastcc void @qrf_top_Loop_1_proc3([16 x float]* %Qi_M_real, [16 x float]* %Qi_M_imag, [16 x float]* %Ri_M_real, [16 x float]* %Ri_M_imag, [16 x float]* %A_M_real, [16 x float]* %A_M_imag)"   --->   Operation 9 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 10 [1/2] (0.00ns)   --->   "call fastcc void @qrf_top_Loop_1_proc3([16 x float]* %Qi_M_real, [16 x float]* %Qi_M_imag, [16 x float]* %Ri_M_real, [16 x float]* %Ri_M_imag, [16 x float]* %A_M_real, [16 x float]* %A_M_imag)"   --->   Operation 10 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 11 [2/2] (0.00ns)   --->   "call fastcc void @qrf_top_Loop_qrf_out([16 x float]* %R_M_real, [16 x float]* %Ri_M_real, [16 x float]* %R_M_imag, [16 x float]* %Ri_M_imag, [16 x float]* %Qi_M_real, [16 x float]* %Qi_M_imag, [16 x float]* %Q_M_real, [16 x float]* %Q_M_imag)"   --->   Operation 11 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecDataflowPipeline(i32 -1, i32 0, [1 x i8]* @p_str) nounwind" [C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:449->C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:714]   --->   Operation 12 'specdataflowpipeline' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 13 [1/2] (0.00ns)   --->   "call fastcc void @qrf_top_Loop_qrf_out([16 x float]* %R_M_real, [16 x float]* %Ri_M_real, [16 x float]* %R_M_imag, [16 x float]* %Ri_M_imag, [16 x float]* %Qi_M_real, [16 x float]* %Qi_M_imag, [16 x float]* %Q_M_real, [16 x float]* %Q_M_imag)"   --->   Operation 13 'call' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_4 : Operation 14 [1/1] (0.00ns)   --->   "ret void" [C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:723]   --->   Operation 14 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 50ns, clock uncertainty: 6.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# 
+# Start of session at: Fri Jul 31 04:30:11 2020
+# Process ID: 11796
+# Current directory: C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/vivado_proj/vivado_proj.sdk/webtalk
+# Command line: wbtcv.exe -mode batch -source sdk_webtalk.tcl
+# Log file: C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/vivado_proj/vivado_proj.sdk/webtalk/webtalk.log
+# Journal file: C:/Users/zhangqx/workspace/Xilinx_Intern/summer/project/DOA_Estimation_Based_on_MUSIC_HLS/vivado_proj/vivado_proj.sdk/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source sdk_webtalk.tcl

@@ -1,0 +1,291 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'music'" level="0">
+<item name = "Date">Sat Aug  1 17:58:07 2020
+</item>
+<item name = "Version">2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)</item>
+<item name = "Project">hls_proj</item>
+<item name = "Solution">solution7</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 8.750, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">1728825, 1769785, 1728825, 1769785, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+<column name="grp_fft_streaming_fu_368">fft_streaming, 23733, 24757, 13314, 14338, dataflow</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">1727740, 1768700, 172774 ~ 176870, -, -, 10, no</column>
+<column name=" + Loop 1.1">172772, 176868, 43193 ~ 44217, -, -, 4, no</column>
+<column name="  ++ Loop 1.1.1">10240, 10240, 10, -, -, 1024, no</column>
+<column name="  ++ Loop 1.1.2">9216, 9216, 9, -, -, 1024, no</column>
+<column name="- Loop 2">1083, 1083, 3, -, -, 361, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 393, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">60, 117, 17530, 23712, 0</column>
+<column name="Memory">9, -, 0, 0, 0</column>
+<column name="Multiplexer">-, -, -, 500, -</column>
+<column name="Register">-, -, 443, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">24, 53, 16, 46, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="grp_fft_streaming_fu_368">fft_streaming, 58, 117, 16874, 22900, 0</column>
+<column name="music_AXILiteS_s_axi_U">music_AXILiteS_s_axi, 0, 0, 144, 232, 0</column>
+<column name="music_data_m_axi_U">music_data_m_axi, 2, 0, 512, 580, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="FFT_Buffer_re_U">music_FFT_Buffer_re, 2, 0, 0, 0, 1024, 32, 1, 32768</column>
+<column name="FFT_Buffer_im_U">music_FFT_Buffer_re, 2, 0, 0, 0, 1024, 32, 1, 32768</column>
+<column name="FFT_out_re_U">music_FFT_out_re, 2, 0, 0, 0, 1024, 32, 1, 32768</column>
+<column name="FFT_out_im_U">music_FFT_out_re, 2, 0, 0, 0, 1024, 32, 1, 32768</column>
+<column name="temp_array_U">music_temp_array, 1, 0, 0, 0, 361, 32, 1, 11552</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln306_1_fu_509_p2">+, 0, 0, 24, 17, 17</column>
+<column name="add_ln306_2_fu_518_p2">+, 0, 0, 38, 31, 31</column>
+<column name="add_ln306_fu_492_p2">+, 0, 0, 19, 14, 14</column>
+<column name="add_ln311_1_fu_578_p2">+, 0, 0, 24, 17, 17</column>
+<column name="add_ln311_2_fu_587_p2">+, 0, 0, 38, 31, 31</column>
+<column name="add_ln311_fu_561_p2">+, 0, 0, 19, 14, 14</column>
+<column name="add_ln312_fu_592_p2">+, 0, 0, 38, 31, 31</column>
+<column name="i_fu_623_p2">+, 0, 0, 15, 9, 1</column>
+<column name="j_1_fu_549_p2">+, 0, 0, 13, 11, 1</column>
+<column name="j_fu_486_p2">+, 0, 0, 13, 11, 1</column>
+<column name="l_fu_446_p2">+, 0, 0, 13, 4, 1</column>
+<column name="n_fu_466_p2">+, 0, 0, 12, 3, 1</column>
+<column name="P_sm_data_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="P_sm_data_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="P_sm_last_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="P_sm_last_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="P_sm_user_V_1_load_A">and, 0, 0, 2, 1, 1</column>
+<column name="P_sm_user_V_1_load_B">and, 0, 0, 2, 1, 1</column>
+<column name="P_sm_data_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="P_sm_last_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="P_sm_user_V_1_state_cmp_full">icmp, 0, 0, 8, 2, 1</column>
+<column name="icmp_ln303_fu_440_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="icmp_ln304_fu_460_p2">icmp, 0, 0, 9, 3, 4</column>
+<column name="icmp_ln305_fu_480_p2">icmp, 0, 0, 13, 11, 12</column>
+<column name="icmp_ln310_fu_543_p2">icmp, 0, 0, 13, 11, 12</column>
+<column name="icmp_ln382_fu_617_p2">icmp, 0, 0, 13, 9, 9</column>
+<column name="icmp_ln384_fu_634_p2">icmp, 0, 0, 13, 9, 1</column>
+<column name="icmp_ln385_fu_640_p2">icmp, 0, 0, 13, 9, 9</column>
+<column name="ap_block_state17_io">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state24">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_grp_fft_streaming_fu_368_ap_done">or, 0, 0, 2, 1, 1</column>
+<column name="ap_sync_grp_fft_streaming_fu_368_ap_ready">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="FFT_Buffer_im_address0">15, 3, 10, 30</column>
+<column name="FFT_Buffer_im_ce0">15, 3, 1, 3</column>
+<column name="FFT_Buffer_re_address0">15, 3, 10, 30</column>
+<column name="FFT_Buffer_re_ce0">15, 3, 1, 3</column>
+<column name="FFT_out_im_address0">15, 3, 10, 30</column>
+<column name="FFT_out_im_ce0">15, 3, 1, 3</column>
+<column name="FFT_out_im_ce1">9, 2, 1, 2</column>
+<column name="FFT_out_im_we0">9, 2, 1, 2</column>
+<column name="FFT_out_im_we1">9, 2, 1, 2</column>
+<column name="FFT_out_re_address0">15, 3, 10, 30</column>
+<column name="FFT_out_re_ce0">15, 3, 1, 3</column>
+<column name="FFT_out_re_ce1">9, 2, 1, 2</column>
+<column name="FFT_out_re_we0">9, 2, 1, 2</column>
+<column name="FFT_out_re_we1">9, 2, 1, 2</column>
+<column name="P_sm_TDATA_blk_n">9, 2, 1, 2</column>
+<column name="P_sm_data_1_data_out">9, 2, 32, 64</column>
+<column name="P_sm_data_1_state">15, 3, 2, 6</column>
+<column name="P_sm_last_V_1_data_out">9, 2, 1, 2</column>
+<column name="P_sm_last_V_1_state">15, 3, 2, 6</column>
+<column name="P_sm_user_V_1_data_out">9, 2, 1, 2</column>
+<column name="P_sm_user_V_1_state">15, 3, 2, 6</column>
+<column name="ap_NS_fsm">125, 27, 1, 27</column>
+<column name="data_AWADDR">15, 3, 32, 96</column>
+<column name="data_WDATA">15, 3, 32, 96</column>
+<column name="data_blk_n_AR">9, 2, 1, 2</column>
+<column name="data_blk_n_AW">9, 2, 1, 2</column>
+<column name="data_blk_n_B">9, 2, 1, 2</column>
+<column name="data_blk_n_R">9, 2, 1, 2</column>
+<column name="data_blk_n_W">9, 2, 1, 2</column>
+<column name="j24_0_reg_346">9, 2, 11, 22</column>
+<column name="j_0_reg_334">9, 2, 11, 22</column>
+<column name="l_0_reg_312">9, 2, 4, 8</column>
+<column name="n_0_reg_323">9, 2, 3, 6</column>
+<column name="p_06_rec_reg_357">9, 2, 9, 18</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="FFT_out_im_load_reg_748">32, 0, 32, 0</column>
+<column name="FFT_out_re_load_reg_737">32, 0, 32, 0</column>
+<column name="P_sm_data_1_payload_A">32, 0, 32, 0</column>
+<column name="P_sm_data_1_payload_B">32, 0, 32, 0</column>
+<column name="P_sm_data_1_sel_rd">1, 0, 1, 0</column>
+<column name="P_sm_data_1_sel_wr">1, 0, 1, 0</column>
+<column name="P_sm_data_1_state">2, 0, 2, 0</column>
+<column name="P_sm_last_V_1_payload_A">1, 0, 1, 0</column>
+<column name="P_sm_last_V_1_payload_B">1, 0, 1, 0</column>
+<column name="P_sm_last_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="P_sm_last_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="P_sm_last_V_1_state">2, 0, 2, 0</column>
+<column name="P_sm_user_V_1_payload_A">1, 0, 1, 0</column>
+<column name="P_sm_user_V_1_payload_B">1, 0, 1, 0</column>
+<column name="P_sm_user_V_1_sel_rd">1, 0, 1, 0</column>
+<column name="P_sm_user_V_1_sel_wr">1, 0, 1, 0</column>
+<column name="P_sm_user_V_1_state">2, 0, 2, 0</column>
+<column name="add_ln306_2_reg_693">31, 0, 31, 0</column>
+<column name="add_ln311_2_reg_722">31, 0, 31, 0</column>
+<column name="add_ln312_reg_727">31, 0, 31, 0</column>
+<column name="ap_CS_fsm">26, 0, 26, 0</column>
+<column name="ap_sync_reg_grp_fft_streaming_fu_368_ap_done">1, 0, 1, 0</column>
+<column name="ap_sync_reg_grp_fft_streaming_fu_368_ap_ready">1, 0, 1, 0</column>
+<column name="data_addr_read_reg_704">32, 0, 32, 0</column>
+<column name="grp_fft_streaming_fu_368_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_reg_762">9, 0, 9, 0</column>
+<column name="icmp_ln384_reg_772">1, 0, 1, 0</column>
+<column name="icmp_ln385_reg_777">1, 0, 1, 0</column>
+<column name="j24_0_reg_346">11, 0, 11, 0</column>
+<column name="j_0_reg_334">11, 0, 11, 0</column>
+<column name="j_1_reg_712">11, 0, 11, 0</column>
+<column name="j_reg_688">11, 0, 11, 0</column>
+<column name="l_0_reg_312">4, 0, 4, 0</column>
+<column name="l_reg_660">4, 0, 4, 0</column>
+<column name="n_0_reg_323">3, 0, 3, 0</column>
+<column name="n_reg_674">3, 0, 3, 0</column>
+<column name="p_06_rec_reg_357">9, 0, 9, 0</column>
+<column name="p_cast6_reg_646">30, 0, 31, 1</column>
+<column name="p_cast_reg_651">30, 0, 31, 1</column>
+<column name="shl_ln_reg_665">4, 0, 14, 10</column>
+<column name="zext_ln305_1_reg_679">3, 0, 17, 14</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_AXILiteS_AWVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_AWREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_AWADDR">in, 6, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WDATA">in, 32, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_WSTRB">in, 4, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARVALID">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARREADY">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_ARADDR">in, 6, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RVALID">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RREADY">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RDATA">out, 32, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_RRESP">out, 2, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BVALID">out, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BREADY">in, 1, s_axi, AXILiteS, scalar</column>
+<column name="s_axi_AXILiteS_BRESP">out, 2, s_axi, AXILiteS, scalar</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, music, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, music, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, music, return value</column>
+<column name="m_axi_data_AWVALID">out, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_AWREADY">in, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_AWADDR">out, 32, m_axi, data, pointer</column>
+<column name="m_axi_data_AWID">out, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_AWLEN">out, 8, m_axi, data, pointer</column>
+<column name="m_axi_data_AWSIZE">out, 3, m_axi, data, pointer</column>
+<column name="m_axi_data_AWBURST">out, 2, m_axi, data, pointer</column>
+<column name="m_axi_data_AWLOCK">out, 2, m_axi, data, pointer</column>
+<column name="m_axi_data_AWCACHE">out, 4, m_axi, data, pointer</column>
+<column name="m_axi_data_AWPROT">out, 3, m_axi, data, pointer</column>
+<column name="m_axi_data_AWQOS">out, 4, m_axi, data, pointer</column>
+<column name="m_axi_data_AWREGION">out, 4, m_axi, data, pointer</column>
+<column name="m_axi_data_AWUSER">out, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_WVALID">out, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_WREADY">in, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_WDATA">out, 32, m_axi, data, pointer</column>
+<column name="m_axi_data_WSTRB">out, 4, m_axi, data, pointer</column>
+<column name="m_axi_data_WLAST">out, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_WID">out, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_WUSER">out, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_ARVALID">out, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_ARREADY">in, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_ARADDR">out, 32, m_axi, data, pointer</column>
+<column name="m_axi_data_ARID">out, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_ARLEN">out, 8, m_axi, data, pointer</column>
+<column name="m_axi_data_ARSIZE">out, 3, m_axi, data, pointer</column>
+<column name="m_axi_data_ARBURST">out, 2, m_axi, data, pointer</column>
+<column name="m_axi_data_ARLOCK">out, 2, m_axi, data, pointer</column>
+<column name="m_axi_data_ARCACHE">out, 4, m_axi, data, pointer</column>
+<column name="m_axi_data_ARPROT">out, 3, m_axi, data, pointer</column>
+<column name="m_axi_data_ARQOS">out, 4, m_axi, data, pointer</column>
+<column name="m_axi_data_ARREGION">out, 4, m_axi, data, pointer</column>
+<column name="m_axi_data_ARUSER">out, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_RVALID">in, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_RREADY">out, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_RDATA">in, 32, m_axi, data, pointer</column>
+<column name="m_axi_data_RLAST">in, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_RID">in, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_RUSER">in, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_RRESP">in, 2, m_axi, data, pointer</column>
+<column name="m_axi_data_BVALID">in, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_BREADY">out, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_BRESP">in, 2, m_axi, data, pointer</column>
+<column name="m_axi_data_BID">in, 1, m_axi, data, pointer</column>
+<column name="m_axi_data_BUSER">in, 1, m_axi, data, pointer</column>
+<column name="P_sm_TDATA">out, 32, axis, P_sm_data, pointer</column>
+<column name="P_sm_TREADY">in, 1, axis, P_sm_data, pointer</column>
+<column name="P_sm_TVALID">out, 1, axis, P_sm_last_V, pointer</column>
+<column name="P_sm_TLAST">out, 1, axis, P_sm_last_V, pointer</column>
+<column name="P_sm_TUSER">out, 1, axis, P_sm_user_V, pointer</column>
+</table>
+</item>
+</section>
+</profile>

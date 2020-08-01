@@ -1,0 +1,10 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../src/main.cpp in debug mode
+   Compiling ../../../../src/music.cpp in debug mode
+   Generating csim.exe
+##########################
+DOA1: 7deg, DOA2: 63deg
+##########################
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

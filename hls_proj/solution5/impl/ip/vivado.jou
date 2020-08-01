@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Aug  1 17:20:23 2020
+# Process ID: 11376
+# Current directory: C:/Z/DOA_Estimation_Based_on_MUSIC_HLS/hls_proj/solution5/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/Z/DOA_Estimation_Based_on_MUSIC_HLS/hls_proj/solution5/impl/ip/vivado.log
+# Journal file: C:/Z/DOA_Estimation_Based_on_MUSIC_HLS/hls_proj/solution5/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

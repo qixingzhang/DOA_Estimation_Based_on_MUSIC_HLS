@@ -1,0 +1,125 @@
+{"sourceFile": [{
+      "name": "",
+      "directive": [
+        {
+          "functionName": "music",
+          "label": "music_label6",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "reverse_bits",
+          "label": "reverse_bits_label14",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "music",
+          "label": "music_label15",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "music",
+          "label": "music_label16",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "func_pack",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "DATAFLOW"}
+        },
+        {
+          "functionName": "qrf_vm",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_mm",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_magnitude",
+          "label": "Function_qrf_magnitude_real",
+          "functionLabel": "Function_qrf_magnitude_real",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_magnitude",
+          "label": "Function_qrf_magnitude_complex",
+          "functionLabel": "Function_qrf_magnitude_complex",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_givens",
+          "label": "Function_qrf_givens_real",
+          "functionLabel": "Function_qrf_givens_real",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_givens",
+          "label": "Function_qrf_givens_complex",
+          "functionLabel": "Function_qrf_givens_complex",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_basic",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "INLINE"}
+        },
+        {
+          "functionName": "qrf_givens",
+          "label": "Function_qrf_givens_real",
+          "functionLabel": "Function_qrf_givens_real",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_givens",
+          "label": "Function_qrf_givens_complex",
+          "functionLabel": "Function_qrf_givens_complex",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_magnitude",
+          "label": "Function_qrf_magnitude_complex",
+          "functionLabel": "Function_qrf_magnitude_complex",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_magnitude",
+          "label": "Function_qrf_magnitude_real",
+          "functionLabel": "Function_qrf_magnitude_real",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_mm",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_vm",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "EXPRESSION_BALANCE"}
+        },
+        {
+          "functionName": "qrf_basic",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "DATAFLOW"}
+        },
+        {
+          "functionName": "qrf_alt",
+          "label": "",
+          "functionLabel": "",
+          "pragma": {"name": "DATAFLOW"}
+        }
+      ]
+    }]}

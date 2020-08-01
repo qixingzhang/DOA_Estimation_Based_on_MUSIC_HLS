@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Messages>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1312" tag="" content="Analyzing design file &apos;src/music.cpp&apos; ..."/>
+	<Message severity="WARNING" prefix="[HLS 214-114]" key="HLS 214-114" tag="DATAFLOW,SDX_KERNEL" content="Only function calls and local variable declarations are allowed in a dataflow region: src/music.cpp:273:2"/>
+	<Message severity="WARNING" prefix="[HLS 214-114]" key="HLS 214-114" tag="DATAFLOW,SDX_KERNEL" content="Only function calls and local variable declarations are allowed in a dataflow region: C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:451:7"/>
+	<Message severity="WARNING" prefix="[HLS 214-114]" key="HLS 214-114" tag="DATAFLOW,SDX_KERNEL" content="Only function calls and local variable declarations are allowed in a dataflow region: C:/Xilinx/Vivado/2019.1/common/technology/autopilothls/linear_algebra/hls_qrf.h:566:5"/>
+	<Message severity="WARNING" prefix="[HLS 200-471]" key="HLS 200-471" tag="DATAFLOW,SDX_KERNEL" content="Dataflow form checks found 3 issue(s) in file src/music.cpp"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 185.164 ; gain = 94.348"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 185.164 ; gain = 94.348"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1467" tag="" content="Starting code transformations ..."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;reverse_bits&apos; into &apos;bit_reverse&apos; (src/music.cpp:138)."/>
+	<Message severity="INFO" prefix="[XFORM 203-603]" key="XFORM_INLINE_STATUS_221" tag="" content="Inlining function &apos;bit_reverse&apos; into &apos;fft_streaming&apos; (src/music.cpp:272)."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Standard Transforms Time (s): cpu = 00:00:09 ; elapsed = 00:00:39 . Memory (MB): peak = 214.535 ; gain = 123.719"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1472" tag="" content="Checking synthesizability ..."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Checking Synthesizability Time (s): cpu = 00:00:10 ; elapsed = 00:00:39 . Memory (MB): peak = 245.453 ; gain = 154.637"/>
+	<Message severity="WARNING" prefix="[XFORM 203-1103]" key="XFORM_DATA_PACK_INVALID_346" tag="" content="Ignored data pack directive on non-struct variable &apos;P_sm.data&apos; (src/music.cpp:282)."/>
+	<Message severity="INFO" prefix="[HLS 200-489]" key="HLS 200-489" tag="" content="Unrolling loop &apos;stage_loop&apos; (src/music.cpp:274) in function &apos;fft_streaming&apos; completely with a factor of 9."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;Stage_R&apos; (src/music.cpp:268) in dimension 1 completely."/>
+	<Message severity="INFO" prefix="[XFORM 203-101]" key="XFORM_PARTITION_STATUS_116" tag="" content="Partitioning array &apos;Stage_I&apos; (src/music.cpp:268) in dimension 1 completely."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_402" tag="" content="Updating loop upper bound from 1024 to 1 for loop &apos;dft_loop&apos; in function &apos;fft_stage&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_405" tag="" content="Updating loop lower bound from 0 to 1 for loop &apos;dft_loop&apos; in function &apos;fft_stage&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-721]" key="XFORM_LOOP_STREAM_STATUS_309" tag="" content="Changing loop &apos;Loop_1_proc&apos; (src/music.cpp:137) to a process function for dataflow in function &apos;fft_streaming&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_R[0]&apos;  should be updated in process function &apos;fft_streaming_Loop_1_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_I[0]&apos;  should be updated in process function &apos;fft_streaming_Loop_1_proc&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_R[1]&apos; should be updated in process function &apos;fft_stage.118&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_I[1]&apos; should be updated in process function &apos;fft_stage.118&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_R[2]&apos; should be updated in process function &apos;fft_stage.119&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_I[2]&apos; should be updated in process function &apos;fft_stage.119&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_R[3]&apos; should be updated in process function &apos;fft_stage.120&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_I[3]&apos; should be updated in process function &apos;fft_stage.120&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_R[4]&apos; should be updated in process function &apos;fft_stage.121&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_I[4]&apos; should be updated in process function &apos;fft_stage.121&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_R[5]&apos; should be updated in process function &apos;fft_stage.122&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_I[5]&apos; should be updated in process function &apos;fft_stage.122&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_R[6]&apos; should be updated in process function &apos;fft_stage.123&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_I[6]&apos; should be updated in process function &apos;fft_stage.123&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_R[7]&apos; should be updated in process function &apos;fft_stage.124&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_I[7]&apos; should be updated in process function &apos;fft_stage.124&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_R[8]&apos; should be updated in process function &apos;fft_stage.125&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_I[8]&apos; should be updated in process function &apos;fft_stage.125&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_R[9]&apos; should be updated in process function &apos;fft_stage.126&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;Stage_I[9]&apos; should be updated in process function &apos;fft_stage.126&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;OUT_R&apos; should be updated in process function &apos;fft_stage&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="WARNING" prefix="[XFORM 203-713]" key="XFORM_DATAFLOW_WARNING_193" tag="ARRAY,SDX_ARRAY,DATAFLOW" content="All the elements of global array &apos;OUT_I&apos; should be updated in process function &apos;fft_stage&apos;, otherwise it may not be synthesized correctly."/>
+	<Message severity="INFO" prefix="[XFORM 203-712]" key="XFORM_DATAFLOW_TRANSFORM_230" tag="DATAFLOW" content="Applying dataflow to function &apos;fft_streaming&apos;, detected/extracted 11 process function(s): 
+	 &apos;fft_streaming_Loop_1_proc&apos;
+	 &apos;fft_stage.118&apos;
+	 &apos;fft_stage.119&apos;
+	 &apos;fft_stage.120&apos;
+	 &apos;fft_stage.121&apos;
+	 &apos;fft_stage.122&apos;
+	 &apos;fft_stage.123&apos;
+	 &apos;fft_stage.124&apos;
+	 &apos;fft_stage.125&apos;
+	 &apos;fft_stage.126&apos;
+	 &apos;fft_stage&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_402" tag="" content="Updating loop upper bound from 1024 to 2 for loop &apos;dft_loop&apos; in function &apos;fft_stage.126&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_405" tag="" content="Updating loop lower bound from 0 to 2 for loop &apos;dft_loop&apos; in function &apos;fft_stage.126&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_402" tag="" content="Updating loop upper bound from 1024 to 4 for loop &apos;dft_loop&apos; in function &apos;fft_stage.125&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_405" tag="" content="Updating loop lower bound from 0 to 4 for loop &apos;dft_loop&apos; in function &apos;fft_stage.125&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_402" tag="" content="Updating loop upper bound from 1024 to 8 for loop &apos;dft_loop&apos; in function &apos;fft_stage.124&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_405" tag="" content="Updating loop lower bound from 0 to 8 for loop &apos;dft_loop&apos; in function &apos;fft_stage.124&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_402" tag="" content="Updating loop upper bound from 1024 to 16 for loop &apos;dft_loop&apos; in function &apos;fft_stage.123&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_405" tag="" content="Updating loop lower bound from 0 to 16 for loop &apos;dft_loop&apos; in function &apos;fft_stage.123&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_402" tag="" content="Updating loop upper bound from 1024 to 32 for loop &apos;dft_loop&apos; in function &apos;fft_stage.122&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_405" tag="" content="Updating loop lower bound from 0 to 32 for loop &apos;dft_loop&apos; in function &apos;fft_stage.122&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_402" tag="" content="Updating loop upper bound from 1024 to 64 for loop &apos;dft_loop&apos; in function &apos;fft_stage.121&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_405" tag="" content="Updating loop lower bound from 0 to 64 for loop &apos;dft_loop&apos; in function &apos;fft_stage.121&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_402" tag="" content="Updating loop upper bound from 1024 to 128 for loop &apos;dft_loop&apos; in function &apos;fft_stage.120&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_405" tag="" content="Updating loop lower bound from 0 to 128 for loop &apos;dft_loop&apos; in function &apos;fft_stage.120&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_402" tag="" content="Updating loop upper bound from 1024 to 256 for loop &apos;dft_loop&apos; in function &apos;fft_stage.119&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_405" tag="" content="Updating loop lower bound from 0 to 256 for loop &apos;dft_loop&apos; in function &apos;fft_stage.119&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_402" tag="" content="Updating loop upper bound from 1024 to 512 for loop &apos;dft_loop&apos; in function &apos;fft_stage.118&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_405" tag="" content="Updating loop lower bound from 0 to 512 for loop &apos;dft_loop&apos; in function &apos;fft_stage.118&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-561]" key="XFORM_LOOPBOUND_INVALID_404" tag="" content="Ignored multiple trip count directives for loop &apos;butterfly_loop&apos; in function &apos;fft_stage&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Pre-synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:41 . Memory (MB): peak = 311.141 ; gain = 220.324"/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;butterfly_loop&apos; (src/music.cpp:181:36) in function &apos;fft_stage.126&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;butterfly_loop&apos; (src/music.cpp:181:36) in function &apos;fft_stage.125&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;butterfly_loop&apos; (src/music.cpp:181:36) in function &apos;fft_stage.124&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;butterfly_loop&apos; (src/music.cpp:181:36) in function &apos;fft_stage.123&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;butterfly_loop&apos; (src/music.cpp:181:36) in function &apos;fft_stage.122&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;butterfly_loop&apos; (src/music.cpp:181:36) in function &apos;fft_stage.121&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;butterfly_loop&apos; (src/music.cpp:181:36) in function &apos;fft_stage.120&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;butterfly_loop&apos; (src/music.cpp:181:36) in function &apos;fft_stage.119&apos;."/>
+	<Message severity="INFO" prefix="[XFORM 203-541]" key="XFORM_LOOPFLAT_STATUS_218" tag="" content="Flattening a loop nest &apos;butterfly_loop&apos; (src/music.cpp:181:36) in function &apos;fft_stage.118&apos;."/>
+	<Message severity="WARNING" prefix="[XFORM 203-631]" key="XFORM_FRN_STATUS_336" tag="" content="Renaming function &apos;fft_streaming_Loop_1_proc&apos; to &apos;fft_streaming_Loop_1&apos; (src/music.cpp:268)"/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished Architecture Synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:42 . Memory (MB): peak = 427.395 ; gain = 336.578"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1317" tag="" content="Starting hardware synthesis ..."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1385" tag="" content="Synthesizing &apos;music&apos; ..."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;fft_stage.118&apos; to &apos;fft_stage_118&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;fft_stage.119&apos; to &apos;fft_stage_119&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;fft_stage.120&apos; to &apos;fft_stage_120&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;fft_stage.121&apos; to &apos;fft_stage_121&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;fft_stage.122&apos; to &apos;fft_stage_122&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;fft_stage.123&apos; to &apos;fft_stage_123&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;fft_stage.124&apos; to &apos;fft_stage_124&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;fft_stage.125&apos; to &apos;fft_stage_125&apos;."/>
+	<Message severity="WARNING" prefix="[SYN 201-103]" key="SYN_MODULE_NAME_ILLEGAL_445" tag="" content="Legalizing function name &apos;fft_stage.126&apos; to &apos;fft_stage_126&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;fft_streaming_Loop_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 42.49 seconds; current allocated memory: 368.925 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-434]" key="HLS 200-434" tag="SDX" content="Only 0 loops out of a total 2 loops have been pipelined in this design."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.2 seconds; current allocated memory: 369.096 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;fft_stage_118&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;butterfly_loop_dft_loop&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 2, Final II = 2, Depth = 18."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.276 seconds; current allocated memory: 369.281 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.218 seconds; current allocated memory: 369.535 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;fft_stage_119&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;butterfly_loop_dft_loop&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 2, Final II = 2, Depth = 18."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.321 seconds; current allocated memory: 369.737 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.243 seconds; current allocated memory: 370.060 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;fft_stage_120&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;butterfly_loop_dft_loop&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 2, Final II = 2, Depth = 18."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.363 seconds; current allocated memory: 370.246 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.519 seconds; current allocated memory: 370.570 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;fft_stage_121&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;butterfly_loop_dft_loop&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 2, Final II = 2, Depth = 18."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.362 seconds; current allocated memory: 370.808 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.246 seconds; current allocated memory: 371.131 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;fft_stage_122&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;butterfly_loop_dft_loop&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 2, Final II = 2, Depth = 18."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.345 seconds; current allocated memory: 371.317 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.248 seconds; current allocated memory: 371.640 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;fft_stage_123&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;butterfly_loop_dft_loop&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 2, Final II = 2, Depth = 18."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.373 seconds; current allocated memory: 371.842 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.238 seconds; current allocated memory: 372.165 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;fft_stage_124&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;butterfly_loop_dft_loop&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 2, Final II = 2, Depth = 18."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.35 seconds; current allocated memory: 372.388 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.233 seconds; current allocated memory: 372.711 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;fft_stage_125&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;butterfly_loop_dft_loop&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 2, Final II = 2, Depth = 18."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 2.489 seconds; current allocated memory: 372.913 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.262 seconds; current allocated memory: 373.237 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;fft_stage_126&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;butterfly_loop_dft_loop&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 2, Final II = 2, Depth = 18."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.392 seconds; current allocated memory: 373.437 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.253 seconds; current allocated memory: 373.757 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;fft_stage&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_41" tag="" content="Pipelining loop &apos;butterfly_loop&apos;."/>
+	<Message severity="INFO" prefix="[SCHED 204-61]" key="SCHED_PIPELINING_STATUS_44" tag="" content="Pipelining result : Target II = 2, Final II = 2, Depth = 18."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.348 seconds; current allocated memory: 373.950 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.243 seconds; current allocated memory: 374.215 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;fft_streaming&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.276 seconds; current allocated memory: 374.328 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.058 seconds; current allocated memory: 374.667 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1477" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-42]" key="HLS_42_1438" tag="" content="-- Implementing module &apos;music&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1478" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_597" tag="" content="Starting scheduling ..."/>
+	<Message severity="INFO" prefix="[SCHED 204-11]" key="SCHED_SCHED_STATUS_596" tag="" content="Finished scheduling."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.589 seconds; current allocated memory: 375.077 MB."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_926" tag="" content="Starting micro-architecture generation ..."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_698" tag="" content="Performing variable lifetime analysis."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_697" tag="" content="Exploring resource sharing."/>
+	<Message severity="INFO" prefix="[BIND 205-101]" key="BIND_101_693" tag="" content="Binding ..."/>
+	<Message severity="INFO" prefix="[BIND 205-100]" key="BIND_100_925" tag="" content="Finished micro-architecture generation."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.42 seconds; current allocated memory: 375.531 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;fft_streaming_Loop_1&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;fft_streaming_Loop_1&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.674 seconds; current allocated memory: 375.916 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;fft_stage_118&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;music_faddfsub_32ns_32ns_32_5_full_dsp_1&apos; to &apos;music_faddfsub_32bkb&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;music_fsub_32ns_32ns_32_5_full_dsp_1&apos; to &apos;music_fsub_32ns_3cud&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;music_fadd_32ns_32ns_32_5_full_dsp_1&apos; to &apos;music_fadd_32ns_3dEe&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;music_fmul_32ns_32ns_32_4_max_dsp_1&apos; to &apos;music_fmul_32ns_3eOg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fadd_32ns_3dEe&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_faddfsub_32bkb&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fmul_32ns_3eOg&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fsub_32ns_3cud&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;fft_stage_118&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.431 seconds; current allocated memory: 376.564 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;fft_stage_119&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_119_W_real42&apos; to &apos;fft_stage_119_W_rfYi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_119_W_imag33&apos; to &apos;fft_stage_119_W_ig8j&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fadd_32ns_3dEe&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_faddfsub_32bkb&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fmul_32ns_3eOg&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fsub_32ns_3cud&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;fft_stage_119&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.549 seconds; current allocated memory: 377.378 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;fft_stage_120&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_120_W_real41&apos; to &apos;fft_stage_120_W_rhbi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_120_W_imag32&apos; to &apos;fft_stage_120_W_iibs&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fadd_32ns_3dEe&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_faddfsub_32bkb&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fmul_32ns_3eOg&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fsub_32ns_3cud&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;fft_stage_120&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.611 seconds; current allocated memory: 378.126 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;fft_stage_121&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_121_W_real40&apos; to &apos;fft_stage_121_W_rjbC&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_121_W_imag31&apos; to &apos;fft_stage_121_W_ikbM&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fadd_32ns_3dEe&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_faddfsub_32bkb&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fmul_32ns_3eOg&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fsub_32ns_3cud&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;fft_stage_121&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.636 seconds; current allocated memory: 378.940 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;fft_stage_122&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_122_W_real39&apos; to &apos;fft_stage_122_W_rlbW&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_122_W_imag30&apos; to &apos;fft_stage_122_W_imb6&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fadd_32ns_3dEe&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_faddfsub_32bkb&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fmul_32ns_3eOg&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fsub_32ns_3cud&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;fft_stage_122&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.62 seconds; current allocated memory: 379.687 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;fft_stage_123&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_123_W_real38&apos; to &apos;fft_stage_123_W_rncg&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_123_W_imag29&apos; to &apos;fft_stage_123_W_iocq&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fadd_32ns_3dEe&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_faddfsub_32bkb&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fmul_32ns_3eOg&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fsub_32ns_3cud&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;fft_stage_123&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.62 seconds; current allocated memory: 380.485 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;fft_stage_124&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_124_W_real37&apos; to &apos;fft_stage_124_W_rpcA&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_124_W_imag28&apos; to &apos;fft_stage_124_W_iqcK&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fadd_32ns_3dEe&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_faddfsub_32bkb&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fmul_32ns_3eOg&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fsub_32ns_3cud&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;fft_stage_124&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.626 seconds; current allocated memory: 381.247 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;fft_stage_125&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_125_W_real36&apos; to &apos;fft_stage_125_W_rrcU&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_125_W_imag27&apos; to &apos;fft_stage_125_W_isc4&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fadd_32ns_3dEe&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_faddfsub_32bkb&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fmul_32ns_3eOg&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fsub_32ns_3cud&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;fft_stage_125&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.656 seconds; current allocated memory: 382.045 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;fft_stage_126&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_126_W_real&apos; to &apos;fft_stage_126_W_rtde&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_stage_126_W_imag&apos; to &apos;fft_stage_126_W_iudo&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fadd_32ns_3dEe&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_faddfsub_32bkb&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fmul_32ns_3eOg&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fsub_32ns_3cud&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;fft_stage_126&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.635 seconds; current allocated memory: 382.798 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;fft_stage&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fadd_32ns_3dEe&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_faddfsub_32bkb&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fmul_32ns_3eOg&apos;: 2 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_855" tag="" content="Generating core module &apos;music_fsub_32ns_3cud&apos;: 1 instance(s)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;fft_stage&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 0.622 seconds; current allocated memory: 383.509 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;fft_streaming&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_R_0&apos; to &apos;fft_streaming_Stavdy&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_R_1&apos; to &apos;fft_streaming_StawdI&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_R_2&apos; to &apos;fft_streaming_StaxdS&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_R_3&apos; to &apos;fft_streaming_Stayd2&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_R_4&apos; to &apos;fft_streaming_Stazec&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_R_5&apos; to &apos;fft_streaming_StaAem&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_R_6&apos; to &apos;fft_streaming_StaBew&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_R_7&apos; to &apos;fft_streaming_StaCeG&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_R_8&apos; to &apos;fft_streaming_StaDeQ&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_R_9&apos; to &apos;fft_streaming_StaEe0&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_I_0&apos; to &apos;fft_streaming_StaFfa&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_I_1&apos; to &apos;fft_streaming_StaGfk&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_I_2&apos; to &apos;fft_streaming_StaHfu&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_I_3&apos; to &apos;fft_streaming_StaIfE&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_I_4&apos; to &apos;fft_streaming_StaJfO&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_I_5&apos; to &apos;fft_streaming_StaKfY&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_I_6&apos; to &apos;fft_streaming_StaLf8&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_I_7&apos; to &apos;fft_streaming_StaMgi&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_I_8&apos; to &apos;fft_streaming_StaNgs&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[SYN 201-210]" key="SYN_210_889" tag="" content="Renamed object name &apos;fft_streaming_Stage_I_9&apos; to &apos;fft_streaming_StaOgC&apos; due to the length limit 20"/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;fft_streaming&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.162 seconds; current allocated memory: 386.764 MB."/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1483" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1484" tag="" content="-- Generating RTL for module &apos;music&apos;"/>
+	<Message severity="INFO" prefix="[HLS 200-10]" key="HLS_10_1485" tag="" content="----------------------------------------------------------------"/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;music/data&apos; to &apos;m_axi&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;music/data_re&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;music/data_im&apos; to &apos;s_axilite &amp; ap_none&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;music/P_sm_data&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;music/P_sm_user_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on port &apos;music/P_sm_last_V&apos; to &apos;axis&apos; (register, both mode)."/>
+	<Message severity="INFO" prefix="[RTGEN 206-500]" key="PREPROC_IO_COMP_CONFLICT_1950" tag="" content="Setting interface mode on function &apos;music&apos; to &apos;s_axilite &amp; ap_ctrl_hs&apos;."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_851" tag="" content="Bundling port &apos;return&apos;, &apos;data_re&apos; and &apos;data_im&apos; to AXI-Lite port AXILiteS."/>
+	<Message severity="INFO" prefix="[RTGEN 206-100]" key="RTGEN_100_856" tag="" content="Finished creating RTL model for &apos;music&apos;."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_966" tag="" content=" Elapsed time: 1.141 seconds; current allocated memory: 388.554 MB."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;fft_stage_119_W_rfYi_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;fft_stage_119_W_ig8j_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;fft_streaming_Stavdy_memcore_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;fft_streaming_StawdI_memcore_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-279]" key="RTMG_279_1793" tag="" content="Implementing memory &apos;music_temp_array_rom&apos; using auto ROMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;music_FFT_Buffer_re_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[RTMG 210-278]" key="RTMG_278_1790" tag="" content="Implementing memory &apos;music_FFT_out_re_ram (RAM)&apos; using block RAMs."/>
+	<Message severity="INFO" prefix="[HLS 200-111]" key="HLS_111_965" tag="" content="Finished generating all RTL models Time (s): cpu = 00:00:27 ; elapsed = 00:01:08 . Memory (MB): peak = 476.871 ; gain = 386.055"/>
+	<Message severity="INFO" prefix="[VHDL 208-304]" key="VHDL_304_1066" tag="" content="Generating VHDL RTL for music."/>
+	<Message severity="INFO" prefix="[VLOG 209-307]" key="VLOG_307_1067" tag="" content="Generating Verilog RTL for music."/>
+</Messages>

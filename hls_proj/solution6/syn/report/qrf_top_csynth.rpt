@@ -1,0 +1,221 @@
+
+
+================================================================
+== Vivado HLS Report for 'qrf_top'
+================================================================
+* Date:           Sat Aug  1 16:08:17 2020
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        hls_proj
+* Solution:       solution6
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     9.195|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+------+-----+------+----------+
+    |   Latency  |  Interval  | Pipeline |
+    | min |  max | min |  max |   Type   |
+    +-----+------+-----+------+----------+
+    |  118|  1798|  119|  1799| dataflow |
+    +-----+------+-----+------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------+----------------------+-----+------+-----+------+---------+
+        |                         |                      |   Latency  |  Interval  | Pipeline|
+        |         Instance        |        Module        | min |  max | min |  max |   Type  |
+        +-------------------------+----------------------+-----+------+-----+------+---------+
+        |qrf_top_Loop_1_proc3_U0  |qrf_top_Loop_1_proc3  |  118|  1798|  118|  1798|   none  |
+        |qrf_top_Loop_qrf_out_U0  |qrf_top_Loop_qrf_out  |   53|    53|   53|    53|   none  |
+        +-------------------------+----------------------+-----+------+-----+------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
++-----------------+---------+-------+--------+-------+-----+
+|DSP              |        -|      -|       -|      -|    -|
+|Expression       |        -|      -|       0|     22|    -|
+|FIFO             |        -|      -|       -|      -|    -|
+|Instance         |        0|     37|    9660|  15924|    -|
+|Memory           |        8|      -|       0|      0|    0|
+|Multiplexer      |        -|      -|       -|     36|    -|
+|Register         |        -|      -|       4|      -|    -|
++-----------------+---------+-------+--------+-------+-----+
+|Total            |        8|     37|    9664|  15982|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Available        |      280|    220|  106400|  53200|    0|
++-----------------+---------+-------+--------+-------+-----+
+|Utilization (%)  |        2|     16|       9|     30|    0|
++-----------------+---------+-------+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+------+-------+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF  |  LUT  | URAM|
+    +-------------------------+----------------------+---------+-------+------+-------+-----+
+    |qrf_top_Loop_1_proc3_U0  |qrf_top_Loop_1_proc3  |        0|     37|  9620|  15660|    0|
+    |qrf_top_Loop_qrf_out_U0  |qrf_top_Loop_qrf_out  |        0|      0|    40|    264|    0|
+    +-------------------------+----------------------+---------+-------+------+-------+-----+
+    |Total                    |                      |        0|     37|  9660|  15924|    0|
+    +-------------------------+----------------------+---------+-------+------+-------+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    +-------------+-------------------+---------+---+----+-----+------+-----+------+-------------+
+    |    Memory   |       Module      | BRAM_18K| FF| LUT| URAM| Words| Bits| Banks| W*Bits*Banks|
+    +-------------+-------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Qi_M_real_U  |qrf_top_Qi_M_real  |        2|  0|   0|    0|    16|   32|     2|         1024|
+    |Qi_M_imag_U  |qrf_top_Qi_M_real  |        2|  0|   0|    0|    16|   32|     2|         1024|
+    |Ri_M_real_U  |qrf_top_Qi_M_real  |        2|  0|   0|    0|    16|   32|     2|         1024|
+    |Ri_M_imag_U  |qrf_top_Qi_M_real  |        2|  0|   0|    0|    16|   32|     2|         1024|
+    +-------------+-------------------+---------+---+----+-----+------+-----+------+-------------+
+    |Total        |                   |        8|  0|   0|    0|    64|  128|     8|         4096|
+    +-------------+-------------------+---------+---+----+-----+------+-----+------+-------------+
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+    |            Variable Name            | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+    |ap_channel_done_Qi_M_imag            |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_Qi_M_real            |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_Ri_M_imag            |    and   |      0|  0|   2|           1|           1|
+    |ap_channel_done_Ri_M_real            |    and   |      0|  0|   2|           1|           1|
+    |ap_idle                              |    and   |      0|  0|   2|           1|           1|
+    |qrf_top_Loop_1_proc3_U0_ap_continue  |    and   |      0|  0|   2|           1|           1|
+    |qrf_top_Loop_qrf_out_U0_ap_start     |    and   |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_Qi_M_imag      |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_Qi_M_real      |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_Ri_M_imag      |    or    |      0|  0|   2|           1|           1|
+    |ap_sync_channel_write_Ri_M_real      |    or    |      0|  0|   2|           1|           1|
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                |          |      0|  0|  22|          11|          11|
+    +-------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------+----+-----------+-----+-----------+
+    |                 Name                | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_channel_write_Qi_M_imag  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_Qi_M_real  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_Ri_M_imag  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_Ri_M_real  |   9|          2|    1|          2|
+    +-------------------------------------+----+-----------+-----+-----------+
+    |Total                                |  36|          8|    4|          8|
+    +-------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------+---+----+-----+-----------+
+    |                 Name                | FF| LUT| Bits| Const Bits|
+    +-------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_channel_write_Qi_M_imag  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_Qi_M_real  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_Ri_M_imag  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_Ri_M_real  |  1|   0|    1|          0|
+    +-------------------------------------+---+----+-----+-----------+
+    |Total                                |  4|   0|    4|          0|
+    +-------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+--------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  | Source Object|    C Type    |
++-------------------+-----+-----+------------+--------------+--------------+
+|ap_clk             |  in |    1| ap_ctrl_hs |    qrf_top   | return value |
+|ap_rst             |  in |    1| ap_ctrl_hs |    qrf_top   | return value |
+|ap_start           |  in |    1| ap_ctrl_hs |    qrf_top   | return value |
+|ap_done            | out |    1| ap_ctrl_hs |    qrf_top   | return value |
+|ap_ready           | out |    1| ap_ctrl_hs |    qrf_top   | return value |
+|ap_idle            | out |    1| ap_ctrl_hs |    qrf_top   | return value |
+|ap_continue        |  in |    1| ap_ctrl_hs |    qrf_top   | return value |
+|A_M_real_address0  | out |    4|  ap_memory |   A_M_real   |     array    |
+|A_M_real_ce0       | out |    1|  ap_memory |   A_M_real   |     array    |
+|A_M_real_d0        | out |   32|  ap_memory |   A_M_real   |     array    |
+|A_M_real_q0        |  in |   32|  ap_memory |   A_M_real   |     array    |
+|A_M_real_we0       | out |    1|  ap_memory |   A_M_real   |     array    |
+|A_M_real_address1  | out |    4|  ap_memory |   A_M_real   |     array    |
+|A_M_real_ce1       | out |    1|  ap_memory |   A_M_real   |     array    |
+|A_M_real_d1        | out |   32|  ap_memory |   A_M_real   |     array    |
+|A_M_real_q1        |  in |   32|  ap_memory |   A_M_real   |     array    |
+|A_M_real_we1       | out |    1|  ap_memory |   A_M_real   |     array    |
+|A_M_imag_address0  | out |    4|  ap_memory |   A_M_imag   |     array    |
+|A_M_imag_ce0       | out |    1|  ap_memory |   A_M_imag   |     array    |
+|A_M_imag_d0        | out |   32|  ap_memory |   A_M_imag   |     array    |
+|A_M_imag_q0        |  in |   32|  ap_memory |   A_M_imag   |     array    |
+|A_M_imag_we0       | out |    1|  ap_memory |   A_M_imag   |     array    |
+|A_M_imag_address1  | out |    4|  ap_memory |   A_M_imag   |     array    |
+|A_M_imag_ce1       | out |    1|  ap_memory |   A_M_imag   |     array    |
+|A_M_imag_d1        | out |   32|  ap_memory |   A_M_imag   |     array    |
+|A_M_imag_q1        |  in |   32|  ap_memory |   A_M_imag   |     array    |
+|A_M_imag_we1       | out |    1|  ap_memory |   A_M_imag   |     array    |
+|Q_M_real_address0  | out |    4|  ap_memory |   Q_M_real   |     array    |
+|Q_M_real_ce0       | out |    1|  ap_memory |   Q_M_real   |     array    |
+|Q_M_real_d0        | out |   32|  ap_memory |   Q_M_real   |     array    |
+|Q_M_real_q0        |  in |   32|  ap_memory |   Q_M_real   |     array    |
+|Q_M_real_we0       | out |    1|  ap_memory |   Q_M_real   |     array    |
+|Q_M_real_address1  | out |    4|  ap_memory |   Q_M_real   |     array    |
+|Q_M_real_ce1       | out |    1|  ap_memory |   Q_M_real   |     array    |
+|Q_M_real_d1        | out |   32|  ap_memory |   Q_M_real   |     array    |
+|Q_M_real_q1        |  in |   32|  ap_memory |   Q_M_real   |     array    |
+|Q_M_real_we1       | out |    1|  ap_memory |   Q_M_real   |     array    |
+|Q_M_imag_address0  | out |    4|  ap_memory |   Q_M_imag   |     array    |
+|Q_M_imag_ce0       | out |    1|  ap_memory |   Q_M_imag   |     array    |
+|Q_M_imag_d0        | out |   32|  ap_memory |   Q_M_imag   |     array    |
+|Q_M_imag_q0        |  in |   32|  ap_memory |   Q_M_imag   |     array    |
+|Q_M_imag_we0       | out |    1|  ap_memory |   Q_M_imag   |     array    |
+|Q_M_imag_address1  | out |    4|  ap_memory |   Q_M_imag   |     array    |
+|Q_M_imag_ce1       | out |    1|  ap_memory |   Q_M_imag   |     array    |
+|Q_M_imag_d1        | out |   32|  ap_memory |   Q_M_imag   |     array    |
+|Q_M_imag_q1        |  in |   32|  ap_memory |   Q_M_imag   |     array    |
+|Q_M_imag_we1       | out |    1|  ap_memory |   Q_M_imag   |     array    |
+|R_M_real_address0  | out |    4|  ap_memory |   R_M_real   |     array    |
+|R_M_real_ce0       | out |    1|  ap_memory |   R_M_real   |     array    |
+|R_M_real_d0        | out |   32|  ap_memory |   R_M_real   |     array    |
+|R_M_real_q0        |  in |   32|  ap_memory |   R_M_real   |     array    |
+|R_M_real_we0       | out |    1|  ap_memory |   R_M_real   |     array    |
+|R_M_real_address1  | out |    4|  ap_memory |   R_M_real   |     array    |
+|R_M_real_ce1       | out |    1|  ap_memory |   R_M_real   |     array    |
+|R_M_real_d1        | out |   32|  ap_memory |   R_M_real   |     array    |
+|R_M_real_q1        |  in |   32|  ap_memory |   R_M_real   |     array    |
+|R_M_real_we1       | out |    1|  ap_memory |   R_M_real   |     array    |
+|R_M_imag_address0  | out |    4|  ap_memory |   R_M_imag   |     array    |
+|R_M_imag_ce0       | out |    1|  ap_memory |   R_M_imag   |     array    |
+|R_M_imag_d0        | out |   32|  ap_memory |   R_M_imag   |     array    |
+|R_M_imag_q0        |  in |   32|  ap_memory |   R_M_imag   |     array    |
+|R_M_imag_we0       | out |    1|  ap_memory |   R_M_imag   |     array    |
+|R_M_imag_address1  | out |    4|  ap_memory |   R_M_imag   |     array    |
+|R_M_imag_ce1       | out |    1|  ap_memory |   R_M_imag   |     array    |
+|R_M_imag_d1        | out |   32|  ap_memory |   R_M_imag   |     array    |
+|R_M_imag_q1        |  in |   32|  ap_memory |   R_M_imag   |     array    |
+|R_M_imag_we1       | out |    1|  ap_memory |   R_M_imag   |     array    |
++-------------------+-----+-----+------------+--------------+--------------+
+

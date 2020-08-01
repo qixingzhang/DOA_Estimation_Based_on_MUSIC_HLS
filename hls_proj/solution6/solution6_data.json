@@ -1,0 +1,2664 @@
+{
+  "Top": "music",
+  "RtlTop": "music",
+  "RtlPrefix": "",
+  "SourceLanguage": "cpp",
+  "ResetStyle": "control",
+  "GenerateBdFiles": "1",
+  "HostMachineBits": "64",
+  "Target": {
+    "Family": "zynq",
+    "Device": "xc7z020",
+    "Package": "-clg400",
+    "Speed": "-1"
+  },
+  "HlsSolution": {
+    "Config": [
+      "config_schedule -effort=medium",
+      "config_schedule -enable_dsp_full_reg=0",
+      "config_schedule -relax_ii_for_timing=0",
+      "config_schedule -verbose=0",
+      "config_export -format=ip_catalog",
+      "config_export -rtl=verilog",
+      "config_export -vivado_optimization_level=2",
+      "config_export -vivado_phys_opt=place",
+      "config_export -vivado_report_level=0",
+      "config_bind -effort=medium",
+      "config_sdx -optimization_level=none",
+      "config_sdx -target=none"
+    ],
+    "DirectiveTcl": [
+      "set_directive_loop_tripcount fft\/DFTpts -min 1 -max 1024",
+      "set_directive_inline sort_eigval ",
+      "set_directive_inline Autocorrelation ",
+      "set_directive_inline fft ",
+      "set_directive_expression_balance fft\/DFTpts ",
+      "set_directive_expression_balance music\/music_label2 ",
+      "set_directive_expression_balance music\/music_label3 ",
+      "set_directive_expression_balance music\/music_label4 ",
+      "set_directive_expression_balance music\/music_label5 ",
+      "set_directive_expression_balance music\/music_label6 ",
+      "set_directive_expression_balance eig_decompose\/eig_decompose_label7 ",
+      "set_directive_expression_balance eig_decompose\/eig_decompose_label8 ",
+      "set_directive_expression_balance eig_decompose\/eig_decompose_label9 ",
+      "set_directive_expression_balance eig_decompose\/eig_decompose_label10 ",
+      "set_directive_expression_balance eig_decompose\/eig_decompose_label11 ",
+      "set_directive_expression_balance eig_decompose\/eig_decompose_label12 ",
+      "set_directive_expression_balance eig_decompose\/eig_decompose_label13 ",
+      "set_directive_expression_balance reverse_bits\/reverse_bits_label14 ",
+      "set_directive_expression_balance music\/music_label15 ",
+      "set_directive_expression_balance music\/music_label16 ",
+      "set_directive_expression_balance Autocorrelation\/Autocorrelation_label17 ",
+      "set_directive_dataflow func_pack ",
+      "set_directive_inline qr_decompose ",
+      "set_directive_inline eig_decompose ",
+      "set_directive_inline qrf_vm ",
+      "set_directive_inline qrf_mm ",
+      "set_directive_inline qrf_magnitude\/Function_qrf_magnitude_real\/Function_qrf_magnitude_real ",
+      "set_directive_inline qrf_magnitude\/Function_qrf_magnitude_complex\/Function_qrf_magnitude_complex ",
+      "set_directive_inline qrf_givens\/Function_qrf_givens_real\/Function_qrf_givens_real ",
+      "set_directive_inline qrf_givens\/Function_qrf_givens_complex\/Function_qrf_givens_complex ",
+      "set_directive_inline qrf_basic ",
+      "set_directive_expression_balance qrf_givens\/Function_qrf_givens_real\/Function_qrf_givens_real ",
+      "set_directive_expression_balance qrf_givens\/Function_qrf_givens_complex\/Function_qrf_givens_complex ",
+      "set_directive_expression_balance qrf_magnitude\/Function_qrf_magnitude_complex\/Function_qrf_magnitude_complex ",
+      "set_directive_expression_balance qrf_magnitude\/Function_qrf_magnitude_real\/Function_qrf_magnitude_real ",
+      "set_directive_expression_balance qrf_mm ",
+      "set_directive_expression_balance qrf_vm ",
+      "set_directive_dataflow qrf_basic ",
+      "set_directive_dataflow qrf_alt "
+    ],
+    "DirectiveInfo": [
+      "loop_tripcount fft\/DFTpts {{tripcount positionBooleanCmd} {min 1} {max 1024}} {}",
+      "inline sort_eigval {} {}",
+      "inline Autocorrelation {} {}",
+      "inline fft {} {}",
+      "expression_balance fft\/DFTpts {{balance positionBooleanCmd}} {}",
+      "expression_balance music\/music_label2 {{balance positionBooleanCmd}} {}",
+      "expression_balance music\/music_label3 {{balance positionBooleanCmd}} {}",
+      "expression_balance music\/music_label4 {{balance positionBooleanCmd}} {}",
+      "expression_balance music\/music_label5 {{balance positionBooleanCmd}} {}",
+      "expression_balance music\/music_label6 {{balance positionBooleanCmd}} {}",
+      "expression_balance eig_decompose\/eig_decompose_label7 {{balance positionBooleanCmd}} {}",
+      "expression_balance eig_decompose\/eig_decompose_label8 {{balance positionBooleanCmd}} {}",
+      "expression_balance eig_decompose\/eig_decompose_label9 {{balance positionBooleanCmd}} {}",
+      "expression_balance eig_decompose\/eig_decompose_label10 {{balance positionBooleanCmd}} {}",
+      "expression_balance eig_decompose\/eig_decompose_label11 {{balance positionBooleanCmd}} {}",
+      "expression_balance eig_decompose\/eig_decompose_label12 {{balance positionBooleanCmd}} {}",
+      "expression_balance eig_decompose\/eig_decompose_label13 {{balance positionBooleanCmd}} {}",
+      "expression_balance reverse_bits\/reverse_bits_label14 {{balance positionBooleanCmd}} {}",
+      "expression_balance music\/music_label15 {{balance positionBooleanCmd}} {}",
+      "expression_balance music\/music_label16 {{balance positionBooleanCmd}} {}",
+      "expression_balance Autocorrelation\/Autocorrelation_label17 {{balance positionBooleanCmd}} {}",
+      "dataflow func_pack {} {}",
+      "inline qr_decompose {} {}",
+      "inline eig_decompose {} {}",
+      "inline qrf_vm {} {}",
+      "inline qrf_mm {} {}",
+      "inline qrf_magnitude\/Function_qrf_magnitude_real\/Function_qrf_magnitude_real {} {}",
+      "inline qrf_magnitude\/Function_qrf_magnitude_complex\/Function_qrf_magnitude_complex {} {}",
+      "inline qrf_givens\/Function_qrf_givens_real\/Function_qrf_givens_real {} {}",
+      "inline qrf_givens\/Function_qrf_givens_complex\/Function_qrf_givens_complex {} {}",
+      "inline qrf_basic {} {}",
+      "expression_balance qrf_givens\/Function_qrf_givens_real\/Function_qrf_givens_real {{balance positionBooleanCmd}} {}",
+      "expression_balance qrf_givens\/Function_qrf_givens_complex\/Function_qrf_givens_complex {{balance positionBooleanCmd}} {}",
+      "expression_balance qrf_magnitude\/Function_qrf_magnitude_complex\/Function_qrf_magnitude_complex {{balance positionBooleanCmd}} {}",
+      "expression_balance qrf_magnitude\/Function_qrf_magnitude_real\/Function_qrf_magnitude_real {{balance positionBooleanCmd}} {}",
+      "expression_balance qrf_mm {{balance positionBooleanCmd}} {}",
+      "expression_balance qrf_vm {{balance positionBooleanCmd}} {}",
+      "dataflow qrf_basic {} {}",
+      "dataflow qrf_alt {} {}"
+    ]
+  },
+  "Args": {
+    "data_re": {
+      "index": "0",
+      "type": {
+        "kinds": ["array"],
+        "dataType": "float",
+        "dataWidth": "32",
+        "arraySizes": [
+          "10240",
+          "4"
+        ],
+        "interfaceRef": "m_axi_data"
+      }
+    },
+    "data_im": {
+      "index": "1",
+      "type": {
+        "kinds": ["array"],
+        "dataType": "float",
+        "dataWidth": "32",
+        "arraySizes": [
+          "10240",
+          "4"
+        ],
+        "interfaceRef": "m_axi_data"
+      }
+    },
+    "P_sm": {
+      "index": "2",
+      "type": {
+        "kinds": [
+          "struct",
+          "pointer"
+        ],
+        "dataType": "out_stream",
+        "structImpl": "flat-field",
+        "dataPack": true,
+        "fields": {
+          "data": {
+            "order": "0",
+            "dataType": "float",
+            "dataWidth": "32",
+            "interfaceRef": "P_sm",
+            "bitMap": "31:0",
+            "portRef": "TDATA",
+            "structImpl": "field",
+            "dataPack": true
+          },
+          "user": {
+            "order": "1",
+            "dataType": "ap_uint",
+            "dataWidth": "1",
+            "interfaceRef": "P_sm",
+            "bitMap": "0:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          },
+          "last": {
+            "order": "2",
+            "dataType": "ap_uint",
+            "dataWidth": "1",
+            "interfaceRef": "P_sm",
+            "bitMap": "0:0",
+            "portRef": "TDATA",
+            "structImpl": "interface",
+            "dataPack": true
+          }
+        }
+      }
+    }
+  },
+  "Return": {
+    "dataType": "int",
+    "dataWidth": "32",
+    "interfaceRef": "s_axi_AXILiteS",
+    "registerRefs": ["ap_return"]
+  },
+  "ClockInfo": {
+    "ClockName": "ap_clk",
+    "ClockPeriod": "10",
+    "IsCombLogic": "0",
+    "II": "x",
+    "Latency": "274716901",
+    "Uncertainty": "1.25"
+  },
+  "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
+  "Ipx": {
+    "Vendor": "xilinx.com",
+    "Library": "hls",
+    "Name": "music",
+    "Version": "1.0",
+    "DisplayName": "Music",
+    "Revision": "",
+    "Description": "An IP generated by Vivado HLS",
+    "Taxonomy": "\/VIVADO_HLS_IP",
+    "AutoFamilySupport": ""
+  },
+  "Files": {
+    "CSource": ["..\/..\/src\/music.cpp"],
+    "Vhdl": [
+      "impl\/vhdl\/bit_reverse235.vhd",
+      "impl\/vhdl\/fft_stage245.vhd",
+      "impl\/vhdl\/fft_stage_1236.vhd",
+      "impl\/vhdl\/fft_stage_1237.vhd",
+      "impl\/vhdl\/fft_stage_1237_W_eOg.vhd",
+      "impl\/vhdl\/fft_stage_1237_W_fYi.vhd",
+      "impl\/vhdl\/fft_stage_1238.vhd",
+      "impl\/vhdl\/fft_stage_1239.vhd",
+      "impl\/vhdl\/fft_stage_1240.vhd",
+      "impl\/vhdl\/fft_stage_1241.vhd",
+      "impl\/vhdl\/fft_stage_1242.vhd",
+      "impl\/vhdl\/fft_stage_1243.vhd",
+      "impl\/vhdl\/fft_stage_1244.vhd",
+      "impl\/vhdl\/fft_streaming.vhd",
+      "impl\/vhdl\/fft_streaming_Staudo.vhd",
+      "impl\/vhdl\/fft_streaming_Staudo_memcore.vhd",
+      "impl\/vhdl\/fft_streaming_Stavdy.vhd",
+      "impl\/vhdl\/fft_streaming_Stavdy_memcore.vhd",
+      "impl\/vhdl\/music_Autocorr_Bubck.vhd",
+      "impl\/vhdl\/music_AUU_M_real.vhd",
+      "impl\/vhdl\/music_AXILiteS_s_axi.vhd",
+      "impl\/vhdl\/music_data_m_axi.vhd",
+      "impl\/vhdl\/music_ddiv_64ns_6bll.vhd",
+      "impl\/vhdl\/music_dmul_64ns_6bkl.vhd",
+      "impl\/vhdl\/music_eigval.vhd",
+      "impl\/vhdl\/music_fadd_32ns_3cud.vhd",
+      "impl\/vhdl\/music_faddfsub_32OgC.vhd",
+      "impl\/vhdl\/music_fc.vhd",
+      "impl\/vhdl\/music_fcmp_32ns_3QgW.vhd",
+      "impl\/vhdl\/music_fdiv_32ns_3PgM.vhd",
+      "impl\/vhdl\/music_FFT_Buffer_re.vhd",
+      "impl\/vhdl\/music_FFT_out_re.vhd",
+      "impl\/vhdl\/music_fmul_32ns_3dEe.vhd",
+      "impl\/vhdl\/music_fourth_orde3i2.vhd",
+      "impl\/vhdl\/music_fourth_orde4jc.vhd",
+      "impl\/vhdl\/music_fourth_orde5jm.vhd",
+      "impl\/vhdl\/music_fourth_orde6jw.vhd",
+      "impl\/vhdl\/music_fourth_orde7jG.vhd",
+      "impl\/vhdl\/music_fpext_32ns_bjl.vhd",
+      "impl\/vhdl\/music_fptrunc_64nbil.vhd",
+      "impl\/vhdl\/music_fsqrt_32ns_Rg6.vhd",
+      "impl\/vhdl\/music_fsub_32ns_3bkb.vhd",
+      "impl\/vhdl\/music_mul_42ns_33bqm.vhd",
+      "impl\/vhdl\/music_mul_49ns_44bpm.vhd",
+      "impl\/vhdl\/music_mul_49ns_49bnm.vhd",
+      "impl\/vhdl\/music_mul_56ns_52bom.vhd",
+      "impl\/vhdl\/music_mul_64s_63nbrm.vhd",
+      "impl\/vhdl\/music_mul_80ns_24Zio.vhd",
+      "impl\/vhdl\/music_mul_170ns_5bml.vhd",
+      "impl\/vhdl\/music_mul_mul_15n0iy.vhd",
+      "impl\/vhdl\/music_mul_mul_15n1iI.vhd",
+      "impl\/vhdl\/music_mux_83_1_1_1.vhd",
+      "impl\/vhdl\/music_mux_164_1_1_1.vhd",
+      "impl\/vhdl\/music_p.vhd",
+      "impl\/vhdl\/music_Q_temp_M_real.vhd",
+      "impl\/vhdl\/music_ref_4oPi_ta2iS.vhd",
+      "impl\/vhdl\/music_sort_index.vhd",
+      "impl\/vhdl\/music_theta.vhd",
+      "impl\/vhdl\/music_Un_M_real.vhd",
+      "impl\/vhdl\/music_w.vhd",
+      "impl\/vhdl\/qrf_top.vhd",
+      "impl\/vhdl\/qrf_top_Loop_1_proc3.vhd",
+      "impl\/vhdl\/qrf_top_Loop_qrf_out.vhd",
+      "impl\/vhdl\/qrf_top_Qi_M_real.vhd",
+      "impl\/vhdl\/qrf_top_Qi_M_real_memcore.vhd",
+      "impl\/vhdl\/scaled_fixed2ieee.vhd",
+      "impl\/vhdl\/scaled_fixed2ieee_1.vhd",
+      "impl\/vhdl\/scaled_fixed2ieee_c.vhd",
+      "impl\/vhdl\/scaled_fixed2ieeeShg.vhd",
+      "impl\/vhdl\/scaled_fixed2ieeeThq.vhd",
+      "impl\/vhdl\/scaled_fixed2ieeeUhA.vhd",
+      "impl\/vhdl\/sin_or_cos_float_s.vhd",
+      "impl\/vhdl\/sin_or_cos_float_VhK.vhd",
+      "impl\/vhdl\/sin_or_cos_float_WhU.vhd",
+      "impl\/vhdl\/sin_or_cos_float_Xh4.vhd",
+      "impl\/vhdl\/sin_or_cos_float_Yie.vhd",
+      "impl\/vhdl\/music.vhd"
+    ],
+    "Verilog": [
+      "impl\/verilog\/bit_reverse235.v",
+      "impl\/verilog\/fft_stage245.v",
+      "impl\/verilog\/fft_stage_1236.v",
+      "impl\/verilog\/fft_stage_1237.v",
+      "impl\/verilog\/fft_stage_1237_W_eOg.v",
+      "impl\/verilog\/fft_stage_1237_W_eOg_rom.dat",
+      "impl\/verilog\/fft_stage_1237_W_fYi.v",
+      "impl\/verilog\/fft_stage_1237_W_fYi_rom.dat",
+      "impl\/verilog\/fft_stage_1238.v",
+      "impl\/verilog\/fft_stage_1239.v",
+      "impl\/verilog\/fft_stage_1240.v",
+      "impl\/verilog\/fft_stage_1241.v",
+      "impl\/verilog\/fft_stage_1242.v",
+      "impl\/verilog\/fft_stage_1243.v",
+      "impl\/verilog\/fft_stage_1244.v",
+      "impl\/verilog\/fft_streaming.v",
+      "impl\/verilog\/fft_streaming_Staudo.v",
+      "impl\/verilog\/fft_streaming_Staudo_memcore.v",
+      "impl\/verilog\/fft_streaming_Stavdy.v",
+      "impl\/verilog\/fft_streaming_Stavdy_memcore.v",
+      "impl\/verilog\/music_Autocorr_Bubck.v",
+      "impl\/verilog\/music_AUU_M_real.v",
+      "impl\/verilog\/music_AXILiteS_s_axi.v",
+      "impl\/verilog\/music_data_m_axi.v",
+      "impl\/verilog\/music_ddiv_64ns_6bll.v",
+      "impl\/verilog\/music_dmul_64ns_6bkl.v",
+      "impl\/verilog\/music_eigval.v",
+      "impl\/verilog\/music_fadd_32ns_3cud.v",
+      "impl\/verilog\/music_faddfsub_32OgC.v",
+      "impl\/verilog\/music_fc.v",
+      "impl\/verilog\/music_fc_rom.dat",
+      "impl\/verilog\/music_fcmp_32ns_3QgW.v",
+      "impl\/verilog\/music_fdiv_32ns_3PgM.v",
+      "impl\/verilog\/music_FFT_Buffer_re.v",
+      "impl\/verilog\/music_FFT_out_re.v",
+      "impl\/verilog\/music_fmul_32ns_3dEe.v",
+      "impl\/verilog\/music_fourth_orde3i2.v",
+      "impl\/verilog\/music_fourth_orde3i2_rom.dat",
+      "impl\/verilog\/music_fourth_orde4jc.v",
+      "impl\/verilog\/music_fourth_orde4jc_rom.dat",
+      "impl\/verilog\/music_fourth_orde5jm.v",
+      "impl\/verilog\/music_fourth_orde5jm_rom.dat",
+      "impl\/verilog\/music_fourth_orde6jw.v",
+      "impl\/verilog\/music_fourth_orde6jw_rom.dat",
+      "impl\/verilog\/music_fourth_orde7jG.v",
+      "impl\/verilog\/music_fourth_orde7jG_rom.dat",
+      "impl\/verilog\/music_fpext_32ns_bjl.v",
+      "impl\/verilog\/music_fptrunc_64nbil.v",
+      "impl\/verilog\/music_fsqrt_32ns_Rg6.v",
+      "impl\/verilog\/music_fsub_32ns_3bkb.v",
+      "impl\/verilog\/music_mul_42ns_33bqm.v",
+      "impl\/verilog\/music_mul_49ns_44bpm.v",
+      "impl\/verilog\/music_mul_49ns_49bnm.v",
+      "impl\/verilog\/music_mul_56ns_52bom.v",
+      "impl\/verilog\/music_mul_64s_63nbrm.v",
+      "impl\/verilog\/music_mul_80ns_24Zio.v",
+      "impl\/verilog\/music_mul_170ns_5bml.v",
+      "impl\/verilog\/music_mul_mul_15n0iy.v",
+      "impl\/verilog\/music_mul_mul_15n1iI.v",
+      "impl\/verilog\/music_mux_83_1_1_1.v",
+      "impl\/verilog\/music_mux_164_1_1_1.v",
+      "impl\/verilog\/music_p.v",
+      "impl\/verilog\/music_p_rom.dat",
+      "impl\/verilog\/music_Q_temp_M_real.v",
+      "impl\/verilog\/music_ref_4oPi_ta2iS.v",
+      "impl\/verilog\/music_ref_4oPi_ta2iS_rom.dat",
+      "impl\/verilog\/music_sort_index.v",
+      "impl\/verilog\/music_theta.v",
+      "impl\/verilog\/music_theta_rom.dat",
+      "impl\/verilog\/music_Un_M_real.v",
+      "impl\/verilog\/music_w.v",
+      "impl\/verilog\/qrf_top.v",
+      "impl\/verilog\/qrf_top_Loop_1_proc3.v",
+      "impl\/verilog\/qrf_top_Loop_qrf_out.v",
+      "impl\/verilog\/qrf_top_Qi_M_real.v",
+      "impl\/verilog\/qrf_top_Qi_M_real_memcore.v",
+      "impl\/verilog\/scaled_fixed2ieee.v",
+      "impl\/verilog\/scaled_fixed2ieee_1.v",
+      "impl\/verilog\/scaled_fixed2ieee_c.v",
+      "impl\/verilog\/scaled_fixed2ieeeShg.v",
+      "impl\/verilog\/scaled_fixed2ieeeThq.v",
+      "impl\/verilog\/scaled_fixed2ieeeUhA.v",
+      "impl\/verilog\/sin_or_cos_float_s.v",
+      "impl\/verilog\/sin_or_cos_float_VhK.v",
+      "impl\/verilog\/sin_or_cos_float_VhK_rom.dat",
+      "impl\/verilog\/sin_or_cos_float_WhU.v",
+      "impl\/verilog\/sin_or_cos_float_WhU_rom.dat",
+      "impl\/verilog\/sin_or_cos_float_Xh4.v",
+      "impl\/verilog\/sin_or_cos_float_Xh4_rom.dat",
+      "impl\/verilog\/sin_or_cos_float_Yie.v",
+      "impl\/verilog\/sin_or_cos_float_Yie_rom.dat",
+      "impl\/verilog\/music.v"
+    ],
+    "SwDriver": [
+      "impl\/misc\/drivers\/music_v1_0\/data\/music.mdd",
+      "impl\/misc\/drivers\/music_v1_0\/data\/music.tcl",
+      "impl\/misc\/drivers\/music_v1_0\/src\/Makefile",
+      "impl\/misc\/drivers\/music_v1_0\/src\/xmusic.c",
+      "impl\/misc\/drivers\/music_v1_0\/src\/xmusic.h",
+      "impl\/misc\/drivers\/music_v1_0\/src\/xmusic_hw.h",
+      "impl\/misc\/drivers\/music_v1_0\/src\/xmusic_linux.c",
+      "impl\/misc\/drivers\/music_v1_0\/src\/xmusic_sinit.c"
+    ],
+    "Misc": ["impl\/misc\/logo.png"],
+    "Subcore": [
+      "impl\/misc\/music_ap_ddiv_29_no_dsp_64_ip.tcl",
+      "impl\/misc\/music_ap_dmul_4_max_dsp_64_ip.tcl",
+      "impl\/misc\/music_ap_fadd_3_full_dsp_32_ip.tcl",
+      "impl\/misc\/music_ap_faddfsub_3_full_dsp_32_ip.tcl",
+      "impl\/misc\/music_ap_fcmp_0_no_dsp_32_ip.tcl",
+      "impl\/misc\/music_ap_fdiv_14_no_dsp_32_ip.tcl",
+      "impl\/misc\/music_ap_fmul_2_max_dsp_32_ip.tcl",
+      "impl\/misc\/music_ap_fpext_0_no_dsp_32_ip.tcl",
+      "impl\/misc\/music_ap_fptrunc_0_no_dsp_64_ip.tcl",
+      "impl\/misc\/music_ap_fsqrt_10_no_dsp_32_ip.tcl",
+      "impl\/misc\/music_ap_fsub_3_full_dsp_32_ip.tcl"
+    ],
+    "DesignXml": "C:\/Z\/DOA_Estimation_Based_on_MUSIC_HLS\/hls_proj\/solution6\/.autopilot\/db\/music.design.xml",
+    "DebugDir": "C:\/Z\/DOA_Estimation_Based_on_MUSIC_HLS\/hls_proj\/solution6\/.debug",
+    "ProtoInst": ["C:\/Z\/DOA_Estimation_Based_on_MUSIC_HLS\/hls_proj\/solution6\/.debug\/music.protoinst"]
+  },
+  "SubcoreInfo": {
+    "HasXpmMemory": false,
+    "HasClockedDsp": false,
+    "IP": [
+      {
+        "name": "music_ap_ddiv_29_no_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 29 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name music_ap_ddiv_29_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Divide CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "music_ap_dmul_4_max_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 4 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name music_ap_dmul_4_max_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "music_ap_fadd_3_full_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Add CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name music_ap_fadd_3_full_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "music_ap_faddfsub_3_full_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name music_ap_faddfsub_3_full_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "music_ap_fcmp_0_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 1 CONFIG.c_result_fraction_width 0 CONFIG.component_name music_ap_fcmp_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Compare CONFIG.result_precision_type Custom CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "music_ap_fdiv_14_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 14 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name music_ap_fdiv_14_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Divide CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "music_ap_fmul_2_max_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 2 CONFIG.c_mult_usage Max_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name music_ap_fmul_2_max_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Multiply CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "music_ap_fpext_0_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 11 CONFIG.c_result_fraction_width 53 CONFIG.component_name music_ap_fpext_0_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Double CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "music_ap_fptrunc_0_no_dsp_64",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Double CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 11 CONFIG.c_a_fraction_width 53 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 0 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name music_ap_fptrunc_0_no_dsp_64 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken false CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Float_to_Float CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "music_ap_fsqrt_10_no_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Both CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 10 CONFIG.c_mult_usage No_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name music_ap_fsqrt_10_no_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Square_Root CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      },
+      {
+        "name": "music_ap_fsub_3_full_dsp_32",
+        "vlnv": "xilinx.com:ip:floating_point:7.1",
+        "params": "CONFIG.a_precision_type Single CONFIG.a_tuser_width 1 CONFIG.add_sub_value Subtract CONFIG.b_tuser_width 1 CONFIG.c_a_exponent_width 8 CONFIG.c_a_fraction_width 24 CONFIG.c_compare_operation Programmable CONFIG.c_has_divide_by_zero false CONFIG.c_has_invalid_op false CONFIG.c_has_overflow false CONFIG.c_has_underflow false CONFIG.c_latency 3 CONFIG.c_mult_usage Full_Usage CONFIG.c_optimization Speed_Optimized CONFIG.c_rate 1 CONFIG.c_result_exponent_width 8 CONFIG.c_result_fraction_width 24 CONFIG.component_name music_ap_fsub_3_full_dsp_32 CONFIG.flow_control NonBlocking CONFIG.has_a_tlast false CONFIG.has_a_tuser false CONFIG.has_aclken true CONFIG.has_aresetn false CONFIG.has_b_tlast false CONFIG.has_b_tuser false CONFIG.has_operation_tlast false CONFIG.has_operation_tuser false CONFIG.has_result_tready false CONFIG.maximum_latency false CONFIG.operation_tuser_width 1 CONFIG.operation_type Add_Subtract CONFIG.result_precision_type Single CONFIG.result_tlast_behv Null"
+      }
+    ]
+  },
+  "Interfaces": {
+    "ap_clk": {
+      "type": "clock",
+      "ctype": {"CLK": {"Type": "bool"}},
+      "bundle_name": "ap_clk",
+      "bundle_role": "default",
+      "buses": "s_axi_AXILiteS m_axi_data P_sm",
+      "reset": "ap_rst_n"
+    },
+    "ap_rst_n": {
+      "type": "reset",
+      "polarity": "ACTIVE_LOW",
+      "ctype": {"RST": {"Type": "bool"}},
+      "bundle_name": "ap_rst_n",
+      "bundle_role": "default"
+    },
+    "interrupt": {
+      "type": "interrupt",
+      "ctype": {"INTERRUPT": {"Type": "bool"}},
+      "bundle_name": "AXILiteS",
+      "bundle_role": "interrupt"
+    },
+    "m_axi_data": {
+      "type": "native_axim",
+      "is_adaptor": "true",
+      "mode": "master",
+      "port_prefix": "m_axi_data",
+      "data_width": "32",
+      "param_prefix": "C_M_AXI_DATA",
+      "ctype": {
+        "AWLEN": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        },
+        "AWSIZE": {
+          "Type": "integer unsigned",
+          "Width": "3"
+        },
+        "AWBURST": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "AWLOCK": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "AWREGION": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "AWCACHE": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "AWPROT": {
+          "Type": "integer unsigned",
+          "Width": "3"
+        },
+        "AWQOS": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "AWVALID": {"Type": "bool"},
+        "AWREADY": {"Type": "bool"},
+        "WLAST": {"Type": "bool"},
+        "WVALID": {"Type": "bool"},
+        "WREADY": {"Type": "bool"},
+        "BVALID": {"Type": "bool"},
+        "BREADY": {"Type": "bool"},
+        "BRESP": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "ARLEN": {
+          "Type": "integer unsigned",
+          "Width": "8"
+        },
+        "ARSIZE": {
+          "Type": "integer unsigned",
+          "Width": "3"
+        },
+        "ARBURST": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "ARLOCK": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "ARREGION": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "ARCACHE": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "ARPROT": {
+          "Type": "integer unsigned",
+          "Width": "3"
+        },
+        "ARQOS": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "ARVALID": {"Type": "bool"},
+        "ARREADY": {"Type": "bool"},
+        "RLAST": {"Type": "bool"},
+        "RVALID": {"Type": "bool"},
+        "RREADY": {"Type": "bool"},
+        "RRESP": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "AWADDR": {
+          "Type": "integer unsigned",
+          "Width": "32"
+        },
+        "AWID": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "AWUSER": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "WDATA": {
+          "Type": "real float",
+          "Width": "32"
+        },
+        "WSTRB": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "WID": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "WUSER": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "ARADDR": {
+          "Type": "integer unsigned",
+          "Width": "32"
+        },
+        "ARID": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "ARUSER": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "RDATA": {
+          "Type": "real float",
+          "Width": "32"
+        },
+        "RID": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "RUSER": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "BID": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "BUSER": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        }
+      },
+      "HasOffset": "1",
+      "preferred_usage_value": "MEMORY",
+      "has_dependant_on": "1",
+      "NUM_READ_OUTSTANDING": "16",
+      "NUM_WRITE_OUTSTANDING": "16",
+      "MAX_READ_BURST_LENGTH": "16",
+      "MAX_WRITE_BURST_LENGTH": "16",
+      "offset_slave_name": "s_axi_AXILiteS",
+      "port_width": {
+        "ARADDR": "32",
+        "ARID": "1",
+        "ARUSER": "1",
+        "AWADDR": "32",
+        "AWID": "1",
+        "AWUSER": "1",
+        "BID": "1",
+        "BUSER": "1",
+        "RDATA": "32",
+        "RID": "1",
+        "RUSER": "1",
+        "WDATA": "32",
+        "WID": "1",
+        "WSTRB": "4",
+        "WUSER": "1"
+      }
+    },
+    "P_sm": {
+      "type": "axi4stream",
+      "mode": "master",
+      "port_prefix": "P_sm",
+      "has_tready": "1",
+      "ctype": {
+        "TDATA": {
+          "Type": "real float",
+          "Width": "32"
+        },
+        "TREADY": {"Type": "bool"},
+        "TVALID": {"Type": "bool"},
+        "TLAST": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        },
+        "TUSER": {
+          "Type": "integer unsigned",
+          "Width": "1"
+        }
+      },
+      "port_width": {
+        "TDATA": "32",
+        "TLAST": "1",
+        "TUSER": "1"
+      }
+    },
+    "s_axi_AXILiteS": {
+      "type": "axi4lite",
+      "is_adaptor": "true",
+      "mode": "slave",
+      "port_prefix": "s_axi_AXILiteS",
+      "param_prefix": "C_S_AXI_AXILITES",
+      "addr_bits": "6",
+      "registers": [
+        {
+          "offset": "0x00",
+          "name": "CTRL",
+          "access": "RW",
+          "reset_value": "0x0",
+          "description": "Control signals",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "AP_START",
+              "access": "RW",
+              "reset_value": "0",
+              "description": "Control signal Register for 'ap_start'."
+            },
+            {
+              "offset": "1",
+              "width": "1",
+              "name": "AP_DONE",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Control signal Register for 'ap_done'."
+            },
+            {
+              "offset": "2",
+              "width": "1",
+              "name": "AP_IDLE",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Control signal Register for 'ap_idle'."
+            },
+            {
+              "offset": "3",
+              "width": "1",
+              "name": "AP_READY",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Control signal Register for 'ap_ready'."
+            },
+            {
+              "offset": "4",
+              "width": "3",
+              "name": "RESERVED_1",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            },
+            {
+              "offset": "7",
+              "width": "1",
+              "name": "AUTO_RESTART",
+              "access": "RW",
+              "reset_value": "0",
+              "description": "Control signal Register for 'auto_restart'."
+            },
+            {
+              "offset": "8",
+              "width": "24",
+              "name": "RESERVED_2",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x04",
+          "name": "GIER",
+          "access": "RW",
+          "reset_value": "0x0",
+          "description": "Global Interrupt Enable Register",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "Enable",
+              "access": "RW",
+              "reset_value": "0",
+              "description": "Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"
+            },
+            {
+              "offset": "1",
+              "width": "31",
+              "name": "RESERVED",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x08",
+          "name": "IP_IER",
+          "access": "RW",
+          "reset_value": "0x0",
+          "description": "IP Interrupt Enable Register",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "CHAN0_INT_EN",
+              "access": "RW",
+              "reset_value": "0",
+              "description": "Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."
+            },
+            {
+              "offset": "1",
+              "width": "1",
+              "name": "CHAN1_INT_EN",
+              "access": "RW",
+              "reset_value": "0",
+              "description": "Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."
+            },
+            {
+              "offset": "2",
+              "width": "30",
+              "name": "RESERVED",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x0c",
+          "name": "IP_ISR",
+          "access": "RW",
+          "reset_value": "0x0",
+          "description": "IP Interrupt Status Register",
+          "fields": [
+            {
+              "offset": "0",
+              "width": "1",
+              "name": "CHAN0_INT_ST",
+              "access": "RTOW",
+              "reset_value": "0",
+              "description": "Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 input interrupt, 1 = Channel 0 input interrup"
+            },
+            {
+              "offset": "1",
+              "width": "1",
+              "name": "CHAN1_INT_ST",
+              "access": "RTOW",
+              "reset_value": "0",
+              "description": "Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 input interrupt, 1 = Channel 1 input interrup"
+            },
+            {
+              "offset": "2",
+              "width": "30",
+              "name": "RESERVED",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Reserved.  0s on read."
+            }
+          ]
+        },
+        {
+          "offset": "0x10",
+          "name": "ap_return",
+          "access": "R",
+          "reset_value": "0x0",
+          "description": "Data signal of ap_return",
+          "fields": [{
+              "offset": "0",
+              "width": "32",
+              "name": "ap_return",
+              "access": "R",
+              "reset_value": "0",
+              "description": "Bit 31 to 0 Data signal of ap_return"
+            }]
+        },
+        {
+          "offset": "0x18",
+          "name": "data_re",
+          "access": "W",
+          "reset_value": "0x0",
+          "description": "Data signal of data_re",
+          "fields": [{
+              "offset": "0",
+              "width": "32",
+              "name": "data_re",
+              "access": "W",
+              "reset_value": "0",
+              "description": "Bit 31 to 0 Data signal of data_re"
+            }]
+        },
+        {
+          "offset": "0x20",
+          "name": "data_im",
+          "access": "W",
+          "reset_value": "0x0",
+          "description": "Data signal of data_im",
+          "fields": [{
+              "offset": "0",
+              "width": "32",
+              "name": "data_im",
+              "access": "W",
+              "reset_value": "0",
+              "description": "Bit 31 to 0 Data signal of data_im"
+            }]
+        }
+      ],
+      "ctype": {
+        "AWVALID": {"Type": "bool"},
+        "AWREADY": {"Type": "bool"},
+        "WVALID": {"Type": "bool"},
+        "WREADY": {"Type": "bool"},
+        "BVALID": {"Type": "bool"},
+        "BREADY": {"Type": "bool"},
+        "BRESP": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "ARVALID": {"Type": "bool"},
+        "ARREADY": {"Type": "bool"},
+        "RVALID": {"Type": "bool"},
+        "RREADY": {"Type": "bool"},
+        "RRESP": {
+          "Type": "integer unsigned",
+          "Width": "2"
+        },
+        "AWADDR": {
+          "Type": "integer unsigned",
+          "Width": "6"
+        },
+        "WDATA": {
+          "Type": "integer signed",
+          "Width": "32"
+        },
+        "WSTRB": {
+          "Type": "integer unsigned",
+          "Width": "4"
+        },
+        "ARADDR": {
+          "Type": "integer unsigned",
+          "Width": "6"
+        },
+        "RDATA": {
+          "Type": "integer signed",
+          "Width": "32"
+        }
+      },
+      "data_width": "32",
+      "port_width": {
+        "ARADDR": "6",
+        "AWADDR": "6",
+        "RDATA": "32",
+        "WDATA": "32",
+        "WSTRB": "4"
+      }
+    }
+  },
+  "RtlPorts": {
+    "s_axi_AXILiteS_AWVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_AWREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_AWADDR": {
+      "dir": "in",
+      "width": "6"
+    },
+    "s_axi_AXILiteS_WVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_WREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_WDATA": {
+      "dir": "in",
+      "width": "32"
+    },
+    "s_axi_AXILiteS_WSTRB": {
+      "dir": "in",
+      "width": "4"
+    },
+    "s_axi_AXILiteS_ARVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_ARREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_ARADDR": {
+      "dir": "in",
+      "width": "6"
+    },
+    "s_axi_AXILiteS_RVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_RREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_RDATA": {
+      "dir": "out",
+      "width": "32"
+    },
+    "s_axi_AXILiteS_RRESP": {
+      "dir": "out",
+      "width": "2"
+    },
+    "s_axi_AXILiteS_BVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_BREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "s_axi_AXILiteS_BRESP": {
+      "dir": "out",
+      "width": "2"
+    },
+    "ap_clk": {
+      "dir": "in",
+      "width": "1"
+    },
+    "ap_rst_n": {
+      "dir": "in",
+      "width": "1"
+    },
+    "interrupt": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "m_axi_data_AWVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "m_axi_data_AWREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "m_axi_data_AWADDR": {
+      "dir": "out",
+      "width": "32"
+    },
+    "m_axi_data_AWID": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "m_axi_data_AWLEN": {
+      "dir": "out",
+      "width": "8"
+    },
+    "m_axi_data_AWSIZE": {
+      "dir": "out",
+      "width": "3"
+    },
+    "m_axi_data_AWBURST": {
+      "dir": "out",
+      "width": "2"
+    },
+    "m_axi_data_AWLOCK": {
+      "dir": "out",
+      "width": "2"
+    },
+    "m_axi_data_AWCACHE": {
+      "dir": "out",
+      "width": "4"
+    },
+    "m_axi_data_AWPROT": {
+      "dir": "out",
+      "width": "3"
+    },
+    "m_axi_data_AWQOS": {
+      "dir": "out",
+      "width": "4"
+    },
+    "m_axi_data_AWREGION": {
+      "dir": "out",
+      "width": "4"
+    },
+    "m_axi_data_AWUSER": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "m_axi_data_WVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "m_axi_data_WREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "m_axi_data_WDATA": {
+      "dir": "out",
+      "width": "32"
+    },
+    "m_axi_data_WSTRB": {
+      "dir": "out",
+      "width": "4"
+    },
+    "m_axi_data_WLAST": {
+      "dir": "out",
+      "width": "1"
+    },
+    "m_axi_data_WID": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "m_axi_data_WUSER": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "m_axi_data_ARVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "m_axi_data_ARREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "m_axi_data_ARADDR": {
+      "dir": "out",
+      "width": "32"
+    },
+    "m_axi_data_ARID": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "m_axi_data_ARLEN": {
+      "dir": "out",
+      "width": "8"
+    },
+    "m_axi_data_ARSIZE": {
+      "dir": "out",
+      "width": "3"
+    },
+    "m_axi_data_ARBURST": {
+      "dir": "out",
+      "width": "2"
+    },
+    "m_axi_data_ARLOCK": {
+      "dir": "out",
+      "width": "2"
+    },
+    "m_axi_data_ARCACHE": {
+      "dir": "out",
+      "width": "4"
+    },
+    "m_axi_data_ARPROT": {
+      "dir": "out",
+      "width": "3"
+    },
+    "m_axi_data_ARQOS": {
+      "dir": "out",
+      "width": "4"
+    },
+    "m_axi_data_ARREGION": {
+      "dir": "out",
+      "width": "4"
+    },
+    "m_axi_data_ARUSER": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "m_axi_data_RVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "m_axi_data_RREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "m_axi_data_RDATA": {
+      "dir": "in",
+      "width": "32"
+    },
+    "m_axi_data_RLAST": {
+      "dir": "in",
+      "width": "1"
+    },
+    "m_axi_data_RID": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "m_axi_data_RUSER": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "m_axi_data_RRESP": {
+      "dir": "in",
+      "width": "2"
+    },
+    "m_axi_data_BVALID": {
+      "dir": "in",
+      "width": "1"
+    },
+    "m_axi_data_BREADY": {
+      "dir": "out",
+      "width": "1"
+    },
+    "m_axi_data_BRESP": {
+      "dir": "in",
+      "width": "2"
+    },
+    "m_axi_data_BID": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "m_axi_data_BUSER": {
+      "dir": "in",
+      "width": "1",
+      "isVector": "true"
+    },
+    "P_sm_TDATA": {
+      "dir": "out",
+      "width": "32"
+    },
+    "P_sm_TREADY": {
+      "dir": "in",
+      "width": "1"
+    },
+    "P_sm_TVALID": {
+      "dir": "out",
+      "width": "1"
+    },
+    "P_sm_TLAST": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    },
+    "P_sm_TUSER": {
+      "dir": "out",
+      "width": "1",
+      "isVector": "true"
+    }
+  },
+  "ModuleInfo": {
+    "Hierarchy": {
+      "ModuleName": "music",
+      "Instances": [
+        {
+          "ModuleName": "fft_streaming",
+          "InstanceName": "grp_fft_streaming_fu_2582",
+          "Instances": [
+            {
+              "ModuleName": "fft_stage_1240",
+              "InstanceName": "fft_stage_1240_U0"
+            },
+            {
+              "ModuleName": "fft_stage_1241",
+              "InstanceName": "fft_stage_1241_U0"
+            },
+            {
+              "ModuleName": "fft_stage_1239",
+              "InstanceName": "fft_stage_1239_U0"
+            },
+            {
+              "ModuleName": "fft_stage_1237",
+              "InstanceName": "fft_stage_1237_U0"
+            },
+            {
+              "ModuleName": "fft_stage_1238",
+              "InstanceName": "fft_stage_1238_U0"
+            },
+            {
+              "ModuleName": "fft_stage_1242",
+              "InstanceName": "fft_stage_1242_U0"
+            },
+            {
+              "ModuleName": "fft_stage_1243",
+              "InstanceName": "fft_stage_1243_U0"
+            },
+            {
+              "ModuleName": "fft_stage_1244",
+              "InstanceName": "fft_stage_1244_U0"
+            },
+            {
+              "ModuleName": "fft_stage245",
+              "InstanceName": "fft_stage245_U0"
+            },
+            {
+              "ModuleName": "fft_stage_1236",
+              "InstanceName": "fft_stage_1236_U0"
+            },
+            {
+              "ModuleName": "bit_reverse235",
+              "InstanceName": "bit_reverse235_U0"
+            }
+          ]
+        },
+        {
+          "ModuleName": "qrf_top",
+          "InstanceName": "grp_qrf_top_fu_2626",
+          "Instances": [
+            {
+              "ModuleName": "qrf_top_Loop_1_proc3",
+              "InstanceName": "qrf_top_Loop_1_proc3_U0"
+            },
+            {
+              "ModuleName": "qrf_top_Loop_qrf_out",
+              "InstanceName": "qrf_top_Loop_qrf_out_U0"
+            }
+          ]
+        },
+        {
+          "ModuleName": "sin_or_cos_float_s",
+          "InstanceName": "grp_sin_or_cos_float_s_fu_2636",
+          "Instances": [{
+              "ModuleName": "scaled_fixed2ieee_1",
+              "InstanceName": "grp_scaled_fixed2ieee_1_fu_218"
+            }]
+        },
+        {
+          "ModuleName": "sin_or_cos_float_s",
+          "InstanceName": "grp_sin_or_cos_float_s_fu_2652",
+          "Instances": [{
+              "ModuleName": "scaled_fixed2ieee_1",
+              "InstanceName": "grp_scaled_fixed2ieee_1_fu_218"
+            }]
+        },
+        {
+          "ModuleName": "scaled_fixed2ieee",
+          "InstanceName": "grp_scaled_fixed2ieee_fu_2667"
+        }
+      ]
+    },
+    "Info": {
+      "bit_reverse235": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "fft_stage_1236": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "fft_stage_1237": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "fft_stage_1238": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "fft_stage_1239": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "fft_stage_1240": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "fft_stage_1241": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "fft_stage_1242": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "fft_stage_1243": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "fft_stage_1244": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "fft_stage245": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "fft_streaming": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "qrf_top_Loop_1_proc3": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "qrf_top_Loop_qrf_out": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "qrf_top": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "1",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "scaled_fixed2ieee": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "scaled_fixed2ieee_1": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "sin_or_cos_float_s": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      },
+      "music": {
+        "FunctionProtocol": "ap_ctrl_hs",
+        "isTaskLevelControl": "1",
+        "isPipelined": "0",
+        "isCombinational": "0",
+        "isOneStateSeq": "0"
+      }
+    },
+    "Metrics": {
+      "bit_reverse235": {
+        "Latency": {
+          "LatencyBest": "13313",
+          "LatencyAvg": "14337",
+          "LatencyWorst": "14337",
+          "PipelineIIMin": "13313",
+          "PipelineIIMax": "14337",
+          "PipelineII": "13313 ~ 14337",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "6.508"
+        },
+        "Loops": [{
+            "Name": "Loop 1",
+            "TripCount": "1024",
+            "LatencyMin": "13312",
+            "LatencyMax": "14336",
+            "Latency": "13312 ~ 14336",
+            "PipelineII": "",
+            "PipelineDepthMin": "13",
+            "PipelineDepthMax": "14",
+            "PipelineDepth": "13 ~ 14",
+            "Loops": [{
+                "Name": "Loop 1.1",
+                "TripCount": "10",
+                "Latency": "10",
+                "PipelineII": "",
+                "PipelineDepth": "1"
+              }]
+          }],
+        "Area": {
+          "FF": "118",
+          "LUT": "206",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "fft_stage_1236": {
+        "Latency": {
+          "LatencyBest": "529",
+          "LatencyAvg": "529",
+          "LatencyWorst": "529",
+          "PipelineII": "529",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.256"
+        },
+        "Loops": [{
+            "Name": "dft_loop",
+            "TripCount": "512",
+            "Latency": "527",
+            "PipelineII": "1",
+            "PipelineDepth": "17"
+          }],
+        "Area": {
+          "BRAM_18K": "0",
+          "DSP48E": "18",
+          "FF": "2343",
+          "LUT": "3274",
+          "URAM": "0"
+        }
+      },
+      "fft_stage_1237": {
+        "Latency": {
+          "LatencyBest": "529",
+          "LatencyAvg": "529",
+          "LatencyWorst": "529",
+          "PipelineII": "529",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.639"
+        },
+        "Loops": [{
+            "Name": "butterfly_loop_dft_loop",
+            "TripCount": "512",
+            "Latency": "527",
+            "PipelineII": "1",
+            "PipelineDepth": "17"
+          }],
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "24",
+          "FF": "2645",
+          "LUT": "3941",
+          "URAM": "0"
+        }
+      },
+      "fft_stage_1238": {
+        "Latency": {
+          "LatencyBest": "529",
+          "LatencyAvg": "529",
+          "LatencyWorst": "529",
+          "PipelineII": "529",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.784"
+        },
+        "Loops": [{
+            "Name": "butterfly_loop_dft_loop",
+            "TripCount": "512",
+            "Latency": "527",
+            "PipelineII": "1",
+            "PipelineDepth": "17"
+          }],
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "24",
+          "FF": "2646",
+          "LUT": "3943",
+          "URAM": "0"
+        }
+      },
+      "fft_stage_1239": {
+        "Latency": {
+          "LatencyBest": "529",
+          "LatencyAvg": "529",
+          "LatencyWorst": "529",
+          "PipelineII": "529",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.744"
+        },
+        "Loops": [{
+            "Name": "butterfly_loop_dft_loop",
+            "TripCount": "512",
+            "Latency": "527",
+            "PipelineII": "1",
+            "PipelineDepth": "17"
+          }],
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "24",
+          "FF": "2647",
+          "LUT": "3942",
+          "URAM": "0"
+        }
+      },
+      "fft_stage_1240": {
+        "Latency": {
+          "LatencyBest": "529",
+          "LatencyAvg": "529",
+          "LatencyWorst": "529",
+          "PipelineII": "529",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.980"
+        },
+        "Loops": [{
+            "Name": "butterfly_loop_dft_loop",
+            "TripCount": "512",
+            "Latency": "527",
+            "PipelineII": "1",
+            "PipelineDepth": "17"
+          }],
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "24",
+          "FF": "2648",
+          "LUT": "3944",
+          "URAM": "0"
+        }
+      },
+      "fft_stage_1241": {
+        "Latency": {
+          "LatencyBest": "529",
+          "LatencyAvg": "529",
+          "LatencyWorst": "529",
+          "PipelineII": "529",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.998"
+        },
+        "Loops": [{
+            "Name": "butterfly_loop_dft_loop",
+            "TripCount": "512",
+            "Latency": "527",
+            "PipelineII": "1",
+            "PipelineDepth": "17"
+          }],
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "24",
+          "FF": "2649",
+          "LUT": "3944",
+          "URAM": "0"
+        }
+      },
+      "fft_stage_1242": {
+        "Latency": {
+          "LatencyBest": "529",
+          "LatencyAvg": "529",
+          "LatencyWorst": "529",
+          "PipelineII": "529",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.848"
+        },
+        "Loops": [{
+            "Name": "butterfly_loop_dft_loop",
+            "TripCount": "512",
+            "Latency": "527",
+            "PipelineII": "1",
+            "PipelineDepth": "17"
+          }],
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "24",
+          "FF": "2650",
+          "LUT": "3942",
+          "URAM": "0"
+        }
+      },
+      "fft_stage_1243": {
+        "Latency": {
+          "LatencyBest": "529",
+          "LatencyAvg": "529",
+          "LatencyWorst": "529",
+          "PipelineII": "529",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.148"
+        },
+        "Loops": [{
+            "Name": "butterfly_loop_dft_loop",
+            "TripCount": "512",
+            "Latency": "527",
+            "PipelineII": "1",
+            "PipelineDepth": "17"
+          }],
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "24",
+          "FF": "2651",
+          "LUT": "3939",
+          "URAM": "0"
+        }
+      },
+      "fft_stage_1244": {
+        "Latency": {
+          "LatencyBest": "529",
+          "LatencyAvg": "529",
+          "LatencyWorst": "529",
+          "PipelineII": "529",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.775"
+        },
+        "Loops": [{
+            "Name": "butterfly_loop_dft_loop",
+            "TripCount": "512",
+            "Latency": "527",
+            "PipelineII": "1",
+            "PipelineDepth": "17"
+          }],
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "24",
+          "FF": "2652",
+          "LUT": "3936",
+          "URAM": "0"
+        }
+      },
+      "fft_stage245": {
+        "Latency": {
+          "LatencyBest": "529",
+          "LatencyAvg": "529",
+          "LatencyWorst": "529",
+          "PipelineII": "529",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "7.256"
+        },
+        "Loops": [{
+            "Name": "butterfly_loop",
+            "TripCount": "512",
+            "Latency": "527",
+            "PipelineII": "1",
+            "PipelineDepth": "17"
+          }],
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "24",
+          "FF": "2558",
+          "LUT": "3821",
+          "URAM": "0"
+        }
+      },
+      "fft_streaming": {
+        "Latency": {
+          "LatencyBest": "18613",
+          "LatencyAvg": "19637",
+          "LatencyWorst": "19637",
+          "PipelineIIMin": "13314",
+          "PipelineIIMax": "14338",
+          "PipelineII": "13314 ~ 14338",
+          "PipelineDepth": "",
+          "PipelineType": "dataflow"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.148"
+        },
+        "Area": {
+          "BRAM_18K": "58",
+          "DSP48E": "234",
+          "FF": "26227",
+          "LUT": "39134",
+          "URAM": "0"
+        }
+      },
+      "qrf_top_Loop_1_proc3": {
+        "Latency": {
+          "LatencyBest": "118",
+          "LatencyAvg": "754",
+          "LatencyWorst": "1798",
+          "PipelineIIMin": "118",
+          "PipelineIIMax": "1798",
+          "PipelineII": "118 ~ 1798",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "9.195"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "4",
+            "Latency": "19",
+            "PipelineII": "",
+            "PipelineDepth": "5",
+            "Loops": [{
+                "Name": "Loop 1.1",
+                "TripCount": "4",
+                "Latency": "3",
+                "PipelineII": "",
+                "PipelineDepth": "1"
+              }]
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "4",
+            "Latency": "19",
+            "PipelineII": "",
+            "PipelineDepth": "5",
+            "Loops": [{
+                "Name": "Loop 2.1",
+                "TripCount": "4",
+                "Latency": "3",
+                "PipelineII": "",
+                "PipelineDepth": "1"
+              }]
+          },
+          {
+            "Name": "qrf_in_row_assign",
+            "TripCount": "4",
+            "Latency": "52",
+            "PipelineII": "",
+            "PipelineDepth": "13",
+            "Loops": [
+              {
+                "Name": "qrf_in_col_assign_Qi",
+                "TripCount": "4",
+                "Latency": "4",
+                "PipelineII": "1",
+                "PipelineDepth": "1"
+              },
+              {
+                "Name": "qrf_in_col_assign_Ri",
+                "TripCount": "4",
+                "Latency": "4",
+                "PipelineII": "1",
+                "PipelineDepth": "2"
+              }
+            ]
+          },
+          {
+            "Name": "qrf_col_loop_qrf_row_loop",
+            "TripCount": "12",
+            "LatencyMin": "24",
+            "LatencyMax": "1704",
+            "Latency": "24 ~ 1704",
+            "PipelineII": "",
+            "PipelineDepthMin": "2",
+            "PipelineDepthMax": "142",
+            "PipelineDepth": "2 ~ 142",
+            "Loops": [
+              {
+                "Name": "qrf_r_update",
+                "TripCount": "4",
+                "Latency": "31",
+                "PipelineII": "4",
+                "PipelineDepth": "20"
+              },
+              {
+                "Name": "qrf_q_update",
+                "TripCount": "4",
+                "Latency": "31",
+                "PipelineII": "4",
+                "PipelineDepth": "20"
+              }
+            ]
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "0",
+          "DSP48E": "37",
+          "FF": "9620",
+          "LUT": "15660",
+          "URAM": "0"
+        }
+      },
+      "qrf_top_Loop_qrf_out": {
+        "Latency": {
+          "LatencyBest": "53",
+          "LatencyAvg": "53",
+          "LatencyWorst": "53",
+          "PipelineII": "53",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "5.637"
+        },
+        "Loops": [{
+            "Name": "qrf_out_row_assign",
+            "TripCount": "4",
+            "Latency": "52",
+            "PipelineII": "",
+            "PipelineDepth": "13",
+            "Loops": [
+              {
+                "Name": "qrf_out_col_assign_Q",
+                "TripCount": "4",
+                "Latency": "4",
+                "PipelineII": "1",
+                "PipelineDepth": "2"
+              },
+              {
+                "Name": "qrf_out_col_assign_R",
+                "TripCount": "4",
+                "Latency": "4",
+                "PipelineII": "1",
+                "PipelineDepth": "2"
+              }
+            ]
+          }],
+        "Area": {
+          "FF": "40",
+          "LUT": "264",
+          "BRAM_18K": "0",
+          "DSP48E": "0",
+          "URAM": "0"
+        }
+      },
+      "qrf_top": {
+        "Latency": {
+          "LatencyBest": "118",
+          "LatencyAvg": "754",
+          "LatencyWorst": "1798",
+          "PipelineIIMin": "119",
+          "PipelineIIMax": "1799",
+          "PipelineII": "119 ~ 1799",
+          "PipelineDepth": "",
+          "PipelineType": "dataflow"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "9.195"
+        },
+        "Area": {
+          "BRAM_18K": "8",
+          "DSP48E": "37",
+          "FF": "9664",
+          "LUT": "15982",
+          "URAM": "0"
+        }
+      },
+      "scaled_fixed2ieee": {
+        "Latency": {
+          "LatencyBest": "21",
+          "LatencyAvg": "26",
+          "LatencyWorst": "33",
+          "PipelineIIMin": "21",
+          "PipelineIIMax": "33",
+          "PipelineII": "21 ~ 33",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.247"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "3",
+            "Latency": "6",
+            "PipelineII": "",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "4",
+            "Latency": "8",
+            "PipelineII": "",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "",
+            "LatencyMin": "3",
+            "LatencyMax": "14",
+            "Latency": "3 ~ 14",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "0",
+          "FF": "571",
+          "LUT": "1586",
+          "URAM": "0",
+          "DSP48E": "0"
+        }
+      },
+      "scaled_fixed2ieee_1": {
+        "Latency": {
+          "LatencyBest": "10",
+          "LatencyAvg": "12",
+          "LatencyWorst": "16",
+          "PipelineIIMin": "10",
+          "PipelineIIMax": "16",
+          "PipelineII": "10 ~ 16",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.042"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "2",
+            "Latency": "4",
+            "PipelineII": "",
+            "PipelineDepth": "2"
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "",
+            "LatencyMin": "3",
+            "LatencyMax": "8",
+            "Latency": "3 ~ 8",
+            "PipelineII": "",
+            "PipelineDepth": "3"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "2",
+          "FF": "340",
+          "LUT": "676",
+          "URAM": "0",
+          "DSP48E": "0"
+        }
+      },
+      "sin_or_cos_float_s": {
+        "Latency": {
+          "LatencyBest": "26",
+          "LatencyAvg": "28",
+          "LatencyWorst": "32",
+          "PipelineIIMin": "26",
+          "PipelineIIMax": "32",
+          "PipelineII": "26 ~ 32",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "8.665"
+        },
+        "Area": {
+          "BRAM_18K": "2",
+          "DSP48E": "13",
+          "FF": "1589",
+          "LUT": "2785",
+          "URAM": "0"
+        }
+      },
+      "music": {
+        "Latency": {
+          "LatencyBest": "274716901",
+          "LatencyAvg": "",
+          "LatencyWorst": "318208229",
+          "PipelineIIMin": "274716902",
+          "PipelineIIMax": "318208230",
+          "PipelineII": "274716902 ~ 318208230",
+          "PipelineDepth": "",
+          "PipelineType": "none"
+        },
+        "Timing": {
+          "Target": "10.00",
+          "Uncertainty": "1.25",
+          "Estimate": "9.195"
+        },
+        "Loops": [
+          {
+            "Name": "Loop 1",
+            "TripCount": "10",
+            "Latency": "49",
+            "PipelineII": "",
+            "PipelineDepth": "5",
+            "Loops": [{
+                "Name": "Loop 1.1",
+                "TripCount": "4",
+                "Latency": "3",
+                "PipelineII": "",
+                "PipelineDepth": "1"
+              }]
+          },
+          {
+            "Name": "Loop 2",
+            "TripCount": "4",
+            "Latency": "19",
+            "PipelineII": "",
+            "PipelineDepth": "5",
+            "Loops": [{
+                "Name": "Loop 2.1",
+                "TripCount": "4",
+                "Latency": "3",
+                "PipelineII": "",
+                "PipelineDepth": "1"
+              }]
+          },
+          {
+            "Name": "Loop 3",
+            "TripCount": "4",
+            "Latency": "11",
+            "PipelineII": "",
+            "PipelineDepth": "3",
+            "Loops": [{
+                "Name": "Loop 3.1",
+                "TripCount": "2",
+                "Latency": "1",
+                "PipelineII": "",
+                "PipelineDepth": "1"
+              }]
+          },
+          {
+            "Name": "Loop 4",
+            "TripCount": "4",
+            "Latency": "19",
+            "PipelineII": "",
+            "PipelineDepth": "5",
+            "Loops": [{
+                "Name": "Loop 4.1",
+                "TripCount": "4",
+                "Latency": "3",
+                "PipelineII": "",
+                "PipelineDepth": "1"
+              }]
+          },
+          {
+            "Name": "Loop 5",
+            "TripCount": "361",
+            "Latency": "1804",
+            "PipelineII": "",
+            "PipelineDepth": "5",
+            "Loops": [{
+                "Name": "Loop 5.1",
+                "TripCount": "4",
+                "Latency": "3",
+                "PipelineII": "",
+                "PipelineDepth": "1"
+              }]
+          },
+          {
+            "Name": "Loop 6",
+            "TripCount": "4",
+            "Latency": "1447",
+            "PipelineII": "",
+            "PipelineDepth": "362",
+            "Loops": [{
+                "Name": "Loop 6.1",
+                "TripCount": "361",
+                "Latency": "360",
+                "PipelineII": "",
+                "PipelineDepth": "1"
+              }]
+          },
+          {
+            "Name": "Loop 7",
+            "TripCount": "10",
+            "LatencyMin": "1522940",
+            "LatencyMax": "1563900",
+            "Latency": "1522940 ~ 1563900",
+            "PipelineII": "",
+            "PipelineDepthMin": "152294",
+            "PipelineDepthMax": "156390",
+            "PipelineDepth": "152294 ~ 156390",
+            "Loops": [{
+                "Name": "Loop 7.1",
+                "TripCount": "4",
+                "LatencyMin": "152292",
+                "LatencyMax": "156388",
+                "Latency": "152292 ~ 156388",
+                "PipelineII": "",
+                "PipelineDepthMin": "38073",
+                "PipelineDepthMax": "39097",
+                "PipelineDepth": "38073 ~ 39097",
+                "Loops": [
+                  {
+                    "Name": "Loop 7.1.1",
+                    "TripCount": "1024",
+                    "Latency": "10240",
+                    "PipelineII": "",
+                    "PipelineDepth": "10"
+                  },
+                  {
+                    "Name": "Loop 7.1.2",
+                    "TripCount": "1024",
+                    "Latency": "9216",
+                    "PipelineII": "",
+                    "PipelineDepth": "9"
+                  }
+                ]
+              }]
+          },
+          {
+            "Name": "music_label1",
+            "TripCount": "1024",
+            "LatencyMin": "273183744",
+            "LatencyMax": "316634112",
+            "Latency": "273183744 ~ 316634112",
+            "PipelineII": "",
+            "PipelineDepthMin": "266781",
+            "PipelineDepthMax": "309213",
+            "PipelineDepth": "266781 ~ 309213",
+            "Loops": [
+              {
+                "Name": "music_label1.1",
+                "TripCount": "10",
+                "Latency": "460",
+                "PipelineII": "",
+                "PipelineDepth": "46",
+                "Loops": [{
+                    "Name": "music_label1.1.1",
+                    "TripCount": "4",
+                    "Latency": "44",
+                    "PipelineII": "",
+                    "PipelineDepth": "11"
+                  }]
+              },
+              {
+                "Name": "music_label1.2",
+                "TripCount": "4",
+                "Latency": "2984",
+                "PipelineII": "",
+                "PipelineDepth": "746",
+                "Loops": [{
+                    "Name": "music_label1.2.1",
+                    "TripCount": "4",
+                    "Latency": "744",
+                    "PipelineII": "",
+                    "PipelineDepth": "186",
+                    "Loops": [{
+                        "Name": "Autocorrelation_label17",
+                        "TripCount": "10",
+                        "Latency": "160",
+                        "PipelineII": "",
+                        "PipelineDepth": "16"
+                      }]
+                  }]
+              },
+              {
+                "Name": "music_label1.3",
+                "TripCount": "4",
+                "Latency": "19",
+                "PipelineII": "",
+                "PipelineDepth": "5",
+                "Loops": [{
+                    "Name": "music_label1.3.1",
+                    "TripCount": "4",
+                    "Latency": "3",
+                    "PipelineII": "",
+                    "PipelineDepth": "1"
+                  }]
+              },
+              {
+                "Name": "music_label1.4",
+                "TripCount": "4",
+                "Latency": "19",
+                "PipelineII": "",
+                "PipelineDepth": "5",
+                "Loops": [{
+                    "Name": "music_label1.4.1",
+                    "TripCount": "4",
+                    "Latency": "3",
+                    "PipelineII": "",
+                    "PipelineDepth": "1"
+                  }]
+              },
+              {
+                "Name": "music_label1.5",
+                "TripCount": "4",
+                "Latency": "19",
+                "PipelineII": "",
+                "PipelineDepth": "5",
+                "Loops": [{
+                    "Name": "music_label1.5.1",
+                    "TripCount": "4",
+                    "Latency": "3",
+                    "PipelineII": "",
+                    "PipelineDepth": "1"
+                  }]
+              },
+              {
+                "Name": "music_label1.6",
+                "TripCount": "4",
+                "Latency": "19",
+                "PipelineII": "",
+                "PipelineDepth": "5",
+                "Loops": [{
+                    "Name": "music_label1.6.1",
+                    "TripCount": "4",
+                    "Latency": "3",
+                    "PipelineII": "",
+                    "PipelineDepth": "1"
+                  }]
+              },
+              {
+                "Name": "music_label1.7",
+                "TripCount": "4",
+                "Latency": "40",
+                "PipelineII": "",
+                "PipelineDepth": "10",
+                "Loops": [{
+                    "Name": "music_label1.7.1",
+                    "TripCount": "4",
+                    "Latency": "8",
+                    "PipelineII": "",
+                    "PipelineDepth": "2"
+                  }]
+              },
+              {
+                "Name": "music_label1.8",
+                "TripCount": "8",
+                "LatencyMin": "8968",
+                "LatencyMax": "22408",
+                "Latency": "8968 ~ 22408",
+                "PipelineII": "",
+                "PipelineDepthMin": "1121",
+                "PipelineDepthMax": "2801",
+                "PipelineDepth": "1121 ~ 2801",
+                "Loops": [{
+                    "Name": "music_label1.8.1",
+                    "TripCount": "4",
+                    "Latency": "1000",
+                    "PipelineII": "",
+                    "PipelineDepth": "250",
+                    "Loops": [{
+                        "Name": "music_label1.8.1.1",
+                        "TripCount": "4",
+                        "Latency": "248",
+                        "PipelineII": "",
+                        "PipelineDepth": "62",
+                        "Loops": [{
+                            "Name": "eig_decompose_label7",
+                            "TripCount": "4",
+                            "Latency": "60",
+                            "PipelineII": "",
+                            "PipelineDepth": "15"
+                          }]
+                      }]
+                  }]
+              },
+              {
+                "Name": "music_label1.9",
+                "TripCount": "4",
+                "LatencyMin": "2636",
+                "LatencyMax": "5612",
+                "Latency": "2636 ~ 5612",
+                "PipelineII": "",
+                "PipelineDepthMin": "659",
+                "PipelineDepthMax": "1403",
+                "PipelineDepth": "659 ~ 1403",
+                "Loops": [
+                  {
+                    "Name": "music_label1.9.1",
+                    "TripCount": "4",
+                    "Latency": "64",
+                    "PipelineII": "",
+                    "PipelineDepth": "16",
+                    "Loops": [{
+                        "Name": "eig_decompose_label12",
+                        "TripCount": "4",
+                        "Latency": "8",
+                        "PipelineII": "",
+                        "PipelineDepth": "2"
+                      }]
+                  },
+                  {
+                    "Name": "music_label1.9.2",
+                    "TripCount": "3",
+                    "LatencyMin": "297",
+                    "LatencyMax": "951",
+                    "Latency": "297 ~ 951",
+                    "PipelineII": "",
+                    "PipelineDepthMin": "99",
+                    "PipelineDepthMax": "317",
+                    "PipelineDepth": "99 ~ 317",
+                    "Loops": [
+                      {
+                        "Name": "eig_decompose_label9",
+                        "TripCount": "",
+                        "LatencyMin": "52",
+                        "LatencyMax": "104",
+                        "Latency": "52 ~ 104",
+                        "PipelineII": "",
+                        "PipelineDepth": "26"
+                      },
+                      {
+                        "Name": "music_label1.9.2.2",
+                        "TripCount": "",
+                        "LatencyMin": "35",
+                        "LatencyMax": "201",
+                        "Latency": "35 ~ 201",
+                        "PipelineII": "",
+                        "PipelineDepthMin": "35",
+                        "PipelineDepthMax": "67",
+                        "PipelineDepth": "35 ~ 67",
+                        "Loops": [{
+                            "Name": "eig_decompose_label8",
+                            "TripCount": "",
+                            "LatencyMin": "32",
+                            "LatencyMax": "64",
+                            "Latency": "32 ~ 64",
+                            "PipelineII": "",
+                            "PipelineDepth": "16"
+                          }]
+                      }
+                    ]
+                  },
+                  {
+                    "Name": "eig_decompose_label11",
+                    "TripCount": "3",
+                    "LatencyMin": "168",
+                    "LatencyMax": "258",
+                    "Latency": "168 ~ 258",
+                    "PipelineII": "",
+                    "PipelineDepthMin": "56",
+                    "PipelineDepthMax": "86",
+                    "PipelineDepth": "56 ~ 86",
+                    "Loops": [{
+                        "Name": "eig_decompose_label10",
+                        "TripCount": "",
+                        "LatencyMin": "15",
+                        "LatencyMax": "45",
+                        "Latency": "15 ~ 45",
+                        "PipelineII": "",
+                        "PipelineDepth": "15"
+                      }]
+                  },
+                  {
+                    "Name": "eig_decompose_label13",
+                    "TripCount": "4",
+                    "Latency": "104",
+                    "PipelineII": "",
+                    "PipelineDepth": "26"
+                  }
+                ]
+              },
+              {
+                "Name": "music_label1.10",
+                "TripCount": "4",
+                "Latency": "4",
+                "PipelineII": "",
+                "PipelineDepth": "1"
+              },
+              {
+                "Name": "music_label1.11",
+                "TripCount": "3",
+                "LatencyMin": "24",
+                "LatencyMax": "48",
+                "Latency": "24 ~ 48",
+                "PipelineII": "",
+                "PipelineDepthMin": "8",
+                "PipelineDepthMax": "16",
+                "PipelineDepth": "8 ~ 16",
+                "Loops": [{
+                    "Name": "music_label1.11.1",
+                    "TripCount": "",
+                    "LatencyMin": "4",
+                    "LatencyMax": "12",
+                    "Latency": "4 ~ 12",
+                    "PipelineII": "",
+                    "PipelineDepth": "4"
+                  }]
+              },
+              {
+                "Name": "music_label1.12",
+                "TripCount": "4",
+                "Latency": "56",
+                "PipelineII": "",
+                "PipelineDepth": "14",
+                "Loops": [{
+                    "Name": "music_label1.12.1",
+                    "TripCount": "4",
+                    "Latency": "12",
+                    "PipelineII": "",
+                    "PipelineDepth": "3"
+                  }]
+              },
+              {
+                "Name": "music_label1.13",
+                "TripCount": "4",
+                "LatencyMin": "128544",
+                "LatencyMax": "154536",
+                "Latency": "128544 ~ 154536",
+                "PipelineII": "",
+                "PipelineDepthMin": "32136",
+                "PipelineDepthMax": "38634",
+                "PipelineDepth": "32136 ~ 38634",
+                "Loops": [{
+                    "Name": "music_label2",
+                    "TripCount": "361",
+                    "LatencyMin": "32129",
+                    "LatencyMax": "38627",
+                    "Latency": "32129 ~ 38627",
+                    "PipelineII": "",
+                    "PipelineDepthMin": "89",
+                    "PipelineDepthMax": "107",
+                    "PipelineDepth": "89 ~ 107"
+                  }]
+              },
+              {
+                "Name": "music_label1.14",
+                "TripCount": "4",
+                "Latency": "552",
+                "PipelineII": "",
+                "PipelineDepth": "138",
+                "Loops": [{
+                    "Name": "music_label1.14.1",
+                    "TripCount": "4",
+                    "Latency": "136",
+                    "PipelineII": "",
+                    "PipelineDepth": "34",
+                    "Loops": [{
+                        "Name": "music_label3",
+                        "TripCount": "2",
+                        "Latency": "32",
+                        "PipelineII": "",
+                        "PipelineDepth": "16"
+                      }]
+                  }]
+              },
+              {
+                "Name": "music_label1.15",
+                "TripCount": "361",
+                "Latency": "96026",
+                "PipelineII": "",
+                "PipelineDepth": "266",
+                "Loops": [{
+                    "Name": "music_label1.15.1",
+                    "TripCount": "4",
+                    "Latency": "264",
+                    "PipelineII": "",
+                    "PipelineDepth": "66",
+                    "Loops": [{
+                        "Name": "music_label4",
+                        "TripCount": "4",
+                        "Latency": "64",
+                        "PipelineII": "",
+                        "PipelineDepth": "16"
+                      }]
+                  }]
+              },
+              {
+                "Name": "music_label1.16",
+                "TripCount": "361",
+                "Latency": "26353",
+                "PipelineII": "",
+                "PipelineDepth": "73",
+                "Loops": [{
+                    "Name": "music_label5",
+                    "TripCount": "4",
+                    "Latency": "64",
+                    "PipelineII": "",
+                    "PipelineDepth": "16"
+                  }]
+              }
+            ]
+          },
+          {
+            "Name": "Loop 9",
+            "TripCount": "361",
+            "Latency": "6859",
+            "PipelineII": "",
+            "PipelineDepth": "19"
+          }
+        ],
+        "Area": {
+          "BRAM_18K": "113",
+          "DSP48E": "420",
+          "FF": "56364",
+          "LUT": "86385",
+          "URAM": "0"
+        }
+      }
+    }
+  },
+  "Sdx": {
+    "Target": "none",
+    "ProfileOption": "0",
+    "ProfileType": "none",
+    "XO": "",
+    "KernelName": "music",
+    "EnableXoSwEmu": "1"
+  },
+  "GenData": {
+    "DataVersion": "0.2",
+    "Time": "2020-08-01 16:08:42 +0800",
+    "ToolName": "vivado_hls",
+    "ToolVersion": "2019.1"
+  }
+}

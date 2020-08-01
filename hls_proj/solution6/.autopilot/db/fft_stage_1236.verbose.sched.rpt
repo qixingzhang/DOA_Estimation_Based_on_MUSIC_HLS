@@ -1,0 +1,340 @@
+
+
+================================================================
+== Vivado HLS Report for 'fft_stage_1236'
+================================================================
+* Date:           Sat Aug  1 16:07:29 2020
+
+* Version:        2019.1 (Build 2552052 on Fri May 24 15:28:33 MDT 2019)
+* Project:        hls_proj
+* Solution:       solution6
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     7.256|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  529|  529|  529|  529|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +------------+-----+-----+----------+-----------+-----------+------+----------+
+        |            |  Latency  | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name | min | max |  Latency |  achieved |   target  | Count| Pipelined|
+        +------------+-----+-----+----------+-----------+-----------+------+----------+
+        |- dft_loop  |  527|  527|        17|          1|          1|   512|    yes   |
+        +------------+-----+-----+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 2
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 17
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 19
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 17, States = { 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 19 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 2 
+19 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.76>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1)"   --->   Operation 20 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([15 x i8]* @p_str9) nounwind" [src/music.cpp:145]   --->   Operation 21 'specloopname' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%tmp_69 = call i32 (...)* @_ssdm_op_SpecRegionBegin([15 x i8]* @p_str9) nounwind" [src/music.cpp:145]   --->   Operation 22 'specregionbegin' 'tmp_69' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (1.76ns)   --->   "br label %0" [src/music.cpp:148]   --->   Operation 23 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 3.25>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%t_0 = phi i10 [ 0, %butterfly_loop_begin ], [ %t, %dft_loop ]"   --->   Operation 24 'phi' 't_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%empty_179 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 512, i64 512, i64 512)"   --->   Operation 25 'speclooptripcount' 'empty_179' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (1.77ns)   --->   "%icmp_ln148 = icmp eq i10 %t_0, -512" [src/music.cpp:148]   --->   Operation 26 'icmp' 'icmp_ln148' <Predicate = true> <Delay = 1.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.77> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 27 [1/1] (1.73ns)   --->   "%t = add i10 %t_0, 1" [src/music.cpp:148]   --->   Operation 27 'add' 't' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "br i1 %icmp_ln148, label %butterfly_loop_end, label %dft_loop" [src/music.cpp:148]   --->   Operation 28 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%i = shl i10 %t_0, 1" [src/music.cpp:149]   --->   Operation 29 'shl' 'i' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%i_lower = or i10 %i, 1" [src/music.cpp:155]   --->   Operation 30 'or' 'i_lower' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%zext_ln156 = zext i10 %i_lower to i64" [src/music.cpp:156]   --->   Operation 31 'zext' 'zext_ln156' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%X_R_0_addr = getelementptr [1024 x float]* %X_R_0, i64 0, i64 %zext_ln156" [src/music.cpp:156]   --->   Operation 32 'getelementptr' 'X_R_0_addr' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_2 : Operation 33 [2/2] (3.25ns)   --->   "%X_R_0_load = load float* %X_R_0_addr, align 4" [src/music.cpp:156]   --->   Operation 33 'load' 'X_R_0_load' <Predicate = (!icmp_ln148)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_2 : Operation 34 [1/1] (0.00ns)   --->   "%X_I_0_addr = getelementptr [1024 x float]* %X_I_0, i64 0, i64 %zext_ln156" [src/music.cpp:156]   --->   Operation 34 'getelementptr' 'X_I_0_addr' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_2 : Operation 35 [2/2] (3.25ns)   --->   "%X_I_0_load = load float* %X_I_0_addr, align 4" [src/music.cpp:156]   --->   Operation 35 'load' 'X_I_0_load' <Predicate = (!icmp_ln148)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+
+State 3 <SV = 2> <Delay = 3.25>
+ST_3 : Operation 36 [1/2] (3.25ns)   --->   "%X_R_0_load = load float* %X_R_0_addr, align 4" [src/music.cpp:156]   --->   Operation 36 'load' 'X_R_0_load' <Predicate = (!icmp_ln148)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_3 : Operation 37 [1/2] (3.25ns)   --->   "%X_I_0_load = load float* %X_I_0_addr, align 4" [src/music.cpp:156]   --->   Operation 37 'load' 'X_I_0_load' <Predicate = (!icmp_ln148)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+
+State 4 <SV = 3> <Delay = 5.70>
+ST_4 : Operation 38 [4/4] (5.70ns)   --->   "%tmp_s = fmul float %X_I_0_load, -0.000000e+00" [src/music.cpp:156]   --->   Operation 38 'fmul' 'tmp_s' <Predicate = (!icmp_ln148)> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 39 [4/4] (5.70ns)   --->   "%tmp_63 = fmul float %X_R_0_load, -0.000000e+00" [src/music.cpp:157]   --->   Operation 39 'fmul' 'tmp_63' <Predicate = (!icmp_ln148)> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 5.70>
+ST_5 : Operation 40 [3/4] (5.70ns)   --->   "%tmp_s = fmul float %X_I_0_load, -0.000000e+00" [src/music.cpp:156]   --->   Operation 40 'fmul' 'tmp_s' <Predicate = (!icmp_ln148)> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 41 [3/4] (5.70ns)   --->   "%tmp_63 = fmul float %X_R_0_load, -0.000000e+00" [src/music.cpp:157]   --->   Operation 41 'fmul' 'tmp_63' <Predicate = (!icmp_ln148)> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 5.70>
+ST_6 : Operation 42 [2/4] (5.70ns)   --->   "%tmp_s = fmul float %X_I_0_load, -0.000000e+00" [src/music.cpp:156]   --->   Operation 42 'fmul' 'tmp_s' <Predicate = (!icmp_ln148)> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 43 [2/4] (5.70ns)   --->   "%tmp_63 = fmul float %X_R_0_load, -0.000000e+00" [src/music.cpp:157]   --->   Operation 43 'fmul' 'tmp_63' <Predicate = (!icmp_ln148)> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 7 <SV = 6> <Delay = 5.70>
+ST_7 : Operation 44 [1/4] (5.70ns)   --->   "%tmp_s = fmul float %X_I_0_load, -0.000000e+00" [src/music.cpp:156]   --->   Operation 44 'fmul' 'tmp_s' <Predicate = (!icmp_ln148)> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 45 [1/4] (5.70ns)   --->   "%tmp_63 = fmul float %X_R_0_load, -0.000000e+00" [src/music.cpp:157]   --->   Operation 45 'fmul' 'tmp_63' <Predicate = (!icmp_ln148)> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 7.25>
+ST_8 : Operation 46 [5/5] (7.25ns)   --->   "%temp_R = fsub float %X_R_0_load, %tmp_s" [src/music.cpp:156]   --->   Operation 46 'fsub' 'temp_R' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 47 [5/5] (7.25ns)   --->   "%temp_I = fadd float %X_I_0_load, %tmp_63" [src/music.cpp:157]   --->   Operation 47 'fadd' 'temp_I' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 9 <SV = 8> <Delay = 7.25>
+ST_9 : Operation 48 [4/5] (7.25ns)   --->   "%temp_R = fsub float %X_R_0_load, %tmp_s" [src/music.cpp:156]   --->   Operation 48 'fsub' 'temp_R' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 49 [4/5] (7.25ns)   --->   "%temp_I = fadd float %X_I_0_load, %tmp_63" [src/music.cpp:157]   --->   Operation 49 'fadd' 'temp_I' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 10 <SV = 9> <Delay = 7.25>
+ST_10 : Operation 50 [3/5] (7.25ns)   --->   "%temp_R = fsub float %X_R_0_load, %tmp_s" [src/music.cpp:156]   --->   Operation 50 'fsub' 'temp_R' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 51 [3/5] (7.25ns)   --->   "%temp_I = fadd float %X_I_0_load, %tmp_63" [src/music.cpp:157]   --->   Operation 51 'fadd' 'temp_I' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 7.25>
+ST_11 : Operation 52 [2/5] (7.25ns)   --->   "%temp_R = fsub float %X_R_0_load, %tmp_s" [src/music.cpp:156]   --->   Operation 52 'fsub' 'temp_R' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 53 [2/5] (7.25ns)   --->   "%temp_I = fadd float %X_I_0_load, %tmp_63" [src/music.cpp:157]   --->   Operation 53 'fadd' 'temp_I' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_11 : Operation 54 [1/1] (0.00ns)   --->   "%zext_ln158 = zext i10 %i to i64" [src/music.cpp:158]   --->   Operation 54 'zext' 'zext_ln158' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_11 : Operation 55 [1/1] (0.00ns)   --->   "%X_R_0_addr_1 = getelementptr [1024 x float]* %X_R_0, i64 0, i64 %zext_ln158" [src/music.cpp:158]   --->   Operation 55 'getelementptr' 'X_R_0_addr_1' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_11 : Operation 56 [2/2] (3.25ns)   --->   "%X_R_0_load_1 = load float* %X_R_0_addr_1, align 4" [src/music.cpp:158]   --->   Operation 56 'load' 'X_R_0_load_1' <Predicate = (!icmp_ln148)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_11 : Operation 57 [1/1] (0.00ns)   --->   "%X_I_0_addr_1 = getelementptr [1024 x float]* %X_I_0, i64 0, i64 %zext_ln158" [src/music.cpp:159]   --->   Operation 57 'getelementptr' 'X_I_0_addr_1' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_11 : Operation 58 [2/2] (3.25ns)   --->   "%X_I_0_load_1 = load float* %X_I_0_addr_1, align 4" [src/music.cpp:159]   --->   Operation 58 'load' 'X_I_0_load_1' <Predicate = (!icmp_ln148)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+
+State 12 <SV = 11> <Delay = 7.25>
+ST_12 : Operation 59 [1/5] (7.25ns)   --->   "%temp_R = fsub float %X_R_0_load, %tmp_s" [src/music.cpp:156]   --->   Operation 59 'fsub' 'temp_R' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 60 [1/5] (7.25ns)   --->   "%temp_I = fadd float %X_I_0_load, %tmp_63" [src/music.cpp:157]   --->   Operation 60 'fadd' 'temp_I' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_12 : Operation 61 [1/2] (3.25ns)   --->   "%X_R_0_load_1 = load float* %X_R_0_addr_1, align 4" [src/music.cpp:158]   --->   Operation 61 'load' 'X_R_0_load_1' <Predicate = (!icmp_ln148)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_12 : Operation 62 [1/2] (3.25ns)   --->   "%X_I_0_load_1 = load float* %X_I_0_addr_1, align 4" [src/music.cpp:159]   --->   Operation 62 'load' 'X_I_0_load_1' <Predicate = (!icmp_ln148)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+
+State 13 <SV = 12> <Delay = 7.25>
+ST_13 : Operation 63 [5/5] (7.25ns)   --->   "%tmp_64 = fsub float %X_R_0_load_1, %temp_R" [src/music.cpp:158]   --->   Operation 63 'fsub' 'tmp_64' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 64 [5/5] (7.25ns)   --->   "%tmp_65 = fsub float %X_I_0_load_1, %temp_I" [src/music.cpp:159]   --->   Operation 64 'fsub' 'tmp_65' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 65 [5/5] (7.25ns)   --->   "%tmp_66 = fadd float %X_R_0_load_1, %temp_R" [src/music.cpp:160]   --->   Operation 65 'fadd' 'tmp_66' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_13 : Operation 66 [5/5] (7.25ns)   --->   "%tmp_67 = fadd float %X_I_0_load_1, %temp_I" [src/music.cpp:161]   --->   Operation 66 'fadd' 'tmp_67' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 7.25>
+ST_14 : Operation 67 [4/5] (7.25ns)   --->   "%tmp_64 = fsub float %X_R_0_load_1, %temp_R" [src/music.cpp:158]   --->   Operation 67 'fsub' 'tmp_64' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 68 [4/5] (7.25ns)   --->   "%tmp_65 = fsub float %X_I_0_load_1, %temp_I" [src/music.cpp:159]   --->   Operation 68 'fsub' 'tmp_65' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 69 [4/5] (7.25ns)   --->   "%tmp_66 = fadd float %X_R_0_load_1, %temp_R" [src/music.cpp:160]   --->   Operation 69 'fadd' 'tmp_66' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_14 : Operation 70 [4/5] (7.25ns)   --->   "%tmp_67 = fadd float %X_I_0_load_1, %temp_I" [src/music.cpp:161]   --->   Operation 70 'fadd' 'tmp_67' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 7.25>
+ST_15 : Operation 71 [3/5] (7.25ns)   --->   "%tmp_64 = fsub float %X_R_0_load_1, %temp_R" [src/music.cpp:158]   --->   Operation 71 'fsub' 'tmp_64' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 72 [3/5] (7.25ns)   --->   "%tmp_65 = fsub float %X_I_0_load_1, %temp_I" [src/music.cpp:159]   --->   Operation 72 'fsub' 'tmp_65' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 73 [3/5] (7.25ns)   --->   "%tmp_66 = fadd float %X_R_0_load_1, %temp_R" [src/music.cpp:160]   --->   Operation 73 'fadd' 'tmp_66' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_15 : Operation 74 [3/5] (7.25ns)   --->   "%tmp_67 = fadd float %X_I_0_load_1, %temp_I" [src/music.cpp:161]   --->   Operation 74 'fadd' 'tmp_67' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 7.25>
+ST_16 : Operation 75 [2/5] (7.25ns)   --->   "%tmp_64 = fsub float %X_R_0_load_1, %temp_R" [src/music.cpp:158]   --->   Operation 75 'fsub' 'tmp_64' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 76 [2/5] (7.25ns)   --->   "%tmp_65 = fsub float %X_I_0_load_1, %temp_I" [src/music.cpp:159]   --->   Operation 76 'fsub' 'tmp_65' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 77 [2/5] (7.25ns)   --->   "%tmp_66 = fadd float %X_R_0_load_1, %temp_R" [src/music.cpp:160]   --->   Operation 77 'fadd' 'tmp_66' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_16 : Operation 78 [2/5] (7.25ns)   --->   "%tmp_67 = fadd float %X_I_0_load_1, %temp_I" [src/music.cpp:161]   --->   Operation 78 'fadd' 'tmp_67' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 7.25>
+ST_17 : Operation 79 [1/5] (7.25ns)   --->   "%tmp_64 = fsub float %X_R_0_load_1, %temp_R" [src/music.cpp:158]   --->   Operation 79 'fsub' 'tmp_64' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 80 [1/5] (7.25ns)   --->   "%tmp_65 = fsub float %X_I_0_load_1, %temp_I" [src/music.cpp:159]   --->   Operation 80 'fsub' 'tmp_65' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 81 [1/5] (7.25ns)   --->   "%tmp_66 = fadd float %X_R_0_load_1, %temp_R" [src/music.cpp:160]   --->   Operation 81 'fadd' 'tmp_66' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_17 : Operation 82 [1/5] (7.25ns)   --->   "%tmp_67 = fadd float %X_I_0_load_1, %temp_I" [src/music.cpp:161]   --->   Operation 82 'fadd' 'tmp_67' <Predicate = (!icmp_ln148)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 3.25>
+ST_18 : Operation 83 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecLoopName([9 x i8]* @p_str10) nounwind" [src/music.cpp:148]   --->   Operation 83 'specloopname' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_18 : Operation 84 [1/1] (0.00ns)   --->   "%tmp_70 = call i32 (...)* @_ssdm_op_SpecRegionBegin([9 x i8]* @p_str10) nounwind" [src/music.cpp:148]   --->   Operation 84 'specregionbegin' 'tmp_70' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_18 : Operation 85 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str) nounwind" [src/music.cpp:151]   --->   Operation 85 'specpipeline' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_18 : Operation 86 [1/1] (0.00ns)   --->   "%Out_R_1_addr = getelementptr [1024 x float]* %Out_R_1, i64 0, i64 %zext_ln156" [src/music.cpp:158]   --->   Operation 86 'getelementptr' 'Out_R_1_addr' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_18 : Operation 87 [1/1] (3.25ns)   --->   "store float %tmp_64, float* %Out_R_1_addr, align 4" [src/music.cpp:158]   --->   Operation 87 'store' <Predicate = (!icmp_ln148)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_18 : Operation 88 [1/1] (0.00ns)   --->   "%Out_I_1_addr = getelementptr [1024 x float]* %Out_I_1, i64 0, i64 %zext_ln156" [src/music.cpp:159]   --->   Operation 88 'getelementptr' 'Out_I_1_addr' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_18 : Operation 89 [1/1] (3.25ns)   --->   "store float %tmp_65, float* %Out_I_1_addr, align 4" [src/music.cpp:159]   --->   Operation 89 'store' <Predicate = (!icmp_ln148)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_18 : Operation 90 [1/1] (0.00ns)   --->   "%Out_R_1_addr_1 = getelementptr [1024 x float]* %Out_R_1, i64 0, i64 %zext_ln158" [src/music.cpp:160]   --->   Operation 90 'getelementptr' 'Out_R_1_addr_1' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_18 : Operation 91 [1/1] (3.25ns)   --->   "store float %tmp_66, float* %Out_R_1_addr_1, align 4" [src/music.cpp:160]   --->   Operation 91 'store' <Predicate = (!icmp_ln148)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_18 : Operation 92 [1/1] (0.00ns)   --->   "%Out_I_1_addr_1 = getelementptr [1024 x float]* %Out_I_1, i64 0, i64 %zext_ln158" [src/music.cpp:161]   --->   Operation 92 'getelementptr' 'Out_I_1_addr_1' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_18 : Operation 93 [1/1] (3.25ns)   --->   "store float %tmp_67, float* %Out_I_1_addr_1, align 4" [src/music.cpp:161]   --->   Operation 93 'store' <Predicate = (!icmp_ln148)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 1024> <RAM>
+ST_18 : Operation 94 [1/1] (0.00ns)   --->   "%empty_180 = call i32 (...)* @_ssdm_op_SpecRegionEnd([9 x i8]* @p_str10, i32 %tmp_70) nounwind" [src/music.cpp:162]   --->   Operation 94 'specregionend' 'empty_180' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+ST_18 : Operation 95 [1/1] (0.00ns)   --->   "br label %0" [src/music.cpp:148]   --->   Operation 95 'br' <Predicate = (!icmp_ln148)> <Delay = 0.00>
+
+State 19 <SV = 2> <Delay = 0.00>
+ST_19 : Operation 96 [1/1] (0.00ns)   --->   "%empty_181 = call i32 (...)* @_ssdm_op_SpecRegionEnd([15 x i8]* @p_str9, i32 %tmp_69) nounwind" [src/music.cpp:163]   --->   Operation 96 'specregionend' 'empty_181' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 97 [1/1] (0.00ns)   --->   "%empty_182 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 1, i64 1)"   --->   Operation 97 'speclooptripcount' 'empty_182' <Predicate = true> <Delay = 0.00>
+ST_19 : Operation 98 [1/1] (0.00ns)   --->   "ret void" [src/music.cpp:164]   --->   Operation 98 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('t') with incoming values : ('t', src/music.cpp:148) [10]  (1.77 ns)
+
+ <State 2>: 3.25ns
+The critical path consists of the following:
+	'phi' operation ('t') with incoming values : ('t', src/music.cpp:148) [10]  (0 ns)
+	'shl' operation ('i', src/music.cpp:149) [18]  (0 ns)
+	'or' operation ('i_lower', src/music.cpp:155) [20]  (0 ns)
+	'getelementptr' operation ('X_R_0_addr', src/music.cpp:156) [22]  (0 ns)
+	'load' operation ('X_R_0_load', src/music.cpp:156) on array 'X_R_0' [23]  (3.25 ns)
+
+ <State 3>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('X_R_0_load', src/music.cpp:156) on array 'X_R_0' [23]  (3.25 ns)
+
+ <State 4>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_s', src/music.cpp:156) [26]  (5.7 ns)
+
+ <State 5>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_s', src/music.cpp:156) [26]  (5.7 ns)
+
+ <State 6>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_s', src/music.cpp:156) [26]  (5.7 ns)
+
+ <State 7>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_s', src/music.cpp:156) [26]  (5.7 ns)
+
+ <State 8>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('temp_R', src/music.cpp:156) [27]  (7.26 ns)
+
+ <State 9>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('temp_R', src/music.cpp:156) [27]  (7.26 ns)
+
+ <State 10>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('temp_R', src/music.cpp:156) [27]  (7.26 ns)
+
+ <State 11>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('temp_R', src/music.cpp:156) [27]  (7.26 ns)
+
+ <State 12>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('temp_R', src/music.cpp:156) [27]  (7.26 ns)
+
+ <State 13>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_64', src/music.cpp:158) [33]  (7.26 ns)
+
+ <State 14>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_64', src/music.cpp:158) [33]  (7.26 ns)
+
+ <State 15>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_64', src/music.cpp:158) [33]  (7.26 ns)
+
+ <State 16>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_64', src/music.cpp:158) [33]  (7.26 ns)
+
+ <State 17>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_64', src/music.cpp:158) [33]  (7.26 ns)
+
+ <State 18>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('Out_R_1_addr', src/music.cpp:158) [34]  (0 ns)
+	'store' operation ('store_ln158', src/music.cpp:158) of variable 'tmp_64', src/music.cpp:158 on array 'Out_R_1' [35]  (3.25 ns)
+
+ <State 19>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
