@@ -6,4 +6,4 @@ FPGA implementation of DOA estimation based on Multiple Signal Classification(MU
 
 ## Platform
 * Board: Pynq-z2
-* Software: Vivado Design Suite - Hls 2019.1
+* Software: Vivado Design Suite 2019.1, Jupyter notebook
