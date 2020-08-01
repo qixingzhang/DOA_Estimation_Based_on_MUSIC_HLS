@@ -3,3 +3,7 @@
 
 ## Project Description
 FPGA implementation of DOA estimation based on Multiple Signal Classification(MUSIC) Algorithm.
+
+## Platform
+* Board: Pynq-z2
+* Software: Vivado Design Suite - Hls 2019.1
