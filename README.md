@@ -1,4 +1,4 @@
-# DOA_Estimation_Based_on_MUSIC_HLS
+# DOA Estimation Based on MUSIC Algorithm
 2020 Xilinx Summer Camp Project
 
 ## Project Description
